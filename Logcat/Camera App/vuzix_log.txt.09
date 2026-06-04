@@ -1,0 +1,417 @@
+03-08 23:07:29.231   679   679 D audio_hw_primary: update_patch: enter
+03-08 23:07:29.231   679   679 D audio_hw_primary: route_input_stream: exit: status(0)
+03-08 23:07:29.231   679   679 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 53
+03-08 23:07:29.231  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.232   679  1493 E device_utils: update_device_list: Invalid device: 0
+03-08 23:07:29.232  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.235  1380  1752 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@204061e, caller=1041/736](true)
+03-08 23:07:29.236   679  1493 E FMQ     : grantorIdx must be less than 3
+03-08 23:07:29.236   679  1493 E FMQ     : grantorIdx must be less than 3
+03-08 23:07:29.236   736  5278 E FMQ     : grantorIdx must be less than 3
+03-08 23:07:29.237   736  5278 E FMQ     : grantorIdx must be less than 3
+03-08 23:07:29.237   679  5282 D audio_hw_primary: start_input_stream: enter: stream(0xeb1c0a90)usecase(23: audio-record), source 6
+03-08 23:07:29.238   679  5282 D audio_hw_primary: select_devices for use case (audio-record)
+03-08 23:07:29.238   679  5282 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-08 23:07:29.238   679  5282 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-08 23:07:29.238   679  5282 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-08 23:07:29.238   679  5282 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-08 23:07:29.238   679  5282 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-08 23:07:29.238   679  5282 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-08 23:07:29.238   679  5282 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-08 23:07:29.238   679  5282 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-08 23:07:29.238   679  5282 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-08 23:07:29.238   679  5282 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:29.238   679  5282 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-08 23:07:29.238   679  5282 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-08 23:07:29.238   679  5282 D soundtrigger: audio HAL using same device 195 as ST
+03-08 23:07:29.238   679  5282 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-08 23:07:29.238   679  5282 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-08 23:07:29.238   679  5282 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-08 23:07:29.238   679  5282 D audio_route: Apply path: voice-rec-mic
+03-08 23:07:29.239   679  5282 D soundtrigger: audio HAL using same device 195 as ST
+03-08 23:07:29.239   679  5282 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-08 23:07:29.239   679  5282 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-08 23:07:29.239   679  5282 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-08 23:07:29.239   679  5282 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-08 23:07:29.239   679  5282 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-08 23:07:29.239   679  5282 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:29.239   679  5282 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-08 23:07:29.239   679  5282 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:29.239   679  5282 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-08 23:07:29.240   679  5282 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:07:29.240   679  5282 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:07:29.240   679  5282 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:07:29.240   679  5282 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-08 23:07:29.240   679  5282 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:07:29.240   679  5282 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-08 23:07:29.241   679  5282 D audio_route: Apply path: audio-record
+03-08 23:07:29.242   679  5282 D audio_hw_primary: select_devices: done
+03-08 23:07:29.247  2360  5235 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.09
+03-08 23:07:29.247  2360  5235 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 23:07:29.247  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 23:07:29.249  2360  5235 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 23:07:29.258  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-08 23:07:29.261  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-08 23:07:29.263  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please enter evaluation mode
+03-08 23:07:29.267  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please exit evaluation mode
+03-08 23:07:29.269  1189  1309 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
+03-08 23:07:29.270  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Speech commands
+03-08 23:07:29.272  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Command list
+03-08 23:07:29.272  3439  3439 D SnapCam_FocusStateListe: CONTROL_AF_STATE_PASSIVE_FOCUSED onFocusSucceeded
+03-08 23:07:29.274  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go to sleep
+03-08 23:07:29.274   679  5282 D audio_hw_primary: start_input_stream: exit
+03-08 23:07:29.275  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->View notifications
+03-08 23:07:29.276  1189  1309 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=7
+03-08 23:07:29.276  1189  1309 I OMX-VDEC-1080P: Video slvp perflock released
+03-08 23:07:29.277  1189  1309 E ANDR-PERF-TP: ~PerfThreadPool() 391: ~PerfThreadPool 
+03-08 23:07:29.277  1189  1309 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+03-08 23:07:29.278  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open notifications
+03-08 23:07:29.280  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Okay
+03-08 23:07:29.280  1165  5263 D SurfaceUtils: disconnecting from surface 0xeb7c4ba8, reason disconnectFromSurface
+03-08 23:07:29.281  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open
+03-08 23:07:29.282  1165  3258 D FrameDecoder: FrameDecoder destroyed
+03-08 23:07:29.282  1165  3258 D MediaCodec: flushMediametrics
+03-08 23:07:29.282  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Confirm
+03-08 23:07:29.284  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Select this
+03-08 23:07:29.286  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pick this
+03-08 23:07:29.287  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move left
+03-08 23:07:29.289  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go left
+03-08 23:07:29.291  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll left
+03-08 23:07:29.292  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move right
+03-08 23:07:29.294  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go right
+03-08 23:07:29.296  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll right
+03-08 23:07:29.299  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move up
+03-08 23:07:29.300  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go up
+03-08 23:07:29.302  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll up
+03-08 23:07:29.304  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move down
+03-08 23:07:29.305  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go down
+03-08 23:07:29.307  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll down
+03-08 23:07:29.309  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-08 23:07:29.310  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-08 23:07:29.311  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cancel
+03-08 23:07:29.312  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go home
+03-08 23:07:29.314  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quit
+03-08 23:07:29.315  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Show menu
+03-08 23:07:29.317  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page down
+03-08 23:07:29.319  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page up
+03-08 23:07:29.320  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume down
+03-08 23:07:29.321  3439  3439 D CAM_Activity: updating thumbnail with bitmap data
+03-08 23:07:29.322  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume up
+03-08 23:07:29.323  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Stop
+03-08 23:07:29.325  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pause
+03-08 23:07:29.326  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Accept
+03-08 23:07:29.327  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flash off
+03-08 23:07:29.328  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Review
+03-08 23:07:29.329  3439  4971 D BufferPoolAccessor2.0: evictor expired: 2, evicted: 0
+03-08 23:07:29.330  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Continue
+03-08 23:07:29.331  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flash on
+03-08 23:07:29.332  1126  1126 I tombstoned: received crash request for pid 3439
+03-08 23:07:29.332  1126  1126 I tombstoned: found intercept fd 512 for pid 3439 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.333  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Try again
+03-08 23:07:29.333  3439  3449 I eaurora.snapca: Wrote stack traces to tombstoned
+03-08 23:07:29.333  1380  5245 I system_server: libdebuggerd_client: done dumping process 3439
+03-08 23:07:29.334  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Zoom out
+03-08 23:07:29.335  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Start recording
+03-08 23:07:29.337  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Zoom in
+03-08 23:07:29.337  3439  3439 D SnapCam_FocusStateListe: CONTROL_AF_STATE_PASSIVE_SCAN onFocusStarted
+03-08 23:07:29.338  3439  3439 D SnapCam_FocusStateListe: CONTROL_AF_STATE_PASSIVE_FOCUSED onFocusSucceeded
+03-08 23:07:29.338  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a picture
+03-08 23:07:29.340  3099  5279 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Settings
+03-08 23:07:29.342  1380  5245 I ActivityManager: Collecting stacks for pid 1380
+03-08 23:07:29.348  1380  5245 I system_server: libdebuggerd_client: started dumping process 1380
+03-08 23:07:29.349  1126  1126 I tombstoned: registered intercept for pid 1380 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.350  1380  1386 I system_server: Thread[2,tid=1386,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcdf50,peer=0x13c80150,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:29.350  1380  1386 I system_server: 
+03-08 23:07:29.354  3099  5279 I DCCListener: DCC event: DCC_DATA_ID ()
+03-08 23:07:29.354  3099  5279 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=49  added=49  removed=0  failed_to_add=0  failed_to_remove=0)
+03-08 23:07:29.354  3099  5261 I Asr     : Data prep finished event received; proceeding
+03-08 23:07:29.459  1239  1772 D BufferPoolAccessor2.0: bufferpool2 0x71c8d0fcb8 : 0(0 size) total buffers - 0(0 size) used buffers - 38/42 (recycle/alloc) - 4/41 (fetch/transfer)
+03-08 23:07:29.460  1239  1772 D BufferPoolAccessor2.0: bufferpool2 0x71c8d0f818 : 0(0 size) total buffers - 0(0 size) used buffers - 40/42 (recycle/alloc) - 2/41 (fetch/transfer)
+03-08 23:07:29.460  1239  1772 D BufferPoolAccessor2.0: evictor expired: 2, evicted: 2
+03-08 23:07:29.464  1380  1437 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.504   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:07:29.504  1380  1437 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.549  2459  2459 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 23:07:29.549  2459  2459 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 23:07:29.550  2459  2459 W VuzixNotificationListener: shouldShowPopup 2 true
+03-08 23:07:29.729  1380  1464 D InputDispatcher: Waiting to send key to Window{7d693bf u0 org.codeaurora.snapcam/com.android.camera.CameraLauncher} because there are unprocessed events that may cause focus to change
+03-08 23:07:29.785  1126  1126 I tombstoned: received crash request for pid 1380
+03-08 23:07:29.785  1126  1126 I tombstoned: found intercept fd 512 for pid 1380 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.788  1380  1386 I system_server: Wrote stack traces to tombstoned
+03-08 23:07:29.788  1380  5245 I system_server: libdebuggerd_client: done dumping process 1380
+03-08 23:07:29.797  1380  5245 I ActivityManager: Collecting stacks for pid 2345
+03-08 23:07:29.800  1380  5245 I system_server: libdebuggerd_client: started dumping process 2345
+03-08 23:07:29.801  1126  1126 I tombstoned: registered intercept for pid 2345 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.801  2345  2359 I rldStoreServic: Thread[5,tid=2359,WaitingInMainSignalCatcherLoop,Thread*=0x734ffd6a60,peer=0x12e001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:29.801  2345  2359 I rldStoreServic: 
+03-08 23:07:29.892  1126  1126 I tombstoned: received crash request for pid 2345
+03-08 23:07:29.892  1126  1126 I tombstoned: found intercept fd 512 for pid 2345 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.893  2345  2359 I rldStoreServic: Wrote stack traces to tombstoned
+03-08 23:07:29.893  1380  5245 I system_server: libdebuggerd_client: done dumping process 2345
+03-08 23:07:29.897  1380  5245 I ActivityManager: Collecting stacks for pid 2313
+03-08 23:07:29.898  1380  5245 I system_server: libdebuggerd_client: started dumping process 2313
+03-08 23:07:29.899  1126  1126 I tombstoned: registered intercept for pid 2313 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.899  2313  2339 I eui:sui_servic: Thread[5,tid=2339,WaitingInMainSignalCatcherLoop,Thread*=0x734ffda200,peer=0x12e801b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:29.899  2313  2339 I eui:sui_servic: 
+03-08 23:07:29.992  1126  1126 I tombstoned: received crash request for pid 2313
+03-08 23:07:29.992  1126  1126 I tombstoned: found intercept fd 512 for pid 2313 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.993  2313  2339 I eui:sui_servic: Wrote stack traces to tombstoned
+03-08 23:07:29.993  1380  5245 I system_server: libdebuggerd_client: done dumping process 2313
+03-08 23:07:30.000  1380  5245 I ActivityManager: Collecting stacks for pid 2292
+03-08 23:07:30.003  1380  5245 I system_server: libdebuggerd_client: started dumping process 2292
+03-08 23:07:30.004  1126  1126 I tombstoned: registered intercept for pid 2292 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.004  2292  2319 I usbpowermonito: Thread[4,tid=2319,WaitingInMainSignalCatcherLoop,Thread*=0x734ffc7010,peer=0x12dc01b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.004  2292  2319 I usbpowermonito: 
+03-08 23:07:30.166  1126  1126 I tombstoned: received crash request for pid 2292
+03-08 23:07:30.166  1126  1126 I tombstoned: found intercept fd 512 for pid 2292 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.167  2292  2319 I usbpowermonito: Wrote stack traces to tombstoned
+03-08 23:07:30.167  1380  5245 I system_server: libdebuggerd_client: done dumping process 2292
+03-08 23:07:30.172  1380  5245 I ActivityManager: Collecting stacks for pid 2283
+03-08 23:07:30.174  1380  5245 I system_server: libdebuggerd_client: started dumping process 2283
+03-08 23:07:30.175  1126  1126 I tombstoned: registered intercept for pid 2283 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.175  2283  2302 I isplayoptimize: Thread[5,tid=2302,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcfb20,peer=0x12e001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.175  2283  2302 I isplayoptimize: 
+03-08 23:07:30.279  1126  1126 I tombstoned: received crash request for pid 2283
+03-08 23:07:30.279  1126  1126 I tombstoned: found intercept fd 512 for pid 2283 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.280  1380  5245 I system_server: libdebuggerd_client: done dumping process 2283
+03-08 23:07:30.280  2283  2302 I isplayoptimize: Wrote stack traces to tombstoned
+03-08 23:07:30.283  1380  5245 I ActivityManager: Collecting stacks for pid 2254
+03-08 23:07:30.285  1380  5245 I system_server: libdebuggerd_client: started dumping process 2254
+03-08 23:07:30.288  1126  1126 I tombstoned: registered intercept for pid 2254 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.288  2254  2273 I kloadclassifie: Thread[4,tid=2273,WaitingInMainSignalCatcherLoop,Thread*=0x734ffd32c0,peer=0x12e001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.288  2254  2273 I kloadclassifie: 
+03-08 23:07:30.354  1126  1126 I tombstoned: received crash request for pid 2254
+03-08 23:07:30.354  1126  1126 I tombstoned: found intercept fd 512 for pid 2254 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.356  2254  2273 I kloadclassifie: Wrote stack traces to tombstoned
+03-08 23:07:30.356  1380  5245 I system_server: libdebuggerd_client: done dumping process 2254
+03-08 23:07:30.360  1380  5245 I ActivityManager: Collecting stacks for pid 2241
+03-08 23:07:30.365  1380  5245 I system_server: libdebuggerd_client: started dumping process 2241
+03-08 23:07:30.366  1126  1126 I tombstoned: registered intercept for pid 2241 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.366  2241  2255 I gle.android.gm: Thread[5,tid=2255,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcfb20,peer=0x141001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.366  2241  2255 I gle.android.gm: 
+03-08 23:07:30.485  1126  1126 I tombstoned: received crash request for pid 2241
+03-08 23:07:30.485  1126  1126 I tombstoned: found intercept fd 512 for pid 2241 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.486  1380  5245 I system_server: libdebuggerd_client: done dumping process 2241
+03-08 23:07:30.486  2241  2255 I gle.android.gm: Wrote stack traces to tombstoned
+03-08 23:07:30.488   679  1493 D audio_hw_primary: out_standby: enter: stream (0xeac80010) usecase(1: low-latency-playback)
+03-08 23:07:30.491  1380  5245 I ActivityManager: Collecting stacks for pid 2219
+03-08 23:07:30.492  1380  5245 I system_server: libdebuggerd_client: started dumping process 2219
+03-08 23:07:30.493  1126  1126 I tombstoned: registered intercept for pid 2219 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.493  2219  2231 I ud.connectivit: Thread[5,tid=2231,WaitingInMainSignalCatcherLoop,Thread*=0x734ffd6a60,peer=0x12e801b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.493  2219  2231 I ud.connectivit: 
+03-08 23:07:30.559  1126  1126 I tombstoned: received crash request for pid 2219
+03-08 23:07:30.559  1126  1126 I tombstoned: found intercept fd 512 for pid 2219 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.560  2219  2231 I ud.connectivit: Wrote stack traces to tombstoned
+03-08 23:07:30.560  1380  5245 I system_server: libdebuggerd_client: done dumping process 2219
+03-08 23:07:30.564  1380  5245 I ActivityManager: Collecting stacks for pid 2189
+03-08 23:07:30.565  1380  5245 I system_server: libdebuggerd_client: started dumping process 2189
+03-08 23:07:30.566  1126  1126 I tombstoned: registered intercept for pid 2189 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.566  2189  2200 I .dataservices: Thread[6,tid=2200,WaitingInMainSignalCatcherLoop,Thread*=0x734ffd6a60,peer=0x12f001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.566  2189  2200 I .dataservices: 
+03-08 23:07:30.569   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-08 23:07:30.571   679  1493 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-08 23:07:30.571   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-08 23:07:30.571   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:30.571   679  1493 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:07:30.571   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:07:30.571   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 23:07:30.571   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:07:30.571   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 23:07:30.571   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:30.573   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-08 23:07:30.573   679  1493 D audio_hw_primary: out_standby: exit
+03-08 23:07:30.574  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:30.646  1126  1126 I tombstoned: received crash request for pid 2189
+03-08 23:07:30.646  1126  1126 I tombstoned: found intercept fd 512 for pid 2189 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.647  2189  2200 I .dataservices: Wrote stack traces to tombstoned
+03-08 23:07:30.647  1380  5245 I system_server: libdebuggerd_client: done dumping process 2189
+03-08 23:07:30.652  1380  5245 I ActivityManager: Collecting stacks for pid 2170
+03-08 23:07:30.655  1380  5245 I system_server: libdebuggerd_client: started dumping process 2170
+03-08 23:07:30.655  1126  1126 I tombstoned: registered intercept for pid 2170 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.656  2170  2181 I mhelper_servic: Thread[5,tid=2181,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcdf50,peer=0x12e801b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.656  2170  2181 I mhelper_servic: 
+03-08 23:07:30.758  1126  1126 I tombstoned: received crash request for pid 2170
+03-08 23:07:30.758  1126  1126 I tombstoned: found intercept fd 512 for pid 2170 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.759  2170  2181 I mhelper_servic: Wrote stack traces to tombstoned
+03-08 23:07:30.759  1380  5245 I system_server: libdebuggerd_client: done dumping process 2170
+03-08 23:07:30.764  1380  5245 I ActivityManager: Collecting stacks for pid 1775
+03-08 23:07:30.765  1380  5245 I system_server: libdebuggerd_client: started dumping process 1775
+03-08 23:07:30.766  1126  1126 I tombstoned: registered intercept for pid 1775 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.766  1775  1787 I rkstack.proces: Thread[5,tid=1787,WaitingInMainSignalCatcherLoop,Thread*=0x734ffd32c0,peer=0x12f801b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.766  1775  1787 I rkstack.proces: 
+03-08 23:07:30.842  1126  1126 I tombstoned: received crash request for pid 1775
+03-08 23:07:30.842  1126  1126 I tombstoned: found intercept fd 512 for pid 1775 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.844  1775  1787 I rkstack.proces: Wrote stack traces to tombstoned
+03-08 23:07:30.844  1380  5245 I system_server: libdebuggerd_client: done dumping process 1775
+03-08 23:07:30.849  1380  5245 I ActivityManager: Collecting stacks for pid 1811
+03-08 23:07:30.852  1380  5245 I system_server: libdebuggerd_client: started dumping process 1811
+03-08 23:07:30.858  1126  1126 I tombstoned: registered intercept for pid 1811 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.858  1811  1828 I alcomm.qti.qdm: Thread[6,tid=1828,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcfb20,peer=0x12fc01b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.858  1811  1828 I alcomm.qti.qdm: 
+03-08 23:07:30.894  1592  1592 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{e95905b I.E...... ......ID 0,0-854,480} canPanelBeCollapsed(): false
+03-08 23:07:30.897  1380  1397 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.vuzix.launcher.m400/com.vuzix.launcher.common.activity.LauncherActivity (has extras)} from uid 0
+03-08 23:07:30.903  1380  1397 D CompatibilityInfo: mCompatibilityFlags - 10
+03-08 23:07:30.903  1380  1397 D CompatibilityInfo: applicationDensity - 212
+03-08 23:07:30.903  1380  1397 D CompatibilityInfo: applicationScale - 1.0
+03-08 23:07:30.905  1380  1397 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-08 23:07:30.915   694   694 I sensors-hal: activate:209, android.sensor.accelerometer/11 en=0
+03-08 23:07:30.915   694   694 I sensors-hal: activate:220, android.sensor.accelerometer/11 en=0 completed
+03-08 23:07:30.926  3439  3439 D SnapCam_CaptureModule: closeCamera
+03-08 23:07:30.928  3439  3439 D SnapCam_CaptureModule: Closing camera: 0
+03-08 23:07:30.934   684  1082 I CamX    : [CONFIG][HAL    ] camxhal3.cpp:1210 flush() HalOp: Begin FLUSH: 0x7a98a78610, logicalCameraId: 0, cameraId: 0
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 764, Num Output Buffers: 1, Partial Request: 2, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: false
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 763, Num Output Buffers: 1, Partial Request: 2, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: false
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 762, Num Output Buffers: 1, Partial Request: 1, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: false
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 761, Num Output Buffers: 1, Partial Request: 1, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: false
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 760, Num Output Buffers: 1, Partial Request: 1, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: false
+03-08 23:07:30.934   684  1082 I CamX    : [ DUMP][HAL    ] camxhaldevice.cpp:1441 DumpFrameworkRequests() +   Error for Framework Request: 759, Num Output Buffers: 1, Partial Request: 0, notifyRequestError: false, notifyResultError: false, notifyBufferError: false, Notify Shutter: true
+03-08 23:07:30.954   712   712 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+03-08 23:07:30.954   712   712 E ANDR-PERF-REQUEST: Translate to physical failed
+03-08 23:07:30.954   712   712 E ANDR-PERF-TARGET: Error: Invalid logical cluster id 2
+03-08 23:07:30.954   712   712 E ANDR-PERF-REQUEST: Translate to physical failed
+03-08 23:07:30.955   684  1082 I CamX    : [CONFIG][CORE   ] camxsession.cpp:282 Flush() Flushing 0x7ba8bd6080 took 0 ms
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDHw0 requestId 29 Sequence 0
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDHw:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 0 for Node: ZSLPreviewRaw_FDHw0 is in flush state.
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_StatsParse0 requestId 29 Sequence 0
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node StatsParse:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.955   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 0 for Node: ZSLPreviewRaw_StatsParse0 is in flush state.
+03-08 23:07:30.955   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDManager0 requestId 29 Sequence 0
+03-08 23:07:30.955   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDManager:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.955   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 0 for Node: ZSLPreviewRaw_FDManager0 is in flush state.
+03-08 23:07:30.956   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_ChiNodeWrapper0 requestId 26 Sequence 4294967294
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDManager0 requestId 26 Sequence 2
+03-08 23:07:30.956   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node ChiNodeWrapper:0 for requestId 26 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AutoFocus0 requestId 29 Sequence 2
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDManager:0 for requestId 26 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AutoFocus:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   932 I CHIMEMCPY: FlushRequest():992 Flush request Id 26 from node
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 26 Sequence 2 for Node: ZSLPreviewRaw_FDManager0 is in flush state.
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 2 for Node: ZSLPreviewRaw_AutoFocus0 is in flush state.
+03-08 23:07:30.956   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 26 Sequence 4294967294 for Node: ZSLPreviewRaw_ChiNodeWrapper0 is in flush state.
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IPE0 requestId 27 Sequence 1
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IPE:0 for requestId 27 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 27 Sequence 1 for Node: ZSLPreviewRaw_IPE0 is in flush state.
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDHw0 requestId 27 Sequence 1
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDHw:0 for requestId 27 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_ChiNodeWrapper0 requestId 27 Sequence 4294967294
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node ChiNodeWrapper:0 for requestId 27 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 27 Sequence 1 for Node: ZSLPreviewRaw_FDHw0 is in flush state.
+03-08 23:07:30.956   684   927 I CHIMEMCPY: FlushRequest():992 Flush request Id 27 from node
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDManager0 requestId 27 Sequence 2
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDManager:0 for requestId 27 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.956   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 27 Sequence 4294967294 for Node: ZSLPreviewRaw_ChiNodeWrapper0 is in flush state.
+03-08 23:07:30.956   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 27 Sequence 2 for Node: ZSLPreviewRaw_FDManager0 is in flush state.
+03-08 23:07:30.967  1126  1126 I tombstoned: received crash request for pid 1811
+03-08 23:07:30.967  1126  1126 I tombstoned: found intercept fd 512 for pid 1811 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.967  1811  1828 I alcomm.qti.qdm: Wrote stack traces to tombstoned
+03-08 23:07:30.967  1380  5245 I system_server: libdebuggerd_client: done dumping process 1811
+03-08 23:07:30.971  1380  5245 I ActivityManager: Collecting stacks for pid 1796
+03-08 23:07:30.971  1380  5245 I system_server: libdebuggerd_client: started dumping process 1796
+03-08 23:07:30.972  1126  1126 I tombstoned: registered intercept for pid 1796 and type kDebuggerdJavaBacktrace
+03-08 23:07:30.972  1796  1812 I com.android.se: Thread[6,tid=1812,WaitingInMainSignalCatcherLoop,Thread*=0x734ffc8be0,peer=0x12e401b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:30.972  1796  1812 I com.android.se: 
+03-08 23:07:30.976   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IPE0 requestId 26 Sequence 1
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IPE:0 for requestId 26 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 26 Sequence 1 for Node: ZSLPreviewRaw_IPE0 is in flush state.
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IPE0 requestId 25 Sequence 1
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IPE:0 for requestId 25 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 25 Sequence 1 for Node: ZSLPreviewRaw_IPE0 is in flush state.
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_StatsParse0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node StatsParse:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_StatsParse0 is in flush state.
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_ChiNodeWrapper0 requestId 25 Sequence 4294967294
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node ChiNodeWrapper:0 for requestId 25 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   929 I CHIMEMCPY: FlushRequest():992 Flush request Id 25 from node
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 25 Sequence 4294967294 for Node: ZSLPreviewRaw_ChiNodeWrapper0 is in flush state.
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDHw0 requestId 26 Sequence 1
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDHw:0 for requestId 26 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 26 Sequence 1 for Node: ZSLPreviewRaw_FDHw0 is in flush state.
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDManager0 requestId 25 Sequence 2
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDManager:0 for requestId 25 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   931 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 25 Sequence 2 for Node: ZSLPreviewRaw_FDManager0 is in flush state.
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_Sensor0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node Sensor:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_Sensor0 is in flush state.
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_Stats0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDHw0 requestId 25 Sequence 1
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node Stats:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDHw:0 for requestId 25 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_Stats0 is in flush state.
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AWB0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AWB:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_AWB0 is in flush state.
+03-08 23:07:30.977   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 25 Sequence 1 for Node: ZSLPreviewRaw_FDHw0 is in flush state.
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IFE0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IFE:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_IFE0 is in flush state.
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_Stats0 requestId 29 Sequence 1
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node Stats:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 1 for Node: ZSLPreviewRaw_Stats0 is in flush state.
+03-08 23:07:30.977   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AutoFocus0 requestId 28 Sequence 1
+03-08 23:07:30.977   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AutoFocus:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.977   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_AutoFocus0 is in flush state.
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AWB0 requestId 29 Sequence 1
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AWB:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AutoFocus0 requestId 28 Sequence 2
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AutoFocus:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 2 for Node: ZSLPreviewRaw_AutoFocus0 is in flush state.
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 1 for Node: ZSLPreviewRaw_AWB0 is in flush state.
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IFE0 requestId 29 Sequence 1
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IFE:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_Sensor0 requestId 29 Sequence 1
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node Sensor:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.978   684   932 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 1 for Node: ZSLPreviewRaw_Sensor0 is in flush state.
+03-08 23:07:30.978   684   930 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 1 for Node: ZSLPreviewRaw_IFE0 is in flush state.
+03-08 23:07:30.978   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_AutoFocus0 requestId 29 Sequence 1
+03-08 23:07:30.978   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node AutoFocus:0 for requestId 29 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.978   684   927 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 29 Sequence 1 for Node: ZSLPreviewRaw_AutoFocus0 is in flush state.
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_IPE0 requestId 28 Sequence 1
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node IPE:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_IPE0 is in flush state.
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_ChiNodeWrapper0 requestId 28 Sequence 4294967294
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node ChiNodeWrapper:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.980   684   929 I CHIMEMCPY: FlushRequest():992 Flush request Id 28 from node
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 4294967294 for Node: ZSLPreviewRaw_ChiNodeWrapper0 is in flush state.
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1646 ProcessRequest() Flush called on Node ZSLPreviewRaw_FDHw0 requestId 28 Sequence 1
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:8382 Flush() Flushing Node FDHw:0 for requestId 28 on pipeline ZSLPreviewRaw:0
+03-08 23:07:30.980   684   929 I CamX    : [CONFIG][CORE   ] camxnode.cpp:1660 ProcessRequest() Canceling RequestId 28 Sequence 1 for Node: ZSLPreviewRaw_FDHw0 is in flush state.

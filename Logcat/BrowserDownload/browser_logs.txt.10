@@ -1,0 +1,1226 @@
+03-14 18:24:54.205   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:24:54.207   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:24:54.207   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:24:54.207   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:24:54.208   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:24:54.208   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:24:54.208   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:24:54.208   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:24:54.208   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:24:54.209   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:24:54.241   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:24:54.241   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:24:54.242   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:24:54.242   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:24:54.242   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:24:54.693  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:54.695   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:24:55.054  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:24:55.058  3057  4882 I Asr     : Restart on not OK 13200
+03-14 18:24:55.058  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:24:55.061  3057  4882 I Asr     : Restart end 13710
+03-14 18:24:55.411  1368  1453 D InputDispatcher: Waiting to send key to Window{17c89bc u0 android/com.android.internal.app.ResolverActivity} because there are unprocessed events that may cause focus to change
+03-14 18:24:55.428   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:24:55.428   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:24:55.428   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:24:55.429   802  1223 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:24:55.429   802  1223 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:24:55.430   802  1223 D AF::TrackHandle: OpPlayAudio: track:119 usage:13 not muted
+03-14 18:24:55.432  1368  1487 D AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 10469
+03-14 18:24:55.435  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:55.450  1368  1453 D InputDispatcher: Waiting to send key to Window{17c89bc u0 android/com.android.internal.app.ResolverActivity} because there are unprocessed events that may cause focus to change
+03-14 18:24:55.501   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:24:55.501   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:24:55.501   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:24:55.502   802  1223 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:24:55.503   802  1223 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:24:55.507   802  1223 D AF::TrackHandle: OpPlayAudio: track:120 usage:13 not muted
+03-14 18:24:55.510  1368  1487 D AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 10469
+03-14 18:24:55.528  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:55.730  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:55.830   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:24:55.834  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:56.615  1368  1453 D InputDispatcher: Waiting to send key to Window{17c89bc u0 android/com.android.internal.app.ResolverActivity} because there are unprocessed events that may cause focus to change
+03-14 18:24:56.632  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:56.635  1368  1669 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW cat=[android.intent.category.BROWSABLE] dat=https://search.app.goo.gl/... flg=0x3000000 cmp=org.chromium.webview_shell/.WebViewBrowserActivity (has extras)} from uid 10036
+03-14 18:24:56.640  1368  1669 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:56.640  1368  1669 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:56.640  1368  1669 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:56.642  1368  1669 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:24:56.659  1368  3847 I ActivityTaskManager: The Process org.chromium.webview_shell Already Exists in BG. So sending its PID: 3596
+03-14 18:24:56.660  1368  3847 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (4988467)
+03-14 18:24:56.662  1368  3847 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:56.662  1368  3847 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:56.662  1368  3847 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:56.820  3596  3686 W chromium: [WARNING:display_webview.cc(31)] WebView overlays are enabled!
+03-14 18:24:56.832  1368  1392 I ActivityTaskManager: Displayed org.chromium.webview_shell/.WebViewBrowserActivity: +196ms
+03-14 18:24:56.847  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:24:56.847  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:24:56.847  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:24:56.918  3596  3596 E WebViewShell: intent://search.app.goo.gl/?link=https://goo.gl/iosgoogleapp/default?url%3Dgoogleapp%253A%252F%252Flens%253Fmin-version%253D180%2526lens_data%253DKAw&al=googleapp://lens?lens_data%3DKAw&apn=com.google.android.googlequicksearchbox&amv=301204913&ofl=https://lens.google&isi=284815942&ibi=com.google.GoogleMobile&ius=googleapp&ifl=https://apps.apple.com/us/app/google/id284815942?ppid%3D1ac8cc35-d99c-4a1d-b909-321c8968cc74%26pt%3D9008%26mt%3D8%26ct%3D4815459-oo-lens-isb-bar-lens-cam%26UTM_campaign%3Dgoogle_search_mweb&utm_campaign=4815459-oo-lens-isb-bar-lens-cam&utm_medium=owned&utm_source=google_search_mweb&ct=4815459-oo-lens-isb-bar-lens-cam&mt=8&pt=9008&efr=1#Intent;package=com.google.android.gms;action=com.google.firebase.dynamiclinks.VIEW_DYNAMIC_LINK;scheme=https;S.browser_fallback_url=https://play.google.com/store/apps/details%3Fid%3Dcom.google.android.googlequicksearchbox&pcampaignid%3Dfdl_long&url%3Dgoogleapp://lens%3Flens_data%253DKAw&min_version%3D301204913;end;
+03-14 18:24:56.923  1368  1669 I ActivityTaskManager: START u0 {act=com.google.firebase.dynamiclinks.VIEW_DYNAMIC_LINK cat=[android.intent.category.BROWSABLE] dat=https://search.app.goo.gl/... pkg=com.google.android.gms cmp=com.google.android.gms/org.microg.gms.appinivite.AppInviteActivity (has extras)} from uid 10036
+03-14 18:24:56.928  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:56.929   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:24:56.931  1368  1669 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:56.931  1368  1669 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:56.931  1368  1669 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:56.932  1368  1669 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:24:56.935  1368  1386 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10052; state: DISABLED
+03-14 18:24:56.936  1368  1394 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10052; state: DISABLED
+03-14 18:24:56.957  1112  1112 D Zygote  : Forked child process 4938
+03-14 18:24:56.959  4938  4938 W Zygote  : Unable to open libbeluga.so: dlopen failed: library "libbeluga.so" not found.
+03-14 18:24:56.960  1368  1394 I ActivityManager: Start proc 4938:com.google.android.gms:ui/u0a52 for pre-top-activity {com.google.android.gms/org.microg.gms.appinivite.AppInviteActivity}
+03-14 18:24:56.972  4938  4938 E .android.gms:u: Not starting debugger since process cannot load the jdwp agent.
+03-14 18:24:56.982  1368  1669 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:56.982  1368  1669 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:56.982  1368  1669 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:56.983  1368  1669 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:56.983  1368  1669 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:56.983  1368  1669 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:56.989  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:24:56.989  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:24:56.989  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:24:56.995  4938  4938 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-14 18:24:57.000  4938  4938 I .android.gms:u: The ClassLoaderContext is a special shared library.
+03-14 18:24:57.019  4938  4938 I Perf    : Connecting to perf service.
+03-14 18:24:57.028  4938  4938 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:24:57.028  4938  4938 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:24:57.035   816  1403 W DisplayIdentification: Invalid EDID: falling back to serial number due to missing display name.
+03-14 18:24:57.035   816  1403 W DisplayIdentification: Invalid EDID: falling back to ASCII text due to missing serial number.
+03-14 18:24:57.043  4938  4938 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+03-14 18:24:57.068  4938  4938 D AppInviteActivity: Intent: Intent { act=com.google.firebase.dynamiclinks.VIEW_DYNAMIC_LINK cat=[android.intent.category.BROWSABLE] dat=https://search.app.goo.gl/... flg=0x800000 pkg=com.google.android.gms cmp=com.google.android.gms/org.microg.gms.appinivite.AppInviteActivity (has extras) } Bundle[{com.android.browser.application_id=org.chromium.webview_shell, browser_fallback_url=https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&pcampaignid=fdl_long&url=googleapp://lens?lens_data%3DKAw&min_version=301204913}]
+03-14 18:24:57.078  4938  4938 D AppInviteActivity: Sending request: MutateOperation{id=AppInviteLink, mutateRequest=MutateDataRequest{appInviteLink=MutateAppInviteLinkRequest{client=ClientIdInfo{packageName=com.google.android.gms, signature=OJGKRT0HGZNU+LGa8F7GViztV4g=, language=en}, link=LinkInfo{empty=, uri=https://search.app.goo.gl/?link=https://goo.gl/iosgoogleapp/default?url%3Dgoogleapp%253A%252F%252Flens%253Fmin-version%253D180%2526lens_data%253DKAw&al=googleapp://lens?lens_data%3DKAw&apn=com.google.android.googlequicksearchbox&amv=301204913&ofl=https://lens.google&isi=284815942&ibi=com.google.GoogleMobile&ius=googleapp&ifl=https://apps.apple.com/us/app/google/id284815942?ppid%3D1ac8cc35-d99c-4a1d-b909-321c8968cc74%26pt%3D9008%26mt%3D8%26ct%3D4815459-oo-lens-isb-bar-lens-cam%26UTM_campaign%3Dgoogle_search_mweb&utm_campaign=4815459-oo-lens-isb-bar-lens-cam&utm_medium=owned&utm_source=google_search_mweb&ct=4815459-oo-lens-isb-bar-lens-cam&mt=8&pt=9008&efr=1}, system=SystemInfo{gms=GmsInfo{versionCode=233013000}}}}}
+03-14 18:24:57.080  4938  4964 I DpmTcmClient: RegisterTcmMonitor from: $Proxy1
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: QUALCOMM build                   : 10e0ec675f, Ie80613d716
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Build Date                       : 06/09/22
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Local Branch                     : 
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Reconstruct Branch               : 
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-14 18:24:57.112  4938  4959 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-14 18:24:57.118  4938  4959 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-14 18:24:57.131   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+03-14 18:24:57.132  4938  4959 I Gralloc4: mapper 4.x is not supported
+03-14 18:24:57.132   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+03-14 18:24:57.133  4938  4959 W Gralloc3: mapper 3.x is not supported
+03-14 18:24:57.181   816  1403 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10052 pid=4938
+03-14 18:24:57.181   816  1403 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10052 => denied (284 us)
+03-14 18:24:57.191  1368  1392 I ActivityTaskManager: Displayed com.google.android.gms/org.microg.gms.appinivite.AppInviteActivity: +259ms
+03-14 18:24:57.336  4938  4938 D AppInviteActivity: Got response: MutateDataResponseWithError{dataResponse=MutateDataResponse{appInviteLink=MutateAppInviteLinkResponse{data_=AppInviteLinkData{fallbackUrl=https://goo.gl/iosgoogleapp/default?url=googleapp://lens?min-version%3D180%26lens_data%3DKAw, packageName=com.google.android.googlequicksearchbox, intentData=https://goo.gl/iosgoogleapp/default?url=googleapp://lens?min-version%3D180%26lens_data%3DKAw, app=AppInviteAppData{packageName=com.google.android.googlequicksearchbox, minAppVersion=301204913, altPackageName=com.google.android.googlequicksearchbox}}, metadata=AppInviteLinkMetadata{source=google_search_mweb, medium=owned, campaign=4815459-oo-lens-isb-bar-lens-cam, id=temp_link_id, info=AppInviteLinkInfo{type=2, url=https://search.app.goo.gl/?link=https://goo.gl/iosgoogleapp/default?url%3Dgoogleapp%253A%252F%252Flens%253Fmin-version%253D180%2526lens_data%253DKAw&al=googleapp://lens?lens_data%3DKAw&apn=com.google.android.googlequicksearchbox&amv=301204913&ofl=https://lens.google&isi=284815942&ibi=com.google.GoogleMobile&ius=googleapp&ifl=https://apps.apple.com/us/app/google/id284815942?ppid%3D1ac8cc35-d99c-4a1d-b909-321c8968cc74%26pt%3D9008%26mt%3D8%26ct%3D4815459-oo-lens-isb-bar-lens-cam%26UTM_campaign%3Dgoogle_search_mweb&utm_campaign=4815459-oo-lens-isb-bar-lens-cam&utm_medium=owned&utm_source=google_search_mweb&ct=4815459-oo-lens-isb-bar-lens-cam&mt=8&pt=9008&efr=1}, domainUriPrefix=https://search.app.goo.gl, content=, term=}}}}
+03-14 18:24:57.356  1368  2016 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT] dat=https://goo.gl/... cmp=org.chromium.webview_shell/.WebViewBrowserActivity} from uid 10052
+03-14 18:24:57.364  1368  2016 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:57.364  1368  2016 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:57.364  1368  2016 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:57.365  1368  2016 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:24:57.376  1368  1647 I ActivityTaskManager: The Process org.chromium.webview_shell Already Exists in BG. So sending its PID: 3596
+03-14 18:24:57.377  1368  1647 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (6907579)
+03-14 18:24:57.379  1368  1647 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:24:57.379  1368  1647 D CompatibilityInfo: applicationDensity - 212
+03-14 18:24:57.379  1368  1647 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:24:57.462  3596  3686 W chromium: [WARNING:display_webview.cc(31)] WebView overlays are enabled!
+03-14 18:24:57.475  1368  1392 I ActivityTaskManager: Displayed org.chromium.webview_shell/.WebViewBrowserActivity: +118ms
+03-14 18:24:57.489  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:24:57.489  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:24:57.489  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:24:57.631  3596  3596 E WebViewShell: https://itunes.apple.com/app/apple-store/id284815942
+03-14 18:24:57.750  3596  3596 E WebViewShell: https://apps.apple.com/app/apple-store/id284815942
+03-14 18:24:57.798  3596  3596 E WebViewShell: https://apps.apple.com/us/app/google/id284815942
+03-14 18:24:57.861   744  1316 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:24:57.943   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:24:57.945   744  1316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:24:57.945   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:24:57.945   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:24:57.945   744  1316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:24:57.945   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:24:57.945   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:24:57.945   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:24:57.945   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:24:57.945   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:24:57.948   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:24:57.948   744  1316 D audio_hw_primary: out_standby: exit
+03-14 18:24:57.949  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:24:59.021  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:24:59.023  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:24:59.323  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:24:59.325  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:25:00.003  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 18:25:00.004  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 18:25:00.009  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 18:25:00.009  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 18:25:01.234  2434  2434 I Choreographer: Skipped 49 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:01.284  2434  2566 I OpenGLRenderer: Davey! duration=878ms; Flags=1, IntendedVsync=6911320576647, Vsync=6912137243281, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6912152231477, AnimationStart=6912152238248, PerformTraversalsStart=6912152240435, DrawStart=6912195685487, SyncQueued=6912195817518, SyncStart=6912197776164, IssueDrawCommandsStart=6912197898352, SwapBuffers=6912199697466, FrameCompleted=6912201410748, DequeueBufferDuration=368594, QueueBufferDuration=868489, GpuCompleted=0, 
+03-14 18:25:03.573  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:03.577  3057  4882 I Asr     : Restart on not OK 21620
+03-14 18:25:03.577  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:03.581  3057  4882 I Asr     : Restart end 22300
+03-14 18:25:04.341  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:04.347  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:04.351  3057  4882 I Asr     : Restart end 22910
+03-14 18:25:04.490  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:04.494  3057  4882 I Asr     : Restart on not OK 23000
+03-14 18:25:04.494  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:04.498  3057  4882 I Asr     : Restart end 23130
+03-14 18:25:06.076  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:25:06.082  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=188281Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -52 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:25:06.386  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:06.390  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:06.394  3057  4882 I Asr     : Restart end 25050
+03-14 18:25:07.461  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:07.856  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:07.860  1368  1647 D MediaSessionService: dispatchVolumeKeyEvent, pkg=org.chromium.webview_shell, opPkg=org.chromium.webview_shell, pid=3596, uid=10036, asSystem=true, event=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=6918765, downTime=6918765, deviceId=4, source=0x301, displayId=-1 }, stream=-2147483648, musicOnly=false
+03-14 18:25:07.860  1368  1647 D MediaSessionService: Adjusting suggestedStream=-2147483648 by -1. flags=4113, preferSuggestedStream=false, session=null
+03-14 18:25:07.864  1368  1647 D MediaSessionService: dispatchVolumeKeyEvent, pkg=org.chromium.webview_shell, opPkg=org.chromium.webview_shell, pid=3596, uid=10036, asSystem=true, event=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=6918765, downTime=6918765, deviceId=4, source=0x301, displayId=-1 }, stream=-2147483648, musicOnly=false
+03-14 18:25:07.864  1368  1647 D MediaSessionService: Adjusting suggestedStream=-2147483648 by 0. flags=4116, preferSuggestedStream=false, session=null
+03-14 18:25:07.892  1524  1873 I vol.Events: writeEvent level_changed STREAM_RING 2
+03-14 18:25:07.892  1524  1873 I vol.Events: writeEvent level_changed STREAM_SYSTEM 2
+03-14 18:25:07.894  1524  1873 I vol.Events: writeEvent level_changed STREAM_VOICE_CALL 2
+03-14 18:25:07.896  1524  1873 I vol.Events: writeEvent level_changed STREAM_MUSIC 5
+03-14 18:25:07.899  1524  1873 I vol.Events: writeEvent active_stream_changed STREAM_MUSIC
+03-14 18:25:07.910  1524  1873 I vol.Events: writeEvent key STREAM_MUSIC 5
+03-14 18:25:07.929  1524  1524 I vol.Events: writeEvent show_dialog volume_changed keyguard=false
+03-14 18:25:08.524  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:08.526  1368  1647 D MediaSessionService: dispatchVolumeKeyEvent, pkg=org.chromium.webview_shell, opPkg=org.chromium.webview_shell, pid=3596, uid=10036, asSystem=true, event=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=6919431, downTime=6919431, deviceId=4, source=0x301, displayId=-1 }, stream=-2147483648, musicOnly=false
+03-14 18:25:08.526  1368  1647 D MediaSessionService: Adjusting suggestedStream=-2147483648 by -1. flags=4113, preferSuggestedStream=false, session=null
+03-14 18:25:08.530  1368  1647 D MediaSessionService: dispatchVolumeKeyEvent, pkg=org.chromium.webview_shell, opPkg=org.chromium.webview_shell, pid=3596, uid=10036, asSystem=true, event=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=6919431, downTime=6919431, deviceId=4, source=0x301, displayId=-1 }, stream=-2147483648, musicOnly=false
+03-14 18:25:08.530  1368  1647 D MediaSessionService: Adjusting suggestedStream=-2147483648 by 0. flags=4116, preferSuggestedStream=false, session=null
+03-14 18:25:08.557  1524  1873 I vol.Events: writeEvent level_changed STREAM_MUSIC 4
+03-14 18:25:08.580  1524  1524 I vol.Events: writeEvent show_dialog volume_changed keyguard=false
+03-14 18:25:10.319  2434  2434 I Choreographer: Skipped 50 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:10.339  2434  2566 I OpenGLRenderer: Davey! duration=868ms; Flags=1, IntendedVsync=6920387528552, Vsync=6921220861852, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6921237307515, AnimationStart=6921237312723, PerformTraversalsStart=6921237315015, DrawStart=6921253906057, SyncQueued=6921253998296, SyncStart=6921254641890, IssueDrawCommandsStart=6921254712880, SwapBuffers=6921255641161, FrameCompleted=6921256625536, DequeueBufferDuration=156146, QueueBufferDuration=449739, GpuCompleted=0, 
+03-14 18:25:11.288  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:11.290  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:11.293  3057  4882 I Asr     : Restart end 29940
+03-14 18:25:11.494  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:25:11.496  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:25:11.579  1524  1524 I vol.Events: writeEvent dismiss_dialog timeout
+03-14 18:25:11.581  1524  1873 I vol.Events: writeEvent active_stream_changed UNKNOWN_STREAM_-1
+03-14 18:25:12.185  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:12.704  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:12.901  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:12.904  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:12.907  3057  4882 I Asr     : Restart end 31650
+03-14 18:25:13.195  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:17.347  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 8 lines
+03-14 18:25:17.773  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:17.941  2434  2434 I Choreographer: Skipped 40 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:18.150  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:18.314  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.450  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 11 lines
+03-14 18:25:18.465  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.498  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:18.582  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.584  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 1 line
+03-14 18:25:18.602  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.662  2434  2434 I Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:18.700  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.791  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 2 lines
+03-14 18:25:18.793  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:18.849  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:18.864  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.464  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 25 lines
+03-14 18:25:19.480  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.482  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:19.590  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.689  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 4 lines
+03-14 18:25:19.706  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.810  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:19.812  3057  4882 I Asr     : Restart on not OK 36950
+03-14 18:25:19.812  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:19.813  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.815  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.816  3057  4882 I Asr     : Restart end 38480
+03-14 18:25:19.897  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.915  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 1 line
+03-14 18:25:19.917  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:19.922  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:19.993  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.199  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 7 lines
+03-14 18:25:20.218  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.254  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:20.257  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:20.261  3057  4882 I Asr     : Restart end 38940
+03-14 18:25:20.266  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.398  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 6 lines
+03-14 18:25:20.432  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.449  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:20.453  3057  4882 I Asr     : Restart on not OK 38940
+03-14 18:25:20.453  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:20.456  3057  4882 I Asr     : Restart end 39100
+03-14 18:25:20.465  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.516  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 3 lines
+03-14 18:25:20.533  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.540  2434  2434 I Choreographer: Skipped 106 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:20.584  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.586  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.587  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:20.598  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:20.625  2434  2566 I OpenGLRenderer: Davey! duration=1854ms; Flags=1, IntendedVsync=6929687816609, Vsync=6931454483205, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6931458029386, AnimationStart=6931458032772, PerformTraversalsStart=6931458034542, DrawStart=6931540588344, SyncQueued=6931540679855, SyncStart=6931541286469, IssueDrawCommandsStart=6931541358657, SwapBuffers=6931542368657, FrameCompleted=6931543196053, DequeueBufferDuration=199271, QueueBufferDuration=513281, GpuCompleted=0, 
+03-14 18:25:20.654  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:21.131  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 17 lines
+03-14 18:25:21.133  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:21.159  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:21.218  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:21.797  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 20 lines
+03-14 18:25:21.813  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:21.834  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:21.853  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:22.222  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 11 lines
+03-14 18:25:22.225  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:22.236  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:22.237  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:22.782  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 18 lines
+03-14 18:25:22.799  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:22.815  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:22.875  2434  2434 I Choreographer: Skipped 107 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:22.967  2434  2566 I OpenGLRenderer: Davey! duration=1879ms; Flags=1, IntendedVsync=6932004549754, Vsync=6933787883016, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6933793063344, AnimationStart=6933793234437, PerformTraversalsStart=6933793236156, DrawStart=6933882400166, SyncQueued=6933882476989, SyncStart=6933883122614, IssueDrawCommandsStart=6933883178396, SwapBuffers=6933884027666, FrameCompleted=6933884926364, DequeueBufferDuration=140782, QueueBufferDuration=349323, GpuCompleted=0, 
+03-14 18:25:24.277  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:25.361  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:25.431  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:25:25.431  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:25:25.431  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:25:25.470  2434  2434 I Choreographer: Skipped 139 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:25.614  2434  2566 I OpenGLRenderer: Davey! duration=2459ms; Flags=1, IntendedVsync=6934071283647, Vsync=6936387950221, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6936388473603, AnimationStart=6936388475113, PerformTraversalsStart=6936388476676, DrawStart=6936528770270, SyncQueued=6936528860426, SyncStart=6936530243863, IssueDrawCommandsStart=6936530310843, SwapBuffers=6936531038707, FrameCompleted=6936531793759, DequeueBufferDuration=131042, QueueBufferDuration=307604, GpuCompleted=0, 
+03-14 18:25:28.251  1368  1453 D InputDispatcher: Waiting to send key to Window{299a937 u0 PopupWindow:db1368e} because there are unprocessed events that may cause focus to change
+03-14 18:25:28.261  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:28.262  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:28.262   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:25:28.263   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:28.263   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.263   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:25:28.263   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:28.263  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:28.263   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:25:28.263   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:25:28.263   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:25:28.263   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:28.263   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:28.263   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:28.263   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:28.263   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:25:28.263   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:28.263   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.263   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:25:28.263   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:25:28.263   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:25:28.264   744  3383 D audio_route: Apply path: speaker
+03-14 18:25:28.266   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:25:28.267   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:25:28.267   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:25:28.267   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:25:28.267   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:25:28.267   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.267   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:28.267   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:28.267   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:25:28.268   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.268   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:25:28.268   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:25:28.269   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:25:28.269   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.269   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:28.269   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:25:28.269   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:25:28.270   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:25:28.302   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:25:28.303   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:25:28.304   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:25:28.304   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:28.304   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:28.315  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:25:28.315  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:25:28.315  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:25:28.593  3596  3616 D OpenGLRenderer: endAllActiveAnimators on 0x726737ed90 (MenuPopupWindow$MenuDropDownListView) with handle 0x71871671e0
+03-14 18:25:28.606   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:25:28.607  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:29.417  2434  2434 I Choreographer: Skipped 45 frames!  The application may be doing too much work on its main thread.
+03-14 18:25:29.474  2434  2566 I OpenGLRenderer: Davey! duration=819ms; Flags=1, IntendedVsync=6939571444058, Vsync=6940321444028, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=6940335252299, AnimationStart=6940335255372, PerformTraversalsStart=6940335257247, DrawStart=6940386474539, SyncQueued=6940386550060, SyncStart=6940386929904, IssueDrawCommandsStart=6940387001466, SwapBuffers=6940388448810, FrameCompleted=6940391570008, DequeueBufferDuration=566146, QueueBufferDuration=2636979, GpuCompleted=0, 
+03-14 18:25:29.538   744  1316 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:25:29.613   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:25:29.614   744  1316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:25:29.614   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:25:29.614   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:29.614   744  1316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:29.614   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:29.614   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:25:29.614   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:29.614   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:25:29.614   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:29.616   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:25:29.616   744  1316 D audio_hw_primary: out_standby: exit
+03-14 18:25:29.617  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:29.696  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:29.808  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:25:29.808  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:25:29.808  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:25:30.647   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:25:30.647   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:25:30.647   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:25:30.647   802  4536 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:25:30.648   802  4536 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:25:30.650   802  4536 D AF::TrackHandle: OpPlayAudio: track:121 usage:13 not muted
+03-14 18:25:30.654  1368  1487 I AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST successful; frameCount 0 -> 18339
+03-14 18:25:30.654  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+03-14 18:25:30.659   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:25:30.659   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:25:30.659   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:30.659   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:30.659   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.659   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:25:30.659   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:30.660   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:25:30.660   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:30.660   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:25:30.660   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:25:30.660   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:25:30.660   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:30.660   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:30.660   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:30.660   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:30.660   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:25:30.660   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:30.660   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:25:30.660   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.660   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:25:30.660   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:25:30.660   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:25:30.660   744  3383 D audio_route: Apply path: speaker
+03-14 18:25:30.661  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:30.662  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:30.663  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:30.664   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:25:30.664   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:25:30.664   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:25:30.664   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:25:30.664   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:25:30.664   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.665   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:30.665   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:30.665   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:25:30.666   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.666   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:25:30.666   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:25:30.666   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.666   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:30.666   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:25:30.666   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:25:30.668   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:25:30.694   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:25:30.697   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:25:30.697   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:25:30.699   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:25:30.699   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:30.699   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:25:30.699   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:30.699   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:25:30.700   802  3871 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:25:30.700   802  3871 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:25:30.703   802  3871 D AF::TrackHandle: OpPlayAudio: track:122 usage:13 not muted
+03-14 18:25:30.711  1368  1487 I AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST successful; frameCount 0 -> 18339
+03-14 18:25:30.718   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:25:30.718   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:25:30.718   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:25:30.718   802  4536 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:25:30.719   802  4536 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:25:30.721   802  4536 D AF::TrackHandle: OpPlayAudio: track:123 usage:13 not muted
+03-14 18:25:30.724  1368  1487 I AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST successful; frameCount 0 -> 18339
+03-14 18:25:30.724  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+03-14 18:25:30.724  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:30.725  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+03-14 18:25:30.728   744  1316 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:25:30.729   744  1316 I audio_hw_primary: getting vr mode to 0
+03-14 18:25:30.729   744  1316 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:25:30.729   802  4536 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:25:30.729   802  4536 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:25:30.731   802  4536 D AF::TrackHandle: OpPlayAudio: track:124 usage:13 not muted
+03-14 18:25:30.734  1368  1487 I AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST successful; frameCount 0 -> 18339
+03-14 18:25:30.744  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:30.744  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+03-14 18:25:31.196   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:25:31.198  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:32.092  1368  1453 D InputDispatcher: Waiting to send key to Window{651b185 u0 PopupWindow:a47214e} because there are unprocessed events that may cause focus to change
+03-14 18:25:32.175   744   799 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:25:32.267   744   799 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:25:32.271   744   799 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:25:32.271   744   799 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:25:32.271   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.271   744   799 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:32.271   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:32.271   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:25:32.271   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:32.271   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:25:32.271   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.276   744   799 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:25:32.276   744   799 D audio_hw_primary: out_standby: exit
+03-14 18:25:32.283  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:32.409  1368  1453 D InputDispatcher: Waiting to send key to Window{651b185 u0 PopupWindow:a47214e} because there are unprocessed events that may cause focus to change
+03-14 18:25:32.422   744   799 D audio_hw_primary: adev_get_parameters:vr_audio_mode_on
+03-14 18:25:32.422   744   799 I audio_hw_primary: getting vr mode to 0
+03-14 18:25:32.422   744   799 D audio_hw_primary: adev_get_parameters: exit: returns - vr_audio_mode_on=false
+03-14 18:25:32.422   802  3871 I hash_map_utils: key: 'vr_audio_mode_on' value: ''
+03-14 18:25:32.423   802  3871 I AudioPolicyManagerCustom: VR mode is 0, switch to primary output if request is for fast|raw
+03-14 18:25:32.428  3596  3596 W cr_WebSettings: isAlgorithmicDarkeningAllowed() is a no-op in an app with targetSdkVersion<T
+03-14 18:25:32.445   802  3871 D AF::TrackHandle: OpPlayAudio: track:125 usage:13 not muted
+03-14 18:25:32.450  1368  1487 D AudioTrack: createTrack_l(8): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 0 -> 10469
+03-14 18:25:32.454   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:25:32.455   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:32.455   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.455   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:25:32.455   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:32.455   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:25:32.455   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:25:32.455   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:25:32.455   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:32.455   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:32.455   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:32.455   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:32.455   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:25:32.455   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:32.455   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.455   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:25:32.455   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:25:32.455   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:25:32.455   744  3383 D audio_route: Apply path: speaker
+03-14 18:25:32.456  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:32.459  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:32.460   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:25:32.460   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:25:32.460   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:25:32.460   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:25:32.460   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:25:32.460   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.460   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:32.460   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:32.460   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:25:32.461   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.461   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:25:32.461   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:25:32.461   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.461   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:32.461   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:25:32.461   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:25:32.463   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:25:32.492   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:25:32.492   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:25:32.494   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:25:32.494   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:32.494   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:32.791   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:25:32.792  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:33.721   744   799 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:25:33.818   744   799 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:25:33.822   744   799 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:25:33.822   744   799 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:25:33.823   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:33.823   744   799 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:33.823   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:33.823   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:25:33.823   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:33.823   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:25:33.823   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:33.828   744   799 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:25:33.828   744   799 D audio_hw_primary: out_standby: exit
+03-14 18:25:33.832  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:36.927   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:25:36.928  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:36.928   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:25:36.928  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:36.928   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:36.928   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:36.928   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.928   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:25:36.928   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:36.929   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:25:36.929   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:25:36.929   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:25:36.929   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:25:36.929   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:25:36.929   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:36.929   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:36.929   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:25:36.929   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:25:36.929   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:25:36.929   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:36.929   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:25:36.929   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.929   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:25:36.929   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:25:36.929   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:25:36.929   744  3383 D audio_route: Apply path: speaker
+03-14 18:25:36.929  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:36.932   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:25:36.933   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:25:36.933   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:25:36.933   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:25:36.933   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:25:36.933   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.933   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:25:36.933   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:36.933   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:25:36.934   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.934   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:25:36.934   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:25:36.935   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:25:36.935   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.935   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:36.935   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:25:36.935   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:25:36.935  3596  3616 D OpenGLRenderer: endAllActiveAnimators on 0x72671c2a90 (RippleDrawable) with handle 0x7187164060
+03-14 18:25:36.937   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:25:36.966   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:25:36.967   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:25:36.968   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:25:36.968   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:36.969   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:36.974  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:25:36.974  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:25:36.974  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:25:37.271  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:37.271   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:25:38.203   744   799 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:25:38.297   744   799 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:25:38.300   744   799 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:25:38.300   744   799 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:25:38.300   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:38.300   744   799 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:25:38.300   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:38.300   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:25:38.300   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:25:38.301   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:25:38.301   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:25:38.307   744   799 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:25:38.307   744   799 D audio_hw_primary: out_standby: exit
+03-14 18:25:38.312  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:25:42.332  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:42.335  3057  4882 I Asr     : Restart on not OK 60590
+03-14 18:25:42.335  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:42.337  3057  4882 I Asr     : Restart end 61080
+03-14 18:25:42.355  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:25:42.362  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:25:45.373  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:25:45.378  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -52 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:25:47.235  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:48.277  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:3778): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:48.277  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 18:25:48.277  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:3780): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:48.277  1100  1100 W ipacm   : type=1400 audit(0.0:3781): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:48.277  1100  1100 W ipacm   : type=1400 audit(0.0:3782): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:48.393  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:25:48.400  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -58 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:25:48.770  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:50.733  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 14 lines
+03-14 18:25:51.117  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:51.296  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:51.300  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:51.302  3057  4882 I Asr     : Restart end 70030
+03-14 18:25:51.350  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.047  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 22 lines
+03-14 18:25:52.100  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.112  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:52.115  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:52.116  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.118  3057  4882 I Asr     : Restart end 70800
+03-14 18:25:52.132  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.565  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 15 lines
+03-14 18:25:52.581  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.618  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:25:52.628  2243  3226 D NetworkLocation: Schedule high-power scan in 59999ms
+03-14 18:25:52.630  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 18:25:52.636  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 18:25:52.647  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:52.898  4251  4277 I chatty  : uid=99001(u0_i9001) Compositor identical 13 lines
+03-14 18:25:52.914  4251  4277 E chromium: [ERROR:tile_manager.cc(831)] WARNING: tile memory limits exceeded, some content may not draw
+03-14 18:25:53.975  1368  2017 D WifiNl80211Manager: Scan result ready event
+03-14 18:25:53.975  1368  2017 D WifiNative: Scan result ready event
+03-14 18:25:53.982  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 18:25:54.047  2243  3415 E Volley  : [120] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 18:25:54.048  2243  2243 W NetworkLocation: Failed retrieving location for 24 wifi networks
+03-14 18:25:54.048  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 18:25:54.048  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 18:25:54.048  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 18:25:54.048  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 18:25:54.048  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 18:25:54.048  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 18:25:54.432  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:25:54.436  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -48 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:25:56.587  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:56.591  3057  4882 I Asr     : Restart on not OK 74810
+03-14 18:25:56.591  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:56.595  3057  4882 I Asr     : Restart end 75200
+03-14 18:25:57.880  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:57.882  3057  4882 I Asr     : Restart on not OK 75200
+03-14 18:25:57.883  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:57.885  3057  4882 I Asr     : Restart end 76600
+03-14 18:25:58.719  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:58.721  3057  4882 I Asr     : Restart on not OK 76930
+03-14 18:25:58.721  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:25:58.725  3057  4882 I Asr     : Restart end 77390
+03-14 18:25:58.997  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:3786): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:58.997  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 18:25:58.997  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:3788): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:58.997  1100  1100 W ipacm   : type=1400 audit(0.0:3789): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:25:58.997  1100  1100 W ipacm   : type=1400 audit(0.0:3790): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:26:00.002  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 18:26:00.002  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 18:26:05.235  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:05.237  3057  4882 I Asr     : Restart on not OK 83560
+03-14 18:26:05.237  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:05.239  3057  4882 I Asr     : Restart end 83970
+03-14 18:26:07.092  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:07.094  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:07.096  3057  4882 I Asr     : Restart end 85860
+03-14 18:26:09.909  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:09.911  3057  4882 I Asr     : Restart on not OK 88040
+03-14 18:26:09.911  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:09.914  3057  4882 I Asr     : Restart end 88570
+03-14 18:26:11.498  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:26:11.500  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:26:21.538  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:21.546  2434  2434 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+03-14 18:26:21.872  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:21.878  3057  4882 I Asr     : Restart on not OK 100350
+03-14 18:26:21.878  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:21.880  3057  4882 I Asr     : Restart end 100630
+03-14 18:26:22.692  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:23.106  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:23.108  3057  4882 I Asr     : Restart on not OK 101530
+03-14 18:26:23.108  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:23.110  3057  4882 I Asr     : Restart end 101750
+03-14 18:26:24.505  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:27.449  1368  1453 D InputDispatcher: Waiting to send key to Window{dbca79c u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:27.463  1368  3847 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:26:27.535  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:26:27.535  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:26:27.535  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:26:27.567  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:26:27.567  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:26:27.685  1368  1453 D InputDispatcher: Waiting to send key to Window{8308ae4 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:29.138  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 1 line
+03-14 18:26:30.475  1368  1453 D InputDispatcher: Waiting to send key to Window{8308ae4 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:31.265  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:26:31.272  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:26:33.604  1368  1453 D InputDispatcher: Waiting to send key to Window{8308ae4 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:26:33.705  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:26:33.705  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:26:33.705  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:26:34.189  3596  3596 W Choreographer: Frame time is 0.02173 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+03-14 18:26:36.071   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:26:36.072   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:26:36.072   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:26:36.072   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:36.072   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.072   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:26:36.072   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:36.072   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:26:36.072   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:36.072   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:26:36.072   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:26:36.072   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:26:36.072   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:26:36.072   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:26:36.072   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:26:36.072   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:26:36.072   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:26:36.073   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:26:36.073   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:26:36.073   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.073   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:26:36.073   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:26:36.073   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:26:36.073   744  3383 D audio_route: Apply path: speaker
+03-14 18:26:36.076   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:26:36.076   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:26:36.076   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:26:36.076   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:26:36.076   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:26:36.076   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.076  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:36.076   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:26:36.076   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:26:36.076   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:26:36.077   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.077   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:26:36.077   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:26:36.077   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:26:36.077   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:26:36.078   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:26:36.078   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.078   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:26:36.078   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:26:36.078   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:26:36.078  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:36.080   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:26:36.111   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:26:36.111   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:26:36.112   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:26:36.112   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:36.112   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:26:36.520  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:36.565  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:36.845  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:36.849  3057  4882 I Asr     : Restart on not OK 114850
+03-14 18:26:36.849  3057  4882 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:26:36.852  3057  4882 I Asr     : Restart end 115610
+03-14 18:26:36.965   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:26:36.965  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:37.103  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:37.546   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:26:37.546  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:37.720  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:38.165  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:38.165   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:26:38.216   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:26:38.221  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:39.066  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:39.066   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:26:40.053   744   799 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:26:40.148   744   799 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:26:40.152   744   799 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:26:40.152   744   799 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:26:40.152   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.152   744   799 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:26:40.152   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:26:40.152   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:26:40.152   744   799 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:26:40.152   744   799 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:26:40.152   744   799 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.158   744   799 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:26:40.158   744   799 D audio_hw_primary: out_standby: exit
+03-14 18:26:40.171  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:40.466  1368  1453 D InputDispatcher: Waiting to send key to Window{4e2854f u0 PopupWindow:572858a} because there are unprocessed events that may cause focus to change
+03-14 18:26:40.479   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:26:40.479  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:40.479   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:26:40.479   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:26:40.479   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:40.479   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.479   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:26:40.479   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:40.480   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:26:40.480   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:26:40.480   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:26:40.480   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:26:40.480   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:26:40.480   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:26:40.480   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:26:40.480   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:26:40.480   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:26:40.480   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:26:40.480   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:26:40.480   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:26:40.480  1368  1669 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:26:40.480   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.480   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:26:40.480   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:26:40.480   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:26:40.480   744  3383 D audio_route: Apply path: speaker
+03-14 18:26:40.482   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:26:40.482   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:26:40.482   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:26:40.482   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:26:40.482   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:26:40.482   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.482   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:26:40.482   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:26:40.482   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:26:40.484   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.484   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:26:40.484   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:26:40.484   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:26:40.484   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:26:40.484   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:26:40.484   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:26:40.485   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:26:40.511  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:26:40.511  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:26:40.511  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)

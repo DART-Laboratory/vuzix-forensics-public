@@ -1,0 +1,230 @@
+03-08 22:20:42.564  3099  4719 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Notifications
+03-08 22:20:42.565  3099  4719 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quick Start
+03-08 22:20:42.566  3099  4719 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scanner
+03-08 22:20:42.568  3099  4719 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Screen Cam
+03-08 22:20:42.568  2360  2544 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.4
+03-08 22:20:42.568  2360  2544 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 22:20:42.568  2360  2544 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 22:20:42.569  3099  4719 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Settings
+03-08 22:20:42.569  2360  2544 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 22:20:42.584  3099  4719 I DCCListener: DCC event: DCC_DATA_ID ()
+03-08 22:20:42.584  3099  4719 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=58  added=58  removed=0  failed_to_add=0  failed_to_remove=0)
+03-08 22:20:42.584  3099  4707 I Asr     : Data prep finished event received; proceeding
+03-08 22:20:42.710  2459  2459 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 22:20:42.711  2459  2459 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 22:20:42.711  2459  2459 W VuzixNotificationListener: shouldShowPopup 2 true
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: QUALCOMM build                   : 10e0ec675f, Ie80613d716
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Build Date                       : 06/09/22
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Local Branch                     : 
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Remote Branch                    : 
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Remote Branch                    : 
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Reconstruct Branch               : 
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-08 22:20:42.930  1380  3408 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-08 22:20:42.939  1380  3408 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-08 22:20:43.192   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 22:20:43.193  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:43.193   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 22:20:43.193   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 22:20:43.193   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 22:20:43.193   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.193   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 22:20:43.193   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 22:20:43.193  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:43.193   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 22:20:43.193   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 22:20:43.193   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 22:20:43.193   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 22:20:43.193   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 22:20:43.193   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 22:20:43.193   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 22:20:43.193   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 22:20:43.193   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 22:20:43.193   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 22:20:43.193   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 22:20:43.193   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 22:20:43.194   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.194   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 22:20:43.194   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 22:20:43.194   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 22:20:43.194   679  2944 D audio_route: Apply path: speaker
+03-08 22:20:43.194  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:43.196   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 22:20:43.196   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 22:20:43.196   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 22:20:43.196   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 22:20:43.196   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 22:20:43.196   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.196   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 22:20:43.196   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 22:20:43.196   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 22:20:43.197   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.197   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 22:20:43.197   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 22:20:43.197   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.197   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 22:20:43.197   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 22:20:43.197   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 22:20:43.199   679  2944 D audio_hw_primary: select_devices: done
+03-08 22:20:43.228   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 22:20:43.228   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 22:20:43.229   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 22:20:43.229   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:43.229   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 22:20:43.679   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:43.679  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:43.693   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:43.698  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:44.145   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:44.150  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:44.336  1380  1395 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:44.781  1380  1395 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:44.782   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:45.355  1380  1395 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:45.801  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:45.802   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:45.955  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:46.405   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:46.406  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:46.629  1380  1395 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:47.066   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:47.068  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:47.448  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:47.883  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:47.883   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:48.060  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:48.500  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:48.501   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:48.780  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:49.220  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:49.220   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:49.945  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:50.381   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 22:20:50.384  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:51.370   679  1493 D audio_hw_primary: out_standby: enter: stream (0xeac80010) usecase(1: low-latency-playback)
+03-08 22:20:51.462   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-08 22:20:51.467   679  1493 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-08 22:20:51.467   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-08 22:20:51.468   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:51.468   679  1493 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 22:20:51.468   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 22:20:51.468   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 22:20:51.468   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 22:20:51.468   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 22:20:51.468   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 22:20:51.472   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-08 22:20:51.473   679  1493 D audio_hw_primary: out_standby: exit
+03-08 22:20:51.478  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 22:20:59.934  1725  2110 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-08 22:20:59.956  3038  3069 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-08 22:21:00.004  1592  1592 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-08 22:21:00.004  1592  1592 D KeyguardUpdateMonitor: handleTimeUpdate
+03-08 22:21:00.397  2241  3227 D NetworkLocation: Schedule high-power scan in 59993ms
+03-08 22:21:00.401  2241  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-08 22:21:00.423  1380  1482 D WifiNative: Scan trigered from WifiNative
+03-08 22:21:01.771  1380  1932 D WifiNl80211Manager: Scan result ready event
+03-08 22:21:01.771  1380  1932 D WifiNative: Scan result ready event
+03-08 22:21:01.785  1380  1482 D WificondScannerImpl: Filtering out 1 scan results.
+03-08 22:21:01.905  2241  3538 E Volley  : [116] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-08 22:21:01.907  2241  2241 W NetworkLocation: Failed retrieving location for 22 wifi networks
+03-08 22:21:01.907  2241  2241 W NetworkLocation: com.android.volley.ClientError
+03-08 22:21:01.907  2241  2241 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-08 22:21:01.907  2241  2241 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-08 22:21:01.907  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-08 22:21:01.907  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-08 22:21:01.907  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-08 22:21:02.970  1725  2110 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-08 22:21:02.984  3038  3069 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -54 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-08 22:21:06.880  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2885): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:17.530  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2893): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:25.519  1592  1592 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-08 22:21:25.529  1592  1592 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-08 22:21:26.979  1775  1983 D DhcpClient: Unicasting DHCPREQUEST ciaddr=172.27.146.234 request=0.0.0.0 serverid=null to /128.143.107.102:67
+03-08 22:21:26.985  1380  1396 I GnssLocationProvider: WakeLock acquired by handleDownloadPsdsData()
+03-08 22:21:26.985  1380  1590 E GpsPsdsDownloader: No PSDS servers were specified in the GPS configuration
+03-08 22:21:27.001  1775  1983 D DhcpClient: Received packet: 98:da:92:01:b1:f1 ACK: your new IP /172.27.146.234, netmask /255.255.240.0, gateways [/172.27.144.1] DNS servers: /128.143.2.7 /128.143.3.7 , lease time 1800
+03-08 22:21:27.003  1775  1983 D DhcpClient: Renewed lease: android.net.networkstack.DhcpResults@f1ce231 DHCP server /128.143.107.102 Vendor info null lease 1800 seconds Servername 
+03-08 22:21:27.011  1775  1983 D DhcpClient: Scheduling renewal in 899s
+03-08 22:21:27.011  1775  1983 D DhcpClient: Scheduling rebind in 1574s
+03-08 22:21:27.011  1775  1983 D DhcpClient: Scheduling expiry in 1799s
+03-08 22:21:27.024  1725  2110 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.STATE_CHANGE
+03-08 22:21:27.028  3038  3069 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -52 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-08 22:21:27.031  1725  2110 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.LINK_CONFIGURATION_CHANGED
+03-08 22:21:27.031  1725  2110 E QCNEJ/WlanStaInfoRelay: update link properties given null lp
+03-08 22:21:32.010  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2901): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:42.929  1380  1414 V DisplayPowerController: Brightness [0.05] reason changing to: 'manual [ dim ]', previous reason: 'manual'.
+03-08 22:21:32.010  1127  1127 W ipacm   : type=1400 audit(0.0:2905): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:45.690  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2909): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:45.690  1127  1127 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-08 22:21:45.690  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2911): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:21:45.690  1127  1127 W ipacm   : type=1400 audit(0.0:2912): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:00.008  1592  1592 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-08 22:22:00.019  1592  1592 D KeyguardUpdateMonitor: handleTimeUpdate
+03-08 22:22:00.400  2241  3227 D NetworkLocation: Schedule high-power scan in 59995ms
+03-08 22:22:00.406  2241  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-08 22:22:00.423  1380  1482 D WifiNative: Scan trigered from WifiNative
+03-08 22:22:01.749  1380  3832 D WifiNl80211Manager: Scan result ready event
+03-08 22:22:01.749  1380  3832 D WifiNative: Scan result ready event
+03-08 22:22:01.762  1380  1482 D WificondScannerImpl: Filtering out 1 scan results.
+03-08 22:22:01.864  2241  3537 E Volley  : [115] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-08 22:22:01.865  2241  2241 W NetworkLocation: Failed retrieving location for 19 wifi networks
+03-08 22:22:01.865  2241  2241 W NetworkLocation: com.android.volley.ClientError
+03-08 22:22:01.865  2241  2241 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-08 22:22:01.865  2241  2241 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-08 22:22:01.865  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-08 22:22:01.865  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-08 22:22:01.865  2241  2241 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-08 22:22:06.800  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2917): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:17.680  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2925): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:17.680  1127  1127 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-08 22:22:17.680  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2927): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:17.680  1127  1127 W ipacm   : type=1400 audit(0.0:2928): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:25.518  1592  1592 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-08 22:22:25.524  1592  1592 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-08 22:22:34.970  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2933): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:34.970  1127  1127 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-08 22:22:34.970  1127  1127 W /system/vendor/bin/ipacm: type=1400 audit(0.0:2935): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:34.970  1127  1127 W ipacm   : type=1400 audit(0.0:2936): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=23537 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-08 22:22:36.400   688   722 E u-blox  : CAndroidDatabase::reportSvStatus: no satellites in view

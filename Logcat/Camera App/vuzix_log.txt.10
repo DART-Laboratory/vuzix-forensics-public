@@ -1,0 +1,428 @@
+03-08 23:07:28.877  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:28.881   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 23:07:28.881  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:28.881   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 23:07:28.881   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:07:28.881   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:28.881   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.881   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 23:07:28.881   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:28.881   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 23:07:28.881   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:28.881   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 23:07:28.881   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 23:07:28.881   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 23:07:28.882   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:07:28.882   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:07:28.882   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:07:28.882   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:07:28.882   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 23:07:28.882   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:07:28.882   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 23:07:28.882   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.882   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 23:07:28.882   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 23:07:28.882   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 23:07:28.882   679  2944 D audio_route: Apply path: speaker
+03-08 23:07:28.883   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 23:07:28.883   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 23:07:28.883   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 23:07:28.883   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 23:07:28.883   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 23:07:28.883   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.884   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:07:28.884   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:28.884   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 23:07:28.884   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.884   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:28.884   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 23:07:28.884   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:07:28.884   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:07:28.884   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 23:07:28.885   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:07:28.885   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.885   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:07:28.885   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 23:07:28.885   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 23:07:28.886   679  2944 D audio_hw_primary: select_devices: done
+03-08 23:07:28.895  1238  1254 V cdsprpcd: vendor/qcom/proprietary/adsprpc/src/sysmon_cdsp_imp.c:45: Got L3 frequency request from CDSP for 0KHz
+03-08 23:07:28.895   684   931 E android.hardware.camera.provider@2.4-service_64: vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1325: Error 0xfffffffb: remote_handle_open_domain: dynamic loading failed for camera_nn on domain 3 (dlerror undefined symbol PLT  #537 HAP_request_async_VTCM in ./libcamera_nn_skel.so) (errno Success)
+03-08 23:07:28.895   684   931 E android.hardware.camera.provider@2.4-service_64: vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1348: Error 0xfffffffb: remote_handle_open failed for camera_nn (errno Success)
+03-08 23:07:28.895   684   931 E android.hardware.camera.provider@2.4-service_64: vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1200: Error 0x2c: remote_handle_invoke failed for handle 0xffffffff, method 19 on domain 3 (sc 0x13010000) (errno Success)
+03-08 23:07:28.895   684   931 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:2743 FDELibWrapperCameraNNSetup() Set DSP power TURBO failed! nnResult = 44
+03-08 23:07:28.895   684   931 W CamX    : [ WARN][FD     ] camxfdenginelibwrapper.cpp:684 FDELibWrapperCreateDLHandle() Failure in FDELibWrapperCameraNNSetup()
+03-08 23:07:28.895   684   931 W CamX    : [ WARN][FD     ] camxfdengine.cpp:242 FDEngineCreate() Create DL handle failure, use standard solution, engineType 3, result = 1
+03-08 23:07:28.912   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 23:07:28.912   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 23:07:28.913   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 23:07:28.914   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:28.914   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:07:28.931  1165  1893 I ExtendedUtils: printFileName fd(8) -> /storage/emulated/0/DCIM/Camera/VID_20260308_230712.mp4
+03-08 23:07:28.939  2360  5242 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.09
+03-08 23:07:28.939  2360  5242 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 23:07:28.939  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 23:07:28.942  2360  5242 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 23:07:28.944  1156  4049 I MMParserExtractor: Created(0x6f3f673010)
+03-08 23:07:28.944  1156  4049 E MM_OSAL : FileSource::FileSource
+03-08 23:07:28.944  1156  4049 E MM_OSAL : FileSource::FileSource m_bEveryThingOK 1
+03-08 23:07:28.946  1380  1752 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:28.947   679  1493 D audio_hw_primary: in_standby: enter: stream (0xeb1c0fd0) usecase(23: audio-record)
+03-08 23:07:28.953  1156  4049 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:28.953  1156  4049 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:28.954  1156  4049 E Utils   : did not find width and/or height
+03-08 23:07:28.955  1156  4049 E Utils   : did not find width and/or height
+03-08 23:07:28.973  3439  3439 D CAM_Activity: updating thumbnail with boolean value=true
+03-08 23:07:28.976  3439  3439 D SnapCam_CaptureModule: Media save complete
+03-08 23:07:28.977  3439  3439 I SnapCam_CaptureModule: cameracapturesession - onConfigured 0
+03-08 23:07:28.978  3439  3439 D VendorTagUtil: vendor tag org.codeaurora.qcamera3.iso_exp_priority.select_priority is supported
+03-08 23:07:28.978  3439  3439 D VendorTagUtil: vendor tag org.codeaurora.qcamera3.iso_exp_priority.use_iso_exp_priority is supported
+03-08 23:07:28.978  3439  3439 V daming  :  >>> 5362 >>> cctMode :color-temperature
+03-08 23:07:28.978  3439  3439 D VendorTagUtil: vendor tag org.codeaurora.qcamera3.manualWB.partial_mwb_mode is supported
+03-08 23:07:28.979  1141  1442 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10011 pid=3439
+03-08 23:07:28.980  1141  1442 I chatty  : uid=1047(cameraserver) Binder:1141_1 identical 2 lines
+03-08 23:07:28.981  1141  1442 W ServiceManager: Permission failure: android.permission.SYSTEM_CAMERA from uid=10011 pid=3439
+03-08 23:07:28.986  1165  3258 I ExtendedUtils: printFileName fd(8) -> /storage/emulated/0/DCIM/Camera/VID_20260308_230712.mp4
+03-08 23:07:28.990   684   929 I CamX    : [CONFIG][CORE   ] camxpipeline.h:1862 SetPipelineStatus() ZSLPreviewRaw_0 status is now PipelineStatus::RESOURCES_ACQUIRED
+03-08 23:07:28.991   684   929 E CamX    : [ERROR][LRME   ] camxlrmenode.cpp:1330 IsNodeDisabledWithOverride() LRME Disabled from settings
+03-08 23:07:28.991   684   929 E CamX    : [ERROR][LRME   ] camxransacnode.cpp:427 IsNodeDisabledWithOverride() Ransac Disabled from settings
+03-08 23:07:29.005  1156  5223 I MMParserExtractor: Created(0x6f3f673010)
+03-08 23:07:29.005  1156  5223 E MM_OSAL : FileSource::FileSource
+03-08 23:07:29.006  1156  5223 E MM_OSAL : FileSource::FileSource m_bEveryThingOK 1
+03-08 23:07:29.006   684   927 E CamX    : [ERROR][ISP    ] lsc34setting.cpp:118 CalculateTintlessSetting() ERROR!!! input 0x7bb8b1e1d0, pData 0x7ba8b9e070, pOutput 0x78cfd3bfa8, tintless Config 0x7ad8a9c328,0x7a08a4c0e8,0x0,0x7978a8c780
+03-08 23:07:29.008   684  1082 I CamX    : [CONFIG][CORE   ] camxpipeline.cpp:581 StreamOn() [ZSLPreviewRaw_0] StreamingOn for pipeline: 0x7ad8a9e4a0
+03-08 23:07:29.014  1156  5223 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:29.014  1156  5223 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:29.014  1156  5223 E Utils   : did not find width and/or height
+03-08 23:07:29.015  1156  5223 E Utils   : did not find width and/or height
+03-08 23:07:29.017  1165  3258 E MetadataRetrieverClient: failed to extract an album art
+03-08 23:07:29.017  3439  3476 E MediaMetadataRetrieverJNI: getEmbeddedPicture: Call to getEmbeddedPicture failed.
+03-08 23:07:29.020  1156  5223 E Utils   : did not find width and/or height
+03-08 23:07:29.020  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.020  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 684
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 1380
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 3439
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 99
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 679
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 736
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 745
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 1165
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 575
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 1156
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 37
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 69
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 176
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 242
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 689
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 746
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 1141
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 2052
+03-08 23:07:29.025  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 4798
+03-08 23:07:29.026  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 4803
+03-08 23:07:29.026  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 4825
+03-08 23:07:29.026  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 4828
+03-08 23:07:29.026  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 4917
+03-08 23:07:29.026  1380  5245 I ActivityManager: Skipping next CPU consuming process, not a java proc: 5168
+03-08 23:07:29.029   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-08 23:07:29.030  1380  5245 I ActivityManager: Dumping to /data/anr/anr_2026-03-08-23-07-29-029
+03-08 23:07:29.030  1380  5245 I ActivityManager: Collecting stacks for pid 3439
+03-08 23:07:29.030   684  1082 I CamX    : [CONFIG][CORE   ] camxpipeline.h:1862 SetPipelineStatus() ZSLPreviewRaw_0 status is now PipelineStatus::STREAM_ON
+03-08 23:07:29.031   684  1082 E CHIUSECASE: [CONFIG ] chxfeaturezsl.cpp:385 ExecuteProcessRequest() Setting pipeline activate flag for frame: 1
+03-08 23:07:29.031  1380  5245 I system_server: libdebuggerd_client: started dumping process 3439
+03-08 23:07:29.031   679  1493 D soundtrigger: audio HAL using same device 195 as ST
+03-08 23:07:29.031   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-08 23:07:29.031   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-08 23:07:29.031   679  1493 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-08 23:07:29.031   679  1493 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 2, rx 0,concurrency session not allowed
+03-08 23:07:29.031   679  1493 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-08 23:07:29.031   679  1493 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-08 23:07:29.031   679  1493 E audio_hw_primary: disable_snd_device:2snd_device-195,count-0
+03-08 23:07:29.031   679  1493 D hardware_info: hw_info_append_hw_type : device_name = handset-stereo-dmic-ef
+03-08 23:07:29.031   679  1493 D audio_hw_primary: disable_snd_device: snd_device(215: current(before decrease) ref_cnt 1) 
+03-08 23:07:29.031   679  1493 E audio_hw_primary: disable_snd_device:1 in_device, snd_device-215,count-0
+03-08 23:07:29.031   679  1493 D hardware_info: hw_info_append_hw_type : device_name = handset-stereo-dmic-ef
+03-08 23:07:29.031   679  1493 D audio_hw_primary: disable_snd_device: snd_device(215: handset-stereo-dmic-ef)
+03-08 23:07:29.032   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(215) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:29.033  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:07:29.034  1126  1126 I tombstoned: registered intercept for pid 3439 and type kDebuggerdJavaBacktrace
+03-08 23:07:29.034  3439  3449 I eaurora.snapca: Thread[6,tid=3449,WaitingInMainSignalCatcherLoop,Thread*=0x734ffda200,peer=0x12e001b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:29.034  3439  3449 I eaurora.snapca: 
+03-08 23:07:29.034  1165  3258 D FrameDecoder: FrameDecoder created
+03-08 23:07:29.035   679  1493 D audio_route: audio_route_update_path: skip to reset mixer control 'DEC1 MUX' in path 'handset-stereo-dmic-ef' because it is still needed by other paths
+03-08 23:07:29.035   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xd7 of type 1 for Event 0, with Raise=1
+03-08 23:07:29.035   679  1493 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-08 23:07:29.035   679  1493 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-08 23:07:29.035   679  1493 E audio_hw_primary: disable_snd_device:2.2 snd_device-195,count-0
+03-08 23:07:29.035   679  1493 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-08 23:07:29.035   679  1493 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-08 23:07:29.035   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:29.035  1165  5259 D RenderEngine: RenderEngine GLES Backend
+03-08 23:07:29.036  1165  5259 D libEGL  : loaded /vendor/lib/egl/libEGL_adreno.so
+03-08 23:07:29.040   679  1493 D soundtrigger: audio HAL using same device 195 as ST
+03-08 23:07:29.041   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-08 23:07:29.041   679  1493 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-08 23:07:29.041   679  1493 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-08 23:07:29.042  1380  3832 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-08 23:07:29.043   679   679 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 51
+03-08 23:07:29.043   679   679 D audio_hw_primary: route_input_stream: exit: status(0)
+03-08 23:07:29.044  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.044  1380  1932 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@204061e, caller=1041/736](false)
+03-08 23:07:29.058  1165  5259 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_adreno.so
+03-08 23:07:29.061  1380  3832 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.062  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.062  1380  1752 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@204061e, caller=1041/736](false)
+03-08 23:07:29.061  3099  5196 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-08 23:07:29.062  3099  5196 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-08 23:07:29.062  3099  5196 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-08 23:07:29.062  1380  1883 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.063   679   679 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xeb1c0fd0)
+03-08 23:07:29.063   679   679 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 446
+03-08 23:07:29.063   679   679 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-08 23:07:29.063   679   679 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-08 23:07:29.063   679   679 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-08 23:07:29.063   679   679 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-08 23:07:29.063   679   679 D audio_hw_primary: in_standby: enter: stream (0xeb1c0fd0) usecase(23: audio-record)
+03-08 23:07:29.065  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x726ffd22d0 is closed.
+03-08 23:07:29.070  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x726ffcff90 is closed.
+03-08 23:07:29.071  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x726ffd1550 is closed.
+03-08 23:07:29.071  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x726ffcf8d0 is closed.
+03-08 23:07:29.071  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x726ffcd650 is closed.
+03-08 23:07:29.072  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x726ffd2690 is closed.
+03-08 23:07:29.072  1165  5259 D libEGL  : loaded /vendor/lib/egl/libGLESv2_adreno.so
+03-08 23:07:29.073  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x726ffcecd0 is closed.
+03-08 23:07:29.073  3099  5196 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x726ffcc690 is closed.
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: QUALCOMM build                   : 10e0ec675f, Ie80613d716
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Build Date                       : 06/09/22
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Local Branch                     : 
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Remote Branch                    : 
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Remote Branch                    : 
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Reconstruct Branch               : 
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch32
+03-08 23:07:29.110  1165  5259 I AdrenoGLES-0: Driver Path                      : /vendor/lib/egl/libGLESv2_adreno.so
+03-08 23:07:29.114   684   932 E CamX    : [ERROR][STATS_AF ] af_haf_pdaf.cpp:967: af_pdaf_set_inputs PDAF info is not valid
+03-08 23:07:29.117  1165  5259 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-08 23:07:29.110  1165  1165 W capture_looper: type=1400 audit(0.0:4379): avc: denied { read } for name="kgsl-3d0" dev="sysfs" ino=44101 scontext=u:r:mediaserver:s0 tcontext=u:object_r:sysfs_kgsl:s0 tclass=lnk_file permissive=0
+03-08 23:07:29.124  1165  5259 W AdrenoUtils: <ReadGpuID_from_sysfs:197>: Failed to open /sys/class/kgsl/kgsl-3d0/gpu_model
+03-08 23:07:29.124  1165  5259 W AdrenoUtils: <ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+03-08 23:07:29.126  1165  5259 E RenderEngine: Couldn't set SCHED_FIFO for ImageManager
+03-08 23:07:29.127   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+03-08 23:07:29.127  1165  5259 I Gralloc4: mapper 4.x is not supported
+03-08 23:07:29.128   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+03-08 23:07:29.128  1165  5259 W Gralloc3: mapper 3.x is not supported
+03-08 23:07:29.132   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device manifest.
+03-08 23:07:29.132  1165  5259 W Gralloc4: allocator 3.x is not supported
+03-08 23:07:29.133   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device manifest.
+03-08 23:07:29.133  1165  5259 W Gralloc3: allocator 3.x is not supported
+03-08 23:07:29.134  1165  5259 I RenderEngine: OpenGL ES informations:
+03-08 23:07:29.134  1165  5259 I RenderEngine: vendor    : Qualcomm
+03-08 23:07:29.134  1165  5259 I RenderEngine: renderer  : Adreno (TM) 615
+03-08 23:07:29.134  1165  5259 I RenderEngine: version   : OpenGL ES 3.2 V@0502.0 (GIT@10e0ec675f, Ie80613d716, 1654771601) (Date:06/09/22)
+03-08 23:07:29.134  1165  5259 I RenderEngine: extensions: GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_half_float GL_OES_framebuffer_object GL_OES_rgb8_rgba8 GL_OES_compressed_ETC1_RGB8_texture GL_AMD_compressed_ATC_texture GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_OES_texture_compression_astc GL_OES_texture_npot GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_read_format_bgra GL_OES_texture_3D GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_QCOM_alpha_test GL_OES_depth24 GL_OES_packed_depth_stencil GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_EXT_sRGB GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_EXT_texture_type_2_10_10_10_REV GL_EXT_texture_sRGB_decode GL_EXT_texture_format_sRGB_override GL_OES_element_index_uint GL_EXT_copy_image GL_EXT_geometry_shader GL_EXT_tessellation_shader GL_OES_texture_stencil8 GL_EXT_shader_io_blocks GL_OES_shader_image_atomic GL_OES_sample_variables GL_EX
+03-08 23:07:29.134  1165  5259 I RenderEngine: GL_MAX_TEXTURE_SIZE = 16384
+03-08 23:07:29.134  1165  5259 I RenderEngine: GL_MAX_VIEWPORT_DIMS = 16384
+03-08 23:07:29.135  1165  3258 I FrameDecoder: using surface mode
+03-08 23:07:29.140  1165  5264 I OMXClient: IOmx service obtained
+03-08 23:07:29.140  1189  5182 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in android.hardwar process
+03-08 23:07:29.145  1189  5182 E android.hardware.media.omx@1.0-service: Service not available yet
+03-08 23:07:29.146  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.147  1189  5182 D PlatformConfig: getConfigStoreBool: vpp/enable=false, returning false 
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInt32 Config name: vidc_dec_log_in value: 0
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInt32 Config name: vidc_dec_log_out value: 0
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInt32 Config name: vidc_dec_hfr_fps value: 0
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.152  1189  5182 D PlatformConfig: getInt32 Config name: vidc_dec_arb_mode_override value: 4
+03-08 23:07:29.158  1189  5182 I OMX-VDEC-1080P: Video slvp perflock acquired
+03-08 23:07:29.158  1189  5182 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=7
+03-08 23:07:29.159  1189  5182 E OMX-VDEC-1080P: Unsupported output color format for c2d (2141391876)
+03-08 23:07:29.159  1189  5182 E OMX-VDEC-1080P: Setting color format failed
+03-08 23:07:29.161  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.161  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.161  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.161  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.162  3099  5267 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [-799322944] ID [5267].
+03-08 23:07:29.162  3099  5267 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.162  3099  5267 I pal/stdout: 	 pid 5267's priority: 4, name: ASR5_CFG
+03-08 23:07:29.162  3099  5267 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.162  3099  5267 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.162  3099  5267 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.162  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.162  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.162  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.163  3099  5268 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [-817402688] ID [5268].
+03-08 23:07:29.163  1189  5182 D PlatformConfig: getInt32: Returning default
+03-08 23:07:29.163  1189  5182 D PlatformConfig: getInstance: Enter
+03-08 23:07:29.163  3099  5268 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.163  3099  5268 I pal/stdout: 	 pid 5268's priority: 4, name: ASR5_Worker0
+03-08 23:07:29.163  1189  5182 D PlatformConfig: getInt32: Returning default
+03-08 23:07:29.163  3099  5268 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.163  3099  5268 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.163  3099  5268 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.163  3099  5269 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [-818443072] ID [5269].
+03-08 23:07:29.163  3099  5269 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.163  3099  5269 I pal/stdout: 	 pid 5269's priority: 4, name: ASR5_Worker1
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.163  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.163  3099  5269 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.163  3099  5269 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.163  3099  5269 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.163  3099  5271 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [-837301056] ID [5271].
+03-08 23:07:29.163  3099  5271 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.163  3099  5271 I pal/stdout: 	 pid 5271's priority: 4, name: ASR5_Worker3
+03-08 23:07:29.163  3099  5271 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.163  1189  5182 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=7
+03-08 23:07:29.163  3099  5271 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.163  3099  5271 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.164  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.164  3099  5270 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [-836260672] ID [5270].
+03-08 23:07:29.164  3099  5270 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.164  3099  5270 I pal/stdout: 	 pid 5270's priority: 4, name: ASR5_Worker2
+03-08 23:07:29.164  3099  5270 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.164  3099  5270 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.164  3099  5270 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.164  3099  5274 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [-839381824] ID [5274].
+03-08 23:07:29.164  3099  5274 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.164  3099  5274 I pal/stdout: 	 pid 5274's priority: 4, name: ASR5_FatalListener
+03-08 23:07:29.164  3099  5274 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.164  3099  5274 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.164  3099  5274 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.164  3099  5272 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [-838341440] ID [5272].
+03-08 23:07:29.164  3099  5272 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.164  3099  5272 I pal/stdout: 	 pid 5272's priority: 4, name: ASR5_Dispatcher
+03-08 23:07:29.164  3099  5272 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.164  3099  5272 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.164  3099  5272 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.165  1165  5263 D MediaCodec: flushMediametrics
+03-08 23:07:29.166  1165  5263 D SurfaceUtils: connecting to surface 0xeb7c4ba8, reason connectToSurface
+03-08 23:07:29.166  1165  5263 I MediaCodec: [OMX.qcom.video.decoder.avc] setting surface generation to 1192961
+03-08 23:07:29.166  1165  5263 D SurfaceUtils: disconnecting from surface 0xeb7c4ba8, reason connectToSurface(reconnect)
+03-08 23:07:29.166  1165  5263 D SurfaceUtils: connecting to surface 0xeb7c4ba8, reason connectToSurface(reconnect)
+03-08 23:07:29.166  1189  5182 E OMX-VDEC-1080P: Extension: OMX.google.android.index.storeANWBufferInMetadata not implemented
+03-08 23:07:29.166  1189  5182 E OMX-VDEC-1080P: Extension: OMX.google.android.index.configureVideoTunnelMode not implemented
+03-08 23:07:29.166  1189  5182 E OMX-VDEC-1080P: Extension: OMX.google.android.index.useAndroidNativeBuffer is supported
+03-08 23:07:29.166  1189  5182 E OMX-VDEC-1080P: get_parameter: unknown param 7f000046
+03-08 23:07:29.166  1189  5182 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000046)) ERROR: UnsupportedIndex(0x8000101a)
+03-08 23:07:29.166  1189  5184 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
+03-08 23:07:29.166  1189  5184 E OMX-VDEC-1080P: set_parameter: Error: 0x80001019, setting param 0x7f00005d
+03-08 23:07:29.166  1189  5184 E OMXNodeInstance: setParameter(0xe5b50024:qcom.decoder.avc, OMX.google.android.index.allocateNativeHandle(0x7f00005d): Output:1 en=0) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:07:29.166  1189  5184 E OMX-VDEC-1080P: Extension: OMX.google.android.index.storeANWBufferInMetadata not implemented
+03-08 23:07:29.167  1189  5182 E OMX-VDEC-1080P: get_parameter: unknown param 6f600011
+03-08 23:07:29.167  1189  5182 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x6f600011)) ERROR: UnsupportedIndex(0x8000101a)
+03-08 23:07:29.167  1165  5264 I ExtendedACodec: setupVideoDecoder()
+03-08 23:07:29.167  1165  5264 I ExtendedACodec: Thumbnail mode enabled.
+03-08 23:07:29.169  1189  1189 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:07:29.169  1189  5181 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:07:29.169  1165  5264 W ACodec  : [OMX.qcom.video.decoder.avc] does not support color format 2130708361
+03-08 23:07:29.170  1165  5264 D ACodec  : Setting [OMX.qcom.video.decoder.avc] input port buffer number: 1
+03-08 23:07:29.170  1165  5264 D ACodec  : Setting [OMX.qcom.video.decoder.avc] output port buffer number: 1
+03-08 23:07:29.171  1189  5181 E OMX-VDEC-1080P: Extension: OMX.google.android.index.describeHDR10PlusInfo not implemented
+03-08 23:07:29.171  1165  5264 I ExtendedACodec: Decoder will be in frame by frame mode
+03-08 23:07:29.174  1189  1189 E OMX-VDEC-1080P: Does not handle dataspace request
+03-08 23:07:29.174  1189  1189 E OMXNodeInstance: getConfig(0xe5b50024:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:07:29.180  1189  1309 E OMX-VDEC-1080P: Extension: OMX.google.android.index.AndroidNativeBufferConsumerUsage not implemented
+03-08 23:07:29.180  1165  5264 D SurfaceUtils: set up nativeWindow 0xeb7c4ba8 for 1920x1080, color 0x7fa30c06, rotation 180, usage 0x20002900
+03-08 23:07:29.182  1165  5263 W ResourceManagerService: Ignoring request to add new resource entry with value <= 0
+03-08 23:07:29.183  1156  4049 D MediaBufferGroup: creating MemoryDealer
+03-08 23:07:29.195  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.195  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.195  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.195  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.195  3099  5276 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [-847385408] ID [5276].
+03-08 23:07:29.196  3099  5276 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.196  3099  5276 I pal/stdout: 	 pid 5276's priority: 4, name: DCC_CREATION_0
+03-08 23:07:29.196  3099  5276 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.196  3099  5276 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.196  3099  5276 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.199  3099  5276 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-08 23:07:29.200  3099  5276 I DCCListener: DCC event: DCC_DATA_ID ()
+03-08 23:07:29.200  3099  5276 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (10)
+03-08 23:07:29.201  3099  5276 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-08 23:07:29.203   679   679 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xeb1c0a90) io_handle(454) source(6) format 1
+03-08 23:07:29.203   679   679 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 454
+03-08 23:07:29.203   679   679 E device_utils: update_device_list: Invalid device: 0
+03-08 23:07:29.204  3439  3439 D SnapCam_FocusStateListe: CONTROL_AF_STATE_PASSIVE_FOCUSED onFocusSucceeded
+03-08 23:07:29.204  3439  3439 D SnapCam_FocusStateListe: CONTROL_AF_STATE_PASSIVE_SCAN onFocusStarted
+03-08 23:07:29.205   736  5278 I AudioFlinger: AudioFlinger's thread 0x7088f2d040 tid=5278 ready to run
+03-08 23:07:29.205   679   679 D audio_hw_primary: in_standby: enter: stream (0xeb1c0a90) usecase(23: audio-record)
+03-08 23:07:29.206   679   679 D audio_hw_primary: in_standby: enter: stream (0xeb1c0a90) usecase(23: audio-record)
+03-08 23:07:29.206  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.207  1380  1932 I chatty  : uid=1000(system) Binder:1380_9 identical 1 line
+03-08 23:07:29.207  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:29.210  3099  5261 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-08 23:07:29.210  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-08 23:07:29.210  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-08 23:07:29.210  3099  5261 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-08 23:07:29.210  3099  5261 I AsrConfiguration: Add app: VuzixApp-en
+03-08 23:07:29.211  3099  5279 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [1733254336] ID [5279].
+03-08 23:07:29.211  3099  5279 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-08 23:07:29.211  3099  5279 I pal/stdout: 	 pid 5279's priority: 4, name: DCC_NORMAL_0
+03-08 23:07:29.211  3099  5279 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-08 23:07:29.211  3099  5279 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-08 23:07:29.211  3099  5279 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-08 23:07:29.212  3099  5279 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x726ffce010 is closed.
+03-08 23:07:29.213  1189  5182 E OMX-VDEC-1080P: Does not handle dataspace request
+03-08 23:07:29.213  1189  5182 E OMXNodeInstance: getConfig(0xe5b50024:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:07:29.214  3099  5279 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-08 23:07:29.215  1189  5184 E OMX-VDEC-1080P: Extension: OMX.QTI.index.config.video.getdsmode not implemented
+03-08 23:07:29.229  3099  3099 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-08 23:07:29.231   679   679 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-08 23:07:29.231   679   679 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 454

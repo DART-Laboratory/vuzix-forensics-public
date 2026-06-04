@@ -1,0 +1,511 @@
+03-08 23:07:31.369  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a video
+03-08 23:07:31.371  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Okay
+03-08 23:07:31.372  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open
+03-08 23:07:31.373  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Confirm
+03-08 23:07:31.374  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Select this
+03-08 23:07:31.375  2360  5242 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.09
+03-08 23:07:31.375  2360  5242 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 23:07:31.375  2360  5242 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 23:07:31.375  2360  5242 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 23:07:31.376  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pick this
+03-08 23:07:31.377  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move left
+03-08 23:07:31.379  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go left
+03-08 23:07:31.380  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll left
+03-08 23:07:31.381  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move right
+03-08 23:07:31.383  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go right
+03-08 23:07:31.384  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll right
+03-08 23:07:31.386  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move up
+03-08 23:07:31.387  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go up
+03-08 23:07:31.389  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll up
+03-08 23:07:31.390  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move down
+03-08 23:07:31.391  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go down
+03-08 23:07:31.393  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll down
+03-08 23:07:31.394  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-08 23:07:31.396  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-08 23:07:31.397  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cancel
+03-08 23:07:31.398  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go home
+03-08 23:07:31.399  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quit
+03-08 23:07:31.400  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Show menu
+03-08 23:07:31.401  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page down
+03-08 23:07:31.403  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page up
+03-08 23:07:31.404  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume down
+03-08 23:07:31.406  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume up
+03-08 23:07:31.407  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Stop
+03-08 23:07:31.408  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Browser
+03-08 23:07:31.409  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Camera
+03-08 23:07:31.410  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->camstrm
+03-08 23:07:31.412  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cognitive EMS
+03-08 23:07:31.413  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Downloads
+03-08 23:07:31.414  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Files
+03-08 23:07:31.415  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Gallery
+03-08 23:07:31.416  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->HelloAR Java
+03-08 23:07:31.419  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Notifications
+03-08 23:07:31.420  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quick Start
+03-08 23:07:31.422  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scanner
+03-08 23:07:31.423  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Screen Cam
+03-08 23:07:31.424  3099  5304 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Settings
+03-08 23:07:31.439  3099  5304 I DCCListener: DCC event: DCC_DATA_ID ()
+03-08 23:07:31.440  3099  5304 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=58  added=58  removed=0  failed_to_add=0  failed_to_remove=0)
+03-08 23:07:31.440  3099  5287 I Asr     : Data prep finished event received; proceeding
+03-08 23:07:31.477  1380  5245 I system_server: libdebuggerd_client: done dumping process 1189
+03-08 23:07:31.482  1380  5245 I ActivityManager: Collecting stacks for native pid 679
+03-08 23:07:31.483  1380  5245 I system_server: libdebuggerd_client: started dumping process 679
+03-08 23:07:31.483  1126  1126 I tombstoned: registered intercept for pid 679 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.483   679   679 I libc    : Requested dump for tid 679 (audio.service)
+03-08 23:07:31.513  5310  5310 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.514  1126  1126 I tombstoned: received crash request for pid 679
+03-08 23:07:31.514  1126  1126 I tombstoned: found intercept fd 512 for pid 679 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.514  5310  5310 I crash_dump32: performing dump of process 679 (target tid = 679)
+03-08 23:07:31.535  2459  2459 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 23:07:31.536  2459  2459 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-08 23:07:31.536  2459  2459 W VuzixNotificationListener: shouldShowPopup 2 true
+03-08 23:07:31.542  1380  5245 I system_server: libdebuggerd_client: done dumping process 679
+03-08 23:07:31.545  1380  5245 I ActivityManager: Collecting stacks for native pid 682
+03-08 23:07:31.545  1380  5245 I system_server: libdebuggerd_client: started dumping process 682
+03-08 23:07:31.546  1126  1126 I tombstoned: registered intercept for pid 682 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.546   682   682 I libc    : Requested dump for tid 682 (bluetooth@1.0-s)
+03-08 23:07:31.559  5315  5315 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.559  1126  1126 I tombstoned: received crash request for pid 682
+03-08 23:07:31.559  1126  1126 I tombstoned: found intercept fd 512 for pid 682 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.559  5315  5315 I crash_dump64: performing dump of process 682 (target tid = 682)
+03-08 23:07:31.564  1380  5245 I system_server: libdebuggerd_client: done dumping process 682
+03-08 23:07:31.567  1380  5245 I ActivityManager: Collecting stacks for native pid 683
+03-08 23:07:31.568  1380  5245 I system_server: libdebuggerd_client: started dumping process 683
+03-08 23:07:31.568  1126  1126 I tombstoned: registered intercept for pid 683 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.568   683   683 I libc    : Requested dump for tid 683 (provider@2.4-ex)
+03-08 23:07:31.581  5321  5321 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.582  1126  1126 I tombstoned: received crash request for pid 683
+03-08 23:07:31.582  1126  1126 I tombstoned: found intercept fd 512 for pid 683 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.582  5321  5321 I crash_dump32: performing dump of process 683 (target tid = 683)
+03-08 23:07:31.596  1380  5245 I system_server: libdebuggerd_client: done dumping process 683
+03-08 23:07:31.598  1380  5245 I ActivityManager: Collecting stacks for native pid 684
+03-08 23:07:31.599  1380  5245 I system_server: libdebuggerd_client: started dumping process 684
+03-08 23:07:31.599  1126  1126 I tombstoned: registered intercept for pid 684 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.599   684   684 I libc    : Requested dump for tid 684 (provider@2.4-se)
+03-08 23:07:31.643  5326  5326 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.644  1126  1126 I tombstoned: received crash request for pid 684
+03-08 23:07:31.644  1126  1126 I tombstoned: found intercept fd 512 for pid 684 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.644  5326  5326 I crash_dump64: performing dump of process 684 (target tid = 684)
+03-08 23:07:31.666  1380  5245 I system_server: libdebuggerd_client: done dumping process 684
+03-08 23:07:31.669  1380  5245 I ActivityManager: Collecting stacks for native pid 623
+03-08 23:07:31.670  1380  5245 I system_server: libdebuggerd_client: started dumping process 623
+03-08 23:07:31.670  1126  1126 I tombstoned: registered intercept for pid 623 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.670   623   623 I libc    : Requested dump for tid 623 (suspend@1.0-ser)
+03-08 23:07:31.683  5332  5332 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.684  1126  1126 I tombstoned: received crash request for pid 623
+03-08 23:07:31.684  1126  1126 I tombstoned: found intercept fd 512 for pid 623 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.684  5332  5332 I crash_dump64: performing dump of process 623 (target tid = 623)
+03-08 23:07:31.693  1380  5245 I system_server: libdebuggerd_client: done dumping process 623
+03-08 23:07:31.696  1380  5245 I ActivityManager: Collecting stacks for native pid 688
+03-08 23:07:31.696  1380  5245 I system_server: libdebuggerd_client: started dumping process 688
+03-08 23:07:31.696  1126  1126 I tombstoned: registered intercept for pid 688 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.697   688   688 I libc    : Requested dump for tid 688 (gnss@2.0-servic)
+03-08 23:07:31.713  5337  5337 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.714  1126  1126 I tombstoned: received crash request for pid 688
+03-08 23:07:31.714  1126  1126 I tombstoned: found intercept fd 512 for pid 688 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.714  5337  5337 I crash_dump64: performing dump of process 688 (target tid = 688)
+03-08 23:07:31.723  1380  5245 I system_server: libdebuggerd_client: done dumping process 688
+03-08 23:07:31.726  1380  5245 I ActivityManager: Collecting stacks for native pid 689
+03-08 23:07:31.726  1380  5245 I system_server: libdebuggerd_client: started dumping process 689
+03-08 23:07:31.727  1126  1126 I tombstoned: registered intercept for pid 689 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.728   689   689 I libc    : Requested dump for tid 689 (composer@2.3-se)
+03-08 23:07:31.757  5344  5344 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.758  1126  1126 I tombstoned: received crash request for pid 689
+03-08 23:07:31.758  1126  1126 I tombstoned: found intercept fd 512 for pid 689 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.759  5344  5344 I crash_dump64: performing dump of process 689 (target tid = 689)
+03-08 23:07:31.784  1380  5245 I system_server: libdebuggerd_client: done dumping process 689
+03-08 23:07:31.788  1380  5245 I ActivityManager: Collecting stacks for native pid 690
+03-08 23:07:31.789  1380  5245 I system_server: libdebuggerd_client: started dumping process 690
+03-08 23:07:31.789  1126  1126 I tombstoned: registered intercept for pid 690 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.790   690   690 I libc    : Requested dump for tid 690 (health@2.1-serv)
+03-08 23:07:31.801  5349  5349 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.801  1126  1126 I tombstoned: received crash request for pid 690
+03-08 23:07:31.801  1126  1126 I tombstoned: found intercept fd 512 for pid 690 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.801  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:31.802  5349  5349 I crash_dump64: performing dump of process 690 (target tid = 690)
+03-08 23:07:31.802  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:31.802   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 23:07:31.803   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:07:31.803   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.803   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 23:07:31.803   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:31.803  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:31.803   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 23:07:31.803   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 23:07:31.803   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 23:07:31.803   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:07:31.803   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:07:31.803   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:07:31.803   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:07:31.803   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 23:07:31.803   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:07:31.803   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.803   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 23:07:31.803   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 23:07:31.803   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 23:07:31.803   679  2944 D audio_route: Apply path: speaker
+03-08 23:07:31.805  1380  5245 I system_server: libdebuggerd_client: done dumping process 690
+03-08 23:07:31.805   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 23:07:31.805   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 23:07:31.805   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 23:07:31.805   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 23:07:31.805   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 23:07:31.805   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.805   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:07:31.805   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:31.805   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 23:07:31.806   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.806   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 23:07:31.806   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:07:31.806   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.806   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:07:31.806   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 23:07:31.806   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 23:07:31.806   679  2944 D audio_hw_primary: select_devices: done
+03-08 23:07:31.810  1380  5245 I ActivityManager: Collecting stacks for native pid 691
+03-08 23:07:31.810  1380  5245 I system_server: libdebuggerd_client: started dumping process 691
+03-08 23:07:31.810  1126  1126 I tombstoned: registered intercept for pid 691 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.810  1380  5245 E system_server: libdebuggerd_client: failed to send signal to pid 691: Permission denied
+03-08 23:07:31.811  1126  1126 I tombstoned: intercept for pid 691 and type kDebuggerdNativeBacktrace terminated: due to input
+03-08 23:07:31.800  1380  1380 W AnrConsumer: type=1400 audit(0.0:4380): avc: denied { signal } for scontext=u:r:system_server:s0 tcontext=u:r:hal_light_default:s0 tclass=process permissive=0
+03-08 23:07:31.813  1380  5245 I ActivityManager: Collecting stacks for native pid 694
+03-08 23:07:31.813  1380  5245 I system_server: libdebuggerd_client: started dumping process 694
+03-08 23:07:31.813  1126  1126 I tombstoned: registered intercept for pid 694 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.814   694   694 I libc    : Requested dump for tid 694 (sensors@2.0-ser)
+03-08 23:07:31.828   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 23:07:31.828   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 23:07:31.828   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 23:07:31.828   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:07:31.828   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:07:31.842  5354  5354 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:31.843  1126  1126 I tombstoned: received crash request for pid 694
+03-08 23:07:31.843  1126  1126 I tombstoned: found intercept fd 512 for pid 694 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.843  5354  5354 I crash_dump64: performing dump of process 694 (target tid = 694)
+03-08 23:07:31.864  1380  5245 I system_server: libdebuggerd_client: done dumping process 694
+03-08 23:07:31.868  1380  5245 I ActivityManager: Collecting stacks for native pid 1239
+03-08 23:07:31.869  1380  5245 I system_server: libdebuggerd_client: started dumping process 1239
+03-08 23:07:31.869  1126  1126 I tombstoned: registered intercept for pid 1239 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.870  1126  1126 I tombstoned: received crash request for pid 1239
+03-08 23:07:31.870  1126  1126 I tombstoned: found intercept fd 512 for pid 1239 and type kDebuggerdNativeBacktrace
+03-08 23:07:31.905  1380  1464 D InputDispatcher: Waiting to send key to Window{25cb0d u0 com.vuzix.launcher.m400/com.vuzix.launcher.common.activity.LauncherActivity} because there are unprocessed events that may cause focus to change
+03-08 23:07:31.993  1380  5245 I system_server: libdebuggerd_client: done dumping process 1239
+03-08 23:07:31.998  1380  5245 I ActivityManager: Collecting stacks for native pid 582
+03-08 23:07:31.999  1380  5245 I system_server: libdebuggerd_client: started dumping process 582
+03-08 23:07:32.000  1126  1126 I tombstoned: registered intercept for pid 582 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.000   582   582 I libc    : Requested dump for tid 582 (Binder:582_2)
+03-08 23:07:32.010  5359  5359 W crash_dump64: type=1400 audit(0.0:4381): avc: denied { ptrace } for scontext=u:r:crash_dump:s0 tcontext=u:r:vold:s0 tclass=process permissive=0
+03-08 23:07:32.025  5359  5359 F crash_dump64: crash_dump.cpp:474] failed to attach to thread 582: Permission denied
+03-08 23:07:32.025  1126  1126 I tombstoned: received crash request for pid 582
+03-08 23:07:32.025  1126  1126 I tombstoned: found registered intercept of type kDebuggerdNativeBacktrace for requested type kDebuggerdAnyIntercept
+03-08 23:07:32.025  1126  1126 I tombstoned: found intercept fd 512 for pid 582 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.026  1380  5245 I system_server: libdebuggerd_client: done dumping process 582
+03-08 23:07:32.027  1126  1126 W tombstoned: crash socket received short read of length 0 (expected 12)
+--------- beginning of crash
+03-08 23:07:32.029   582   582 F libc    : crash_dump helper failed to exec
+03-08 23:07:32.030  1380  5245 I ActivityManager: Collecting stacks for native pid 736
+03-08 23:07:32.032  1380  5245 I system_server: libdebuggerd_client: started dumping process 736
+03-08 23:07:32.032  1126  1126 I tombstoned: registered intercept for pid 736 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.033   736   736 I libc    : Requested dump for tid 736 (audioserver)
+03-08 23:07:32.082   679  2944 W audio_hw_primary: out_write: underrun(1) frames_by_time(960) > out->last_fifo_frames_remaining(384)
+03-08 23:07:32.082  5362  5362 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.083  1126  1126 I tombstoned: received crash request for pid 736
+03-08 23:07:32.083  1126  1126 I tombstoned: found intercept fd 512 for pid 736 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.083  5362  5362 I crash_dump64: performing dump of process 736 (target tid = 736)
+03-08 23:07:32.086   679  2944 W audio_hw_primary: out_write: underrun(2) frames_by_time(756) > out->last_fifo_frames_remaining(192)
+03-08 23:07:32.091   679  2944 W audio_hw_primary: out_write: underrun(3) frames_by_time(203) > out->last_fifo_frames_remaining(192)
+03-08 23:07:32.112   736  1341 D AudioFlinger: mixer(0x708ad50040) throttle end: throttle time(1)
+03-08 23:07:32.126  1380  5245 I system_server: libdebuggerd_client: done dumping process 736
+03-08 23:07:32.133  1380  5245 I ActivityManager: Collecting stacks for native pid 745
+03-08 23:07:32.135  1380  5245 I system_server: libdebuggerd_client: started dumping process 745
+03-08 23:07:32.135  1126  1126 I tombstoned: registered intercept for pid 745 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.136   745   745 I libc    : Requested dump for tid 745 (surfaceflinger)
+03-08 23:07:32.193  5367  5367 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.194  1126  1126 I tombstoned: received crash request for pid 745
+03-08 23:07:32.194  1126  1126 I tombstoned: found intercept fd 512 for pid 745 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.195  5367  5367 I crash_dump64: performing dump of process 745 (target tid = 745)
+03-08 23:07:32.253  1380  5245 I system_server: libdebuggerd_client: done dumping process 745
+03-08 23:07:32.264  1380  5245 I ActivityManager: Collecting stacks for native pid 1141
+03-08 23:07:32.266  1380  5245 I system_server: libdebuggerd_client: started dumping process 1141
+03-08 23:07:32.266  1126  1126 I tombstoned: registered intercept for pid 1141 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.267  1141  1141 I libc    : Requested dump for tid 1141 (cameraserver)
+03-08 23:07:32.278   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:07:32.280  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:32.317  5373  5373 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.317  1126  1126 I tombstoned: received crash request for pid 1141
+03-08 23:07:32.318  1126  1126 I tombstoned: found intercept fd 512 for pid 1141 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.318  5373  5373 I crash_dump32: performing dump of process 1141 (target tid = 1141)
+03-08 23:07:32.359   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:07:32.370  1380  5245 I system_server: libdebuggerd_client: done dumping process 1141
+03-08 23:07:32.372  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:32.374  1380  5245 I ActivityManager: Collecting stacks for native pid 1143
+03-08 23:07:32.375  1380  5245 I system_server: libdebuggerd_client: started dumping process 1143
+03-08 23:07:32.376  1126  1126 I tombstoned: registered intercept for pid 1143 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.377  1143  1143 I libc    : Requested dump for tid 1143 (drmserver)
+03-08 23:07:32.403  5378  5378 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.405  1126  1126 I tombstoned: received crash request for pid 1143
+03-08 23:07:32.405  1126  1126 I tombstoned: found intercept fd 512 for pid 1143 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.405  5378  5378 I crash_dump32: performing dump of process 1143 (target tid = 1143)
+03-08 23:07:32.433  1380  5245 I system_server: libdebuggerd_client: done dumping process 1143
+03-08 23:07:32.437  1380  5245 I ActivityManager: Collecting stacks for native pid 1156
+03-08 23:07:32.438  1380  5245 I system_server: libdebuggerd_client: started dumping process 1156
+03-08 23:07:32.438  1126  1126 I tombstoned: registered intercept for pid 1156 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.439  1126  1126 I tombstoned: received crash request for pid 1156
+03-08 23:07:32.439  1126  1126 I tombstoned: found intercept fd 512 for pid 1156 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.548  1380  5245 I system_server: libdebuggerd_client: done dumping process 1156
+03-08 23:07:32.553  1380  5245 I ActivityManager: Collecting stacks for native pid 1158
+03-08 23:07:32.554  1380  5245 I system_server: libdebuggerd_client: started dumping process 1158
+03-08 23:07:32.555  1126  1126 I tombstoned: registered intercept for pid 1158 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.555  1158  1158 I libc    : Requested dump for tid 1158 (mediametrics)
+03-08 23:07:32.585  5383  5383 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.585  1126  1126 I tombstoned: received crash request for pid 1158
+03-08 23:07:32.585  1126  1126 I tombstoned: found intercept fd 512 for pid 1158 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.587  5383  5383 I crash_dump64: performing dump of process 1158 (target tid = 1158)
+03-08 23:07:32.610  1380  5245 I system_server: libdebuggerd_client: done dumping process 1158
+03-08 23:07:32.616  1380  5245 I ActivityManager: Collecting stacks for native pid 1165
+03-08 23:07:32.618  1380  5245 I system_server: libdebuggerd_client: started dumping process 1165
+03-08 23:07:32.619  1126  1126 I tombstoned: registered intercept for pid 1165 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.620  1165  1165 I libc    : Requested dump for tid 1165 (mediaserver)
+03-08 23:07:32.679  5388  5388 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.680  1126  1126 I tombstoned: received crash request for pid 1165
+03-08 23:07:32.680  1126  1126 I tombstoned: found intercept fd 512 for pid 1165 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.681  5388  5388 I crash_dump32: performing dump of process 1165 (target tid = 1165)
+03-08 23:07:32.731  1380  5245 I system_server: libdebuggerd_client: done dumping process 1165
+03-08 23:07:32.735  1380  5245 I ActivityManager: Collecting stacks for native pid 1166
+03-08 23:07:32.737  1380  5245 I system_server: libdebuggerd_client: started dumping process 1166
+03-08 23:07:32.738  1126  1126 I tombstoned: registered intercept for pid 1166 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.739  1166  1166 I libc    : Requested dump for tid 1166 (Binder:1166_4)
+03-08 23:07:32.779  5394  5394 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:32.780  1126  1126 I tombstoned: received crash request for pid 1166
+03-08 23:07:32.780  1126  1126 I tombstoned: found intercept fd 512 for pid 1166 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.781  5394  5394 I crash_dump64: performing dump of process 1166 (target tid = 1166)
+03-08 23:07:32.832  1380  5245 I system_server: libdebuggerd_client: done dumping process 1166
+03-08 23:07:32.836  1380  5245 I ActivityManager: Collecting stacks for native pid 1189
+03-08 23:07:32.837  1380  5245 I system_server: libdebuggerd_client: started dumping process 1189
+03-08 23:07:32.837  1126  1126 I tombstoned: registered intercept for pid 1189 and type kDebuggerdNativeBacktrace
+03-08 23:07:32.838  1126  1126 I tombstoned: received crash request for pid 1189
+03-08 23:07:32.838  1126  1126 I tombstoned: found intercept fd 512 for pid 1189 and type kDebuggerdNativeBacktrace
+03-08 23:07:33.136  1380  5245 I system_server: libdebuggerd_client: done dumping process 1189
+03-08 23:07:33.143  1380  5245 I ActivityManager: Collecting stacks for native pid 1239
+03-08 23:07:33.145  1380  5245 I system_server: libdebuggerd_client: started dumping process 1239
+03-08 23:07:33.146  1126  1126 I tombstoned: registered intercept for pid 1239 and type kDebuggerdNativeBacktrace
+03-08 23:07:33.148  1126  1126 I tombstoned: received crash request for pid 1239
+03-08 23:07:33.149  1126  1126 I tombstoned: found intercept fd 512 for pid 1239 and type kDebuggerdNativeBacktrace
+03-08 23:07:33.236  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:33.236   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:07:33.480  1380  5245 I system_server: libdebuggerd_client: done dumping process 1239
+03-08 23:07:33.485  1380  5245 I ActivityManager: Collecting stacks for native pid 1240
+03-08 23:07:33.486  1380  5245 I system_server: libdebuggerd_client: started dumping process 1240
+03-08 23:07:33.487  1126  1126 I tombstoned: registered intercept for pid 1240 and type kDebuggerdNativeBacktrace
+03-08 23:07:33.489  1240  1240 I libc    : Requested dump for tid 1240 (Binder:1240_2)
+03-08 23:07:33.513  1380  2156 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:33.523  5399  5399 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdNativeBacktrace
+03-08 23:07:33.524  1126  1126 I tombstoned: received crash request for pid 1240
+03-08 23:07:33.524  1126  1126 I tombstoned: found intercept fd 512 for pid 1240 and type kDebuggerdNativeBacktrace
+03-08 23:07:33.525  5399  5399 I crash_dump64: performing dump of process 1240 (target tid = 1240)
+03-08 23:07:33.554  1380  5245 I system_server: libdebuggerd_client: done dumping process 1240
+03-08 23:07:33.560  1380  5245 I ActivityManager: Collecting stacks for extra pid 2360
+03-08 23:07:33.562  1380  5245 I system_server: libdebuggerd_client: started dumping process 2360
+03-08 23:07:33.563  1126  1126 I tombstoned: registered intercept for pid 2360 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.563  2360  2382 I FuseDaemon: Thread[4,tid=2382,WaitingInMainSignalCatcherLoop,Thread*=0x734ffc8be0,peer=0x130c0338,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:33.563  2360  2382 I FuseDaemon: 
+03-08 23:07:33.647  1126  1126 I tombstoned: received crash request for pid 2360
+03-08 23:07:33.647  1126  1126 I tombstoned: found intercept fd 512 for pid 2360 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.648  2360  2382 I FuseDaemon: Wrote stack traces to tombstoned
+03-08 23:07:33.649  1380  5245 I system_server: libdebuggerd_client: done dumping process 2360
+03-08 23:07:33.654  1380  5245 I ActivityManager: Collecting stacks for extra pid 3099
+03-08 23:07:33.656  1380  5245 I system_server: libdebuggerd_client: started dumping process 3099
+03-08 23:07:33.656  1126  1126 I tombstoned: registered intercept for pid 3099 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.657  3099  3114 I ognitionservic: Thread[6,tid=3114,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcfb20,peer=0x12e401b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:33.658  3099  3114 I ognitionservic: 
+03-08 23:07:33.810  1126  1126 I tombstoned: received crash request for pid 3099
+03-08 23:07:33.810  1126  1126 I tombstoned: found intercept fd 512 for pid 3099 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.813  3099  3114 I ognitionservic: Wrote stack traces to tombstoned
+03-08 23:07:33.813  1380  5245 I system_server: libdebuggerd_client: done dumping process 3099
+03-08 23:07:33.818  1380  5245 I ActivityManager: Collecting stacks for extra pid 2384
+03-08 23:07:33.821  1380  5245 I system_server: libdebuggerd_client: started dumping process 2384
+03-08 23:07:33.822  1126  1126 I tombstoned: registered intercept for pid 2384 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.823  2384  2403 I sibilityservic: Thread[5,tid=2403,WaitingInMainSignalCatcherLoop,Thread*=0x734ffcfb20,peer=0x12e801b0,"Signal Catcher"]: reacting to signal 3
+03-08 23:07:33.823  2384  2403 I sibilityservic: 
+03-08 23:07:33.946  1126  1126 I tombstoned: received crash request for pid 2384
+03-08 23:07:33.946  1126  1126 I tombstoned: found intercept fd 512 for pid 2384 and type kDebuggerdJavaBacktrace
+03-08 23:07:33.948  2384  2403 I sibilityservic: Wrote stack traces to tombstoned
+03-08 23:07:33.948  1380  5245 I system_server: libdebuggerd_client: done dumping process 2384
+03-08 23:07:33.953  1380  5245 I ActivityManager: Done dumping
+03-08 23:07:33.956  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:07:33.957   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:07:34.028  1380  5245 E ActivityManager: ANR in org.codeaurora.snapcam (org.codeaurora.snapcam/com.android.camera.CameraLauncher)
+03-08 23:07:34.028  1380  5245 E ActivityManager: PID: 3439
+03-08 23:07:34.028  1380  5245 E ActivityManager: Reason: Input dispatching timed out (7d693bf org.codeaurora.snapcam/com.android.camera.CameraLauncher (server) is not responding. Waited 5002ms for KeyEvent)
+03-08 23:07:34.028  1380  5245 E ActivityManager: Parent: org.codeaurora.snapcam/com.android.camera.CameraLauncher
+03-08 23:07:34.028  1380  5245 E ActivityManager: Load: 2.7 / 1.18 / 0.69
+03-08 23:07:34.028  1380  5245 E ActivityManager: CPU usage from 0ms to 5410ms later (2026-03-08 23:07:28.543 to 2026-03-08 23:07:33.953):
+03-08 23:07:34.028  1380  5245 E ActivityManager:   27% 1380/system_server: 14% user + 12% kernel / faults: 7052 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   22% 3099/com.vuzix.speechrecognitionservice: 17% user + 4.8% kernel / faults: 12606 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   19% 684/android.hardware.camera.provider@2.4-service_64: 12% user + 7.5% kernel / faults: 13790 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   13% 2360/com.android.providers.media.module: 9% user + 4.4% kernel / faults: 2524 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   12% 2433/com.vuzix.launcher.m400: 9.8% user + 2.4% kernel / faults: 1391 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   12% 745/surfaceflinger: 6.8% user + 5.1% kernel / faults: 457 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   10% 3439/org.codeaurora.snapcam: 7.7% user + 3.1% kernel / faults: 8130 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   9.2% 1189/media.codec: 6% user + 3.1% kernel / faults: 11966 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   8.5% 736/audioserver: 5.3% user + 3.1% kernel / faults: 719 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   7.9% 679/android.hardware.audio.service: 1.8% user + 6% kernel / faults: 118 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   7.7% 1239/media.swcodec: 3.8% user + 3.8% kernel / faults: 13454 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   5.3% 689/android.hardware.graphics.composer@2.3-service: 2.9% user + 2.4% kernel / faults: 263 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   4.8% 1592/com.android.systemui: 4.2% user + 0.5% kernel / faults: 3662 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   4.8% 2384/com.vuzix.accessibilityservice: 3.6% user + 1.1% kernel / faults: 4369 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   3.5% 1165/mediaserver: 1.2% user + 2.2% kernel / faults: 3398 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   3.3% 99/system: 0% user + 3.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   3.1% 575/logd: 0.7% user + 2.4% kernel / faults: 12 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.7% 1141/cameraserver: 1.1% user + 1.6% kernel / faults: 2973 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.7% 1156/media.extractor: 2% user + 0.7% kernel / faults: 4171 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.7% 2292/com.vuzix.usbpowermonitor: 2% user + 0.7% kernel / faults: 3425 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.7% 4798/kworker/0:2: 0% user + 2.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.7% 4828/kworker/u16:4: 0% user + 2.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   2.2% 2241/com.google.android.gms: 1.4% user + 0.7% kernel / faults: 1042 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.8% 1811/com.qualcomm.qti.qdma: 1.6% user + 0.1% kernel / faults: 1362 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2283/com.vuzix.displayoptimizer: 0% user + 0% kernel / faults: 1212 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2170/com.qualcomm.qti.services.systemhelper:systemhelper_service: 0% user + 0% kernel / faults: 1254 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2313/com.qualcomm.qti.services.secureui:sui_service: 0% user + 0% kernel / faults: 1343 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.6% 2345/com.vuzix.AppWorldStoreService: 0.9% user + 0.7% kernel / faults: 1196 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.6% 4825/logcat: 0.5% user + 1.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.4% 83/lpass_smem_glin: 0% user + 1.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.4% 235/crtc_commit:93: 0% user + 1.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.4% 2052/sugov:6: 0% user + 1.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.4% 4766/kworker/u16:1: 0% user + 1.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.2% 82/smem_native_lpa: 0% user + 1.2% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.2% 1775/com.android.networkstack.process: 0.7% user + 0.5% kernel / faults: 1173 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2189/.dataservices: 0% user + 0% kernel / faults: 1257 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2254/com.qualcomm.qti.workloadclassifier: 0% user + 0% kernel / faults: 1216 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.1% 1725/.qtidataservices: 0.9% user + 0.1% kernel / faults: 1325 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 2219/com.vuzix.hud.connectivity: 0% user + 0% kernel / faults: 1143 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   1.1% 3132/com.vuzix.temperatureservice: 0.9% user + 0.1% kernel / faults: 467 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.9% 176/IPCRTR_lpass_sm: 0% user + 0.9% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.9% 935/lpass_IPCRTR: 0% user + 0.9% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.9% 2137/irq/99-1436400.: 0% user + 0.9% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.9% 5168/kworker/u16:12: 0% user + 0.9% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 1126/tombstoned: 0% user + 0% kernel / faults: 5 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 1796/com.android.se: 0% user + 0% kernel / faults: 1156 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.7% 2051/sugov:0: 0% user + 0.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.5% 1/init: 0.1% user + 0.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.5% 242/kgsl_worker_thr: 0% user + 0.5% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.5% 4917/kworker/u16:6: 0% user + 0.5% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 7/rcu_preempt: 0% user + 0.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 413/mmc-cmdqd/0: 0% user + 0.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 688/android.hardware.gnss@2.0-service-ubx: 0.1% user + 0.1% kernel / faults: 126 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 1158/media.metrics: 0.1% user + 0.1% kernel / faults: 115 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 1240/statsd: 0% user + 0.3% kernel / faults: 71 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.3% 4803/kworker/u16:0: 0% user + 0.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 6/ksoftirqd/0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 8/rcu_sched: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 10/rcuop/0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 11/rcuos/0: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 13/migration/0: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 29/rcuop/2: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 30/rcuos/2: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 37/rcuop/3: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 61/rcuop/6: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 62/rcuos/6: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 69/rcuop/7: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 236/crtc_event:93: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 330/rot_commitq_0_0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 334/rot_fenceq_0_0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 576/lmkd: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 577/servicemanager: 0.1% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 578/hwservicemanager: 0.1% user + 0% kernel / faults: 6 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 582/vold: 0% user + 0% kernel / faults: 15 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 623/android.system.suspend@1.0-service: 0% user + 0.1% kernel / faults: 39 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 690/android.hardware.health@2.1-service: 0% user + 0.1% kernel / faults: 11 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 692/android.hardware.memtrack@1.0-service: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 694/android.hardware.sensors@2.0-service.multihal: 0% user + 0.1% kernel / faults: 18 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 706/vendor.qti.hardware.display.allocator@1.0-service: 0% user + 0.1% kernel / faults: 122 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 712/vendor.qti.hardware.perf@2.2-service: 0% user + 0.1% kernel / faults: 9 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 746/adsprpcd: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 1056/hvdcp_opti: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 1100/jbd2/mmcblk0p65: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0% 1143/drmserver: 0% user + 0% kernel / faults: 21 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 1166/netd: 0% user + 0.1% kernel / faults: 30 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 1850/android.ext.services: 0% user + 0.1% kernel / faults: 10 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 2622/com.vuzix.keyboard.latin: 0% user + 0.1% kernel / faults: 1 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 4388/kworker/u17:0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 4619/kworker/2:0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 4814/kworker/0:0: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   0.1% 4821/kworker/1:2: 0% user + 0.1% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:  +0% 5358/crash_dump64: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager: 31% TOTAL: 16% user + 12% kernel + 0.5% iowait + 1.6% irq + 0.6% softirq
+03-08 23:07:34.028  1380  5245 E ActivityManager: CPU usage from 109ms to 427ms later (2026-03-08 23:07:28.652 to 2026-03-08 23:07:28.971):
+03-08 23:07:34.028  1380  5245 E ActivityManager:   92% 2360/com.android.providers.media.module: 59% user + 33% kernel / faults: 578 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:     14% 2391/HeapTaskDaemon: 14% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     14% 3264/bg: 7.4% user + 7.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     14% 5242/Thread-5: 3.7% user + 11% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     7.4% 2395/Binder:2360_1: 7.4% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     7.4% 2544/Thread-4: 0% user + 7.4% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     7.4% 5244/Thread-9: 7.4% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 2392/ReferenceQueueD: 3.7% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 2545/Thread-3: 3.7% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 5236/Thread-5: 0% user + 3.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 5237/Thread-8: 3.7% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 5238/Thread-3: 0% user + 3.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.7% 5239/Thread-3: 0% user + 3.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   53% 684/android.hardware.camera.provider@2.4-service_64: 26% user + 26% kernel / faults: 12194 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:     30% 1082/HwBinder:684_1: 16% user + 13% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     6.7% 3520/provider@2.4-se: 0% user + 6.7% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.3% 928/provider@2.4-se: 0% user + 3.3% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.3% 931/provider@2.4-se: 3.3% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5248/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5249/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5250/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5251/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5252/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5253/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5255/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:    +0% 5256/HwBinder:684_1: 0% user + 0% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:   56% 1380/system_server: 28% user + 28% kernel / faults: 349 minor
+03-08 23:07:34.028  1380  5245 E ActivityManager:     28% 5245/AnrConsumer: 7.1% user + 21% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     7.1% 1883/Binder:1380_7: 3.5% user + 3.5% kernel
+03-08 23:07:34.028  1380  5245 E ActivityManager:     3.5% 1752/Binder:1380_5: 3.5% user + 0% kernel

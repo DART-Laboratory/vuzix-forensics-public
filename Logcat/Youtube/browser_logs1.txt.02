@@ -1,0 +1,1256 @@
+03-14 17:07:56.251  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open
+03-14 17:07:56.252  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Confirm
+03-14 17:07:56.253  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Select this
+03-14 17:07:56.254  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pick this
+03-14 17:07:56.255  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move left
+03-14 17:07:56.257  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go left
+03-14 17:07:56.258  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll left
+03-14 17:07:56.259  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move right
+03-14 17:07:56.260  2423  3502 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs1.txt.09
+03-14 17:07:56.260  2423  3502 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 17:07:56.260  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 17:07:56.260  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go right
+03-14 17:07:56.261  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll right
+03-14 17:07:56.262  2423  3502 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 17:07:56.263  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move up
+03-14 17:07:56.264  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go up
+03-14 17:07:56.265  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll up
+03-14 17:07:56.266  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move down
+03-14 17:07:56.267  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go down
+03-14 17:07:56.268  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll down
+03-14 17:07:56.270  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 17:07:56.271  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 17:07:56.272  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cancel
+03-14 17:07:56.273  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go home
+03-14 17:07:56.274  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quit
+03-14 17:07:56.275  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Show menu
+03-14 17:07:56.276  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page down
+03-14 17:07:56.277  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page up
+03-14 17:07:56.279  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume down
+03-14 17:07:56.280  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume up
+03-14 17:07:56.282  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Stop
+03-14 17:07:56.283  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 17:07:56.283  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 17:07:56.284  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 17:07:56.285  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 17:07:56.286  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 17:07:56.286  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 17:07:56.287  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 17:07:56.288  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 17:07:56.289  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 17:07:56.289  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->10
+03-14 17:07:56.290  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->11
+03-14 17:07:56.291  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->12
+03-14 17:07:56.292  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->13
+03-14 17:07:56.293  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->14
+03-14 17:07:56.293  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->15
+03-14 17:07:56.294  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->16
+03-14 17:07:56.295  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->17
+03-14 17:07:56.296  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->18
+03-14 17:07:56.297  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->19
+03-14 17:07:56.298  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->20
+03-14 17:07:56.298  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->21
+03-14 17:07:56.299  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->22
+03-14 17:07:56.301  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->23
+03-14 17:07:56.302  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->24
+03-14 17:07:56.303  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->25
+03-14 17:07:56.304  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->26
+03-14 17:07:56.305  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->27
+03-14 17:07:56.306  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->28
+03-14 17:07:56.307  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->29
+03-14 17:07:56.308  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->30
+03-14 17:07:56.308  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->31
+03-14 17:07:56.309  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->32
+03-14 17:07:56.310  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->33
+03-14 17:07:56.311  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->34
+03-14 17:07:56.312  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->35
+03-14 17:07:56.313  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->36
+03-14 17:07:56.313  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->37
+03-14 17:07:56.314  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->38
+03-14 17:07:56.315  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->39
+03-14 17:07:56.316  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->40
+03-14 17:07:56.317  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->41
+03-14 17:07:56.318  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->42
+03-14 17:07:56.319  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->43
+03-14 17:07:56.320  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->44
+03-14 17:07:56.321  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->45
+03-14 17:07:56.322  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->46
+03-14 17:07:56.323  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->47
+03-14 17:07:56.324  3057  3948 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->48
+03-14 17:07:56.345  3057  3948 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:07:56.345  3057  3948 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=93  added=93  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 17:07:56.346  3057  3937 I Asr     : Data prep finished event received; proceeding
+03-14 17:07:56.407  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:56.408  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:56.408  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 17:07:56.437  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1595): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:07:56.828  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:07:56.844  2639  2639 D VuzixKeyboard: onStartInputView: android.view.inputmethod.EditorInfo@c34322e false
+03-14 17:07:56.875   744   744 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:07:56.876  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:56.931   744   744 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 17:07:56.933   744   744 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:56.933   744   744 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 17:07:56.933   744   744 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 17:07:56.933   744   744 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 17:07:56.933   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:56.933   744   744 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:56.933   744   744 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 17:07:56.934   744   744 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 17:07:56.934   744   744 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:56.934   744   744 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:07:56.934   744   744 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:56.936   744   744 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:56.936   744   744 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 17:07:56.936   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 17:07:56.936   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 17:07:56.937  1368  1419 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 17:07:56.938   744  1316 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 18
+03-14 17:07:56.938   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:07:56.940  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:56.940  1368  2016 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:07:56.955  3057  3937 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 17:07:56.956  3057  3937 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 17:07:56.956  3057  3937 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 17:07:56.957  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70d1050 is closed.
+03-14 17:07:56.958  1368  1419 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:07:56.959   744   744 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc6910)
+03-14 17:07:56.959   744   744 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 174
+03-14 17:07:56.959   744   744 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 17:07:56.959   744   744 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 17:07:56.959   744   744 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 17:07:56.959   744   744 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 17:07:56.959   744   744 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:07:56.961  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:56.962  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:56.962  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70d0ed0 is closed.
+03-14 17:07:56.963  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70d0450 is closed.
+03-14 17:07:56.963  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70cded0 is closed.
+03-14 17:07:56.963  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:56.964  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70cfb50 is closed.
+03-14 17:07:56.966  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70d0d50 is closed.
+03-14 17:07:56.966  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70d0e10 is closed.
+03-14 17:07:56.967  3057  3937 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70cf490 is closed.
+03-14 17:07:57.077  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.077  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.077  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.077  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.078  3057  3953 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [3953].
+03-14 17:07:57.078  3057  3953 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.078  3057  3953 I pal/stdout: 	 pid 3953's priority: 4, name: ASR5_CFG
+03-14 17:07:57.078  3057  3953 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.078  3057  3953 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.078  3057  3953 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.079  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.080  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.080  3057  3957 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1445366976] ID [3957].
+03-14 17:07:57.080  3057  3956 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1446407360] ID [3956].
+03-14 17:07:57.080  3057  3956 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.080  3057  3956 I pal/stdout: 	 pid 3956's priority: 4, name: ASR5_Worker2
+03-14 17:07:57.080  3057  3957 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.080  3057  3957 I pal/stdout: 	 pid 3957's priority: 4, name: ASR5_Worker3
+03-14 17:07:57.080  3057  3957 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.080  3057  3957 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.080  3057  3957 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.080  3057  3955 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1447447744] ID [3955].
+03-14 17:07:57.080  3057  3955 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.080  3057  3955 I pal/stdout: 	 pid 3955's priority: 4, name: ASR5_Worker1
+03-14 17:07:57.080  3057  3955 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.080  3057  3955 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.080  3057  3955 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.080  3057  3958 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1444326592] ID [3958].
+03-14 17:07:57.080  3057  3958 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.080  3057  3958 I pal/stdout: 	 pid 3958's priority: 4, name: ASR5_Dispatcher
+03-14 17:07:57.080  3057  3956 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.080  3057  3956 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.080  3057  3956 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.080  3057  3954 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [3954].
+03-14 17:07:57.080  3057  3954 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.080  3057  3954 I pal/stdout: 	 pid 3954's priority: 4, name: ASR5_Worker0
+03-14 17:07:57.080  3057  3954 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.080  3057  3954 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.081  3057  3959 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [3959].
+03-14 17:07:57.081  3057  3959 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.081  3057  3959 I pal/stdout: 	 pid 3959's priority: 4, name: ASR5_FatalListener
+03-14 17:07:57.081  3057  3959 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.081  3057  3958 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.081  3057  3954 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.081  3057  3958 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.081  3057  3958 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.081  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.082  3057  3959 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.082  3057  3959 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.110  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.110  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.110  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.110  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.110  3057  3960 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [3960].
+03-14 17:07:57.110  3057  3960 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.110  3057  3960 I pal/stdout: 	 pid 3960's priority: 4, name: DCC_CREATION_0
+03-14 17:07:57.110  3057  3960 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.110  3057  3960 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.110  3057  3960 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.119  3057  3960 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 17:07:57.121  3057  3960 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:07:57.122  3057  3960 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (93)
+03-14 17:07:57.122  3057  3960 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 17:07:57.123   744   744 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc1cf0) io_handle(182) source(6) format 1
+03-14 17:07:57.123   744   744 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 182
+03-14 17:07:57.124   744   744 E device_utils: update_device_list: Invalid device: 0
+03-14 17:07:57.126   802  3962 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=3962 ready to run
+03-14 17:07:57.127   744   744 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:07:57.129   744   744 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:07:57.131  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.131  1368  1419 I chatty  : uid=1000(system) Binder:1368_3 identical 1 line
+03-14 17:07:57.133  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.137  3057  3952 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.137  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.137  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.137  3057  3952 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.138  3057  3952 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:07:57.138  3057  3963 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-113451840] ID [3963].
+03-14 17:07:57.138  3057  3963 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.138  3057  3963 I pal/stdout: 	 pid 3963's priority: 4, name: DCC_NORMAL_0
+03-14 17:07:57.138  3057  3963 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.138  3057  3963 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.138  3057  3963 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.139  3057  3963 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d0510 is closed.
+03-14 17:07:57.143  3057  3963 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 17:07:57.174  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 17:07:57.178   744   744 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 17:07:57.178   744   744 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 182
+03-14 17:07:57.178   744   744 D audio_hw_primary: update_patch: enter
+03-14 17:07:57.178   744   744 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:07:57.178   744   744 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 19
+03-14 17:07:57.179   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 17:07:57.180  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.181  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.182  1368  1381 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 17:07:57.183   744   744 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.184   744   744 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.184   802  3962 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.184   802  3962 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.184   744  3965 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc1cf0)usecase(23: audio-record), source 6
+03-14 17:07:57.184   744  3965 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 17:07:57.185   744  3965 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 17:07:57.185   744  3965 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 17:07:57.185   744  3965 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 17:07:57.185   744  3965 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 17:07:57.185   744  3965 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 17:07:57.185   744  3965 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 17:07:57.185   744  3965 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 17:07:57.185   744  3965 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:57.185   744  3965 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 17:07:57.185   744  3965 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.185   744  3965 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:07:57.185   744  3965 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 17:07:57.185   744  3965 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.185   744  3965 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 17:07:57.185   744  3965 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 17:07:57.185   744  3965 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:57.185   744  3965 D audio_route: Apply path: voice-rec-mic
+03-14 17:07:57.186   744  3965 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.186   744  3965 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 17:07:57.186   744  3965 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 17:07:57.186   744  3965 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 17:07:57.186   744  3965 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:57.186   744  3965 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 17:07:57.186   744  3965 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.186   744  3965 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 17:07:57.186   744  3965 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:07:57.186   744  3965 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 17:07:57.187   744  3965 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.187   744  3965 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_audtable
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 17:07:57.187   744  3965 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 17:07:57.187   744  3965 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 17:07:57.187   744  3965 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 17:07:57.187   744  3965 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 17:07:57.187   744  3965 D audio_route: Apply path: audio-record
+03-14 17:07:57.188   744  3965 D audio_hw_primary: select_devices: done
+03-14 17:07:57.190  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 17:07:57.192  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 17:07:57.193  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->A
+03-14 17:07:57.194  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->B
+03-14 17:07:57.195  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->C
+03-14 17:07:57.196  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->D
+03-14 17:07:57.197  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->E
+03-14 17:07:57.198  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->F
+03-14 17:07:57.199  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->G
+03-14 17:07:57.199  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->H
+03-14 17:07:57.200  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->I
+03-14 17:07:57.201  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->J
+03-14 17:07:57.202  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->K
+03-14 17:07:57.203  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->L
+03-14 17:07:57.204  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->M
+03-14 17:07:57.205  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 17:07:57.205  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 17:07:57.206  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 17:07:57.207  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 17:07:57.208  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 17:07:57.209  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->erase
+03-14 17:07:57.210  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->scan code
+03-14 17:07:57.211  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->queue are code
+03-14 17:07:57.213  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->N
+03-14 17:07:57.214  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->O
+03-14 17:07:57.214   744  3965 D audio_hw_primary: start_input_stream: exit
+03-14 17:07:57.215  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->P
+03-14 17:07:57.215  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Q
+03-14 17:07:57.216  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->R
+03-14 17:07:57.217  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->S
+03-14 17:07:57.218  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->T
+03-14 17:07:57.219  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->U
+03-14 17:07:57.219  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->V
+03-14 17:07:57.220  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->W
+03-14 17:07:57.221  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->X
+03-14 17:07:57.222  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Y
+03-14 17:07:57.222  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Z
+03-14 17:07:57.223  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 17:07:57.224  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 17:07:57.225  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 17:07:57.225  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 17:07:57.226  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->0
+03-14 17:07:57.227  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->space
+03-14 17:07:57.228  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->symbols
+03-14 17:07:57.229  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->shift
+03-14 17:07:57.230  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->caps
+03-14 17:07:57.230  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->forward slash
+03-14 17:07:57.230  2639  2639 D VuzixKeyboard: Received 4 overlay phrases
+03-14 17:07:57.232  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->at sign
+03-14 17:07:57.233  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left parenthesis
+03-14 17:07:57.234  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right parenthesis
+03-14 17:07:57.236  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->apostrophe
+03-14 17:07:57.237  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->quotation mark
+03-14 17:07:57.238  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->comma
+03-14 17:07:57.239  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->period
+03-14 17:07:57.240  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->question mark
+03-14 17:07:57.242  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->exclamation point
+03-14 17:07:57.243  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left
+03-14 17:07:57.244  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right
+03-14 17:07:57.245  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->continue
+03-14 17:07:57.246  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->done
+03-14 17:07:57.247  3057  3963 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->enter
+03-14 17:07:57.261  3057  3963 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:07:57.261  3057  3963 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=60  added=60  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 17:07:57.261  3057  3952 I Asr     : Data prep finished event received; proceeding
+03-14 17:07:57.384  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:57.385  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:57.385  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 17:07:57.610  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.611   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:07:57.673   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 17:07:57.675   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.675   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 17:07:57.675   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 17:07:57.675   744  1316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 17:07:57.675   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:57.675   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:57.675   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 17:07:57.675   744  1316 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 17:07:57.675   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:57.675   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:07:57.675   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.677   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.677   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 17:07:57.677   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 17:07:57.677   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 17:07:57.679  1368  1716 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 17:07:57.680   744   744 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 19
+03-14 17:07:57.681   744   744 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:07:57.682  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.687  1368  1716 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:07:57.700  3057  3952 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 17:07:57.700  3057  3952 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 17:07:57.700  3057  3952 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 17:07:57.703  1368  2016 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:07:57.703   744  1316 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc1cf0)
+03-14 17:07:57.703   744  1316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 182
+03-14 17:07:57.704   744  1316 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 17:07:57.704   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 17:07:57.704   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 17:07:57.704   744  1316 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 17:07:57.704   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:07:57.704  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.705  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.706  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.706  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70cd390 is closed.
+03-14 17:07:57.713  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70cfa90 is closed.
+03-14 17:07:57.714  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70cccd0 is closed.
+03-14 17:07:57.715  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70d1c50 is closed.
+03-14 17:07:57.715  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70cffd0 is closed.
+03-14 17:07:57.716  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70cc3d0 is closed.
+03-14 17:07:57.716  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70ceb90 is closed.
+03-14 17:07:57.716  3057  3952 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70cd2d0 is closed.
+03-14 17:07:57.843  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.843  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.843  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.843  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.844  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.845  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.845  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.845  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.845  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.845  3057  3969 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [3969].
+03-14 17:07:57.845  3057  3969 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.845  3057  3969 I pal/stdout: 	 pid 3969's priority: 4, name: ASR5_CFG
+03-14 17:07:57.845  3057  3969 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.845  3057  3969 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.845  3057  3969 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.845  3057  3971 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1464224960] ID [3971].
+03-14 17:07:57.845  3057  3971 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.845  3057  3971 I pal/stdout: 	 pid 3971's priority: 4, name: ASR5_Worker1
+03-14 17:07:57.845  3057  3971 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.845  3057  3971 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.845  3057  3971 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.846  3057  3970 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1465265344] ID [3970].
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.846  3057  3970 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.846  3057  3970 I pal/stdout: 	 pid 3970's priority: 4, name: ASR5_Worker0
+03-14 17:07:57.846  3057  3970 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.846  3057  3970 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.846  3057  3973 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [3973].
+03-14 17:07:57.846  3057  3973 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.846  3057  3973 I pal/stdout: 	 pid 3973's priority: 4, name: ASR5_Worker3
+03-14 17:07:57.846  3057  3973 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.846  3057  3973 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.846  3057  3973 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.846  3057  3972 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1463184576] ID [3972].
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.846  3057  3972 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.846  3057  3972 I pal/stdout: 	 pid 3972's priority: 4, name: ASR5_Worker2
+03-14 17:07:57.846  3057  3972 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.846  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.846  3057  3974 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [3974].
+03-14 17:07:57.846  3057  3974 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.846  3057  3974 I pal/stdout: 	 pid 3974's priority: 4, name: ASR5_Dispatcher
+03-14 17:07:57.847  3057  3974 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.847  3057  3974 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.847  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.847  3057  3974 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.847  3057  3972 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.847  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.847  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.847  3057  3972 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.847  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.847  3057  3975 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [3975].
+03-14 17:07:57.847  3057  3975 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.847  3057  3975 I pal/stdout: 	 pid 3975's priority: 4, name: ASR5_FatalListener
+03-14 17:07:57.847  3057  3975 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.847  3057  3975 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.847  3057  3975 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.848  3057  3970 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.879  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.879  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.879  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.879  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.880  3057  3976 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [3976].
+03-14 17:07:57.880  3057  3976 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.880  3057  3976 I pal/stdout: 	 pid 3976's priority: 4, name: DCC_CREATION_0
+03-14 17:07:57.880  3057  3976 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.880  3057  3976 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.880  3057  3976 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.888  3057  3976 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 17:07:57.891  3057  3976 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:07:57.891  3057  3976 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (60)
+03-14 17:07:57.891  3057  3976 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 17:07:57.892   744  1316 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc6910) io_handle(190) source(6) format 1
+03-14 17:07:57.892   744  1316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 190
+03-14 17:07:57.893   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 17:07:57.895   802  3978 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=3978 ready to run
+03-14 17:07:57.895   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:07:57.897   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:07:57.900  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.901  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.903  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.904  3057  3968 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:07:57.904  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:07:57.904  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:07:57.905  3057  3968 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:07:57.905  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:07:57.905  3057  3979 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-113451840] ID [3979].
+03-14 17:07:57.905  3057  3979 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:07:57.905  3057  3979 I pal/stdout: 	 pid 3979's priority: 4, name: DCC_NORMAL_0
+03-14 17:07:57.905  3057  3979 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:07:57.905  3057  3979 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:07:57.905  3057  3979 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:07:57.906  3057  3979 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70cd390 is closed.
+03-14 17:07:57.909  3057  3979 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 17:07:57.965  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 17:07:57.967  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-14 17:07:57.970  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-14 17:07:57.971   744  1316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 17:07:57.971   744  1316 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 190
+03-14 17:07:57.971   744  1316 D audio_hw_primary: update_patch: enter
+03-14 17:07:57.971   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:07:57.971   744  1316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 20
+03-14 17:07:57.971  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 17:07:57.973   744   744 E device_utils: update_device_list: Invalid device: 0
+03-14 17:07:57.973  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 17:07:57.974  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->A
+03-14 17:07:57.974  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.975  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->B
+03-14 17:07:57.976  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->C
+03-14 17:07:57.976  1368  1419 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 17:07:57.977  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->D
+03-14 17:07:57.977  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:07:57.977  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->E
+03-14 17:07:57.978  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->F
+03-14 17:07:57.978   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.978   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.978  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->G
+03-14 17:07:57.979  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->H
+03-14 17:07:57.979   802  3978 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.979   802  3978 E FMQ     : grantorIdx must be less than 3
+03-14 17:07:57.980  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->I
+03-14 17:07:57.980   744  3981 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc6910)usecase(23: audio-record), source 6
+03-14 17:07:57.980   744  3981 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 17:07:57.980   744  3981 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 17:07:57.980   744  3981 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 17:07:57.980   744  3981 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 17:07:57.980   744  3981 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 17:07:57.980   744  3981 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 17:07:57.980   744  3981 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 17:07:57.980  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->J
+03-14 17:07:57.981   744  3981 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 17:07:57.981   744  3981 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:07:57.981   744  3981 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 17:07:57.981   744  3981 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.981   744  3981 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:07:57.981   744  3981 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 17:07:57.981   744  3981 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.981   744  3981 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 17:07:57.981   744  3981 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 17:07:57.981   744  3981 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:57.981   744  3981 D audio_route: Apply path: voice-rec-mic
+03-14 17:07:57.981  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->K
+03-14 17:07:57.982  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->L
+03-14 17:07:57.982   744  3981 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:07:57.982   744  3981 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 17:07:57.982   744  3981 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 17:07:57.982   744  3981 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 17:07:57.982   744  3981 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:07:57.982   744  3981 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 17:07:57.982   744  3981 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.982   744  3981 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 17:07:57.983   744  3981 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:07:57.983   744  3981 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 17:07:57.983  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->M
+03-14 17:07:57.983   744  3981 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 17:07:57.983   744  3981 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> send_audtable
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 17:07:57.983   744  3981 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 17:07:57.984   744  3981 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 17:07:57.984   744  3981 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 17:07:57.984   744  3981 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 17:07:57.984  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 17:07:57.984   744  3981 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 17:07:57.984   744  3981 D audio_route: Apply path: audio-record
+03-14 17:07:57.985  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 17:07:57.985   744  3981 D audio_hw_primary: select_devices: done
+03-14 17:07:57.985  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 17:07:57.986  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 17:07:57.987  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 17:07:57.988  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->erase
+03-14 17:07:57.988  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->scan code
+03-14 17:07:57.989  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->queue are code
+03-14 17:07:57.991  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->N
+03-14 17:07:57.991  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->O
+03-14 17:07:57.992  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->P
+03-14 17:07:57.992  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Q
+03-14 17:07:57.993  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->R
+03-14 17:07:57.994  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->S
+03-14 17:07:57.994  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->T
+03-14 17:07:57.995  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->U
+03-14 17:07:57.995  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->V
+03-14 17:07:57.996  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->W
+03-14 17:07:57.997  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->X
+03-14 17:07:57.997  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Y
+03-14 17:07:57.998  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Z
+03-14 17:07:57.998  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 17:07:57.999  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 17:07:58.000  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 17:07:58.000  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 17:07:58.001  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->0
+03-14 17:07:58.001  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->space
+03-14 17:07:58.002  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->symbols
+03-14 17:07:58.003  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->shift
+03-14 17:07:58.004  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->caps
+03-14 17:07:58.004  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->forward slash
+03-14 17:07:58.005  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->at sign
+03-14 17:07:58.006  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left parenthesis
+03-14 17:07:58.008  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right parenthesis
+03-14 17:07:58.009  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->apostrophe
+03-14 17:07:58.010  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->quotation mark
+03-14 17:07:58.011   744  3981 D audio_hw_primary: start_input_stream: exit
+03-14 17:07:58.011  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->comma
+03-14 17:07:58.012  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->period
+03-14 17:07:58.013  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->question mark
+03-14 17:07:58.014  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->exclamation point
+03-14 17:07:58.016  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left
+03-14 17:07:58.016  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right
+03-14 17:07:58.017  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->continue
+03-14 17:07:58.018  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->done
+03-14 17:07:58.018  3057  3979 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->enter
+03-14 17:07:58.033  3057  3979 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:07:58.033  3057  3979 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=62  added=62  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 17:07:58.033  3057  3968 I Asr     : Data prep finished event received; proceeding
+03-14 17:07:58.190  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:58.190  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:07:58.190  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 17:08:00.005  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 17:08:00.005  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 17:08:00.026  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:00.792  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:00.796  3057  3968 I Asr     : Restart on not OK 2140
+03-14 17:08:00.796  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:00.798  3057  3968 I Asr     : Restart end 2460
+03-14 17:08:07.295  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:07.797  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1603): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:08.203  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:14.918  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 3 lines
+03-14 17:08:16.182  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:17.637  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1611): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:22.020  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:24.292  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 8 lines
+03-14 17:08:24.629  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:25.826  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:25.830  3057  3968 I Asr     : Restart on not OK 27170
+03-14 17:08:25.830  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:25.832  3057  3968 I Asr     : Restart end 27470
+03-14 17:08:26.105  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:26.108  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:26.110  3057  3968 I Asr     : Restart end 27870
+03-14 17:08:26.435  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:26.438  3057  3968 I Asr     : Restart on not OK 27880
+03-14 17:08:26.438  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:26.441  3057  3968 I Asr     : Restart end 28050
+03-14 17:08:28.917  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1619): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:29.168  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:31.305  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:31.309  3057  3968 I Asr     : Restart on not OK 32660
+03-14 17:08:31.309  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:08:31.311  3057  3968 I Asr     : Restart end 32990
+03-14 17:08:39.177  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1627): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:39.502  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:40.125  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 1 line
+03-14 17:08:40.975  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:41.085  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 17:08:41.087  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 17:08:41.295  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:42.596  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 2 lines
+03-14 17:08:42.885  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:50.106  2243  3226 D NetworkLocation: Schedule high-power scan in 59997ms
+03-14 17:08:50.115  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 17:08:50.130  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 17:08:51.346   753   825 E u-blox  : CAndroidDatabase::reportSvStatus: no satellites in view
+03-14 17:08:51.452  1368  2016 D WifiNl80211Manager: Scan result ready event
+03-14 17:08:51.453  1368  2016 D WifiNative: Scan result ready event
+03-14 17:08:51.476  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 17:08:51.601  2243  3414 E Volley  : [119] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 17:08:51.603  2243  2243 W NetworkLocation: Failed retrieving location for 23 wifi networks
+03-14 17:08:51.603  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 17:08:51.603  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 17:08:51.603  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 17:08:51.603  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 17:08:51.603  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 17:08:51.603  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 17:08:54.537  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:54.646  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 17:08:54.651  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 17:08:56.517  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1635): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:56.517  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:08:56.517  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1637): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:56.517  1100  1100 W ipacm   : type=1400 audit(0.0:1638): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:08:57.105  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:08:59.913  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:00.004  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 17:09:00.004  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 17:09:02.195  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:06.782  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 1 line
+03-14 17:09:07.992  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:10.489  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:09:10.494  3057  3968 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:09:10.497  3057  3968 I Asr     : Restart end 72240
+03-14 17:09:11.797  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1643): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:11.797  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:09:11.797  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1645): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:11.797  1100  1100 W ipacm   : type=1400 audit(0.0:1646): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:13.623  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:17.637  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1651): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:18.010  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:25.718  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 1 line
+03-14 17:09:29.928  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:32.917  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1659): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:32.917  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:09:32.917  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1661): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:32.917  1100  1100 W ipacm   : type=1400 audit(0.0:1662): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:41.414  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:09:41.421  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:09:42.402  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:42.456  2639  2639 D VuzixKeyboard: onStartInputView: android.view.inputmethod.EditorInfo@71791cf true
+03-14 17:09:42.477  3596  3596 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+03-14 17:09:42.511  2639  2639 D VuzixKeyboard: onStartInputView: android.view.inputmethod.EditorInfo@890575c true
+03-14 17:09:43.328   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:09:43.328  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.397   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 17:09:43.401   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:09:43.401   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 17:09:43.401   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 17:09:43.401   744  1316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 17:09:43.401   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:09:43.401   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:09:43.401   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 17:09:43.401   744  1316 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 17:09:43.401   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:09:43.401   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:09:43.401   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:09:43.404   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:09:43.404   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 17:09:43.404   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 17:09:43.404   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 17:09:43.409  1368  1419 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 17:09:43.414   744  1316 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 20
+03-14 17:09:43.414   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:09:43.414  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.418  1368  2017 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:09:43.420  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.421  1368  1381 I chatty  : uid=1000(system) Binder:1368_1 identical 1 line
+03-14 17:09:43.427  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.470  3057  3968 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 17:09:43.471  3057  3968 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 17:09:43.471  3057  3968 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 17:09:43.472  1368  1381 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 17:09:43.474   744  1316 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc6910)
+03-14 17:09:43.474   744  1316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 190
+03-14 17:09:43.474   744  1316 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 17:09:43.474   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 17:09:43.474   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 17:09:43.474   744  1316 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 17:09:43.475   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 17:09:43.477  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.477  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70d1590 is closed.
+03-14 17:09:43.478  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.481  1368  1419 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.489  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70cf790 is closed.
+03-14 17:09:43.491  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70cffd0 is closed.
+03-14 17:09:43.491  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70cc3d0 is closed.
+03-14 17:09:43.492  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70cfcd0 is closed.
+03-14 17:09:43.493  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70d2fd0 is closed.
+03-14 17:09:43.493  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70cd2d0 is closed.
+03-14 17:09:43.494  3057  3968 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70ceb90 is closed.
+03-14 17:09:43.618  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.618  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.618  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.618  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.618  3057  3987 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [3987].
+03-14 17:09:43.618  3057  3987 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.618  3057  3987 I pal/stdout: 	 pid 3987's priority: 4, name: ASR5_CFG
+03-14 17:09:43.618  3057  3987 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.618  3057  3987 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.618  3057  3987 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.620  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.620  3057  3988 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [3988].
+03-14 17:09:43.620  3057  3988 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.620  3057  3988 I pal/stdout: 	 pid 3988's priority: 4, name: ASR5_Worker0
+03-14 17:09:43.620  3057  3988 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.620  3057  3988 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.620  3057  3988 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.620  3057  3989 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1447447744] ID [3989].
+03-14 17:09:43.620  3057  3989 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.620  3057  3989 I pal/stdout: 	 pid 3989's priority: 4, name: ASR5_Worker1
+03-14 17:09:43.620  3057  3989 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.620  3057  3989 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.620  3057  3989 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.620  3057  3990 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1429630144] ID [3990].
+03-14 17:09:43.620  3057  3990 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.620  3057  3990 I pal/stdout: 	 pid 3990's priority: 4, name: ASR5_Worker2
+03-14 17:09:43.620  3057  3990 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.621  3057  3990 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.621  3057  3990 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.621  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.622  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.622  3057  3991 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [3991].
+03-14 17:09:43.622  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.622  3057  3991 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.622  3057  3991 I pal/stdout: 	 pid 3991's priority: 4, name: ASR5_Worker3
+03-14 17:09:43.622  3057  3992 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [3992].
+03-14 17:09:43.622  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.622  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.622  3057  3991 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.622  3057  3993 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [3993].
+03-14 17:09:43.622  3057  3991 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.622  3057  3991 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.622  3057  3992 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.622  3057  3992 I pal/stdout: 	 pid 3992's priority: 4, name: ASR5_Dispatcher
+03-14 17:09:43.622  3057  3992 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.622  3057  3992 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.622  3057  3992 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.622  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.622  3057  3993 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.622  3057  3993 I pal/stdout: 	 pid 3993's priority: 4, name: ASR5_FatalListener
+03-14 17:09:43.622  3057  3993 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.622  3057  3993 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.623  3057  3993 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.654  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.654  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.654  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.654  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.655  3057  3994 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [3994].
+03-14 17:09:43.655  3057  3994 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.655  3057  3994 I pal/stdout: 	 pid 3994's priority: 4, name: DCC_CREATION_0
+03-14 17:09:43.655  3057  3994 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.655  3057  3994 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.655  3057  3994 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.664  3057  3994 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 17:09:43.668  3057  3994 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:09:43.668  3057  3994 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (62)
+03-14 17:09:43.668  3057  3994 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 17:09:43.670   744  1316 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc1cf0) io_handle(198) source(6) format 1
+03-14 17:09:43.670   744  1316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 198
+03-14 17:09:43.670   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 17:09:43.673   802  3996 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=3996 ready to run
+03-14 17:09:43.673   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:09:43.675   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc1cf0) usecase(23: audio-record)
+03-14 17:09:43.678  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.679  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.679  3057  3986 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 17:09:43.679  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 17:09:43.680  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 17:09:43.680  3057  3986 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 17:09:43.680  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:09:43.680  3057  3997 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-113451840] ID [3997].
+03-14 17:09:43.680  3057  3997 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 17:09:43.680  3057  3997 I pal/stdout: 	 pid 3997's priority: 4, name: DCC_NORMAL_0
+03-14 17:09:43.680  3057  3997 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 17:09:43.680  3057  3997 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 17:09:43.680  3057  3997 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 17:09:43.681  3057  3997 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d1590 is closed.
+03-14 17:09:43.682  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.684  3057  3997 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 17:09:43.734  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 17:09:43.741   744  1316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 17:09:43.741   744  1316 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 198
+03-14 17:09:43.741   744  1316 D audio_hw_primary: update_patch: enter
+03-14 17:09:43.741   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 17:09:43.741   744  1316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 21
+03-14 17:09:43.742  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.742  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 17:09:43.742   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 17:09:43.744  1368  1716 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 17:09:43.745   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 17:09:43.745   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 17:09:43.745   802  3996 E FMQ     : grantorIdx must be less than 3
+03-14 17:09:43.745   802  3996 E FMQ     : grantorIdx must be less than 3
+03-14 17:09:43.745   744  3999 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc1cf0)usecase(23: audio-record), source 6
+03-14 17:09:43.746   744  3999 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 17:09:43.746   744  3999 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 17:09:43.746   744  3999 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 17:09:43.746   744  3999 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 17:09:43.746  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-14 17:09:43.746   744  3999 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 17:09:43.746   744  3999 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 17:09:43.746   744  3999 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 17:09:43.746   744  3999 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 17:09:43.746   744  3999 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 17:09:43.746   744  3999 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 17:09:43.746   744  3999 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:09:43.746   744  3999 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 17:09:43.746   744  3999 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 17:09:43.746   744  3999 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:09:43.746   744  3999 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 17:09:43.746   744  3999 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 17:09:43.746   744  3999 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:09:43.746   744  3999 D audio_route: Apply path: voice-rec-mic
+03-14 17:09:43.747   744  3999 D soundtrigger: audio HAL using same device 195 as ST
+03-14 17:09:43.747   744  3999 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 17:09:43.747   744  3999 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 17:09:43.747   744  3999 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 17:09:43.747   744  3999 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 17:09:43.747   744  3999 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 17:09:43.747   744  3999 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 17:09:43.747   744  3999 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 17:09:43.747   744  3999 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:09:43.747   744  3999 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 17:09:43.748   744  3999 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 17:09:43.748   744  3999 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_audtable
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 17:09:43.748   744  3999 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 17:09:43.748   744  3999 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 17:09:43.748   744  3999 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 17:09:43.748  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-14 17:09:43.748   744  3999 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 17:09:43.749   744  3999 D audio_route: Apply path: audio-record
+03-14 17:09:43.749   744  3999 D audio_hw_primary: select_devices: done
+03-14 17:09:43.750  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 17:09:43.751  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 17:09:43.752  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->A
+03-14 17:09:43.753  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->B
+03-14 17:09:43.754  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->C
+03-14 17:09:43.755  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->D
+03-14 17:09:43.755  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->E
+03-14 17:09:43.756  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->F
+03-14 17:09:43.756  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->G
+03-14 17:09:43.757  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->H
+03-14 17:09:43.757  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->I
+03-14 17:09:43.758  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->J
+03-14 17:09:43.759  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->K
+03-14 17:09:43.760  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->L
+03-14 17:09:43.761  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->M
+03-14 17:09:43.761  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 17:09:43.762  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 17:09:43.763  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 17:09:43.764  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 17:09:43.764  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 17:09:43.765  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->erase
+03-14 17:09:43.766  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->scan code
+03-14 17:09:43.767  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->queue are code
+03-14 17:09:43.768  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->N
+03-14 17:09:43.769  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->O
+03-14 17:09:43.769  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->P
+03-14 17:09:43.770  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Q
+03-14 17:09:43.770  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->R
+03-14 17:09:43.771  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->S
+03-14 17:09:43.771  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->T
+03-14 17:09:43.772  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->U
+03-14 17:09:43.773  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->V
+03-14 17:09:43.773  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->W
+03-14 17:09:43.774  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->X
+03-14 17:09:43.775  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Y
+03-14 17:09:43.775   744  3999 D audio_hw_primary: start_input_stream: exit
+03-14 17:09:43.775  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Z
+03-14 17:09:43.776  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 17:09:43.777  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 17:09:43.777  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 17:09:43.778  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 17:09:43.779  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->0
+03-14 17:09:43.779  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->space
+03-14 17:09:43.780  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->symbols
+03-14 17:09:43.781  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->shift
+03-14 17:09:43.782  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->caps
+03-14 17:09:43.782  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->forward slash
+03-14 17:09:43.784  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->at sign
+03-14 17:09:43.785  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left parenthesis
+03-14 17:09:43.786  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right parenthesis
+03-14 17:09:43.787  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->apostrophe
+03-14 17:09:43.788  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->quotation mark
+03-14 17:09:43.789  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->comma
+03-14 17:09:43.790  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->period
+03-14 17:09:43.790  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->question mark
+03-14 17:09:43.792  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->exclamation point
+03-14 17:09:43.793  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left
+03-14 17:09:43.794  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right
+03-14 17:09:43.794  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->continue
+03-14 17:09:43.795  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->done
+03-14 17:09:43.796  3057  3997 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->enter
+03-14 17:09:43.810  3057  3997 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 17:09:43.810  3057  3997 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=62  added=62  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 17:09:43.810  3057  3986 I Asr     : Data prep finished event received; proceeding
+03-14 17:09:43.959  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:09:43.959  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 17:09:43.960  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 17:09:44.460  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:09:44.479  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -55 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:09:50.124  2243  3226 D NetworkLocation: Schedule high-power scan in 59993ms
+03-14 17:09:50.133  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 17:09:50.149  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 17:09:51.494  1368  1716 D WifiNl80211Manager: Scan result ready event
+03-14 17:09:51.494  1368  1716 D WifiNative: Scan result ready event
+03-14 17:09:51.513  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 17:09:51.620  2243  3415 E Volley  : [120] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 17:09:51.625  2243  2243 W NetworkLocation: Failed retrieving location for 18 wifi networks
+03-14 17:09:51.625  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 17:09:51.625  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 17:09:51.625  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 17:09:51.625  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 17:09:51.625  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 17:09:51.625  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 17:09:54.649  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 17:09:54.652  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 17:09:56.597  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1667): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:09:57.659  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:58.966  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:09:59.828  1368  1377 I system_server: Background concurrent copying GC freed 283000(11MB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 12MB/24MB, paused 177us total 196.717ms
+03-14 17:09:59.864  1368  1379 W System  : A resource failed to call release. 
+03-14 17:10:00.005  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 17:10:00.005  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 17:10:00.400  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:02.532  1368  1392 I UsageStatsService: User[0] Flushing usage stats to disk
+03-14 17:10:07.676  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 8 lines
+03-14 17:10:08.816  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:11.096  3104  3104 D TimeSyncService: Writing date 1773522611096 to disk
+03-14 17:10:11.281  3104  3120 W timesyncservic: Reducing the number of considered missed Gc histogram windows from 240 to 100
+03-14 17:10:11.549  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:11.957  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1675): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:12.564  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:14.350  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 9 lines
+03-14 17:10:14.690  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:14.776  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:10:14.789  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:10:14.850  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:17.537  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 13 lines
+03-14 17:10:17.716  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:17.717  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1683): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:17.717  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:10:17.717  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1685): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:17.717  1100  1100 W ipacm   : type=1400 audit(0.0:1686): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:17.824  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:10:17.848  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -54 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:10:17.911  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:20.458  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 9 lines
+03-14 17:10:20.653  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:20.869  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:10:20.880  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:10:21.299  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:23.540  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 11 lines
+03-14 17:10:23.758  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:23.915  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 17:10:23.927  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -55 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 17:10:24.197  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:32.618  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 30 lines
+03-14 17:10:33.008  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:33.077  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1691): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:33.077  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:10:33.077  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1693): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:33.077  1100  1100 W ipacm   : type=1400 audit(0.0:1694): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:33.248  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:47.410  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 48 lines
+03-14 17:10:47.638  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:49.396  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:10:49.400  3057  3986 I Asr     : Restart on not OK 65200
+03-14 17:10:49.400  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:10:49.402  3057  3986 I Asr     : Restart end 65410
+03-14 17:10:49.831  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:50.008  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:50.169  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 17:10:50.169  2243  3226 D NetworkLocation: Schedule high-power scan in 59991ms
+03-14 17:10:50.186  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 17:10:50.193  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:51.146  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 5 lines
+03-14 17:10:51.348  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:51.503  1368  1716 D WifiNl80211Manager: Scan result ready event
+03-14 17:10:51.503  1368  1716 D WifiNative: Scan result ready event
+03-14 17:10:51.523  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 17:10:51.543  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:51.610  2243  3413 E Volley  : [118] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 17:10:51.611  2243  2243 W NetworkLocation: Failed retrieving location for 17 wifi networks
+03-14 17:10:51.611  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 17:10:51.611  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 17:10:51.611  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 17:10:51.611  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 17:10:51.611  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 17:10:51.611  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 17:10:51.720  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:53.797  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 10 lines
+03-14 17:10:54.432  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:54.635  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 17:10:54.638  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 17:10:54.848  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:56.332  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 6 lines
+03-14 17:10:56.543  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:56.597  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1699): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:10:56.749  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:10:59.687  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 12 lines
+03-14 17:10:59.890  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:00.003  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 17:11:00.004  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 17:11:00.086  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:11.041  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 44 lines
+03-14 17:11:11.242  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:11.477  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1707): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:11.477  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:11:11.477  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1709): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:11.477  1100  1100 W ipacm   : type=1400 audit(0.0:1710): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:11.629  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:17.397  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 27 lines
+03-14 17:11:17.614  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:17.717  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1715): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:17.717  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:11:17.717  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1717): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:17.717  1100  1100 W ipacm   : type=1400 audit(0.0:1718): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:17.843  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:21.051  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 11 lines
+03-14 17:11:21.733  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:22.553  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:22.558  3057  3986 I Asr     : Restart on not OK 98280
+03-14 17:11:22.559  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:22.562  3057  3986 I Asr     : Restart end 98540
+03-14 17:11:27.339  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:28.275  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:33.237  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1723): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:36.795  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:37.593  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:37.597  3057  3986 I Asr     : Restart on not OK 113290
+03-14 17:11:37.597  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:37.600  3057  3986 I Asr     : Restart end 113610
+03-14 17:11:41.103  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:41.108  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:41.111  3057  3986 I Asr     : Restart end 117010
+03-14 17:11:42.590  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:42.595  3057  3986 I Asr     : Restart on not OK 118250
+03-14 17:11:42.595  3057  3986 I AsrConfiguration: Add app: VuzixApp-en
+03-14 17:11:42.598  3057  3986 I Asr     : Restart end 118500
+03-14 17:11:43.624  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:49.168  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 2 lines
+03-14 17:11:49.858  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:50.183  2243  3226 D NetworkLocation: Schedule high-power scan in 59994ms
+03-14 17:11:50.186  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 17:11:50.205  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 17:11:51.078  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:51.540  1368  1381 D WifiNl80211Manager: Scan result ready event
+03-14 17:11:51.540  1368  1381 D WifiNative: Scan result ready event
+03-14 17:11:51.557  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 17:11:51.658  2243  3416 E Volley  : [121] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 17:11:51.659  2243  2243 W NetworkLocation: Failed retrieving location for 19 wifi networks
+03-14 17:11:51.659  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 17:11:51.659  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 17:11:51.659  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 17:11:51.659  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 17:11:51.659  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 17:11:51.659  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 17:11:52.960  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:54.138  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:54.351   753   825 E u-blox  : CAndroidDatabase::reportSvStatus: no satellites in view
+03-14 17:11:54.415  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:54.646  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 17:11:54.646  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 17:11:54.654  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:55.105  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 2 lines
+03-14 17:11:55.353  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:56.597  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1731): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:56.597  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 17:11:56.597  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:1733): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:56.597  1100  1100 W ipacm   : type=1400 audit(0.0:1734): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 17:11:56.626  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 17:11:58.349  1368  1453 I chatty  : uid=1000(system) InputDispatcher identical 1 line
+03-14 17:11:59.655  1368  1453 D InputDispatcher: Waiting to send key to Window{61d63a u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change

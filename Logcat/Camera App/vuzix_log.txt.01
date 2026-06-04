@@ -1,0 +1,435 @@
+03-08 23:08:18.120   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 23:08:18.120   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:18.120   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 23:08:18.120   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:18.123   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-08 23:08:18.123   679  1493 D audio_hw_primary: out_standby: exit
+03-08 23:08:18.125  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:19.912  5510  5528 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10017; state: ENABLED
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: Failed to query
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: android.os.OperationCanceledException: The operation has been canceled.
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.os.CancellationSignal.throwIfCanceled(CancellationSignal.java:58)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:193)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at com.android.documentsui.DirectoryLoader.loadInBackground(DirectoryLoader.java:125)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at com.android.documentsui.DirectoryLoader.loadInBackground(DirectoryLoader.java:51)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:321)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:74)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:62)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-08 23:08:19.921  5510  5539 W DirectoryLoader: 	at com.android.documentsui.ProviderExecutor.run(ProviderExecutor.java:104)
+03-08 23:08:19.923  2360  2545 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.09
+03-08 23:08:19.923  2360  2545 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 23:08:19.923  2360  2545 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 23:08:19.926  2360  2545 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 23:08:20.093  3205  3217 W externalstorag: Reducing the number of considered missed Gc histogram windows from 731 to 100
+03-08 23:08:21.896  5481  5500 I x.fileslaunche: Waiting for a blocking GC ProfileSaver
+03-08 23:08:21.907  5481  5500 I x.fileslaunche: WaitForGcToComplete blocked ProfileSaver on AddRemoveAppImageSpace for 11.968ms
+03-08 23:08:21.918  5481  5493 I x.fileslaunche: WaitForGcToComplete blocked RunEmptyCheckpoint on ProfileSaver for 10.253ms
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: Failed to query
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: android.os.OperationCanceledException: The operation has been canceled.
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.os.CancellationSignal.throwIfCanceled(CancellationSignal.java:58)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:193)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at com.android.documentsui.DirectoryLoader.loadInBackground(DirectoryLoader.java:125)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at com.android.documentsui.DirectoryLoader.loadInBackground(DirectoryLoader.java:51)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:321)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:74)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:62)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-08 23:08:23.090  5510  5539 W DirectoryLoader: 	at com.android.documentsui.ProviderExecutor.run(ProviderExecutor.java:104)
+03-08 23:08:23.092  2360  5235 W MediaProvider: Database update failed while renaming /storage/emulated/0/vuzix_log.txt.09
+03-08 23:08:23.092  2360  5235 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-08 23:08:23.092  2360  5235 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-08 23:08:23.097  2360  5235 I MediaProvider: Retrying database update after deleting conflicting entry
+03-08 23:08:23.137  2833  2845 W m.android.shel: Reducing the number of considered missed Gc histogram windows from 731 to 100
+03-08 23:08:23.150  2899  2911 W android.traceu: Reducing the number of considered missed Gc histogram windows from 731 to 100
+03-08 23:08:23.152  2508  2524 W d.process.medi: Reducing the number of considered missed Gc histogram windows from 731 to 100
+03-08 23:08:24.110  1380  1464 D InputDispatcher: Waiting to send key to Window{fe82c2f u0 com.android.documentsui/com.android.documentsui.files.FilesActivity} because there are unprocessed events that may cause focus to change
+03-08 23:08:24.131  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:24.131   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 23:08:24.132   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:24.132   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.132   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 23:08:24.132   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:24.132   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 23:08:24.132   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 23:08:24.132   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 23:08:24.132   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:24.132   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:24.132   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:24.132   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:24.132   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 23:08:24.132   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:24.132   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.132   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 23:08:24.132   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 23:08:24.132   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 23:08:24.132   679  2944 D audio_route: Apply path: speaker
+03-08 23:08:24.133  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:24.134   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 23:08:24.134   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 23:08:24.134   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 23:08:24.134   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 23:08:24.134   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 23:08:24.134   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.134   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:24.134   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:24.134   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 23:08:24.135   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.135   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 23:08:24.135   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:08:24.135   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.135   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:24.135   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 23:08:24.135   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 23:08:24.137   679  2944 D audio_hw_primary: select_devices: done
+03-08 23:08:24.169   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 23:08:24.169   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 23:08:24.170   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 23:08:24.170   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:24.170   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:24.474   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:08:24.476  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:25.401   679  1493 D audio_hw_primary: out_standby: enter: stream (0xeac80010) usecase(1: low-latency-playback)
+03-08 23:08:25.491   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-08 23:08:25.495   679  1493 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-08 23:08:25.495   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-08 23:08:25.495   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.495   679  1493 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:25.495   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:25.495   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 23:08:25.495   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:25.495   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 23:08:25.495   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.503   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-08 23:08:25.503   679  1493 D audio_hw_primary: out_standby: exit
+03-08 23:08:25.508  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:25.524  1592  1592 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-08 23:08:25.535  1592  1592 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-08 23:08:25.651   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 23:08:25.652   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 23:08:25.652   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:25.652   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:25.652   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.652   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 23:08:25.652   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:25.652   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 23:08:25.652   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:25.652   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 23:08:25.652   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 23:08:25.652   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 23:08:25.652   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:25.652   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:25.652   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:25.652  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:25.652   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:25.652   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 23:08:25.652   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:25.652   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 23:08:25.653   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.653   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 23:08:25.653   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 23:08:25.653   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 23:08:25.653   679  2944 D audio_route: Apply path: speaker
+03-08 23:08:25.653  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:25.657   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 23:08:25.657   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 23:08:25.657   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 23:08:25.657   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 23:08:25.657   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 23:08:25.657   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.657   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:25.658   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:25.658   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 23:08:25.659   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.659   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 23:08:25.659   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:08:25.659   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.659   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:25.659   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 23:08:25.659   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 23:08:25.662   679  2944 D audio_hw_primary: select_devices: done
+03-08 23:08:25.690   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 23:08:25.690   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 23:08:25.692   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 23:08:25.692   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:25.692   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:26.136  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:26.136   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:08:26.331  1380  1464 D InputDispatcher: Waiting to send key to Window{fe82c2f u0 com.android.documentsui/com.android.documentsui.files.FilesActivity} because there are unprocessed events that may cause focus to change
+03-08 23:08:26.338  5510  5510 W ActionModeController: Tried to finish a null action mode.
+03-08 23:08:26.352  1380  1932 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:26.653  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:26.653   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:08:27.587   679  1493 D audio_hw_primary: out_standby: enter: stream (0xeac80010) usecase(1: low-latency-playback)
+03-08 23:08:27.670   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-08 23:08:27.675   679  1493 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-08 23:08:27.675   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-08 23:08:27.675   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:27.675   679  1493 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:27.675   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:27.675   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 23:08:27.675   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:27.675   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 23:08:27.675   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:27.678   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-08 23:08:27.678   679  1493 D audio_hw_primary: out_standby: exit
+03-08 23:08:27.681  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:28.411  1380  1464 D InputDispatcher: Waiting to send key to Window{fe82c2f u0 com.android.documentsui/com.android.documentsui.files.FilesActivity} because there are unprocessed events that may cause focus to change
+03-08 23:08:30.428  1380  1464 D InputDispatcher: Waiting to send key to Window{862a3bc u0 PopupWindow:827ab73} because there are unprocessed events that may cause focus to change
+03-08 23:08:30.444  5510  5510 W ActionModeController: Tried to finish a null action mode.
+03-08 23:08:30.450  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:30.451   679  2944 D audio_hw_primary: start_output_stream: enter: stream(0xeac80010)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-08 23:08:30.451   679  2944 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-08 23:08:30.451  1380  3834 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:30.451   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:30.451   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:30.451   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.451   679  2944 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-08 23:08:30.451   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:30.451   679  2944 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-08 23:08:30.451   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-08 23:08:30.452   679  2944 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-08 23:08:30.452   679  2944 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-08 23:08:30.452   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-08 23:08:30.452   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:30.452   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:30.452   679  2944 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-08 23:08:30.452   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-08 23:08:30.452   679  2944 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-08 23:08:30.452   679  2944 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:30.452   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-08 23:08:30.452   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.452   679  2944 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-08 23:08:30.452   679  2944 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-08 23:08:30.452   679  2944 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-08 23:08:30.452   679  2944 D audio_route: Apply path: speaker
+03-08 23:08:30.454   679  2944 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-08 23:08:30.454   679  2944 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-08 23:08:30.454   679  2944 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-08 23:08:30.454   679  2944 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-08 23:08:30.454   679  2944 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-08 23:08:30.454   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.454   679  2944 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-08 23:08:30.454   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:30.454   679  2944 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-08 23:08:30.455   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.455   679  2944 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-08 23:08:30.455   679  2944 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-08 23:08:30.455   679  2944 D ACDB-LOADER: ACDB -> send_asm_topology
+03-08 23:08:30.455   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-08 23:08:30.455   679  2944 D ACDB-LOADER: ACDB -> send_adm_topology
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_audtable
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_audvoltable
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_afe_topology
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_afe_cal
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-08 23:08:30.456   679  2944 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-08 23:08:30.456   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.456   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:30.456   679  2944 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-08 23:08:30.456   679  2944 D audio_route: Apply path: low-latency-playback
+03-08 23:08:30.457   679  2944 D audio_hw_primary: select_devices: done
+03-08 23:08:30.486   679  2944 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-08 23:08:30.486   679  2944 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-08 23:08:30.487   679  2944 D audio_hw_primary: start_output_stream: exit
+03-08 23:08:30.487   679  2944 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:30.487   679  2944 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:30.530  1165  1165 I ExtendedUtils: printFileName fd(9) -> /storage/emulated/0/DCIM/Camera/VID_20260308_230712.mp4
+03-08 23:08:30.543  1156  1156 I MMParserExtractor: Created(0x6f3f6731d0)
+03-08 23:08:30.543  1156  1156 E MM_OSAL : FileSource::FileSource
+03-08 23:08:30.543  1156  1156 E MM_OSAL : FileSource::FileSource m_bEveryThingOK 1
+03-08 23:08:30.551  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:08:30.551  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:08:30.551  1156  1156 E Utils   : did not find width and/or height
+03-08 23:08:30.553  1156  1156 E Utils   : did not find width and/or height
+03-08 23:08:30.554  1165  1165 E MetadataRetrieverClient: failed to extract an album art
+03-08 23:08:30.554  2360  4265 E MediaMetadataRetrieverJNI: getEmbeddedPicture: Call to getEmbeddedPicture failed.
+03-08 23:08:30.556  1156  1156 E Utils   : did not find width and/or height
+03-08 23:08:30.557  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:08:30.565  1156  1156 E MM_OSAL : resetPlayback no need to reset
+03-08 23:08:30.566  1165  1165 D FrameDecoder: FrameDecoder created
+03-08 23:08:30.566  1165  1165 I FrameDecoder: using surface mode
+03-08 23:08:30.570  1165  5569 I OMXClient: IOmx service obtained
+03-08 23:08:30.570  1189  1189 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in android.hardwar process
+03-08 23:08:30.576  1189  1189 E android.hardware.media.omx@1.0-service: Service not available yet
+03-08 23:08:30.578  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.578  1189  1189 D PlatformConfig: getConfigStoreBool: vpp/enable=false, returning false 
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInt32 Config name: vidc_dec_log_in value: 0
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInt32 Config name: vidc_dec_log_out value: 0
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInt32 Config name: vidc_dec_hfr_fps value: 0
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.583  1189  1189 D PlatformConfig: getInt32 Config name: vidc_dec_arb_mode_override value: 4
+03-08 23:08:30.588  1189  1189 I OMX-VDEC-1080P: Video slvp perflock acquired
+03-08 23:08:30.589  1189  1189 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=7
+03-08 23:08:30.590  1189  1189 E OMX-VDEC-1080P: Unsupported output color format for c2d (2141391876)
+03-08 23:08:30.590  1189  1189 E OMX-VDEC-1080P: Setting color format failed
+03-08 23:08:30.595  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.595  1189  1189 D PlatformConfig: getInt32: Returning default
+03-08 23:08:30.595  1189  1189 D PlatformConfig: getInstance: Enter
+03-08 23:08:30.595  1189  1189 D PlatformConfig: getInt32: Returning default
+03-08 23:08:30.596  1189  1189 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=7
+03-08 23:08:30.598  1165  5568 D MediaCodec: flushMediametrics
+03-08 23:08:30.598  1165  5568 D SurfaceUtils: connecting to surface 0xeb7c4ba8, reason connectToSurface
+03-08 23:08:30.599  1165  5568 I MediaCodec: [OMX.qcom.video.decoder.avc] setting surface generation to 1192962
+03-08 23:08:30.599  1165  5568 D SurfaceUtils: disconnecting from surface 0xeb7c4ba8, reason connectToSurface(reconnect)
+03-08 23:08:30.599  1165  5568 D SurfaceUtils: connecting to surface 0xeb7c4ba8, reason connectToSurface(reconnect)
+03-08 23:08:30.599  1189  1189 E OMX-VDEC-1080P: Extension: OMX.google.android.index.storeANWBufferInMetadata not implemented
+03-08 23:08:30.599  1189  1189 E OMX-VDEC-1080P: Extension: OMX.google.android.index.configureVideoTunnelMode not implemented
+03-08 23:08:30.599  1189  1189 E OMX-VDEC-1080P: Extension: OMX.google.android.index.useAndroidNativeBuffer is supported
+03-08 23:08:30.599  1189  1189 E OMX-VDEC-1080P: get_parameter: unknown param 7f000046
+03-08 23:08:30.599  1189  1189 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000046)) ERROR: UnsupportedIndex(0x8000101a)
+03-08 23:08:30.600  1189  5184 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
+03-08 23:08:30.600  1189  5184 E OMX-VDEC-1080P: set_parameter: Error: 0x80001019, setting param 0x7f00005d
+03-08 23:08:30.600  1189  5184 E OMXNodeInstance: setParameter(0xe5b50024:qcom.decoder.avc, OMX.google.android.index.allocateNativeHandle(0x7f00005d): Output:1 en=0) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:08:30.600  1189  5184 E OMX-VDEC-1080P: Extension: OMX.google.android.index.storeANWBufferInMetadata not implemented
+03-08 23:08:30.600  1189  5184 E OMX-VDEC-1080P: get_parameter: unknown param 6f600011
+03-08 23:08:30.600  1189  5184 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x6f600011)) ERROR: UnsupportedIndex(0x8000101a)
+03-08 23:08:30.600  1165  5569 I ExtendedACodec: setupVideoDecoder()
+03-08 23:08:30.601  1165  5569 I ExtendedACodec: Thumbnail mode enabled.
+03-08 23:08:30.602  1189  5184 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:08:30.602  1189  5184 E OMXNodeInstance: getParameter(0xe5b50024:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:08:30.603  1165  5569 W ACodec  : [OMX.qcom.video.decoder.avc] does not support color format 2130708361
+03-08 23:08:30.603  1165  5569 D ACodec  : Setting [OMX.qcom.video.decoder.avc] input port buffer number: 1
+03-08 23:08:30.603  1165  5569 D ACodec  : Setting [OMX.qcom.video.decoder.avc] output port buffer number: 1
+03-08 23:08:30.605  1189  5184 E OMX-VDEC-1080P: Extension: OMX.google.android.index.describeHDR10PlusInfo not implemented
+03-08 23:08:30.605  1165  5569 I ExtendedACodec: Decoder will be in frame by frame mode
+03-08 23:08:30.608  1189  5184 E OMX-VDEC-1080P: Does not handle dataspace request
+03-08 23:08:30.608  1189  5184 E OMXNodeInstance: getConfig(0xe5b50024:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:08:30.614  1189  5184 E OMX-VDEC-1080P: Extension: OMX.google.android.index.AndroidNativeBufferConsumerUsage not implemented
+03-08 23:08:30.615  1165  5569 D SurfaceUtils: set up nativeWindow 0xeb7c4ba8 for 1920x1080, color 0x7fa30c06, rotation 180, usage 0x20002900
+03-08 23:08:30.616  1165  5568 W ResourceManagerService: Ignoring request to add new resource entry with value <= 0
+03-08 23:08:30.619  1156  1156 D MediaBufferGroup: creating MemoryDealer
+03-08 23:08:30.652  1189  5183 E OMX-VDEC-1080P: Does not handle dataspace request
+03-08 23:08:30.652  1189  5183 E OMXNodeInstance: getConfig(0xe5b50024:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
+03-08 23:08:30.654  1189  5184 E OMX-VDEC-1080P: Extension: OMX.QTI.index.config.video.getdsmode not implemented
+03-08 23:08:30.679  1189  5184 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
+03-08 23:08:30.681  1189  5184 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=7
+03-08 23:08:30.681  1189  5184 I OMX-VDEC-1080P: Video slvp perflock released
+03-08 23:08:30.682  1189  5184 E ANDR-PERF-TP: ~PerfThreadPool() 391: ~PerfThreadPool 
+03-08 23:08:30.682  1189  5184 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+03-08 23:08:30.690  1165  5568 D SurfaceUtils: disconnecting from surface 0xeb7c4ba8, reason disconnectFromSurface
+03-08 23:08:30.691  1165  1165 D FrameDecoder: FrameDecoder destroyed
+03-08 23:08:30.691  1165  1165 D MediaCodec: flushMediametrics
+03-08 23:08:30.790  1380  3835 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-08 23:08:30.790   736  1208 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-08 23:08:30.792  5510  5533 D OpenGLRenderer: endAllActiveAnimators on 0x72e00a4db0 (MenuPopupWindow$MenuDropDownListView) with handle 0x720003de40
+03-08 23:08:31.716   679  1493 D audio_hw_primary: out_standby: enter: stream (0xeac80010) usecase(1: low-latency-playback)
+03-08 23:08:31.800   679  1493 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-08 23:08:31.802   679  1493 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-08 23:08:31.802   679  1493 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-08 23:08:31.802   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:31.802   679  1493 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-08 23:08:31.802   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:31.802   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-08 23:08:31.802   679  1493 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-08 23:08:31.802   679  1493 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-08 23:08:31.802   679  1493 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-08 23:08:31.805   679  1493 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0

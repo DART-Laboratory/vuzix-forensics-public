@@ -1,0 +1,1306 @@
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:32:35.801   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:32:35.801   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:32:35.801   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:32:35.801   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:32:35.801   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:32:35.802   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:32:35.817  2423  2458 I MediaProvider: Invalidating LocalCallingIdentity cache for package org.chromium.webview_shell. Reason: op android:read_external_storage
+03-14 18:32:35.818  2423  2458 I chatty  : uid=10164(com.android.providers.media.module) Binder:2423_2 identical 1 line
+03-14 18:32:35.820  2423  2458 I MediaProvider: Invalidating LocalCallingIdentity cache for package org.chromium.webview_shell. Reason: op android:read_external_storage
+03-14 18:32:35.822  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:32:35.822  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:32:35.822  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:32:35.825  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:32:35.830  2774  2774 V GrantPermissionsActivity: Permission grant result requestId=-4674943284053944098 callingUid=10036 callingPackage=org.chromium.webview_shell permission=android.permission.WRITE_EXTERNAL_STORAGE isImplicit=false result=4
+03-14 18:32:35.830  2774  2774 V GrantPermissionsActivity: Permission grant result requestId=-4674943284053944098 callingUid=10036 callingPackage=org.chromium.webview_shell permission=android.permission.READ_EXTERNAL_STORAGE isImplicit=true result=4
+03-14 18:32:35.833   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:32:35.833   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:32:35.834   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:32:35.834   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:32:35.834   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:32:35.839  1368  2016 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:32:35.888  2774  5409 D OpenGLRenderer: endAllActiveAnimators on 0x726710cba0 (RippleDrawable) with handle 0x7187139250
+03-14 18:32:35.891  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:32:35.891  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:32:35.891  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:32:35.923  3596  3673 W chromium: [WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 59
+03-14 18:32:36.001  1368  3847 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:32:36.001  1368  3847 D CompatibilityInfo: applicationDensity - 212
+03-14 18:32:36.001  1368  3847 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:32:36.007  3596  3596 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10036; state: DISABLED
+03-14 18:32:36.026  2374  5414 D DownloadManager: [2] Starting
+03-14 18:32:36.038  1368  2016 W WindowManager: Unable to start animation, surface is null or no children.
+03-14 18:32:36.056  2374  2831 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10008; state: ENABLED
+03-14 18:32:36.057  2374  5414 I TetheringManager: registerTetheringEventCallback:com.android.providers.downloads
+03-14 18:32:36.066  2374  5414 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:32:36.069  2374  5414 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:32:36.073  2374  5414 I DpmTcmClient: RegisterTcmMonitor from: $Proxy1
+03-14 18:32:36.133   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:32:36.134  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:32:36.143  2374  2398 W d.process.medi: Reducing the number of considered missed Gc histogram windows from 734 to 100
+03-14 18:32:36.271  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008: granting content://settings/system/notification_sound
+03-14 18:32:36.272  1368  1368 I chatty  : uid=1000 system_server identical 2 lines
+03-14 18:32:36.272  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008: granting content://settings/system/notification_sound
+03-14 18:32:36.278  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:36.285  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.285  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.285  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:36.289  1368  2017 D CompatibilityChangeReporter: Compat change id reported: 149924527; UID 10008; state: ENABLED
+03-14 18:32:36.292  1368  2192 D CompatibilityChangeReporter: Compat change id reported: 132649864; UID 10008; state: DISABLED
+03-14 18:32:36.299  2374  5414 W StorageManager: fallocate() not supported; falling back to ftruncate()
+03-14 18:32:36.474  2374  5414 D DownloadManager: [2] Finished with status SUCCESS
+03-14 18:32:36.492  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:36.495  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.495  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.495  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:36.564  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.564  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.564  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:36.566  2476  2476 W VuzixNotificationListener: onNotificationRemoved: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.566  2476  2476 I VuzixNotificationListener: remove: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:36.717  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|3:2|10008: granting content://settings/system/notification_sound
+03-14 18:32:36.718  1368  1368 I chatty  : uid=1000 system_server identical 2 lines
+03-14 18:32:36.719  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|3:2|10008: granting content://settings/system/notification_sound
+03-14 18:32:36.721  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:36.727  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.728  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.728  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:36.809  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.809  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.809  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:36.811  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.811  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:36.811  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:37.064   744  1316 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:32:37.147   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:32:37.149   744  1316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:32:37.149   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:32:37.149   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:32:37.149   744  1316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:32:37.149   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:32:37.149   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:32:37.149   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:32:37.149   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:32:37.149   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:32:37.151   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:32:37.152   744  1316 D audio_hw_primary: out_standby: exit
+03-14 18:32:37.154  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:32:38.014  1368  1453 D InputDispatcher: Waiting to send key to Window{32a7aa7 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:32:38.034  3596  3596 E WebViewShell: https://dartlab.org/assets/pdf/mirage.pdf
+03-14 18:32:38.087  3596  3673 W chromium: [WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 63
+03-14 18:32:38.166  1368  2017 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:32:38.167  1368  2017 D CompatibilityInfo: applicationDensity - 212
+03-14 18:32:38.167  1368  2017 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:32:38.196  2374  5424 D DownloadManager: [3] Starting
+03-14 18:32:38.227  2374  5424 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:32:38.230  2374  5424 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+03-14 18:32:38.232  2374  5424 I DpmTcmClient: RegisterTcmMonitor from: $Proxy1
+03-14 18:32:38.397  2374  5424 W StorageManager: fallocate() not supported; falling back to ftruncate()
+03-14 18:32:38.436  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.437  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.437  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.445  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008: granting content://settings/system/notification_sound
+03-14 18:32:38.446  1368  1368 I chatty  : uid=1000 system_server identical 2 lines
+03-14 18:32:38.446  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008: granting content://settings/system/notification_sound
+03-14 18:32:38.447  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:38.451  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.451  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.451  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:38.530  2374  5424 D DownloadManager: [3] Finished with status SUCCESS
+03-14 18:32:38.580  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.580  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.580  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.593  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.593  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.593  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:38.653  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.653  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.654  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.659  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.659  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.659  2476  2476 W VuzixNotificationListener: shouldShowPopup 1 true
+03-14 18:32:38.663  2476  2476 W VuzixNotificationListener: onNotificationRemoved: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.663  2476  2476 I VuzixNotificationListener: remove: 0|com.android.providers.downloads|0|1:org.chromium.webview_shell|10008
+03-14 18:32:38.781  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.781  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.781  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.587  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:38.788  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|3:3|10008: granting content://settings/system/notification_sound
+03-14 18:32:38.789  1368  1368 I chatty  : uid=1000 system_server identical 2 lines
+03-14 18:32:38.790  1368  1368 D NotificationService: 0|com.android.providers.downloads|0|3:3|10008: granting content://settings/system/notification_sound
+03-14 18:32:38.796  1368  1368 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+03-14 18:32:38.799  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.799  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.799  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.848  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.848  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.848  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.851  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.851  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.851  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.858  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.858  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:2|10008
+03-14 18:32:38.858  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:38.860  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.860  2476  2476 I VuzixNotificationListener: notify: 0|com.android.providers.downloads|0|3:3|10008
+03-14 18:32:38.860  2476  2476 W VuzixNotificationListener: shouldShowPopup 3 false
+03-14 18:32:39.541  1368  2192 W NotificationService: Toast already killed. pkg=org.chromium.webview_shell token=android.os.BinderProxy@a4d90ab
+03-14 18:32:39.601  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:32:39.610  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=186398Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -56 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:32:42.636  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:32:42.642  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=186398Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -52 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:32:43.051  1368  2016 W NotificationService: Toast already killed. pkg=org.chromium.webview_shell token=android.os.BinderProxy@2653d95
+03-14 18:32:46.066  1368  1453 D InputDispatcher: Waiting to send key to Window{32a7aa7 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:32:46.837  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4011): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:32:48.892  2476  2476 W VuzixNotificationListener: onNotificationRankingUpdate
+03-14 18:32:48.893  2476  2476 W VuzixNotificationListener: onNotificationRankingUpdate
+03-14 18:32:48.893  2476  2476 I VuzixNotificationListener: reorder
+03-14 18:32:48.893  2476  2476 I VuzixNotificationListener: reorder
+03-14 18:32:49.795  2434  2434 I Choreographer: Skipped 61 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:49.847  2434  2566 I OpenGLRenderer: Davey! duration=1079ms; Flags=1, IntendedVsync=7379684792335, Vsync=7380701458961, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=7380713636611, AnimationStart=7380713641194, PerformTraversalsStart=7380713644736, DrawStart=7380761720413, SyncQueued=7380761866090, SyncStart=7380762280308, IssueDrawCommandsStart=7380762349058, SwapBuffers=7380763565204, FrameCompleted=7380764617340, DequeueBufferDuration=151771, QueueBufferDuration=381823, GpuCompleted=0, 
+03-14 18:32:50.529  1368  1368 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@9319340
+03-14 18:32:51.654  2434  2434 I Choreographer: Skipped 91 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:51.678  2434  2566 I OpenGLRenderer: Davey! duration=1544ms; Flags=1, IntendedVsync=7381051544459, Vsync=7382568211065, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=7382572690516, AnimationStart=7382572693849, PerformTraversalsStart=7382572696089, DrawStart=7382592899735, SyncQueued=7382593003224, SyncStart=7382593314579, IssueDrawCommandsStart=7382593451610, SwapBuffers=7382594912183, FrameCompleted=7382596139370, DequeueBufferDuration=405260, QueueBufferDuration=750052, GpuCompleted=0, 
+03-14 18:32:51.784  3596  3596 W Choreographer: Frame time is 0.029888 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+03-14 18:32:52.744  2434  2434 I Choreographer: Skipped 61 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:52.772  2434  2566 I OpenGLRenderer: Davey! duration=1054ms; Flags=1, IntendedVsync=7382634909239, Vsync=7383651575865, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=7383662729734, AnimationStart=7383662734943, PerformTraversalsStart=7383662737547, DrawStart=7383685745255, SyncQueued=7383685846401, SyncStart=7383686829839, IssueDrawCommandsStart=7383686993120, SwapBuffers=7383688572964, FrameCompleted=7383689898484, DequeueBufferDuration=494687, QueueBufferDuration=455730, GpuCompleted=0, 
+03-14 18:32:52.956  2243  3226 D NetworkLocation: Schedule high-power scan in 59998ms
+03-14 18:32:52.960  2243  3228 D NetworkLocation: Not yet implemented: onSuccess
+03-14 18:32:52.969  1368  1479 D WifiNative: Scan trigered from WifiNative
+03-14 18:32:53.936  2434  2434 I Choreographer: Skipped 50 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:54.041  1368  1368 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@f361892
+03-14 18:32:54.306  1368  2192 D WifiNl80211Manager: Scan result ready event
+03-14 18:32:54.306  1368  2192 D WifiNative: Scan result ready event
+03-14 18:32:54.315  1368  1479 D WificondScannerImpl: Filtering out 1 scan results.
+03-14 18:32:54.416  2243  3414 E Volley  : [119] NetworkUtility.shouldRetryException: Unexpected response code 404 for https://location.services.mozilla.com/v1/geolocate?key=068ab754-c06b-473d-a1e5-60e7b1a2eb77
+03-14 18:32:54.417  2243  2243 W NetworkLocation: Failed retrieving location for 16 wifi networks
+03-14 18:32:54.417  2243  2243 W NetworkLocation: com.android.volley.ClientError
+03-14 18:32:54.417  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.NetworkUtility.shouldRetryException(NetworkUtility.java:193)
+03-14 18:32:54.417  2243  2243 W NetworkLocation: 	at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:145)
+03-14 18:32:54.417  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:132)
+03-14 18:32:54.417  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+03-14 18:32:54.417  2243  2243 W NetworkLocation: 	at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+03-14 18:32:54.843  2434  2434 I Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:56.576  2434  2434 I Choreographer: Skipped 71 frames!  The application may be doing too much work on its main thread.
+03-14 18:32:56.598  2434  2566 I OpenGLRenderer: Davey! duration=1213ms; Flags=1, IntendedVsync=7386301691108, Vsync=7387485024394, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=7387494582077, AnimationStart=7387494587858, PerformTraversalsStart=7387494591191, DrawStart=7387513581608, SyncQueued=7387513687441, SyncStart=7387514125462, IssueDrawCommandsStart=7387514203431, SwapBuffers=7387515341139, FrameCompleted=7387516109941, DequeueBufferDuration=171406, QueueBufferDuration=293229, GpuCompleted=0, 
+03-14 18:32:59.397  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4019): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:00.010  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 18:33:00.010  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 18:33:00.206  1368  1453 D InputDispatcher: Waiting to send key to Window{32a7aa7 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:33:02.563  2434  2434 I Choreographer: Skipped 68 frames!  The application may be doing too much work on its main thread.
+03-14 18:33:02.615  2434  2566 I OpenGLRenderer: Davey! duration=1196ms; Flags=1, IntendedVsync=7392335213627, Vsync=7393468546915, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=7393481403012, AnimationStart=7393481409574, PerformTraversalsStart=7393481412960, DrawStart=7393529269106, SyncQueued=7393529396762, SyncStart=7393530599991, IssueDrawCommandsStart=7393530679522, SwapBuffers=7393532335772, FrameCompleted=7393533244106, DequeueBufferDuration=501771, QueueBufferDuration=346719, GpuCompleted=0, 
+03-14 18:33:05.115  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:33:05.119  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:33:07.280  1368  1454 I WindowManager: sleepRelease() calling goToSleep(GO_TO_SLEEP_REASON_SLEEP_BUTTON)
+03-14 18:33:07.281  1368  1454 I PowerManagerService: Going to sleep due to sleep_button (uid 1000)...
+03-14 18:33:07.287  1368  1401 I PowerManagerService: Sleeping (uid 1000)...
+03-14 18:33:07.305  1524  2199 D KeyguardViewMediator: onStartedGoingToSleep(2)
+03-14 18:33:07.315  1524  2199 D KeyguardViewMediator: notifyStartedGoingToSleep
+03-14 18:33:07.322  1524  1524 V KeyguardUpdateMonitor: startListeningForFingerprint()
+03-14 18:33:07.322  1524  1524 D KeyguardViewMediator: handleNotifyStartedGoingToSleep
+03-14 18:33:07.463   753   825 E u-blox  : CAndroidDatabase::reportSvStatus: no satellites in view
+03-14 18:33:07.776  1368  1401 I DisplayPowerController: Blocking screen off
+03-14 18:33:07.778  1368  1401 I DisplayPowerController: Unblocked screen off after 1 ms
+03-14 18:33:07.795  1368  1401 D ActivityTaskManager: Top Process State changed to PROCESS_STATE_TOP_SLEEPING
+03-14 18:33:07.810  1368  1401 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:07.814  1524  1545 D KeyguardViewMediator: notifyScreenTurnedOff
+03-14 18:33:07.814  1524  1524 D KeyguardViewMediator: handleNotifyScreenTurnedOff
+03-14 18:33:07.815   759   759 I sensors-hal: activate:209, android.sensor.device_orientation/272 en=0
+03-14 18:33:07.816   759   759 I sensors-hal: activate:220, android.sensor.device_orientation/272 en=0 completed
+03-14 18:33:07.819  1368  1401 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+03-14 18:33:07.819  1368  1401 V DisplayPowerController: Brightness [-1.0] reason changing to: 'screen_off', previous reason: 'manual'.
+03-14 18:33:07.820   816   816 D SurfaceFlinger: Setting power mode 0 on display 19260646516051329
+03-14 18:33:07.820   754   860 I SDM     : DisplayBase::SetDisplayState: Set state = 0, display 26-0
+03-14 18:33:07.825  1368  1386 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+03-14 18:33:07.837  1368  1386 I InputManager-JNI: Viewport [0] to add: local:19260646516051329, isActive: false
+03-14 18:33:07.839  1368  1454 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+03-14 18:33:07.839  1368  1454 I InputReader: Device reconfigured: id=9, name='qbt1000_key_input', size 854x480, orientation 0, mode 4, display id 0
+03-14 18:33:07.839  1368  1454 I InputReader: Device reconfigured: id=6, name='vuzix_touch', size 854x480, orientation 0, mode 1, display id 0
+03-14 18:33:07.839  1368  1454 I InputReader: Device reconfigured: id=3, name='vuzix_abs', size 854x480, orientation 0, mode 4, display id 0
+03-14 18:33:07.893   754   860 I SDM     : HWCSession::HandleConcurrency: sec_builtin_active 0
+03-14 18:33:07.894   816   816 D SurfaceFlinger: Finished setting power mode 0 on display 19260646516051329
+03-14 18:33:07.896   758   758 I QTI PowerHAL: Got set_interactive hint on= 0, count= 2
+03-14 18:33:07.896   758   758 E QTI PowerHAL: Error opening /sys/kernel/hbtp/display_pwr: No such file or directory
+03-14 18:33:07.897   623   630 I android.system.suspend@1.0-service: automatic system suspend enabled
+03-14 18:33:07.898  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:33:07.898  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:33:07.898  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:33:07.902  1524  1545 D KeyguardViewMediator: onFinishedGoingToSleep(2)
+03-14 18:33:07.902  1524  1545 D KeyguardViewMediator: notifyFinishedGoingToSleep
+03-14 18:33:07.904  1524  1524 D KeyguardViewMediator: handleNotifyFinishedGoingToSleep
+03-14 18:33:07.905  1524  1524 V KeyguardStatusView: Schedule setEnableMarquee: Disable
+03-14 18:33:07.905  1524  1524 V KeyguardStatusView: Disable transport text marquee
+03-14 18:33:07.906  1524  1524 V KeyguardUpdateMonitor: startListeningForFingerprint()
+03-14 18:33:07.907   744  1316 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+03-14 18:33:07.907   744  1316 D audio_hw_hfp: hfp_set_parameters: enter
+03-14 18:33:07.907   744  1316 W sound_trigger_hw: sound_trigger_hw_call_back: Unknown event 17
+03-14 18:33:07.907   744  1316 D audio_hw_extn: audio_extn_fm_set_parameters: Enter
+03-14 18:33:07.909  1524  1524 D StatusBar: updateQsExpansionEnabled - QS Expand enabled: true
+03-14 18:33:07.932  2312  2312 E SUI_svcsock: svc_sock_send_message(suisvc): invalid remote socket suitch
+03-14 18:33:07.932  2312  2312 E SUI_svcsock: svc_sock_send_message(suisvc): invalid remote socket suilst
+03-14 18:33:07.938  2165  2165 D SYS_EVENT: send event 8 notification to client
+03-14 18:33:07.946  3057  3057 D VzxSrSpeechRecognitionService: screen changed - OFF - triggered:false
+03-14 18:33:10.517  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4027): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:10.517  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 18:33:10.517  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4029): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:10.517  1100  1100 W ipacm   : type=1400 audit(0.0:4030): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:11.505  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+03-14 18:33:11.509  1524  1524 D KeyguardUpdateMonitor: handleBatteryUpdate
+03-14 18:33:12.048  1368  1454 I PowerManagerService: Waking up from Asleep (uid=1000, reason=WAKE_REASON_WAKE_KEY, details=android.policy:KEY)...
+03-14 18:33:12.054  1524  1545 D KeyguardViewMediator: onStartedWakingUp, seq = 2
+03-14 18:33:12.054  1524  1545 D KeyguardViewMediator: notifyStartedWakingUp
+03-14 18:33:12.055  1524  1524 D KeyguardViewMediator: handleNotifyWakingUp
+03-14 18:33:12.056  1524  1524 V KeyguardStatusView: Schedule setEnableMarquee: Enable
+03-14 18:33:12.061  2165  2165 D SYS_EVENT: send event 64 notification to client
+03-14 18:33:12.063  1368  1401 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+03-14 18:33:12.063  2312  2312 E SUI_svcsock: svc_sock_send_message(suisvc): invalid remote socket suilst
+03-14 18:33:12.063  1368  1401 D ActivityTaskManager: Top Process State changed to PROCESS_STATE_TOP
+03-14 18:33:12.066  1524  1524 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+03-14 18:33:12.081  1524  1524 D KeyguardUpdateMonitor: handleTimeUpdate
+03-14 18:33:12.093  1524  2199 D KeyguardViewMediator: notifyScreenOn
+03-14 18:33:12.092  1368  1401 V DisplayPowerController: Brightness [0.39763778] reason changing to: 'manual', previous reason: 'screen_off'.
+03-14 18:33:12.093  1524  1524 D KeyguardViewMediator: handleNotifyScreenTurningOn
+03-14 18:33:12.096   758   758 I QTI PowerHAL: Got set_interactive hint on= 1, count= 3
+03-14 18:33:12.096   758   758 E QTI PowerHAL: Error opening /sys/kernel/hbtp/display_pwr: No such file or directory
+03-14 18:33:12.105   816   816 D SurfaceFlinger: Setting power mode 2 on display 19260646516051329
+03-14 18:33:12.106   754  4197 I SDM     : DisplayBase::SetDisplayState: Set state = 1, display 26-0
+03-14 18:33:12.107   759   759 I sensors-hal: batch:242, android.sensor.device_orientation/272, period=66667000, max_latency=0
+03-14 18:33:12.108   759   759 I sensors-hal: set_config:63, sample_period_ns is adjusted to 0 based on min/max delay_ns
+03-14 18:33:12.108   759   759 I sensors-hal: batch:251, android.sensor.device_orientation/272, period=66667000, max_latency=0 request completed
+03-14 18:33:12.108   759   759 I sensors-hal: activate:209, android.sensor.device_orientation/272 en=1
+03-14 18:33:12.108   759   759 I sensors-hal: get_qmi_debug_flag:241, support_qmi_debug : false
+03-14 18:33:12.110   759   759 I sensors-hal: activate:220, android.sensor.device_orientation/272 en=1 completed
+03-14 18:33:12.110  1368  1401 I DisplayPowerController: Unblocked screen on after 48 ms
+03-14 18:33:12.111   759  5436 I sensors-hal: ssc_conn_resp_cb:663, resp_value = 0
+03-14 18:33:12.127   744  1316 D audio_hw_primary: adev_set_parameters: enter: screen_state=on
+03-14 18:33:12.127   744  1316 D audio_hw_hfp: hfp_set_parameters: enter
+03-14 18:33:12.127   744  1316 W sound_trigger_hw: sound_trigger_hw_call_back: Unknown event 17
+03-14 18:33:12.127   744  1316 D audio_hw_extn: audio_extn_fm_set_parameters: Enter
+03-14 18:33:12.129  1368  1386 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+03-14 18:33:12.143  1368  1386 I InputManager-JNI: Viewport [0] to add: local:19260646516051329, isActive: true
+03-14 18:33:12.145  1368  1454 I InputReader: Reconfiguring input devices, changes=DISPLAY_INFO | 
+03-14 18:33:12.145  1368  1454 I InputReader: Device reconfigured: id=9, name='qbt1000_key_input', size 854x480, orientation 0, mode 4, display id 0
+03-14 18:33:12.145  1368  1454 I InputReader: Device reconfigured: id=6, name='vuzix_touch', size 854x480, orientation 0, mode 1, display id 0
+03-14 18:33:12.145  1368  1454 I InputReader: Device reconfigured: id=3, name='vuzix_abs', size 854x480, orientation 0, mode 4, display id 0
+03-14 18:33:12.150  1627  2118 D QCNEJ/WlanStaInfoRelay: Received action: android.net.wifi.RSSI_CHANGED
+03-14 18:33:12.154  3007  3033 D OtaMonitorService:  onCapabilitiesChanged 100 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=178867Kbps LinkDnBandwidth>=188281Kbps SignalStrength: -54 OwnerUid: 1000 AdministratorUids: [] SSID: "wahoo" RequestorUid: -1 RequestorPackageName: null]
+03-14 18:33:12.180  2312  2312 E SUI_svcsock: svc_sock_send_message(suisvc): invalid remote socket suilst
+03-14 18:33:12.181  2165  2165 D SYS_EVENT: send event 16 notification to client
+03-14 18:33:12.187  3057  3057 D VzxSrSpeechRecognitionService: screen changed - ON - sleepTrigger:false
+03-14 18:33:12.386  1524  1524 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{cbd74e4 I.E...... ......ID 0,0-854,480} canPanelBeCollapsed(): false
+03-14 18:33:12.391  1368  1384 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.vuzix.launcher.m400/com.vuzix.launcher.common.activity.LauncherActivity (has extras)} from uid 0
+03-14 18:33:12.400  1368  1384 D CompatibilityInfo: mCompatibilityFlags - 10
+03-14 18:33:12.400  1368  1384 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:12.400  1368  1384 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:12.402  1368  1384 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:12.422  1368  1523 E ANDR-PERF-JNI: UXEngine Trigger - Returning null
+03-14 18:33:12.458   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc17b0) usecase(23: audio-record)
+03-14 18:33:12.459  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.482  1368  1387 E SurfaceFlinger: captureLayers failed to readInt32: -2
+03-14 18:33:12.507   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 18:33:12.508   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:12.508   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 18:33:12.508   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 18:33:12.508   744  1316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 18:33:12.508   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:12.508   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:12.508   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 18:33:12.508   744  1316 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 18:33:12.508   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:12.508   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:33:12.508   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:12.509   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:12.509   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 18:33:12.509   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 18:33:12.509   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 18:33:12.511  1368  2192 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 18:33:12.512   744   744 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 78
+03-14 18:33:12.512   744   744 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:33:12.513  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.513  1368  2017 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:33:12.525  3057  5371 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 18:33:12.525  3057  5371 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 18:33:12.525  3057  5371 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 18:33:12.525  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70d3a50 is closed.
+03-14 18:33:12.528  1368  3529 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:33:12.528  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.528  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.528   744  1316 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc17b0)
+03-14 18:33:12.529   744  1316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 654
+03-14 18:33:12.529   744  1316 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 18:33:12.529   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 18:33:12.529   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 18:33:12.529   744  1316 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 18:33:12.529   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc17b0) usecase(23: audio-record)
+03-14 18:33:12.529  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.532  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70d17d0 is closed.
+03-14 18:33:12.533  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70cf310 is closed.
+03-14 18:33:12.533  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70d0390 is closed.
+03-14 18:33:12.533  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70d0690 is closed.
+03-14 18:33:12.533  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70d1590 is closed.
+03-14 18:33:12.534  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70d1c50 is closed.
+03-14 18:33:12.534  3057  5371 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70cded0 is closed.
+03-14 18:33:12.563   754  4197 I SDM     : HWCSession::HandleConcurrency: sec_builtin_active 0
+03-14 18:33:12.563   816   816 D SurfaceFlinger: Finished setting power mode 2 on display 19260646516051329
+03-14 18:33:12.563  1368  1515 D SurfaceControl: Excessive delay in setPowerMode()
+03-14 18:33:12.564  1368  1401 W PowerManagerService: Screen on took 516 ms
+03-14 18:33:12.565  1524  1891 D KeyguardViewMediator: notifyScreenTurnedOn
+03-14 18:33:12.609  1524  1524 D KeyguardViewMediator: handleNotifyScreenTurnedOn
+03-14 18:33:12.619  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.619  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.619  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.620  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.620  3057  5441 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [5441].
+03-14 18:33:12.620  3057  5441 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.620  3057  5441 I pal/stdout: 	 pid 5441's priority: 4, name: ASR5_CFG
+03-14 18:33:12.620  3057  5441 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.620  3057  5441 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.620  3057  5441 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.620  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.620  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.620  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.620  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.621  3057  5442 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [5442].
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.621  3057  5442 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.621  3057  5442 I pal/stdout: 	 pid 5442's priority: 4, name: ASR5_Worker0
+03-14 18:33:12.621  3057  5442 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.621  3057  5442 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.621  3057  5442 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.621  3057  5443 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1430670528] ID [5443].
+03-14 18:33:12.621  3057  5443 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.621  3057  5443 I pal/stdout: 	 pid 5443's priority: 4, name: ASR5_Worker1
+03-14 18:33:12.621  3057  5443 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.621  3057  5443 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.621  3057  5443 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.621  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.622  3057  5444 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1429630144] ID [5444].
+03-14 18:33:12.622  3057  5444 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.622  3057  5444 I pal/stdout: 	 pid 5444's priority: 4, name: ASR5_Worker2
+03-14 18:33:12.622  3057  5444 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.622  3057  5444 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.622  3057  5444 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.622  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.622  3057  5445 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [5445].
+03-14 18:33:12.622  3057  5445 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.622  3057  5445 I pal/stdout: 	 pid 5445's priority: 4, name: ASR5_Worker3
+03-14 18:33:12.622  3057  5445 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.622  3057  5445 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.622  3057  5445 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.622  3057  5446 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [5446].
+03-14 18:33:12.622  3057  5446 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.622  3057  5446 I pal/stdout: 	 pid 5446's priority: 4, name: ASR5_Dispatcher
+03-14 18:33:12.622  3057  5446 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.622  3057  5446 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.622  3057  5446 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.623  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.623  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.623  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.623  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.623  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.623  3057  5447 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [5447].
+03-14 18:33:12.623  3057  5447 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.623  3057  5447 I pal/stdout: 	 pid 5447's priority: 4, name: ASR5_FatalListener
+03-14 18:33:12.623  3057  5447 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.623  3057  5447 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.623  3057  5447 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.653  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.653  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.653  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.653  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.653  3057  5448 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [5448].
+03-14 18:33:12.654  3057  5448 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.654  3057  5448 I pal/stdout: 	 pid 5448's priority: 4, name: DCC_CREATION_0
+03-14 18:33:12.654  3057  5448 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.654  3057  5448 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.654  3057  5448 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.658  3057  5448 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 18:33:12.659  3057  5448 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:33:12.659  3057  5448 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (93)
+03-14 18:33:12.659  3057  5448 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 18:33:12.661   744  1316 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc3f10) io_handle(662) source(6) format 1
+03-14 18:33:12.661   744  1316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 662
+03-14 18:33:12.661   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:33:12.662   802  5450 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=5450 ready to run
+03-14 18:33:12.662   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc3f10) usecase(23: audio-record)
+03-14 18:33:12.663   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc3f10) usecase(23: audio-record)
+03-14 18:33:12.665  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.665  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.666  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.667  3057  5440 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:12.668  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:12.668  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:12.668  3057  5440 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:12.668  3057  5440 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:33:12.668  3057  5451 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-314352448] ID [5451].
+03-14 18:33:12.668  3057  5451 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:12.668  3057  5451 I pal/stdout: 	 pid 5451's priority: 4, name: DCC_NORMAL_0
+03-14 18:33:12.668  3057  5451 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:12.668  3057  5451 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:12.668  3057  5451 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:12.669  3057  5451 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d3a50 is closed.
+03-14 18:33:12.671  3057  5451 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 18:33:12.673   759  5436 I sensors-hal: handle_indication_realtime:471,  SCHED_FIFO(10) for qmi_cbk
+03-14 18:33:12.686  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 18:33:12.688   744  1316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 18:33:12.688   744  1316 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 662
+03-14 18:33:12.688   744  1316 D audio_hw_primary: update_patch: enter
+03-14 18:33:12.688   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:33:12.688   744  1316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 79
+03-14 18:33:12.689  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.689  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:12.689   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:33:12.694  1368  3529 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 18:33:12.696   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:12.696   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:12.697   802  5450 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:12.697   802  5450 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:12.697   744  5453 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc3f10)usecase(23: audio-record), source 6
+03-14 18:33:12.698   744  5453 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 18:33:12.699   744  5453 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 18:33:12.699   744  5453 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 18:33:12.699   744  5453 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 18:33:12.699   744  5453 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 18:33:12.699   744  5453 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 18:33:12.699   744  5453 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 18:33:12.699   744  5453 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 18:33:12.699   744  5453 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:12.699   744  5453 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 18:33:12.699   744  5453 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:12.699   744  5453 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:33:12.699   744  5453 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 18:33:12.699   744  5453 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:12.699   744  5453 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 18:33:12.699   744  5453 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 18:33:12.699   744  5453 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:12.699   744  5453 D audio_route: Apply path: voice-rec-mic
+03-14 18:33:12.699   744  5453 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:12.699   744  5453 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 18:33:12.699   744  5453 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 18:33:12.699   744  5453 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 18:33:12.699   744  5453 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:12.699   744  5453 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 18:33:12.699   744  5453 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:12.700   744  5453 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 18:33:12.700   744  5453 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:12.700   744  5453 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 18:33:12.700   744  5453 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:12.700   744  5453 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:33:12.700   744  5453 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 18:33:12.700   744  5453 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:33:12.701   744  5453 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:33:12.701   744  5453 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 18:33:12.701   744  5453 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 18:33:12.701   744  5453 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 18:33:12.701   744  5453 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:33:12.701   744  5453 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 18:33:12.701   744  5453 D audio_route: Apply path: audio-record
+03-14 18:33:12.701   744  5453 D audio_hw_primary: select_devices: done
+03-14 18:33:12.712  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-14 18:33:12.715  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-14 18:33:12.716  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please enter evaluation mode
+03-14 18:33:12.719  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please exit evaluation mode
+03-14 18:33:12.722  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Speech settings
+03-14 18:33:12.723  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Speech commands
+03-14 18:33:12.725  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Command list
+03-14 18:33:12.726  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Torch on
+03-14 18:33:12.727  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flashlight on
+03-14 18:33:12.727   744  5453 D audio_hw_primary: start_input_stream: exit
+03-14 18:33:12.728  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Torch off
+03-14 18:33:12.730  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flashlight off
+03-14 18:33:12.731  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go to sleep
+03-14 18:33:12.733  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->View notifications
+03-14 18:33:12.734  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open notifications
+03-14 18:33:12.736  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a picture
+03-14 18:33:12.738  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Start recording
+03-14 18:33:12.739  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a video
+03-14 18:33:12.740  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Okay
+03-14 18:33:12.741  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open
+03-14 18:33:12.742  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Confirm
+03-14 18:33:12.743  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Select this
+03-14 18:33:12.744  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pick this
+03-14 18:33:12.745  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move left
+03-14 18:33:12.746  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go left
+03-14 18:33:12.747  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll left
+03-14 18:33:12.749  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move right
+03-14 18:33:12.750  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go right
+03-14 18:33:12.752  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll right
+03-14 18:33:12.753  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move up
+03-14 18:33:12.754  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go up
+03-14 18:33:12.755  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll up
+03-14 18:33:12.756  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move down
+03-14 18:33:12.757  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go down
+03-14 18:33:12.758  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll down
+03-14 18:33:12.759  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 18:33:12.760  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 18:33:12.761  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cancel
+03-14 18:33:12.762  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go home
+03-14 18:33:12.763  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quit
+03-14 18:33:12.764  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Show menu
+03-14 18:33:12.766  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page down
+03-14 18:33:12.767  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page up
+03-14 18:33:12.769  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume down
+03-14 18:33:12.770  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume up
+03-14 18:33:12.771  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Stop
+03-14 18:33:12.772  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Browser
+03-14 18:33:12.773  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Camera
+03-14 18:33:12.773  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->camstrm
+03-14 18:33:12.775  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cognitive EMS
+03-14 18:33:12.776  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Downloads
+03-14 18:33:12.777  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Files
+03-14 18:33:12.777  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Gallery
+03-14 18:33:12.778  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->HelloAR Java
+03-14 18:33:12.780  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Notifications
+03-14 18:33:12.782  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quick Start
+03-14 18:33:12.783  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scanner
+03-14 18:33:12.784  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Screen Cam
+03-14 18:33:12.785  3057  5451 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Settings
+03-14 18:33:12.801  3057  5451 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:33:12.801  3057  5451 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=58  added=58  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 18:33:12.801  3057  5440 I Asr     : Data prep finished event received; proceeding
+03-14 18:33:12.908  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:33:12.908  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:33:12.908  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 18:33:14.058  1524  1524 V KeyguardStatusView: Enable transport text marquee
+03-14 18:33:14.584   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:33:14.585   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:33:14.585   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:33:14.585   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:14.585   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.585   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:33:14.585   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:14.585   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:33:14.585   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:14.585   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:33:14.585   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:33:14.585   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:33:14.585   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:33:14.585   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:33:14.585   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:33:14.585   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:33:14.585   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:33:14.585   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:33:14.586   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:33:14.586   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.586   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:33:14.586   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:33:14.586   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:33:14.586   744  3383 D audio_route: Apply path: speaker
+03-14 18:33:14.588   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:33:14.588   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:33:14.588   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:33:14.588   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:33:14.588   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:33:14.588   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.588   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:33:14.588   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:14.588   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:33:14.589  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:14.589   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.589   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:33:14.589   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:33:14.590   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:33:14.590   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.590   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:33:14.590   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:33:14.590   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:33:14.590  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:14.592   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:33:14.618   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:33:14.619   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:33:14.620   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:33:14.620   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:14.620   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:33:15.471  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:15.472   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:15.608  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:16.427  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:16.428   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:16.607  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:17.045  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:17.047   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:17.439  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:17.839  1368  3847 I chatty  : uid=1000(system) Binder:1368_C identical 1 line
+03-14 18:33:17.884  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:18.666  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:18.666   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:19.308  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:19.745  1368  3847 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:19.746   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:20.106  1368  1453 D InputDispatcher: Waiting to send key to Window{c496339 u0 com.vuzix.launcher.m400/com.vuzix.launcher.common.activity.LauncherActivity} because there are unprocessed events that may cause focus to change
+03-14 18:33:20.114  1368  2192 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 pkg=com.vuzix.downloadslauncher cmp=com.vuzix.downloadslauncher/.Downloads} from uid 10014
+03-14 18:33:20.116  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.129   772   830 E ANDR-PERF-OPTSHANDLER: Perflock resource /sys/class/devfreq/soc:qcom,llccbw/min_freq not supported
+03-14 18:33:20.129   772   830 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [12, 0]
+03-14 18:33:20.131  1368  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.131  1368  2192 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.131  1368  2192 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.132  1368  2192 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:20.139  1368  1386 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10066; state: DISABLED
+03-14 18:33:20.140  1368  1394 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10066; state: ENABLED
+03-14 18:33:20.157  1112  1112 D Zygote  : Forked child process 5461
+03-14 18:33:20.159  5461  5461 W Zygote  : Unable to open libbeluga.so: dlopen failed: library "libbeluga.so" not found.
+03-14 18:33:20.160  1368  1394 I ActivityManager: Start proc 5461:com.vuzix.downloadslauncher/u0a66 for pre-top-activity {com.vuzix.downloadslauncher/com.vuzix.downloadslauncher.Downloads}
+03-14 18:33:20.167  5461  5461 E wnloadslaunche: Not starting debugger since process cannot load the jdwp agent.
+03-14 18:33:20.173  1368  3529 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.173  1368  3529 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.173  1368  3529 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.175  1368  3529 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.175  1368  3529 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.175  1368  3529 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.192  5461  5461 I Perf    : Connecting to perf service.
+03-14 18:33:20.196  5461  5461 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:20.196  5461  5461 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:20.201   816  1925 W DisplayIdentification: Invalid EDID: falling back to serial number due to missing display name.
+03-14 18:33:20.201   816  1925 W DisplayIdentification: Invalid EDID: falling back to ASCII text due to missing serial number.
+03-14 18:33:20.208  1368  3529 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW_DOWNLOADS cmp=com.android.documentsui/.ViewDownloadsActivity} from uid 10066
+03-14 18:33:20.214  1368  3529 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.214  1368  3529 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.214  1368  3529 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.214  1368  3529 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:20.218  1368  1386 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10017; state: DISABLED
+03-14 18:33:20.219  1368  1394 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10017; state: ENABLED
+03-14 18:33:20.242  1112  1112 D Zygote  : Forked child process 5485
+03-14 18:33:20.243  5485  5485 W Zygote  : Unable to open libbeluga.so: dlopen failed: library "libbeluga.so" not found.
+03-14 18:33:20.244  1368  1394 I ActivityManager: Start proc 5485:com.android.documentsui/u0a17 for pre-top-activity {com.android.documentsui/com.android.documentsui.ViewDownloadsActivity}
+03-14 18:33:20.256  5485  5485 E oid.documentsu: Not starting debugger since process cannot load the jdwp agent.
+03-14 18:33:20.264  1368  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.264  1368  2192 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.264  1368  2192 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.267  1368  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:20.267  1368  2192 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:20.267  1368  2192 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:20.289  5485  5485 I Perf    : Connecting to perf service.
+03-14 18:33:20.294  5485  5485 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:20.294  5485  5485 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:20.317   816  1404 W DisplayIdentification: Invalid EDID: falling back to serial number due to missing display name.
+03-14 18:33:20.318   816  1404 W DisplayIdentification: Invalid EDID: falling back to ASCII text due to missing serial number.
+03-14 18:33:20.377  5485  5485 W ActionModeController: Tried to finish a null action mode.
+03-14 18:33:20.381   744   744 D audio_hw_primary: in_standby: enter: stream (0xf3dc3f10) usecase(23: audio-record)
+03-14 18:33:20.383  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: QUALCOMM build                   : 10e0ec675f, Ie80613d716
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Build Date                       : 06/09/22
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Local Branch                     : 
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Reconstruct Branch               : 
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-14 18:33:20.390  5485  5507 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-14 18:33:20.393  5485  5507 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-14 18:33:20.403  5485  5485 W View    : requestLayout() improperly called by com.android.documentsui.sidebar.RootsList{9edb4f VFED.VC.. ......ID 0,0-371,376 #7f0900d9 app:id/roots_list} during layout: running second layout pass
+03-14 18:33:20.406   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+03-14 18:33:20.406  5485  5507 I Gralloc4: mapper 4.x is not supported
+03-14 18:33:20.406   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+03-14 18:33:20.406  5485  5507 W Gralloc3: mapper 3.x is not supported
+03-14 18:33:20.416   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:33:20.417  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.421  1368  1392 I ActivityTaskManager: Displayed com.android.documentsui/.ViewDownloadsActivity: +300ms
+03-14 18:33:20.424   744   744 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 18:33:20.425   744   744 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:20.425   744   744 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 18:33:20.425   744   744 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 18:33:20.425   744   744 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 18:33:20.425   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:20.425   744   744 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:20.425   744   744 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 18:33:20.425   744   744 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 18:33:20.425   744   744 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:20.425   744   744 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:33:20.425   744   744 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:20.426   744   744 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:20.426   744   744 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 18:33:20.426   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 18:33:20.426   744   744 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 18:33:20.427  1368  2192 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 18:33:20.428   744  1316 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 79
+03-14 18:33:20.428   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:33:20.429  1368  2192 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.429   816  1002 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10017 pid=5485
+03-14 18:33:20.429   816  1002 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10017 => denied (298 us)
+03-14 18:33:20.429  1368  2017 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:33:20.438  3057  5440 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 18:33:20.438  3057  5440 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 18:33:20.438  3057  5440 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 18:33:20.439  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70cf250 is closed.
+03-14 18:33:20.441  1368  3529 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:33:20.441  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.442  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.442  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70d3450 is closed.
+03-14 18:33:20.442  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.442  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70d0690 is closed.
+03-14 18:33:20.442   744  1316 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc3f10)
+03-14 18:33:20.442   744  1316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 662
+03-14 18:33:20.442   744  1316 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 18:33:20.442   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 18:33:20.442   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 18:33:20.442   744  1316 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 18:33:20.442   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc3f10) usecase(23: audio-record)
+03-14 18:33:20.443  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70d1590 is closed.
+03-14 18:33:20.444  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70d2610 is closed.
+03-14 18:33:20.444  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70d3b10 is closed.
+03-14 18:33:20.444  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70cded0 is closed.
+03-14 18:33:20.444  3057  5440 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70d1c50 is closed.
+03-14 18:33:20.506  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.506  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.506  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.506  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.507  3057  5526 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [5526].
+03-14 18:33:20.507  3057  5526 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.507  3057  5526 I pal/stdout: 	 pid 5526's priority: 4, name: ASR5_CFG
+03-14 18:33:20.507  3057  5526 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.507  3057  5526 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.507  3057  5526 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.507  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.507  3057  5527 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [5527].
+03-14 18:33:20.508  3057  5527 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.508  3057  5527 I pal/stdout: 	 pid 5527's priority: 4, name: ASR5_Worker0
+03-14 18:33:20.508  3057  5527 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.508  3057  5528 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1447447744] ID [5528].
+03-14 18:33:20.508  3057  5528 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.508  3057  5528 I pal/stdout: 	 pid 5528's priority: 4, name: ASR5_Worker1
+03-14 18:33:20.508  3057  5528 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.508  3057  5528 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.508  3057  5527 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.508  3057  5527 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.508  3057  5528 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.508  3057  5529 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1429630144] ID [5529].
+03-14 18:33:20.508  3057  5529 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.508  3057  5529 I pal/stdout: 	 pid 5529's priority: 4, name: ASR5_Worker2
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.508  3057  5529 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.508  3057  5530 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [5530].
+03-14 18:33:20.508  3057  5530 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.508  3057  5530 I pal/stdout: 	 pid 5530's priority: 4, name: ASR5_Worker3
+03-14 18:33:20.508  3057  5530 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.508  3057  5530 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.508  3057  5530 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.508  3057  5529 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.508  3057  5529 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.508  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.508  3057  5531 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [5531].
+03-14 18:33:20.508  3057  5531 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.508  3057  5531 I pal/stdout: 	 pid 5531's priority: 4, name: ASR5_Dispatcher
+03-14 18:33:20.508  3057  5531 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.508  3057  5531 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.508  3057  5531 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.509  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.509  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.509  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.509  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.509  3057  5532 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [5532].
+03-14 18:33:20.509  3057  5532 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.509  3057  5532 I pal/stdout: 	 pid 5532's priority: 4, name: ASR5_FatalListener
+03-14 18:33:20.509  3057  5532 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.509  3057  5532 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.509  3057  5532 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.538  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.538  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.538  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.538  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.539  3057  5533 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [5533].
+03-14 18:33:20.539  3057  5533 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.539  3057  5533 I pal/stdout: 	 pid 5533's priority: 4, name: DCC_CREATION_0
+03-14 18:33:20.539  3057  5533 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.539  3057  5533 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.539  3057  5533 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.543  3057  5533 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 18:33:20.545  3057  5533 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:33:20.545  3057  5533 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (58)
+03-14 18:33:20.545  3057  5533 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 18:33:20.546   744  1316 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc17b0) io_handle(670) source(6) format 1
+03-14 18:33:20.546   744  1316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 670
+03-14 18:33:20.546   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:33:20.547   802  5535 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=5535 ready to run
+03-14 18:33:20.547   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc17b0) usecase(23: audio-record)
+03-14 18:33:20.548   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc17b0) usecase(23: audio-record)
+03-14 18:33:20.549  1368  5119 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.549  1368  5119 I chatty  : uid=1000(system) Binder:1368_D identical 1 line
+03-14 18:33:20.550  1368  5119 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.551  3057  5525 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:33:20.551  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:33:20.551  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:33:20.551  3057  5525 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:33:20.551  3057  5525 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:33:20.551  3057  5536 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-314352448] ID [5536].
+03-14 18:33:20.551  3057  5536 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:33:20.551  3057  5536 I pal/stdout: 	 pid 5536's priority: 4, name: DCC_NORMAL_0
+03-14 18:33:20.551  3057  5536 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:33:20.551  3057  5536 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:33:20.551  3057  5536 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:33:20.551  3057  5536 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d1ad0 is closed.
+03-14 18:33:20.553  3057  5536 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 18:33:20.567  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 18:33:20.570  1368  5119 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.570   744  1316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 18:33:20.570   744  1316 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 670
+03-14 18:33:20.570   744  1316 D audio_hw_primary: update_patch: enter
+03-14 18:33:20.570   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:33:20.570   744  1316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 80
+03-14 18:33:20.570  1368  2017 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:20.571   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:33:20.572  1368  2017 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 18:33:20.573   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:20.573   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:20.574   802  5535 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:20.574   802  5535 E FMQ     : grantorIdx must be less than 3
+03-14 18:33:20.574   744  5538 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc17b0)usecase(23: audio-record), source 6
+03-14 18:33:20.574   744  5538 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 18:33:20.575   744  5538 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 18:33:20.575   744  5538 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 18:33:20.575   744  5538 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 18:33:20.575   744  5538 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 18:33:20.575   744  5538 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 18:33:20.575   744  5538 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 18:33:20.575   744  5538 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 18:33:20.575   744  5538 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:33:20.575   744  5538 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 18:33:20.575   744  5538 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:20.575   744  5538 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:33:20.575   744  5538 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 18:33:20.575   744  5538 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:20.575   744  5538 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 18:33:20.575   744  5538 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 18:33:20.575   744  5538 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:20.575   744  5538 D audio_route: Apply path: voice-rec-mic
+03-14 18:33:20.576   744  5538 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:33:20.576   744  5538 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 18:33:20.576   744  5538 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 18:33:20.576   744  5538 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 18:33:20.576   744  5538 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:33:20.576   744  5538 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 18:33:20.576   744  5538 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:20.576   744  5538 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 18:33:20.576   744  5538 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:20.576   744  5538 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 18:33:20.577   744  5538 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:20.577   744  5538 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:33:20.577   744  5538 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:33:20.577   744  5538 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 18:33:20.577   744  5538 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:33:20.577   744  5538 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 18:33:20.578   744  5538 D audio_route: Apply path: audio-record
+03-14 18:33:20.578   744  5538 D audio_hw_primary: select_devices: done
+03-14 18:33:20.586  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-14 18:33:20.588  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-14 18:33:20.590  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please enter evaluation mode
+03-14 18:33:20.592  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Please exit evaluation mode
+03-14 18:33:20.594  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Speech settings
+03-14 18:33:20.596  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Speech commands
+03-14 18:33:20.598  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Command list
+03-14 18:33:20.599  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Torch on
+03-14 18:33:20.601  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flashlight on
+03-14 18:33:20.602  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Torch off
+03-14 18:33:20.603  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Flashlight off
+03-14 18:33:20.605  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go to sleep
+03-14 18:33:20.606  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->View notifications
+03-14 18:33:20.607   744  5538 D audio_hw_primary: start_input_stream: exit
+03-14 18:33:20.607  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open notifications
+03-14 18:33:20.609  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a picture
+03-14 18:33:20.611  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Start recording
+03-14 18:33:20.612  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Take a video
+03-14 18:33:20.614  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Okay
+03-14 18:33:20.615  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Open
+03-14 18:33:20.616  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Confirm
+03-14 18:33:20.617  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Select this
+03-14 18:33:20.618  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Pick this
+03-14 18:33:20.619  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move left
+03-14 18:33:20.620  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go left
+03-14 18:33:20.621  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll left
+03-14 18:33:20.622  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move right
+03-14 18:33:20.623  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go right
+03-14 18:33:20.624  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll right
+03-14 18:33:20.625  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move up
+03-14 18:33:20.626  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go up
+03-14 18:33:20.627  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll up
+03-14 18:33:20.628  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Move down
+03-14 18:33:20.630  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go down
+03-14 18:33:20.631  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Scroll down
+03-14 18:33:20.632  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 18:33:20.634  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 18:33:20.634  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Cancel
+03-14 18:33:20.635  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go home
+03-14 18:33:20.636  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Quit
+03-14 18:33:20.637  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Show menu
+03-14 18:33:20.638  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page down
+03-14 18:33:20.639  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Page up
+03-14 18:33:20.640  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume down
+03-14 18:33:20.641  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Volume up
+03-14 18:33:20.642  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Stop
+03-14 18:33:20.643  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 18:33:20.644  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 18:33:20.645  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 18:33:20.645  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 18:33:20.646  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 18:33:20.647  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 18:33:20.648  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 18:33:20.649  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 18:33:20.649  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 18:33:20.650  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->10
+03-14 18:33:20.651  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->11
+03-14 18:33:20.651  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->12
+03-14 18:33:20.652  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->13
+03-14 18:33:20.653  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->14
+03-14 18:33:20.654  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->15
+03-14 18:33:20.654  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->16
+03-14 18:33:20.655  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->17
+03-14 18:33:20.656  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->18
+03-14 18:33:20.656  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->19
+03-14 18:33:20.657  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->20
+03-14 18:33:20.658  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->21
+03-14 18:33:20.659  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->22
+03-14 18:33:20.659  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->23
+03-14 18:33:20.660  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->24
+03-14 18:33:20.661  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->25
+03-14 18:33:20.662  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->26
+03-14 18:33:20.663  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->27
+03-14 18:33:20.664  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->28
+03-14 18:33:20.665  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->29
+03-14 18:33:20.666  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->30
+03-14 18:33:20.666  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->31
+03-14 18:33:20.667  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->32
+03-14 18:33:20.668  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->33
+03-14 18:33:20.669  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->34
+03-14 18:33:20.669  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->35
+03-14 18:33:20.670  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->36
+03-14 18:33:20.671  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->37
+03-14 18:33:20.671  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->38
+03-14 18:33:20.672  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->39
+03-14 18:33:20.673  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->40
+03-14 18:33:20.674  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->41
+03-14 18:33:20.675  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->42
+03-14 18:33:20.675  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->43
+03-14 18:33:20.676  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->44
+03-14 18:33:20.677  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->45
+03-14 18:33:20.677  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->46
+03-14 18:33:20.678  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->47
+03-14 18:33:20.679  3057  5536 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->48
+03-14 18:33:20.699  3057  5536 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:33:20.699  3057  5536 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=93  added=93  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 18:33:20.699  3057  5525 I Asr     : Data prep finished event received; proceeding
+03-14 18:33:20.775  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:33:20.775  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:33:20.775  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 18:33:20.970  1368  1379 W System  : A resource failed to call release. 
+03-14 18:33:20.986  1368  1379 I chatty  : uid=1000(system) FinalizerDaemon identical 9 lines
+03-14 18:33:20.986  1368  1379 W System  : A resource failed to call release. 
+03-14 18:33:21.077  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4035): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:21.077  1100  1100 I chatty  : uid=1001(radio) /system/vendor/bin/ipacm identical 1 line
+03-14 18:33:21.077  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4037): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:21.077  1100  1100 W ipacm   : type=1400 audit(0.0:4038): avc: denied { write } for name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:21.348   744  1316 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:33:21.424   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:33:21.425   744  1316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:33:21.425   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:33:21.425   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:21.425   744  1316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:33:21.425   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:33:21.425   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:33:21.425   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:33:21.425   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:33:21.425   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:21.428   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:33:21.428   744  1316 D audio_hw_primary: out_standby: exit
+03-14 18:33:21.429  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:23.131  3057  5525 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:33:23.136  3057  5525 I Asr     : Restart on not OK 1980
+03-14 18:33:23.136  3057  5525 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:33:23.141  3057  5525 I Asr     : Restart end 2320
+03-14 18:33:23.915  1368  1453 D InputDispatcher: Waiting to send key to Window{46cc042 u0 com.android.documentsui/com.android.documentsui.ViewDownloadsActivity} because there are unprocessed events that may cause focus to change
+03-14 18:33:24.437  1100  1100 W /system/vendor/bin/ipacm: type=1400 audit(0.0:4043): avc: denied { write } for comm=6E65746C696E6B20736F636B6574 name="ipacm_log_file" dev="tmpfs" ino=33807 scontext=u:r:ipacm:s0 tcontext=u:object_r:ipacm_socket:s0 tclass=sock_file permissive=0
+03-14 18:33:25.195  5461  5480 I wnloadslaunche: Waiting for a blocking GC ProfileSaver
+03-14 18:33:25.228  5461  5480 I wnloadslaunche: WaitForGcToComplete blocked ProfileSaver on AddRemoveAppImageSpace for 33.606ms
+03-14 18:33:25.243  5461  5473 I wnloadslaunche: WaitForGcToComplete blocked RunEmptyCheckpoint on ProfileSaver for 13.908ms
+03-14 18:33:26.348  3186  3200 W externalstorag: Reducing the number of considered missed Gc histogram windows from 739 to 100
+03-14 18:33:26.408  2880  2892 W android.traceu: Reducing the number of considered missed Gc histogram windows from 739 to 100
+03-14 18:33:26.408  2834  2846 W m.android.shel: Reducing the number of considered missed Gc histogram windows from 739 to 100
+03-14 18:33:26.785  1368  1453 D InputDispatcher: Waiting to send key to Window{86ec176 u0 PopupWindow:a4a6eb0} because there are unprocessed events that may cause focus to change
+03-14 18:33:26.804   744  3383 D audio_hw_primary: start_output_stream: enter: stream(0xf3884330)usecase(1: low-latency-playback) devices(0x2) is_haptic_usecase(0)
+03-14 18:33:26.804  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:26.805  1368  3529 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:33:26.805   744  3383 D audio_hw_primary: select_devices for use case (low-latency-playback)
+03-14 18:33:26.805   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:33:26.805   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:26.805   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.805   744  3383 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+03-14 18:33:26.805  1368  5119 I ActivityTaskManager: START u0 {act=android.intent.action.VIEW dat=content://com.android.providers.downloads.documents/document/3 typ=application/pdf flg=0x3 cmp=com.vuzix.hud.pdfviewer/.viewer.ViewerActivity} from uid 10017
+03-14 18:33:26.805   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:26.805   744  3383 E audio_hw_extn: audio_extn_enable_hifi_filter: Could not get ctl for mixer cmd - HiFi Filter, using default control
+03-14 18:33:26.805   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: updated afe: bitwidth 16, samplerate 48000 channels 2,backend_idx 0 usecase = 1 device (speaker)
+03-14 18:33:26.805   744  3383 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on codec device not supporting native playback set default Sample Rate(48k)
+03-14 18:33:26.805   744  3383 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+03-14 18:33:26.805   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+03-14 18:33:26.805   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:33:26.805   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:33:26.806   744  3383 E msm8974_platform: platform_check_backends_match: Invalid snd_device2 = none
+03-14 18:33:26.806   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: (78) check_usecases curr device: speaker, usecase device:none backends match 0
+03-14 18:33:26.806   744  3383 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+03-14 18:33:26.806   744  3383 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:33:26.806   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: current(before increase) ref_cnt 0)
+03-14 18:33:26.806   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.806   744  3383 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+03-14 18:33:26.806   744  3383 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (speaker 0)
+03-14 18:33:26.806   744  3383 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+03-14 18:33:26.806   744  3383 D audio_route: Apply path: speaker
+03-14 18:33:26.817   744  3383 I audio_hw_utils: audio_extn_utils_update_stream_output_app_type_cfg Allowing 24 and above bits playback on speaker ONLY at default sampling rate
+03-14 18:33:26.817   744  3383 D audio_hw_primary: audio_is_true_native_stream_active:napb: (0) (low-latency-playback)id (1) sr 48000 bw (16) device speaker
+03-14 18:33:26.817   744  3383 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 3
+03-14 18:33:26.817   744  3383 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 3, with Raise=0
+03-14 18:33:26.817   744  3383 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->out_snd_device speaker
+03-14 18:33:26.817   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.817   744  3383 D msm8974_platform: platform_get_snd_device_backend_index: device 2 is hw_interface_name INT4_MI2S_RX is be_dai_id=153
+03-14 18:33:26.817   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:26.817   744  3383 I audio_hw_utils: send_app_type_cfg_for_device PLAYBACK app_type 69937, acdb_dev_id 15, sample_rate 48000, snd_device_be_idx 153
+03-14 18:33:26.818   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.818   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:33:26.818   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:33:26.819   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:33:26.819   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.819   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:33:26.819   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:33:26.819   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:33:26.821   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:33:26.824  1368  5119 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:26.824  1368  5119 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:26.824  1368  5119 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:26.825  1368  5119 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:26.830  5485  5485 W ActionModeController: Tried to finish a null action mode.
+03-14 18:33:26.832  1368  1386 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10031; state: DISABLED
+03-14 18:33:26.833  1368  1394 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10031; state: ENABLED
+03-14 18:33:26.851  1112  1112 D Zygote  : Forked child process 5544
+03-14 18:33:26.854   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:33:26.854   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:33:26.855  1368  1394 I ActivityManager: Start proc 5544:com.vuzix.hud.pdfviewer/u0a31 for pre-top-activity {com.vuzix.hud.pdfviewer/com.vuzix.hud.pdfviewer.viewer.ViewerActivity}
+03-14 18:33:26.855  5544  5544 W Zygote  : Unable to open libbeluga.so: dlopen failed: library "libbeluga.so" not found.
+03-14 18:33:26.855   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:33:26.855   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:33:26.855   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:33:26.873  5544  5544 E x.hud.pdfviewe: Not starting debugger since process cannot load the jdwp agent.
+03-14 18:33:26.881  1368  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:26.881  1368  2192 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:26.881  1368  2192 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:26.883  1368  2192 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:26.883  1368  2192 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:26.883  1368  2192 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:26.903  5544  5544 I Perf    : Connecting to perf service.
+03-14 18:33:26.909  5544  5544 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:26.909  5544  5544 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+03-14 18:33:26.914   816  1404 W DisplayIdentification: Invalid EDID: falling back to serial number due to missing display name.
+03-14 18:33:26.914   816  1404 W DisplayIdentification: Invalid EDID: falling back to ASCII text due to missing serial number.
+03-14 18:33:26.963  5544  5544 D com.shockwave.pdfium.PdfiumCore: Starting PdfiumAndroid 1.9.0
+03-14 18:33:26.976  3057  3057 D VzxSrVocabulary: vocab activityId 0 resetting com.vuzix.speechrecognitionservice to base
+03-14 18:33:26.988  1368  3529 I ActivityTaskManager: START u0 {cmp=com.vuzix.hud.pdfviewer/.ftue.SplashActivity} from uid 10031
+03-14 18:33:26.991  1368  3529 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:26.991  1368  3529 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:26.991  1368  3529 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:26.993  1368  3529 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:33:27.005   759   759 I sensors-hal: batch:242, android.sensor.rotation_vector/111, period=50000000, max_latency=0
+03-14 18:33:27.006   759   759 I sensors-hal: set_config:63, sample_period_ns is adjusted to 50000000 based on min/max delay_ns
+03-14 18:33:27.006   759   759 I sensors-hal: batch:251, android.sensor.rotation_vector/111, period=50000000, max_latency=0 request completed
+03-14 18:33:27.006   759   759 I sensors-hal: activate:209, android.sensor.rotation_vector/111 en=1
+03-14 18:33:27.006   759   759 I sensors-hal: get_qmi_debug_flag:241, support_qmi_debug : false
+03-14 18:33:27.007   759   759 I sensors-hal: activate:220, android.sensor.rotation_vector/111 en=1 completed
+03-14 18:33:27.008   759  5571 I sensors-hal: ssc_conn_resp_cb:663, resp_value = 0
+03-14 18:33:27.024   759   759 I sensors-hal: activate:209, android.sensor.rotation_vector/111 en=0
+03-14 18:33:27.025   759   759 I sensors-hal: activate:220, android.sensor.rotation_vector/111 en=0 completed
+03-14 18:33:27.026  1368  5119 I ActivityTaskManager: The Process com.vuzix.hud.pdfviewer Already Exists in BG. So sending its PID: 5544
+03-14 18:33:27.027  1368  5119 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (7417801)
+03-14 18:33:27.028  1368  5119 D CompatibilityInfo: mCompatibilityFlags - 0
+03-14 18:33:27.028  1368  5119 D CompatibilityInfo: applicationDensity - 212
+03-14 18:33:27.028  1368  5119 D CompatibilityInfo: applicationScale - 1.0
+03-14 18:33:27.042   819   837 I adsprpcd: vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:859: Successfully opened file /mnt/vendor/persist/sensors/registry/registry/sns_gyro_cal_persist_s0.bias
+03-14 18:33:27.044   819   837 I adsprpcd: vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:859: Successfully opened file /mnt/vendor/persist/sensors/registry/registry/sns_gyro_cal_persist_s0.scale_factor
+03-14 18:33:27.046   819   837 I adsprpcd: vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:859: Successfully opened file /mnt/vendor/persist/sensors/registry/registry/sns_gyro_cal_persist_s0.compensation_matrix
+03-14 18:33:27.049   819   837 I adsprpcd: vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:859: Successfully opened file /mnt/vendor/persist/sensors/registry/registry/sns_gyro_cal_persist_s0
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: QUALCOMM build                   : 10e0ec675f, Ie80613d716
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Build Date                       : 06/09/22
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.17
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Local Branch                     : 
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Remote Branch                    : 
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Reconstruct Branch               : 
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-14 18:33:27.084  5544  5565 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-14 18:33:27.087  5544  5565 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-14 18:33:27.098   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+03-14 18:33:27.098  5544  5565 I Gralloc4: mapper 4.x is not supported
+03-14 18:33:27.098   578   578 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.

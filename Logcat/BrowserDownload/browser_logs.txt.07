@@ -1,0 +1,1231 @@
+03-14 18:29:00.096   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.096   744  3383 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 15, path = 0, app id = 0x11131, sample rate = 48000, afe_sample_rate = 48000
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:29:00.096  1368  1381 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[15] app_type[69937]
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_audvoltable
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE_SIZE
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:29:00.096   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 15, Topology Id 1001025e
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[16] acdb_id[15]
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 15 path = 0
+03-14 18:29:00.097   744  3383 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:29:00.097   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.097   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:29:00.097   744  3383 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback
+03-14 18:29:00.097   744  3383 D audio_route: Apply path: low-latency-playback
+03-14 18:29:00.099   744  3383 D audio_hw_primary: select_devices: done
+03-14 18:29:00.125   744  3383 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map13
+03-14 18:29:00.125   744  3383 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+03-14 18:29:00.126   744  3383 D audio_hw_primary: start_output_stream: exit
+03-14 18:29:00.126   744  3383 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.126   744  3383 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:29:00.158   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc2a10) usecase(23: audio-record)
+03-14 18:29:00.159  1368  5119 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.180  3596  3596 W InputMethodManager: InputMethodManager.peekInstance() is deprecated because it cannot be compatible with multi-display. Use context.getSystemService(InputMethodManager.class) instead.
+03-14 18:29:00.180  3596  3596 W InputMethodManager: java.lang.Throwable
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.inputmethod.InputMethodManager.peekInstance(InputMethodManager.java:1254)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.widget.EditText.onWindowFocusChanged(EditText.java:199)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.View.dispatchWindowFocusChanged(View.java:14639)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:1513)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.handleWindowFocusChanged(ViewRootImpl.java:3273)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl.access$1200(ViewRootImpl.java:201)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:5064)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.os.Looper.loop(Looper.java:223)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at android.app.ActivityThread.main(ActivityThread.java:7705)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at java.lang.reflect.Method.invoke(Native Method)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-14 18:29:00.180  3596  3596 W InputMethodManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:952)
+03-14 18:29:00.186  2639  2639 D VuzixKeyboard: onStartInputView: android.view.inputmethod.EditorInfo@ca85f8e false
+03-14 18:29:00.190  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:00.190  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:00.190  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:00.192  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:00.204   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 18:29:00.205   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:00.205   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 18:29:00.205   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 18:29:00.205   744  1316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 18:29:00.205   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:00.205   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:00.205   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 18:29:00.205   744  1316 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 18:29:00.205   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:00.205   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:29:00.205   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.207   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:00.207   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 18:29:00.207   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 18:29:00.207   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 18:29:00.208  1368  1647 E AppOps  : Attribution not found: uid=1000 pkg=com.vuzix.speechrecognitionservice(null) op=RECORD_AUDIO
+03-14 18:29:00.210   744   799 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 63
+03-14 18:29:00.210   744   799 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:29:00.212  1368  1647 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:29:00.214  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.226  3057  5105 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 18:29:00.227  3057  5105 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 18:29:00.227  3057  5105 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 18:29:00.228  1368  1647 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:29:00.229  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.229  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.229   744   799 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc2a10)
+03-14 18:29:00.229   744   799 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 534
+03-14 18:29:00.229   744   799 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 18:29:00.229   744   799 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 18:29:00.229   744   799 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 18:29:00.229   744   799 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 18:29:00.229   744   799 D audio_hw_primary: in_standby: enter: stream (0xf3dc2a10) usecase(23: audio-record)
+03-14 18:29:00.230  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.232  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70d0210 is closed.
+03-14 18:29:00.239  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70d0510 is closed.
+03-14 18:29:00.240  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70cea10 is closed.
+03-14 18:29:00.243  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70d2c10 is closed.
+03-14 18:29:00.244  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70d3bd0 is closed.
+03-14 18:29:00.244  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70cfb50 is closed.
+03-14 18:29:00.244  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70cfcd0 is closed.
+03-14 18:29:00.245  3057  5105 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70ceb90 is closed.
+03-14 18:29:00.325  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.325  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.325  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.325  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.325  3057  5129 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [5129].
+03-14 18:29:00.326  3057  5129 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.326  3057  5129 I pal/stdout: 	 pid 5129's priority: 4, name: ASR5_CFG
+03-14 18:29:00.326  3057  5129 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.326  3057  5129 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.326  3057  5129 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.326  3057  5131 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1447447744] ID [5131].
+03-14 18:29:00.326  3057  5131 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.326  3057  5131 I pal/stdout: 	 pid 5131's priority: 4, name: ASR5_Worker1
+03-14 18:29:00.326  3057  5131 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.326  3057  5131 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.326  3057  5131 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.326  3057  5130 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [5130].
+03-14 18:29:00.326  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.326  3057  5132 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1429630144] ID [5132].
+03-14 18:29:00.327  3057  5132 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.327  3057  5132 I pal/stdout: 	 pid 5132's priority: 4, name: ASR5_Worker2
+03-14 18:29:00.327  3057  5132 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.327  3057  5130 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.327  3057  5130 I pal/stdout: 	 pid 5130's priority: 4, name: ASR5_Worker0
+03-14 18:29:00.327  3057  5130 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.327  3057  5130 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.327  3057  5130 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.329  3057  5132 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.329  3057  5132 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.332  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.336  3057  5135 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [5135].
+03-14 18:29:00.336  3057  5135 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.336  3057  5135 I pal/stdout: 	 pid 5135's priority: 4, name: ASR5_FatalListener
+03-14 18:29:00.336  3057  5135 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.336  3057  5135 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.336  3057  5135 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.336  3057  5134 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [5134].
+03-14 18:29:00.336  3057  5134 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.336  3057  5134 I pal/stdout: 	 pid 5134's priority: 4, name: ASR5_Dispatcher
+03-14 18:29:00.336  3057  5134 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.336  3057  5134 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.336  3057  5134 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.336  3057  5133 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [5133].
+03-14 18:29:00.336  3057  5133 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.336  3057  5133 I pal/stdout: 	 pid 5133's priority: 4, name: ASR5_Worker3
+03-14 18:29:00.336  3057  5133 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.336  3057  5133 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.336  3057  5133 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.363  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.363  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.363  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.363  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.363  3057  5137 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [5137].
+03-14 18:29:00.363  3057  5137 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.363  3057  5137 I pal/stdout: 	 pid 5137's priority: 4, name: DCC_CREATION_0
+03-14 18:29:00.363  3057  5137 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.363  3057  5137 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.363  3057  5137 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.364  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:00.364  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:00.364  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:00.366  3057  5137 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 18:29:00.367  2423  2606 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:00.367  3057  5137 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:29:00.367  3057  5137 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (58)
+03-14 18:29:00.367  3057  5137 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 18:29:00.369   744   799 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc6910) io_handle(542) source(6) format 1
+03-14 18:29:00.370   744   799 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 542
+03-14 18:29:00.370   744   799 E device_utils: update_device_list: Invalid device: 0
+03-14 18:29:00.371   802  5139 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=5139 ready to run
+03-14 18:29:00.371   744   799 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 18:29:00.372   744   799 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 18:29:00.373  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.373  1368  1716 I chatty  : uid=1000(system) Binder:1368_7 identical 1 line
+03-14 18:29:00.373  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.376  3057  5128 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:00.376  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:00.376  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:00.376  3057  5128 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:00.376  3057  5140 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-314352448] ID [5140].
+03-14 18:29:00.376  3057  5140 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:00.376  3057  5140 I pal/stdout: 	 pid 5140's priority: 4, name: DCC_NORMAL_0
+03-14 18:29:00.376  3057  5140 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:00.376  3057  5140 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:00.376  3057  5140 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:00.377  3057  5128 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:29:00.377  3057  5140 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d2550 is closed.
+03-14 18:29:00.378  3057  5140 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 18:29:00.394  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 18:29:00.398  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.398   744   799 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 18:29:00.399  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.399   744   799 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 542
+03-14 18:29:00.399   744   799 D audio_hw_primary: update_patch: enter
+03-14 18:29:00.399   744   799 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:29:00.399   744   799 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 64
+03-14 18:29:00.400   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:29:00.402  1368  2016 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 18:29:00.403   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:00.403   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:00.404   802  5139 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:00.404   802  5139 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:00.404   744  5142 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc6910)usecase(23: audio-record), source 6
+03-14 18:29:00.405   744  5142 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 18:29:00.405   744  5142 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 18:29:00.405   744  5142 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 18:29:00.405   744  5142 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 18:29:00.405   744  5142 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 18:29:00.405   744  5142 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 18:29:00.405   744  5142 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 18:29:00.405   744  5142 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 18:29:00.405   744  5142 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:00.405   744  5142 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 18:29:00.405   744  5142 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.405   744  5142 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:29:00.405   744  5142 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 18:29:00.405   744  5142 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:00.405   744  5142 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 18:29:00.405   744  5142 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 18:29:00.405   744  5142 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:00.405   744  5142 D audio_route: Apply path: voice-rec-mic
+03-14 18:29:00.406   744  5142 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:00.406   744  5142 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 18:29:00.406   744  5142 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 18:29:00.406   744  5142 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 18:29:00.406   744  5142 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:00.406   744  5142 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 18:29:00.406   744  5142 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.407   744  5142 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 18:29:00.407   744  5142 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:29:00.407   744  5142 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 18:29:00.407   744  5142 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:29:00.407   744  5142 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:29:00.407   744  5142 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 18:29:00.407   744  5142 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:29:00.407   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:29:00.408   744  5142 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:29:00.408   744  5142 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 18:29:00.408   744  5142 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:29:00.408   744  5142 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 18:29:00.408   744  5142 D audio_route: Apply path: audio-record
+03-14 18:29:00.410   744  5142 D audio_hw_primary: select_devices: done
+03-14 18:29:00.417  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->E
+03-14 18:29:00.419  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->F
+03-14 18:29:00.420  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->G
+03-14 18:29:00.422  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->H
+03-14 18:29:00.423  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->I
+03-14 18:29:00.424  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->J
+03-14 18:29:00.425  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->K
+03-14 18:29:00.426  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->L
+03-14 18:29:00.427  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->M
+03-14 18:29:00.428  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 18:29:00.429  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 18:29:00.430  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 18:29:00.431  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 18:29:00.432  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 18:29:00.434  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->erase
+03-14 18:29:00.434  1368  1716 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:00.434   802  1178 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+03-14 18:29:00.435  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->scan code
+03-14 18:29:00.436  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->queue are code
+03-14 18:29:00.438  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->N
+03-14 18:29:00.438   744  5142 D audio_hw_primary: start_input_stream: exit
+03-14 18:29:00.439  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->O
+03-14 18:29:00.440  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->P
+03-14 18:29:00.441  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Q
+03-14 18:29:00.442  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->R
+03-14 18:29:00.443  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->S
+03-14 18:29:00.444  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->T
+03-14 18:29:00.445  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->U
+03-14 18:29:00.446  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->V
+03-14 18:29:00.447  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->W
+03-14 18:29:00.448  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->X
+03-14 18:29:00.449  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Y
+03-14 18:29:00.450  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Z
+03-14 18:29:00.451  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 18:29:00.452  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 18:29:00.453  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 18:29:00.454  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 18:29:00.455  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->0
+03-14 18:29:00.456  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->space
+03-14 18:29:00.457  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->symbols
+03-14 18:29:00.458  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->shift
+03-14 18:29:00.459  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->caps
+03-14 18:29:00.460  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->forward slash
+03-14 18:29:00.462  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->at sign
+03-14 18:29:00.463  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left parenthesis
+03-14 18:29:00.465  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right parenthesis
+03-14 18:29:00.467  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->apostrophe
+03-14 18:29:00.468  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->quotation mark
+03-14 18:29:00.469  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->comma
+03-14 18:29:00.470  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->period
+03-14 18:29:00.471  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->question mark
+03-14 18:29:00.473  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->exclamation point
+03-14 18:29:00.475  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left
+03-14 18:29:00.476  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right
+03-14 18:29:00.477  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->return
+03-14 18:29:00.478  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->continue
+03-14 18:29:00.479  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->done
+03-14 18:29:00.480  3057  5140 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->enter
+03-14 18:29:00.484  1368  1453 D InputDispatcher: Waiting to send key to Window{32a7aa7 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:29:00.494  3057  5140 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:29:00.495  3057  5140 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=55  added=55  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 18:29:00.495  3057  5128 I Asr     : Data prep finished event received; proceeding
+03-14 18:29:00.511  2639  2639 D VuzixKeyboard: Received 4 overlay phrases
+03-14 18:29:00.531  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:00.531  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:00.531  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:00.533  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:00.601  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:29:00.601  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:29:00.601  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 18:29:00.695  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:00.695  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:00.695  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:00.698  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:00.860  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:00.860  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:00.860  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:00.863  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:00.991   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 18:29:00.992  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.034   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: audio-record
+03-14 18:29:01.036   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:01.036   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 2, with Raise=1
+03-14 18:29:01.036   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 12: usecase id 23, type 1
+03-14 18:29:01.036   744  1316 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 12, usecase type 1
+03-14 18:29:01.036   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:01.036   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:01.036   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: current(before decrease) ref_cnt 1) 
+03-14 18:29:01.036   744  1316 E audio_hw_primary: disable_snd_device:1snd_device-195,count-0
+03-14 18:29:01.036   744  1316 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:01.036   744  1316 D audio_hw_primary: disable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:29:01.036   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.038   744  1316 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:01.038   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 0, with Raise=1
+03-14 18:29:01.038   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 0
+03-14 18:29:01.038   744  1316 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 0, rx 0,concurrency session allowed
+03-14 18:29:01.041   744   744 D audio_hw_primary: adev_release_audio_patch: Remove patch with handle 64
+03-14 18:29:01.041   744   744 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:29:01.043  1368  2016 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.044  1368  2016 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:29:01.054  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:01.054  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:01.054  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:01.057  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:01.058  3057  5128 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EBUSY.
+03-14 18:29:01.058  3057  5128 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: EDEADLK.
+03-14 18:29:01.058  3057  5128 D pal/stdout: StarRec_PAL_MutexDeInit(): pthread_mutex_destroy: while: EBUSY.
+03-14 18:29:01.060  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_NORMAL_0] thread with thread handle 0x0x71f70d2910 is closed.
+03-14 18:29:01.061  1368  1381 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](false)
+03-14 18:29:01.062   744  1316 D audio_hw_primary: adev_close_input_stream: enter:stream_handle(0xf3dc6910)
+03-14 18:29:01.062   744  1316 D audio_hw_primary: io_streams_map_remove: Removed stream with handle 542
+03-14 18:29:01.062   744  1316 D soundtrigger: audio_extn_sound_trigger_check_ec_ref_enable: EC Reference is disabled
+03-14 18:29:01.062   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Enter
+03-14 18:29:01.062   744  1316 D sound_trigger_hw: handle_audio_ec_ref_enabled: Exit audio ec ref=0
+03-14 18:29:01.062   744  1316 D soundtrigger: audio_extn_sound_trigger_update_ec_ref_status: update audio echo ref status false
+03-14 18:29:01.062   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc6910) usecase(23: audio-record)
+03-14 18:29:01.063  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.063  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.064  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.066  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_CFG] thread with thread handle 0x0x71f70cd390 is closed.
+03-14 18:29:01.067  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_FatalListener] thread with thread handle 0x0x71f70ceb90 is closed.
+03-14 18:29:01.067  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Dispatcher] thread with thread handle 0x0x71f70d3810 is closed.
+03-14 18:29:01.067  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker0] thread with thread handle 0x0x71f70cfa90 is closed.
+03-14 18:29:01.068  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker1] thread with thread handle 0x0x71f70cffd0 is closed.
+03-14 18:29:01.068  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker2] thread with thread handle 0x0x71f70cd510 is closed.
+03-14 18:29:01.069  3057  5128 D pal/stdout: StarRec_PAL_ThreadWait(): [ASR5_Worker3] thread with thread handle 0x0x71f70d14d0 is closed.
+03-14 18:29:01.161  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_CFG] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.161  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.161  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.161  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_CFG] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.161  3057  5149 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_CFG] ok -> set/getpriority (4)/(4) - hdl [1466305728] ID [5149].
+03-14 18:29:01.161  3057  5149 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.161  3057  5149 I pal/stdout: 	 pid 5149's priority: 4, name: ASR5_CFG
+03-14 18:29:01.161  3057  5149 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.161  3057  5149 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.161  3057  5149 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker1] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.162  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.163  3057  5150 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker0] ok -> set/getpriority (4)/(4) - hdl [1448488128] ID [5150].
+03-14 18:29:01.163  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker1] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.163  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker2] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.163  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.163  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.163  3057  5151 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker1] ok -> set/getpriority (4)/(4) - hdl [1430670528] ID [5151].
+03-14 18:29:01.163  3057  5151 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.163  3057  5151 I pal/stdout: 	 pid 5151's priority: 4, name: ASR5_Worker1
+03-14 18:29:01.163  3057  5152 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker2] ok -> set/getpriority (4)/(4) - hdl [1429630144] ID [5152].
+03-14 18:29:01.163  3057  5152 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.163  3057  5152 I pal/stdout: 	 pid 5152's priority: 4, name: ASR5_Worker2
+03-14 18:29:01.163  3057  5152 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.163  3057  5152 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.163  3057  5152 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.163  3057  5151 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.163  3057  5151 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.163  3057  5151 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.163  3057  5150 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.163  3057  5150 I pal/stdout: 	 pid 5150's priority: 4, name: ASR5_Worker0
+03-14 18:29:01.163  3057  5150 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.163  3057  5150 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.163  3057  5150 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker2] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Worker3] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Worker3] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_Dispatcher] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.164  3057  5153 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Worker3] ok -> set/getpriority (4)/(4) - hdl [1428589760] ID [5153].
+03-14 18:29:01.164  3057  5153 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.164  3057  5153 I pal/stdout: 	 pid 5153's priority: 4, name: ASR5_Worker3
+03-14 18:29:01.164  3057  5153 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.164  3057  5154 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_Dispatcher] ok -> set/getpriority (4)/(4) - hdl [1427549376] ID [5154].
+03-14 18:29:01.164  3057  5154 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.164  3057  5154 I pal/stdout: 	 pid 5154's priority: 4, name: ASR5_Dispatcher
+03-14 18:29:01.164  3057  5154 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.164  3057  5154 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.164  3057  5153 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_Dispatcher] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.164  3057  5154 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.164  3057  5153 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [ASR5_FatalListener] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.164  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [ASR5_FatalListener] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.164  3057  5155 I pal/stdout: fpThreadRoutine_setThreadName(): [ASR5_FatalListener] ok -> set/getpriority (4)/(4) - hdl [1426508992] ID [5155].
+03-14 18:29:01.164  3057  5155 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.164  3057  5155 I pal/stdout: 	 pid 5155's priority: 4, name: ASR5_FatalListener
+03-14 18:29:01.164  3057  5155 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.164  3057  5155 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.165  3057  5155 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.192  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_CREATION_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.193  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.193  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.193  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_CREATION_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.193  3057  5156 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_CREATION_0] ok -> set/getpriority (4)/(4) - hdl [1418505408] ID [5156].
+03-14 18:29:01.193  3057  5156 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.193  3057  5156 I pal/stdout: 	 pid 5156's priority: 4, name: DCC_CREATION_0
+03-14 18:29:01.193  3057  5156 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.193  3057  5156 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.193  3057  5156 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.196  3057  5156 I DCCListener: DCC event: DCC_CREATION_STARTED ()
+03-14 18:29:01.198  3057  5156 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:29:01.198  3057  5156 I DCCListener: DCC event: DCC_WITH_N_ENTRIES (55)
+03-14 18:29:01.198  3057  5156 I DCCListener: DCC event: DCC_CREATION_FINISHED ()
+03-14 18:29:01.201   744  1316 D audio_hw_primary: adev_open_input_stream: enter: sample_rate(16000) channel_mask(0x10) devices(0x80000004)        stream_handle(0xf3dc5410) io_handle(550) source(6) format 1
+03-14 18:29:01.201   744  1316 D audio_hw_primary: io_streams_map_insert: Added stream in io_streams_map with handle 550
+03-14 18:29:01.201   744  1316 E device_utils: update_device_list: Invalid device: 0
+03-14 18:29:01.203   802  5158 I AudioFlinger: AudioFlinger's thread 0x7579ba0040 tid=5158 ready to run
+03-14 18:29:01.203   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc5410) usecase(23: audio-record)
+03-14 18:29:01.204   744  1316 D audio_hw_primary: in_standby: enter: stream (0xf3dc5410) usecase(23: audio-record)
+03-14 18:29:01.206  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.206  1368  1381 I chatty  : uid=1000(system) Binder:1368_1 identical 1 line
+03-14 18:29:01.206  1368  1381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.208  3057  5148 I pal/stdout: StarRec_PAL_ThreadInit(): [DCC_NORMAL_0] initial priority level THREAD_PRIO_NORMAL.
+03-14 18:29:01.208  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: invert nice value [3 -> 3].
+03-14 18:29:01.208  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] DEFAULT SETTING: policy [SCHED_OTHER], prio: default [0] + handed-over [3] + 1 = calculated [4].
+03-14 18:29:01.208  3057  5148 I pal/stdout: StarRec_PAL_ThreadCreate(): [DCC_NORMAL_0] THREAD CREATED: Policy [0,SCHED_OTHER,OTHER], prio: handed-over [3], final nice,prio [4,0], min [0], max [0]. 
+03-14 18:29:01.209  3057  5159 I pal/stdout: fpThreadRoutine_setThreadName(): [DCC_NORMAL_0] ok -> set/getpriority (4)/(4) - hdl [-314352448] ID [5159].
+03-14 18:29:01.209  3057  5148 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:29:01.209  3057  5159 I pal/stdout: sMainWrapper_PrintPrio(): 
+03-14 18:29:01.209  3057  5159 I pal/stdout: 	 pid 5159's priority: 4, name: DCC_NORMAL_0
+03-14 18:29:01.209  3057  5159 I pal/stdout: sMainWrapper_PrintPrio(): 	 scheduling class: 
+03-14 18:29:01.209  3057  5159 I pal/stdout: sMainWrapper_PrintPrio(): 	 OTHER / Normal 
+03-14 18:29:01.209  3057  5159 I pal/stdout: sMainWrapper_PrintPrio(): 	 RT prio: 0 (of 0 to 0)
+03-14 18:29:01.210  3057  5159 D pal/stdout: StarRec_PAL_ThreadWait(): [DCC_CREATION_0] thread with thread handle 0x0x71f70d3a50 is closed.
+03-14 18:29:01.211  3057  5159 I DCCListener: DCC event: DCC_DATA_PREPARATION_STARTED ()
+03-14 18:29:01.223  2423  3500 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:01.223  2423  3500 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:01.223  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:01.225  2423  3500 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:01.226  3057  3057 D VzxSrSpeechRecognitionService: Icon IconStatusSleep
+03-14 18:29:01.229   744  1316 D audio_hw_primary: adev_create_audio_patch: enter: num sources 1, num_sinks 1, handle 0
+03-14 18:29:01.229   744  1316 D audio_hw_primary: adev_create_audio_patch: Capture patch from device 80000004 to mix 550
+03-14 18:29:01.229   744  1316 D audio_hw_primary: update_patch: enter
+03-14 18:29:01.230   744  1316 D audio_hw_primary: route_input_stream: exit: status(0)
+03-14 18:29:01.229  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.230   744  1316 D audio_hw_primary: adev_create_audio_patch: Added a new patch with handle 65
+03-14 18:29:01.230  1368  1647 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.230   744   744 E device_utils: update_device_list: Invalid device: 0
+03-14 18:29:01.232  1368  1647 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@6756fb7, caller=1041/802](true)
+03-14 18:29:01.233   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:01.233   744  1316 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:01.234   802  5158 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:01.234   802  5158 E FMQ     : grantorIdx must be less than 3
+03-14 18:29:01.234   744  5161 D audio_hw_primary: start_input_stream: enter: stream(0xf3dc5410)usecase(23: audio-record), source 6
+03-14 18:29:01.234   744  5161 D audio_hw_primary: select_devices for use case (audio-record)
+03-14 18:29:01.234   744  5161 I msm8974_platform: platform_check_and_set_capture_codec_backend_cfg:txbecf: afe: bitwidth 16, samplerate 16000, channel 1 format 1, backend_idx 8 usecase = 23 device (voice-rec-mic)
+03-14 18:29:01.234   744  5161 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec selected backend: 8 current bit width: 16 and sample rate: 16000, channels 1 format 1
+03-14 18:29:01.234   744  5161 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: current backend bit_width 16 sample_rate 48000 channels 1, format 0
+03-14 18:29:01.234   744  5161 I msm8974_platform: platform_check_capture_codec_backend_cfg:txbecf: afe: Codec backend needs to be updated. new bit width: 16 new sample rate: 48000 new channel: 1 new format: 1
+03-14 18:29:01.234   744  5161 I msm8974_platform: platform_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 1 format 1, backend_idx 8 device (voice-rec-mic)
+03-14 18:29:01.234   744  5161 D audio_hw_primary: check_usecases_capture_codec_backend:becf: force routing 0
+03-14 18:29:01.234   744  5161 E audio_hw_primary: enable_snd_device: addcheck2 other record usecase's dev
+03-14 18:29:01.235   744  5161 D hardware_info: hw_info_append_hw_type : device_name = voice-rec-mic
+03-14 18:29:01.235   744  5161 D audio_hw_primary: enable_snd_device: snd_device(195: current(before increase) ref_cnt 0)
+03-14 18:29:01.235   744  5161 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.235   744  5161 D audio_hw_primary: enable_snd_device: snd_device(195: voice-rec-mic)
+03-14 18:29:01.235   744  5161 D msm8974_platform: platform_get_island_cfg_on_device:island cfg status on snd_device = (voice-rec-mic 0)
+03-14 18:29:01.235   744  5161 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:01.235   744  5161 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0xc3 of type 1 for Event 1, with Raise=1
+03-14 18:29:01.235   744  5161 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received DEVICE event, event type 1
+03-14 18:29:01.235   744  5161 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:01.235   744  5161 D audio_route: Apply path: voice-rec-mic
+03-14 18:29:01.236   744  5161 D soundtrigger: audio HAL using same device 195 as ST
+03-14 18:29:01.236   744  5161 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 23 of type 1 for Event 3, with Raise=1
+03-14 18:29:01.236   744  5161 D soundtrigger: audio_extn_sound_trigger_update_stream_status: send event 13: usecase id 23, type 1
+03-14 18:29:01.236   744  5161 I sound_trigger_platform: platform_stdev_check_and_update_concurrency: Received STREAM event, event type 13, usecase type 1
+03-14 18:29:01.236   744  5161 D sound_trigger_platform: platform_stdev_check_and_update_concurrency: dedicated path 0, reset backend 1, tx 1, rx 0,concurrency session not allowed
+03-14 18:29:01.236   744  5161 D audio_hw_utils: audio_extn_utils_send_app_type_cfg: usecase->in_snd_device voice-rec-mic
+03-14 18:29:01.236   744  5161 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.236   744  5161 D msm8974_platform: platform_get_snd_device_backend_index: device 195 is hw_interface_name INT3_MI2S_TX is be_dai_id=152
+03-14 18:29:01.236   744  5161 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:29:01.236   744  5161 I audio_hw_utils: send_app_type_cfg_for_device CAPTURE app_type 69938, acdb_dev_id 11, sample_rate 16000, snd_device_be_idx 152
+03-14 18:29:01.237   744  5161 D msm8974_platform: platform_split_snd_device: snd_device(195) num devices(1) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.237   744  5161 D audio_hw_utils: audio_extn_btsco_get_sample_rate:Not a BT SCO device, need not update sampling rate
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 11, path = 1, app id = 0x11132, sample rate = 16000, afe_sample_rate = 48000
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_asm_topology
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_adm_topology
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_audtable
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL cal_type[11] acdb_id[11] app_type[69938]
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_SIZE
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_audstrmtable
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+03-14 18:29:01.237   744  5161 D ACDB-LOADER: ACDB -> send_afe_topology
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 11, Topology Id 112fb
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> send_afe_cal
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE
+03-14 18:29:01.238   744  5161 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: Error: ACDB_CMD_GET_AFE_COMMON_TABLE_SIZE Returned = -19
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+03-14 18:29:01.238   744  5161 D android.hardware.audio.service: Failed to fetch the lookup information of the device 000018EB 11
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: Error: ACDB AFE returned = -19
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL cal_type[17] acdb_id[11]
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 11 path = 1
+03-14 18:29:01.238   744  5161 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+03-14 18:29:01.238   744  5161 D audio_hw_primary: enable_audio_route: apply mixer and update path: audio-record
+03-14 18:29:01.238   744  5161 D audio_route: Apply path: audio-record
+03-14 18:29:01.239   744  5161 D audio_hw_primary: select_devices: done
+03-14 18:29:01.257  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->hello view-zix
+03-14 18:29:01.260  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Voice off
+03-14 18:29:01.263  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Go back
+03-14 18:29:01.264  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Close
+03-14 18:29:01.266  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->A
+03-14 18:29:01.267  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->B
+03-14 18:29:01.267   744  5161 D audio_hw_primary: start_input_stream: exit
+03-14 18:29:01.268  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->C
+03-14 18:29:01.269  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->D
+03-14 18:29:01.270  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->E
+03-14 18:29:01.270  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->F
+03-14 18:29:01.271  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->G
+03-14 18:29:01.272  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->H
+03-14 18:29:01.273  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->I
+03-14 18:29:01.274  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->J
+03-14 18:29:01.275  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->K
+03-14 18:29:01.276  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->L
+03-14 18:29:01.277  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->M
+03-14 18:29:01.278  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->1
+03-14 18:29:01.278  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->2
+03-14 18:29:01.279  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->3
+03-14 18:29:01.281  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->4
+03-14 18:29:01.282  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->5
+03-14 18:29:01.283  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->erase
+03-14 18:29:01.284  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->scan code
+03-14 18:29:01.285  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->queue are code
+03-14 18:29:01.287  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->N
+03-14 18:29:01.288  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->O
+03-14 18:29:01.289  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->P
+03-14 18:29:01.289  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Q
+03-14 18:29:01.290  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->R
+03-14 18:29:01.291  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->S
+03-14 18:29:01.291  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->T
+03-14 18:29:01.292  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->U
+03-14 18:29:01.293  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->V
+03-14 18:29:01.294  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->W
+03-14 18:29:01.295  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->X
+03-14 18:29:01.296  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Y
+03-14 18:29:01.297  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->Z
+03-14 18:29:01.298  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->6
+03-14 18:29:01.299  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->7
+03-14 18:29:01.300  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->8
+03-14 18:29:01.301  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->9
+03-14 18:29:01.302  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->0
+03-14 18:29:01.303  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->space
+03-14 18:29:01.304  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->symbols
+03-14 18:29:01.305  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->shift
+03-14 18:29:01.306  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->caps
+03-14 18:29:01.307  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->forward slash
+03-14 18:29:01.308  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->at sign
+03-14 18:29:01.310  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left parenthesis
+03-14 18:29:01.311  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right parenthesis
+03-14 18:29:01.313  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->apostrophe
+03-14 18:29:01.314  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->quotation mark
+03-14 18:29:01.316  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->comma
+03-14 18:29:01.317  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->period
+03-14 18:29:01.318  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->question mark
+03-14 18:29:01.319  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->exclamation point
+03-14 18:29:01.321  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->left
+03-14 18:29:01.322  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->right
+03-14 18:29:01.323  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->return
+03-14 18:29:01.324  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->continue
+03-14 18:29:01.325  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->done
+03-14 18:29:01.326  3057  5159 I ContentValuesIterator: DCC item: CustomPhrase_Ortho->enter
+03-14 18:29:01.341  3057  5159 I DCCListener: DCC event: DCC_DATA_ID ()
+03-14 18:29:01.341  3057  5159 I DCCListener: DCC event: DCC_DATA_PREPARATION_FINISHED (current_total_number=63  added=63  removed=0  failed_to_add=0  failed_to_remove=0)
+03-14 18:29:01.341  3057  5148 I Asr     : Data prep finished event received; proceeding
+03-14 18:29:01.366   744  1316 D audio_hw_primary: out_standby: enter: stream (0xf3884330) usecase(1: low-latency-playback)
+03-14 18:29:01.386  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:01.386  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:01.386  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:01.388  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:01.409  1368  1453 D InputDispatcher: Waiting to send key to Window{32a7aa7 u0 org.chromium.webview_shell/org.chromium.webview_shell.WebViewBrowserActivity} because there are unprocessed events that may cause focus to change
+03-14 18:29:01.435  2476  2476 W VuzixNotificationListener: onNotificationPosted: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:29:01.435  2476  2476 I VuzixNotificationListener: notify: 0|com.vuzix.speechrecognitionservice|1|null|1000
+03-14 18:29:01.435  2476  2476 W VuzixNotificationListener: shouldShowPopup 2 true
+03-14 18:29:01.445   744  1316 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback
+03-14 18:29:01.447   744  1316 E soundtrigger: audio_extn_sound_trigger_update_stream_status: invalid input device 0x0, for event 2
+03-14 18:29:01.447   744  1316 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_info->id 1 of type 0 for Event 2, with Raise=0
+03-14 18:29:01.447   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.447   744  1316 I msm8974_platform: platform_get_custom_mtmx_params: no matching param with id 0 ip_ch 2 op_ch 2 uc_id 1 snd_dev 2
+03-14 18:29:01.447   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:29:01.447   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: current(before decrease) ref_cnt 1) 
+03-14 18:29:01.447   744  1316 D hardware_info: hw_info_append_hw_type : device_name = speaker
+03-14 18:29:01.447   744  1316 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+03-14 18:29:01.447   744  1316 D msm8974_platform: platform_split_snd_device: snd_device(2) num devices(0) new_snd_devices[0](0) ret=-22
+03-14 18:29:01.450   744  1316 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+03-14 18:29:01.450   744  1316 D audio_hw_primary: out_standby: exit
+03-14 18:29:01.451  1368  5119 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+03-14 18:29:01.573  2423  3502 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:01.573  2423  3502 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:01.573  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:01.576  2423  3502 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:01.780  2423  3502 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:01.780  2423  3502 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:01.780  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:01.784  2423  3502 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:02.021  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:02.021  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:02.021  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:02.024  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:02.225  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:02.225  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:02.225  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:02.227  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:02.376  3596  3596 W Choreographer: Frame time is 0.083763 ms in the future!  Check that graphics HAL is generating vsync timestamps using the correct timebase.
+03-14 18:29:02.458  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:02.458  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:02.458  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:02.460  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:02.663  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:02.663  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:02.663  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:02.665  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:02.864  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:02.864  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:02.864  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:02.867  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:03.072  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:03.072  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:03.072  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:03.075  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:03.292  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:03.292  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:03.292  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:03.295  2423  2606 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:03.495  2423  3500 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:03.495  2423  3500 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:03.495  2423  3500 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:03.498  2423  3500 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:03.691  2423  3502 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:03.691  2423  3502 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:03.691  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:03.693  2423  3502 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:03.903  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:03.903  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:03.903  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:03.906  2423  2606 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:04.102  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:04.102  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:04.102  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:04.105  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:04.140  3057  5148 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:29:04.145  3057  5148 I Asr     : Restart on not OK 2260
+03-14 18:29:04.145  3057  5148 I AsrConfiguration: Add app: VuzixApp-en
+03-14 18:29:04.150  3057  5148 I Asr     : Restart end 2550
+03-14 18:29:04.324  2423  3502 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:04.324  2423  3502 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:04.324  2423  3502 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:04.326  2423  3502 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:04.481   765  1516 E WifiHAL : Received Data Stall event, sending alert 8
+03-14 18:29:04.483  1368  1493 W WifiVendorHal: onDebugErrorAlert 264
+03-14 18:29:04.486  1368  1468 W WifiDiags: CaptureBugReport 264
+03-14 18:29:04.499   765   765 E WifiHAL : wifi_get_ring_data: Error -5 happened. 
+03-14 18:29:04.501  1368  1468 E WifiVendorHal: getRingBufferData(l.1739) failed {.code = ERROR_INVALID_ARGS, .description = }
+03-14 18:29:04.540  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:04.540  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:04.540  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:04.542  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:04.730  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:04.730  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:04.730  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:04.733  2423  2606 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:04.938  2423  3501 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:04.938  2423  3501 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:04.938  2423  3501 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:04.941  2423  3501 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:05.148  2423  2607 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:05.148  2423  2607 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:05.148  2423  2607 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:05.150  2423  2607 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:05.373  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:05.373  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:05.373  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
+03-14 18:29:05.376  2423  2606 I MediaProvider: Retrying database update after deleting conflicting entry
+03-14 18:29:05.584  2423  2606 W MediaProvider: Database update failed while renaming /storage/emulated/0/browser_logs.txt.09
+03-14 18:29:05.584  2423  2606 W MediaProvider: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:890)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:756)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:66)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.DatabaseUtils.executeUpdateDelete(DatabaseUtils.java:500)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:684)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2(SQLiteQueryBuilder.java:606)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$update$2$SQLiteQueryBuilder(Unknown Source:0)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.-$$Lambda$SQLiteQueryBuilder$AgEfPRRGX0oz5jjY6qV0HE57T3E.apply(Unknown Source:10)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:555)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.util.SQLiteQueryBuilder.update(SQLiteQueryBuilder.java:605)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1682)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateDatabaseForFuseRename(MediaProvider.java:1661)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileForFuse(MediaProvider.java:1984)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameFileUncheckedForFuse(MediaProvider.java:1955)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameUncheckedForFuse(MediaProvider.java:2032)
+03-14 18:29:05.584  2423  2606 W MediaProvider: 	at com.android.providers.media.MediaProvider.renameForFuse(MediaProvider.java:2078)
