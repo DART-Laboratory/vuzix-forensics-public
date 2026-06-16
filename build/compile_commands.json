@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/main.cpp.o -c /home/rhys/src/vuzix-forensics/main.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/main.cpp",
+  "output": "CMakeFiles/tp.dir/main.cpp.o"
+}
+]

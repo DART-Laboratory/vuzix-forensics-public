@@ -1,0 +1,3 @@
+/home/rhys/src/vuzix-forensics/build/CMakeFiles/tp.dir
+/home/rhys/src/vuzix-forensics/build/CMakeFiles/edit_cache.dir
+/home/rhys/src/vuzix-forensics/build/CMakeFiles/rebuild_cache.dir

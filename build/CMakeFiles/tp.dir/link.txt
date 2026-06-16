@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tp.dir/link.d CMakeFiles/tp.dir/main.cpp.o -o tp

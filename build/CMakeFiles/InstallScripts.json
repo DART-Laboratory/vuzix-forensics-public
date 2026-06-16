@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/rhys/src/vuzix-forensics/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
