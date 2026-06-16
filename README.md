@@ -22,4 +22,22 @@ This project uses:
 * CLI11 - Used for customizing `tp` as a command-line utility.
 * GraphViz (`dot` utility) - Used for generating graph visualization.
 
-Make sure to have them installed.
+### Installing dependencies
+
+#### Debian-based
+
+* `sudo apt install cmake`
+* `sudo apt install libcli11-dev`
+* `sudo apt install graphviz`
+
+#### Red Hat-based
+
+* `sudo dnf install cmake`
+* `sudo dnf install cli11-devel`
+* `sudo dnf install graphviz`
+
+#### Windows
+
+* CMake download: https://cmake.org/download/
+* CLI11 vcpkg download: https://cliutils.github.io/CLI11/book/chapters/installation.html#installing-cli11-using-vcpkg
+* GraphViz download: https://graphviz.org/download/
