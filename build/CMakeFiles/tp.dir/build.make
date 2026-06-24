@@ -86,18 +86,66 @@ CMakeFiles/tp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/src/vuzix-forensics/main.cpp -o CMakeFiles/tp.dir/main.cpp.s
 
+CMakeFiles/tp.dir/App.cpp.o: CMakeFiles/tp.dir/flags.make
+CMakeFiles/tp.dir/App.cpp.o: /home/rhys/src/vuzix-forensics/App.cpp
+CMakeFiles/tp.dir/App.cpp.o: CMakeFiles/tp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tp.dir/App.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp.dir/App.cpp.o -MF CMakeFiles/tp.dir/App.cpp.o.d -o CMakeFiles/tp.dir/App.cpp.o -c /home/rhys/src/vuzix-forensics/App.cpp
+
+CMakeFiles/tp.dir/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp.dir/App.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/src/vuzix-forensics/App.cpp > CMakeFiles/tp.dir/App.cpp.i
+
+CMakeFiles/tp.dir/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp.dir/App.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/src/vuzix-forensics/App.cpp -o CMakeFiles/tp.dir/App.cpp.s
+
+CMakeFiles/tp.dir/Reader.cpp.o: CMakeFiles/tp.dir/flags.make
+CMakeFiles/tp.dir/Reader.cpp.o: /home/rhys/src/vuzix-forensics/Reader.cpp
+CMakeFiles/tp.dir/Reader.cpp.o: CMakeFiles/tp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tp.dir/Reader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp.dir/Reader.cpp.o -MF CMakeFiles/tp.dir/Reader.cpp.o.d -o CMakeFiles/tp.dir/Reader.cpp.o -c /home/rhys/src/vuzix-forensics/Reader.cpp
+
+CMakeFiles/tp.dir/Reader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp.dir/Reader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/src/vuzix-forensics/Reader.cpp > CMakeFiles/tp.dir/Reader.cpp.i
+
+CMakeFiles/tp.dir/Reader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp.dir/Reader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/src/vuzix-forensics/Reader.cpp -o CMakeFiles/tp.dir/Reader.cpp.s
+
+CMakeFiles/tp.dir/Analyzer.cpp.o: CMakeFiles/tp.dir/flags.make
+CMakeFiles/tp.dir/Analyzer.cpp.o: /home/rhys/src/vuzix-forensics/Analyzer.cpp
+CMakeFiles/tp.dir/Analyzer.cpp.o: CMakeFiles/tp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tp.dir/Analyzer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tp.dir/Analyzer.cpp.o -MF CMakeFiles/tp.dir/Analyzer.cpp.o.d -o CMakeFiles/tp.dir/Analyzer.cpp.o -c /home/rhys/src/vuzix-forensics/Analyzer.cpp
+
+CMakeFiles/tp.dir/Analyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tp.dir/Analyzer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/src/vuzix-forensics/Analyzer.cpp > CMakeFiles/tp.dir/Analyzer.cpp.i
+
+CMakeFiles/tp.dir/Analyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tp.dir/Analyzer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/src/vuzix-forensics/Analyzer.cpp -o CMakeFiles/tp.dir/Analyzer.cpp.s
+
 # Object files for target tp
 tp_OBJECTS = \
-"CMakeFiles/tp.dir/main.cpp.o"
+"CMakeFiles/tp.dir/main.cpp.o" \
+"CMakeFiles/tp.dir/App.cpp.o" \
+"CMakeFiles/tp.dir/Reader.cpp.o" \
+"CMakeFiles/tp.dir/Analyzer.cpp.o"
 
 # External object files for target tp
 tp_EXTERNAL_OBJECTS =
 
 tp: CMakeFiles/tp.dir/main.cpp.o
+tp: CMakeFiles/tp.dir/App.cpp.o
+tp: CMakeFiles/tp.dir/Reader.cpp.o
+tp: CMakeFiles/tp.dir/Analyzer.cpp.o
 tp: CMakeFiles/tp.dir/build.make
 tp: CMakeFiles/tp.dir/compiler_depend.ts
 tp: CMakeFiles/tp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,1 @@
+*** command 'lshal debug -E vendor.qti.hardware.systemhelper@1.0::ISystemEvent/default' failed: exit code 128

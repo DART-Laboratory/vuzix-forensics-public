@@ -3,6 +3,9 @@ tp: \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o \
   CMakeFiles/tp.dir/main.cpp.o \
+  CMakeFiles/tp.dir/App.cpp.o \
+  CMakeFiles/tp.dir/Reader.cpp.o \
+  CMakeFiles/tp.dir/Analyzer.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
@@ -45,6 +48,12 @@ tp: \
 /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o:
 
 CMakeFiles/tp.dir/main.cpp.o:
+
+CMakeFiles/tp.dir/App.cpp.o:
+
+CMakeFiles/tp.dir/Reader.cpp.o:
+
+CMakeFiles/tp.dir/Analyzer.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so:
 

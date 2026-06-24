@@ -136,6 +136,78 @@ tp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/build
 .PHONY : tp/fast
 
+Analyzer.o: Analyzer.cpp.o
+.PHONY : Analyzer.o
+
+# target to build an object file
+Analyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.o
+.PHONY : Analyzer.cpp.o
+
+Analyzer.i: Analyzer.cpp.i
+.PHONY : Analyzer.i
+
+# target to preprocess a source file
+Analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.i
+.PHONY : Analyzer.cpp.i
+
+Analyzer.s: Analyzer.cpp.s
+.PHONY : Analyzer.s
+
+# target to generate assembly for a file
+Analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.s
+.PHONY : Analyzer.cpp.s
+
+App.o: App.cpp.o
+.PHONY : App.o
+
+# target to build an object file
+App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/App.cpp.o
+.PHONY : App.cpp.o
+
+App.i: App.cpp.i
+.PHONY : App.i
+
+# target to preprocess a source file
+App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/App.cpp.i
+.PHONY : App.cpp.i
+
+App.s: App.cpp.s
+.PHONY : App.s
+
+# target to generate assembly for a file
+App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/App.cpp.s
+.PHONY : App.cpp.s
+
+Reader.o: Reader.cpp.o
+.PHONY : Reader.o
+
+# target to build an object file
+Reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Reader.cpp.o
+.PHONY : Reader.cpp.o
+
+Reader.i: Reader.cpp.i
+.PHONY : Reader.i
+
+# target to preprocess a source file
+Reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Reader.cpp.i
+.PHONY : Reader.cpp.i
+
+Reader.s: Reader.cpp.s
+.PHONY : Reader.s
+
+# target to generate assembly for a file
+Reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Reader.cpp.s
+.PHONY : Reader.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -170,6 +242,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp"
+	@echo "... Analyzer.o"
+	@echo "... Analyzer.i"
+	@echo "... Analyzer.s"
+	@echo "... App.o"
+	@echo "... App.i"
+	@echo "... App.s"
+	@echo "... Reader.o"
+	@echo "... Reader.i"
+	@echo "... Reader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

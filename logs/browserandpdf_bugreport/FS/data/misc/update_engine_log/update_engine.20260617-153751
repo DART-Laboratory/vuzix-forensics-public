@@ -1,0 +1,8 @@
+[0617/153751.368409] [INFO:main.cc(54)] A/B Update Engine starting
+[0617/153751.404373] [INFO:boot_control_android.cc(70)] Loaded boot control hidl hal.
+[0617/153751.421076] [INFO:update_attempter_android.cc(1010)] Scheduling CleanupPreviousUpdateAction.
+[0617/153751.447277] [INFO:action_processor.cc(51)] ActionProcessor: starting NoOpAction
+[0617/153751.459898] [INFO:action_processor.cc(116)] ActionProcessor: finished last action NoOpAction with code ErrorCode::kSuccess
+[0617/153751.470819] [INFO:update_attempter_android.cc(522)] Processing Done.
+[0617/153751.481700] [INFO:update_attempter_android.cc(662)] Terminating cleanup previous update.
+[0617/163712.336132] [INFO:main.cc(71)] A/B Update Engine terminating with exit code 0

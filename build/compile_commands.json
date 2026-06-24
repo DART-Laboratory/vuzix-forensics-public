@@ -4,5 +4,23 @@
   "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/main.cpp.o -c /home/rhys/src/vuzix-forensics/main.cpp",
   "file": "/home/rhys/src/vuzix-forensics/main.cpp",
   "output": "CMakeFiles/tp.dir/main.cpp.o"
+},
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/App.cpp.o -c /home/rhys/src/vuzix-forensics/App.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/App.cpp",
+  "output": "CMakeFiles/tp.dir/App.cpp.o"
+},
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Reader.cpp.o -c /home/rhys/src/vuzix-forensics/Reader.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/Reader.cpp",
+  "output": "CMakeFiles/tp.dir/Reader.cpp.o"
+},
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Analyzer.cpp.o -c /home/rhys/src/vuzix-forensics/Analyzer.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/Analyzer.cpp",
+  "output": "CMakeFiles/tp.dir/Analyzer.cpp.o"
 }
 ]

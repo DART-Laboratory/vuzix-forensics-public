@@ -7,7 +7,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(CLI11 CONFIG REQUIRED)
 
-add_executable(tp main.cpp)
+add_executable(tp
+	main.cpp
+	App.cpp
+	Reader.cpp
+	Analyzer.cpp
+)
 
 target_link_libraries(tp PRIVATE CLI11::CLI11)
 
