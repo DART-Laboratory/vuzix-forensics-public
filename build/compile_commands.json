@@ -19,8 +19,20 @@
 },
 {
   "directory": "/home/rhys/src/vuzix-forensics/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Analyzer.cpp.o -c /home/rhys/src/vuzix-forensics/Analyzer.cpp",
-  "file": "/home/rhys/src/vuzix-forensics/Analyzer.cpp",
-  "output": "CMakeFiles/tp.dir/Analyzer.cpp.o"
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/RelationGenerator.cpp.o -c /home/rhys/src/vuzix-forensics/RelationGenerator.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/RelationGenerator.cpp",
+  "output": "CMakeFiles/tp.dir/RelationGenerator.cpp.o"
+},
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Cleaner.cpp.o -c /home/rhys/src/vuzix-forensics/Cleaner.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/Cleaner.cpp",
+  "output": "CMakeFiles/tp.dir/Cleaner.cpp.o"
+},
+{
+  "directory": "/home/rhys/src/vuzix-forensics/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Builder.cpp.o -c /home/rhys/src/vuzix-forensics/Builder.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/Builder.cpp",
+  "output": "CMakeFiles/tp.dir/Builder.cpp.o"
 }
 ]

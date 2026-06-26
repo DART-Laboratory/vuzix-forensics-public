@@ -136,30 +136,6 @@ tp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/build
 .PHONY : tp/fast
 
-Analyzer.o: Analyzer.cpp.o
-.PHONY : Analyzer.o
-
-# target to build an object file
-Analyzer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.o
-.PHONY : Analyzer.cpp.o
-
-Analyzer.i: Analyzer.cpp.i
-.PHONY : Analyzer.i
-
-# target to preprocess a source file
-Analyzer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.i
-.PHONY : Analyzer.cpp.i
-
-Analyzer.s: Analyzer.cpp.s
-.PHONY : Analyzer.s
-
-# target to generate assembly for a file
-Analyzer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Analyzer.cpp.s
-.PHONY : Analyzer.cpp.s
-
 App.o: App.cpp.o
 .PHONY : App.o
 
@@ -184,6 +160,54 @@ App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/App.cpp.s
 .PHONY : App.cpp.s
 
+Builder.o: Builder.cpp.o
+.PHONY : Builder.o
+
+# target to build an object file
+Builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Builder.cpp.o
+.PHONY : Builder.cpp.o
+
+Builder.i: Builder.cpp.i
+.PHONY : Builder.i
+
+# target to preprocess a source file
+Builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Builder.cpp.i
+.PHONY : Builder.cpp.i
+
+Builder.s: Builder.cpp.s
+.PHONY : Builder.s
+
+# target to generate assembly for a file
+Builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Builder.cpp.s
+.PHONY : Builder.cpp.s
+
+Cleaner.o: Cleaner.cpp.o
+.PHONY : Cleaner.o
+
+# target to build an object file
+Cleaner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.o
+.PHONY : Cleaner.cpp.o
+
+Cleaner.i: Cleaner.cpp.i
+.PHONY : Cleaner.i
+
+# target to preprocess a source file
+Cleaner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.i
+.PHONY : Cleaner.cpp.i
+
+Cleaner.s: Cleaner.cpp.s
+.PHONY : Cleaner.s
+
+# target to generate assembly for a file
+Cleaner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.s
+.PHONY : Cleaner.cpp.s
+
 Reader.o: Reader.cpp.o
 .PHONY : Reader.o
 
@@ -207,6 +231,30 @@ Reader.s: Reader.cpp.s
 Reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Reader.cpp.s
 .PHONY : Reader.cpp.s
+
+RelationGenerator.o: RelationGenerator.cpp.o
+.PHONY : RelationGenerator.o
+
+# target to build an object file
+RelationGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.o
+.PHONY : RelationGenerator.cpp.o
+
+RelationGenerator.i: RelationGenerator.cpp.i
+.PHONY : RelationGenerator.i
+
+# target to preprocess a source file
+RelationGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.i
+.PHONY : RelationGenerator.cpp.i
+
+RelationGenerator.s: RelationGenerator.cpp.s
+.PHONY : RelationGenerator.s
+
+# target to generate assembly for a file
+RelationGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.s
+.PHONY : RelationGenerator.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -242,15 +290,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tp"
-	@echo "... Analyzer.o"
-	@echo "... Analyzer.i"
-	@echo "... Analyzer.s"
 	@echo "... App.o"
 	@echo "... App.i"
 	@echo "... App.s"
+	@echo "... Builder.o"
+	@echo "... Builder.i"
+	@echo "... Builder.s"
+	@echo "... Cleaner.o"
+	@echo "... Cleaner.i"
+	@echo "... Cleaner.s"
 	@echo "... Reader.o"
 	@echo "... Reader.i"
 	@echo "... Reader.s"
+	@echo "... RelationGenerator.o"
+	@echo "... RelationGenerator.i"
+	@echo "... RelationGenerator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

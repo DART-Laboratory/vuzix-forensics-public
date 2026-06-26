@@ -5,7 +5,9 @@ tp: \
   CMakeFiles/tp.dir/main.cpp.o \
   CMakeFiles/tp.dir/App.cpp.o \
   CMakeFiles/tp.dir/Reader.cpp.o \
-  CMakeFiles/tp.dir/Analyzer.cpp.o \
+  CMakeFiles/tp.dir/RelationGenerator.cpp.o \
+  CMakeFiles/tp.dir/Cleaner.cpp.o \
+  CMakeFiles/tp.dir/Builder.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libm.so \
@@ -53,7 +55,11 @@ CMakeFiles/tp.dir/App.cpp.o:
 
 CMakeFiles/tp.dir/Reader.cpp.o:
 
-CMakeFiles/tp.dir/Analyzer.cpp.o:
+CMakeFiles/tp.dir/RelationGenerator.cpp.o:
+
+CMakeFiles/tp.dir/Cleaner.cpp.o:
+
+CMakeFiles/tp.dir/Builder.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/libstdc++.so:
 

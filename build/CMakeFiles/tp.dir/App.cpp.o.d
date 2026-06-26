@@ -161,6 +161,16 @@ CMakeFiles/tp.dir/App.cpp.o: /home/rhys/src/vuzix-forensics/App.cpp \
  /usr/include/c++/16/bits/uniform_int_dist.h \
  /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/unicode-data.h /usr/include/c++/16/bits/print.h \
+ /usr/include/c++/16/fstream /usr/include/c++/16/istream \
+ /usr/include/c++/16/ios /usr/include/c++/16/bits/basic_ios.h \
+ /usr/include/c++/16/bits/basic_ios.tcc /usr/include/c++/16/ostream \
+ /usr/include/c++/16/bits/ostream.h \
+ /usr/include/c++/16/bits/ostream_print.h \
+ /usr/include/c++/16/bits/ostream.tcc \
+ /usr/include/c++/16/bits/istream.tcc \
+ /usr/include/c++/16/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/16/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/16/bits/fstream.tcc \
  /home/rhys/src/vuzix-forensics/App.h /usr/include/CLI/App.hpp \
  /usr/include/c++/16/algorithm /usr/include/c++/16/bits/ranges_algo.h \
  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
@@ -179,13 +189,8 @@ CMakeFiles/tp.dir/App.cpp.o: /home/rhys/src/vuzix-forensics/App.cpp \
  /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/bits/binders.h \
  /usr/include/c++/16/bits/funcwrap.h \
  /usr/include/c++/16/bits/mofunc_impl.h /usr/include/c++/16/iostream \
- /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream.h \
- /usr/include/c++/16/ios /usr/include/c++/16/bits/basic_ios.h \
- /usr/include/c++/16/bits/basic_ios.tcc \
- /usr/include/c++/16/bits/ostream_print.h \
- /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
- /usr/include/c++/16/bits/istream.tcc /usr/include/c++/16/iterator \
- /usr/include/c++/16/bits/stream_iterator.h /usr/include/c++/16/memory \
+ /usr/include/c++/16/iterator /usr/include/c++/16/bits/stream_iterator.h \
+ /usr/include/c++/16/memory \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
  /usr/include/c++/16/bits/align.h /usr/include/c++/16/bits/unique_ptr.h \
  /usr/include/c++/16/bits/shared_ptr.h \
@@ -206,10 +211,7 @@ CMakeFiles/tp.dir/App.cpp.o: /home/rhys/src/vuzix-forensics/App.cpp \
  /usr/include/c++/16/bits/stl_multiset.h /usr/include/c++/16/sstream \
  /usr/include/c++/16/bits/sstream.tcc /usr/include/c++/16/utility \
  /usr/include/c++/16/bits/stl_relops.h /usr/include/c++/16/bits/intcmp.h \
- /usr/include/CLI/ConfigFwd.hpp /usr/include/c++/16/fstream \
- /usr/include/c++/16/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/16/bits/fstream.tcc /usr/include/CLI/Encoding.hpp \
+ /usr/include/CLI/ConfigFwd.hpp /usr/include/CLI/Encoding.hpp \
  /usr/include/CLI/Macros.hpp /usr/include/c++/16/filesystem \
  /usr/include/c++/16/bits/fs_fwd.h /usr/include/c++/16/bits/chrono.h \
  /usr/include/c++/16/ratio /usr/include/c++/16/bits/parse_numbers.h \
@@ -251,4 +253,6 @@ CMakeFiles/tp.dir/App.cpp.o: /home/rhys/src/vuzix-forensics/App.cpp \
  /usr/include/CLI/Config.hpp /usr/include/CLI/impl/Config_inl.hpp \
  /home/rhys/src/vuzix-forensics/Reader.h /usr/include/c++/16/chrono \
  /usr/include/c++/16/bits/chrono_io.h \
- /home/rhys/src/vuzix-forensics/Analyzer.h
+ /home/rhys/src/vuzix-forensics/RelationGenerator.h \
+ /home/rhys/src/vuzix-forensics/Cleaner.h \
+ /home/rhys/src/vuzix-forensics/Builder.h
