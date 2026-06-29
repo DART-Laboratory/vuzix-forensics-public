@@ -16,9 +16,9 @@ This project uses:
 
 * CMake - Used for configuring and building C++ project.
 * CLI11 - Used for customizing `tp` as a command-line utility.
-* GraphViz (`dot` utility) - Used for generating graph visualization.\*
+* GraphViz (`dot` utility)\* - Used for generating graph visualization.
 
-\* *GraphViz is the only dependency required to actually RUN the program properly. It is used to generate the svg file. If your environment does not have the `dot` utility, `tp` will not be able to convert the .dot file into an svg. Everything else will work, however.*
+\**GraphViz is the only dependency required to actually RUN the program properly. It is used to generate the svg file. If your environment does not have the `dot` utility, `tp` will not be able to convert the .dot file into an svg. Everything else will work, however.*
 
 ### Installing dependencies
 
