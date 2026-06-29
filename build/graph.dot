@@ -1,50 +1,55 @@
 digraph G {
 layout=fdp
-	"com.android.systemui"
-	"com.android.networkstack.process"
-	"com.android.settings"
+	"No name"
+	"No name"
+	"No name"
+	"No name"
+	"No name"
 	"android.ext.services"
-	"com.qualcomm.qti.qccauthmgr"
-	"com.android.deskclock"
-	"com.android.providers.media.module"
-	"android.process.media"
-	"com.vuzix.accessibilityservice"
-	"com.android.keychain"
-	"com.android.printspooler"
-	"com.vuzix.notificationdrawer"
-	"com.vuzix.launcher.m400"
-	"com.android.vending"
 	"android.process.acore"
-	"com.vuzix.keyboard.latin"
+	"android.process.media"
 	"com.android.calendar"
 	"com.android.contacts"
+	"com.android.deskclock"
+	"com.android.documentsui"
 	"com.android.dynsystem"
+	"com.android.externalstorage"
+	"com.android.keychain"
+	"com.android.localtransport"
 	"com.android.managedprovisioning"
+	"com.android.networkstack.process"
 	"com.android.onetimeinitializer"
 	"com.android.packageinstaller"
 	"com.android.permissioncontroller"
-	"com.android.providers.calendar"
-	"com.android.shell"
 	"com.android.phone"
+	"com.android.printspooler"
+	"com.android.providers.calendar"
+	"com.android.providers.media.module"
+	"com.android.settings"
+	"com.android.shell"
+	"com.android.systemui"
 	"com.android.traceur"
+	"com.android.vending"
 	"com.qti.ltebc"
-	"com.android.localtransport"
+	"com.qti.ltebc"
+	"com.qti.ltebc"
+	"com.qti.ltebc"
+	"com.qualcomm.qti.qccauthmgr"
 	"com.qualcomm.qti.qms.service.connectionsecurity"
+	"com.qualcomm.qti.qms.service.trustzoneaccess"
+	"com.vuzix.accessibilityservice"
 	"com.vuzix.android.ota"
+	"com.vuzix.downloadslauncher"
+	"com.vuzix.hud.pdfviewer"
+	"com.vuzix.keyboard.latin"
+	"com.vuzix.launcher.m400"
+	"com.vuzix.notificationdrawer"
 	"com.vuzix.quick_start"
 	"com.vuzix.speechrecognitionservice"
 	"com.vuzix.temperatureservice"
 	"com.vuzix.timesyncservice"
 	"com.vuzix.timezoneservice"
-	"com.android.externalstorage"
-	"com.qti.ltebc"
-	"com.qti.ltebc"
-	"com.qti.ltebc"
-	"com.qualcomm.qti.qms.service.trustzoneaccess"
 	"org.chromium.webview_shell"
-	"com.vuzix.downloadslauncher"
-	"com.android.documentsui"
-	"com.vuzix.hud.pdfviewer"
 	subgraph "cluster_android.ext.services" {
 		"android.ext.services.autofill.InlineSuggestionRenderServiceImpl"
 		label="android.ext.services"
@@ -62,6 +67,7 @@ layout=fdp
 		label="com.android.deskclock"
 	}
 	subgraph "cluster_com.android.documentsui" {
+		".ViewDownloadsActivity"
 		"com.android.documentsui.ViewDownloadsActivity"
 		label="com.android.documentsui"
 	}
@@ -122,6 +128,7 @@ layout=fdp
 		label="com.android.providers.media.module"
 	}
 	subgraph "cluster_com.android.settings" {
+		".FallbackHome"
 		"com.android.settings.FallbackHome"
 		label="com.android.settings"
 	}
@@ -134,6 +141,7 @@ layout=fdp
 		label="com.android.stk"
 	}
 	subgraph "cluster_com.android.systemui" {
+		".usb.UsbDebuggingActivity"
 		"com.android.systemui.SystemUIService"
 		label="com.android.systemui"
 	}
@@ -146,24 +154,23 @@ layout=fdp
 		label="com.android.vending"
 	}
 	subgraph "cluster_com.android.webview" {
-		"org.chromium.android_webview.services.VariationsSeedServer"
-		"webview_service"
 		"org.chromium.android_webview.nonembedded.AwComponentUpdateService"
+		"org.chromium.android_webview.services.VariationsSeedServer"
 		"webview_apk"
+		"webview_service"
 		label="com.android.webview"
 	}
 	subgraph "cluster_com.google.android.gms" {
 		"com.huawei.signature.diff.SignatureService"
-		"signature"
 		"org.microg.gms.gcm.TriggerReceiver"
 		"persistent"
+		"signature"
 		label="com.google.android.gms"
 	}
 	subgraph "cluster_com.qti.ltebc" {
+		"com.qualcomm.ltebc.LTEBroadcastAlarmReceiver"
 		"com.qualcomm.ltebc.LTEBroadcastBootReceiver"
 		"com.qualcomm.ltebc.LTEBroadcastReceiver"
-		"com.qualcomm.ltebc.LTEBroadcastReceiver"
-		"com.qualcomm.ltebc.LTEBroadcastAlarmReceiver"
 		label="com.qti.ltebc"
 	}
 	subgraph "cluster_com.qualcomm.qti.qccauthmgr" {
@@ -187,10 +194,12 @@ layout=fdp
 		label="com.vuzix.android.ota"
 	}
 	subgraph "cluster_com.vuzix.downloadslauncher" {
+		".Downloads"
 		"com.vuzix.downloadslauncher.Downloads"
 		label="com.vuzix.downloadslauncher"
 	}
 	subgraph "cluster_com.vuzix.hud.pdfviewer" {
+		".viewer.ViewerActivity"
 		"com.vuzix.hud.pdfviewer.viewer.ViewerActivity"
 		label="com.vuzix.hud.pdfviewer"
 	}
@@ -227,15 +236,18 @@ layout=fdp
 		label="com.vuzix.timezoneservice"
 	}
 	subgraph "cluster_org.chromium.webview_shell" {
+		".WebViewBrowserActivity"
 		"org.chromium.webview_shell.WebViewBrowserActivity"
 		label="org.chromium.webview_shell"
 	}
 "com.android.systemui.SystemUIService" -> "com.android.systemui"
 "com.android.server.NetworkStackService" -> "com.android.networkstack.process"
+"No name" -> ".FallbackHome"
 "com.android.settings.FallbackHome" -> "com.android.settings"
 "android.ext.services.autofill.InlineSuggestionRenderServiceImpl" -> "android.ext.services"
 "com.qualcomm.qti.qccauthmgr.providers.SMQContentProvider" -> "com.qualcomm.qti.qccauthmgr"
 "com.android.deskclock.AlarmInitReceiver" -> "com.android.deskclock"
+"No name" -> "com.vuzix.launcher.common.activity.LauncherActivity"
 "com.android.providers.media.fuse.ExternalStorageServiceImpl" -> "com.android.providers.media.module"
 "com.android.mtp.MtpReceiver" -> "android.process.media"
 "com.vuzix.accessibilityservice.AccessibilitySpeechInput" -> "com.vuzix.accessibilityservice"
@@ -249,6 +261,7 @@ layout=fdp
 "com.vuzix.keyboard.latin.LatinKeyboardService" -> "com.vuzix.keyboard.latin"
 "com.android.calendar.alerts.AlertReceiver" -> "com.android.calendar"
 "com.android.contacts.interactions.OnBootOrUpgradeReceiver" -> "com.android.contacts"
+"No name" -> ".usb.UsbDebuggingActivity"
 "com.android.dynsystem.BootCompletedReceiver" -> "com.android.dynsystem"
 "com.android.managedprovisioning.BootReminder" -> "com.android.managedprovisioning"
 "com.android.onetimeinitializer.OneTimeInitializerReceiver" -> "com.android.onetimeinitializer"
@@ -273,10 +286,16 @@ layout=fdp
 "com.qualcomm.ltebc.LTEBroadcastReceiver" -> "com.qti.ltebc"
 "com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" -> "com.qti.ltebc"
 "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" -> "com.qualcomm.qti.qms.service.trustzoneaccess"
+"No name" -> ".WebViewBrowserActivity"
 "org.chromium.webview_shell.WebViewBrowserActivity" -> "org.chromium.webview_shell"
 "org.chromium.android_webview.services.VariationsSeedServer" -> "webview_service"
 "org.chromium.android_webview.nonembedded.AwComponentUpdateService" -> "webview_apk"
+"No name" -> "com.vuzix.launcher.common.activity.LauncherActivity"
+"No name" -> ".Downloads"
 "com.vuzix.downloadslauncher.Downloads" -> "com.vuzix.downloadslauncher"
+"No name" -> ".ViewDownloadsActivity"
 "com.android.documentsui.ViewDownloadsActivity" -> "com.android.documentsui"
+"No name" -> ".viewer.ViewerActivity"
 "com.vuzix.hud.pdfviewer.viewer.ViewerActivity" -> "com.vuzix.hud.pdfviewer"
+"No name" -> "com.vuzix.launcher.common.activity.LauncherActivity"
 }
