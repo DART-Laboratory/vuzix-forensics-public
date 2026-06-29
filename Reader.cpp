@@ -38,8 +38,6 @@ std::optional<std::shared_ptr<LogcatLog>> Reader::read_logcat_line(const std::st
 
 	if (m.empty()) [[unlikely]] return std::nullopt;
 
-	std::cout << l << std::endl;
-
 	std::istringstream ss{m[1].str()};
 	ss >> std::chrono::parse("%m-%d", log.date);
 	ss = std::istringstream{m[2].str()};

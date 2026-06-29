@@ -14,9 +14,13 @@ struct Proc {
 
 	struct IDs {
 		UID uid;
-		PID pid;
+		std::optional<PID> pid;
+
+		auto operator<=>(const IDs&) const noexcept = default;
 	};
 	std::optional<IDs> ids;
+
+	auto operator<=>(const Proc&) const noexcept = default;
 };
 
 struct Event {
@@ -58,7 +62,7 @@ public:
 	static Timeline generate_timeline(const std::vector<std::shared_ptr<LogcatLog>>& logs);
 
 private:
-	static std::pair<std::optional<std::string>, std::string> get_package_and_name(const std::string& str, const char seperator = '/');
+	static std::pair<std::optional<Package>, std::string> get_package_and_name(const std::string& str, const char seperator = '/');
 
 	static uint64_t get_uid(const std::string& str) noexcept;
 };

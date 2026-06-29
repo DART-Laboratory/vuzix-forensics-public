@@ -21,23 +21,22 @@ std::string Builder::build_graph(const Timeline& timeline) {
 	std::stringstream out_ss{};
 	out_ss << HEADER;
 
-	const std::map<std::optional<Package>, std::vector<Proc>> package_procs{sort_into_packages(timeline)};
+	const std::map<std::optional<Package>, std::set<Proc>> pkg_procs{sort_into_packages(timeline)};
 	std::vector<const Proc*> procs{};
-	for (const std::pair<std::optional<Package>, std::vector<Proc>>& package : package_procs) {
-		if (package.first.has_value()) {
-			std::println(out_ss, "\tsubgraph \"cluster_{}\" {{", package.first.value());
+	for (const std::pair<std::optional<Package>, std::set<Proc>>& pkg : pkg_procs) {
+		if (pkg.first.has_value()) {
+			std::println(out_ss, "\tsubgraph \"cluster_{}\" {{", pkg.first.value());
 		}
-		for (const Proc& proc : package.second) {
+		for (const Proc& proc : pkg.second) {
 			procs.emplace_back(&proc);
-			if (package.first.has_value()) std::print(out_ss, "\t");
+			if (pkg.first.has_value()) std::print(out_ss, "\t");
 			std::println(out_ss, "\t\"{}\"", proc.name.value_or(NO_NAME));
 		}
 		
-		if (package.first.has_value()) {
-			std::println(out_ss, "\t\tlabel=\"{}\"", package.first.value());
+		if (pkg.first.has_value()) {
+			std::println(out_ss, "\t\tlabel=\"{}\"", pkg.first.value());
 			std::println(out_ss, "\t}}");
 		}
-		//std::println(out_ss, "\t\"{}\" -> \"{}\" [label=\"{}\"];", *rel.lhs, *rel.rhs, rel.relation);
 	}
 
 	for (const std::unique_ptr<Event>& event : timeline.events) {
@@ -49,15 +48,5 @@ std::string Builder::build_graph(const Timeline& timeline) {
 	
 	out_ss << FOOTER;
 	return out_ss.str();
-}
-
-std::map<std::optional<Package>, std::vector<Proc>> Builder::sort_into_packages(const Timeline& timeline) {
-	std::map<std::optional<Package>, std::vector<Proc>> package_procs{};
-	for (const std::unique_ptr<Event>& event : timeline.events) {
-		package_procs[event->parent.package].emplace_back(event->parent);
-		package_procs[event->child.package].emplace_back(event->child);
-	}
-
-	return package_procs;
 }
 

@@ -14,6 +14,7 @@ private:
 	char** argv;
 
 	std::string input_file;
-	std::optional<std::string> output_file;
+	std::string output_file{"graph"};
+	bool save_dot_file{false};
 };
 

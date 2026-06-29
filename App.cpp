@@ -8,8 +8,9 @@
 App::App(const int argc, char** argv) : app{"Log parser"}, argc{argc}, argv{argv} {
     argv = app.ensure_utf8(argv);
 
-	app.add_option("file", input_file, "Bug report file name (without extension)")->check(CLI::ExistingFile)->required();
-	app.add_option("-o,--out", output_file, "Output file");
+	app.add_option("file", input_file, "Bug report file name")->check(CLI::ExistingFile)->required();
+	app.add_option("-o,--out", output_file, "Output file (without extension)");
+	app.add_flag("-d,--dot,!--no-dot", save_dot_file, "Save dot file");
 }
 
 int App::run() {
@@ -64,11 +65,17 @@ int App::run() {
 	}
 	std::println("Cleaner passed.");*/
 
-	std::string file_name{output_file.value_or("graph")};
+	std::string file_name{output_file};
 	std::ofstream out{file_name+".dot"};
 	out << Builder::build_graph(timeline);
-	system(std::format("dot -Tsvg {}.dot > {}.svg"/* && rm {}.dot"*/, file_name, file_name, file_name).c_str());
-	std::println("Created graph image (graph.svg).\n");
+
+	system(std::format("dot -Tsvg {}.dot > {}.svg", file_name, file_name, file_name).c_str());
+	if (!save_dot_file) {
+		system(std::format("rm {}.dot", file_name).c_str());
+	} else {
+		std::println("Created graph dot file ({}.dot).", file_name);
+	}
+	std::println("Created graph image ({}.svg).", file_name);
 
 	return 0;
 }

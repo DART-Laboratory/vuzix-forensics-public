@@ -5,8 +5,33 @@ Timeline TimelineGenerator::generate_timeline(const std::vector<std::shared_ptr<
 	Timeline timeline{};
 	
 	for (const std::shared_ptr<LogcatLog>& log : logs) {
-		log->print();
-		if (log->process_name == "ActivityManager") {
+		if (log->process_name == "ActivityTaskManager") {
+			std::regex r{"START u\\d+ \\{(?:.*?\\bpkg=([^ \\}\\r\\n]+))?.*?\\bcmp=([^ \\}\r\n]+)(?: \\(has extras\\))?\\} from uid (.*)"};
+			std::smatch m{};
+			std::regex_match(log->description, m, r);
+			if (m.empty()) continue;
+
+			std::string pkg{m[1].str()};
+			std::pair<std::optional<Package>, std::string> cmp{get_package_and_name(m[2].str())};
+			
+			timeline.events.emplace_back(std::make_unique<ActivityStartEvent>(
+				log->date,
+				log->time,
+				Proc{
+					std::nullopt,
+					std::nullopt,
+					Proc::IDs{
+						get_uid(m[3].str()),
+						std::nullopt
+					}
+				},
+				Proc{
+					(!pkg.empty() ? pkg : cmp.first),
+					cmp.second,
+					std::nullopt
+				}
+			));
+		} else if (log->process_name == "ActivityManager") {
 			std::regex r{
 				"Start proc ([0-9]{4}):([^/]+)\\/((u0ai?)?[0-9]+) for ((service)|(pre-top-activity)|(top-activity)|(broadcast)|(content provider)|( )|(added application)|(null)) ?\\{?(.*?(?=\\}|$|\n|\r))\\}?"
 			};
@@ -43,7 +68,7 @@ Timeline TimelineGenerator::generate_timeline(const std::vector<std::shared_ptr<
 	return timeline;
 }
 
-std::pair<std::optional<std::string>, std::string> TimelineGenerator::get_package_and_name(const std::string& str, const char seperator) {
+std::pair<std::optional<Package>, std::string> TimelineGenerator::get_package_and_name(const std::string& str, const char seperator) {
 	const size_t slash{str.find(seperator)};
 	std::pair<std::optional<std::string>, std::string> pair{std::make_pair(std::nullopt, "")};
 	if (slash != std::string::npos) {
@@ -52,7 +77,6 @@ std::pair<std::optional<std::string>, std::string> TimelineGenerator::get_packag
 	} else {
 		pair.second = str;
 	}
-	std::cout << pair.first.value_or("NO PKG") << ' ' << pair.second << std::endl;
 	return pair;
 }
 
