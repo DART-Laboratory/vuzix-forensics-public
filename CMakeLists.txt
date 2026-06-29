@@ -11,7 +11,8 @@ add_executable(tp
 	main.cpp
 	App.cpp
 	Reader.cpp
-	Analyzer.cpp
+	TimelineGenerator.cpp
+	Builder.cpp
 )
 
 target_link_libraries(tp PRIVATE CLI11::CLI11)

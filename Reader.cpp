@@ -2,6 +2,7 @@
 #include <regex>
 #include <ranges>
 #include <algorithm>
+#include <sstream>
 
 std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::string>& lines) {
 	return read_logcat(lines) | std::views::transform([](const std::shared_ptr<LogcatLog>& log) -> std::shared_ptr<Log> {
@@ -29,7 +30,7 @@ std::optional<std::shared_ptr<LogcatLog>> Reader::read_logcat_line(const std::st
 	LogcatLog log{};
 
 	const std::regex r{
-		"^([0-9]{2}-[0-9]{2}) +([0-9]{2}:[0-9]{2}:[0-9]{2}.[0-9]{3})( +[0-9]{4}){2} +(F|E|W|I|D|V) (.*?(?= *:+ )) *:+ (.*)"
+		"^([0-9]{2}-[0-9]{2}) +([0-9]{2}:[0-9]{2}:[0-9]{2}.[0-9]{3})( +[0-9]{4})+ +(F|E|W|I|D|V) (.*?(?= *:+ )) *:+ (.*)"
 	};
 
 	std::smatch m{};
@@ -37,13 +38,16 @@ std::optional<std::shared_ptr<LogcatLog>> Reader::read_logcat_line(const std::st
 
 	if (m.empty()) [[unlikely]] return std::nullopt;
 
-	std::istringstream ss{(m.begin()+1)->str()};
-	ss >> std::chrono::parse("%m-%d", log.date);
+	std::cout << l << std::endl;
 
-	std::chrono::milliseconds ms{};
-	ss = std::istringstream{(m.begin()+2)->str()};
-	ss >> std::chrono::parse("%T", ms);
-	log.time = std::chrono::time_point<std::chrono::system_clock>{ms};
+	std::istringstream ss{m[1].str()};
+	ss >> std::chrono::parse("%m-%d", log.date);
+	ss = std::istringstream{m[2].str()};
+	ss >> std::chrono::parse("%T", log.time);
+
+	if (!ss || !log.date.ok()) { [[unlikely]]
+		return std::nullopt;
+	}
 
 	log.process_name = (m.begin()+5)->str();
 	log.description = (m.begin()+6)->str();

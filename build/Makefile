@@ -184,30 +184,6 @@ Builder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Builder.cpp.s
 .PHONY : Builder.cpp.s
 
-Cleaner.o: Cleaner.cpp.o
-.PHONY : Cleaner.o
-
-# target to build an object file
-Cleaner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.o
-.PHONY : Cleaner.cpp.o
-
-Cleaner.i: Cleaner.cpp.i
-.PHONY : Cleaner.i
-
-# target to preprocess a source file
-Cleaner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.i
-.PHONY : Cleaner.cpp.i
-
-Cleaner.s: Cleaner.cpp.s
-.PHONY : Cleaner.s
-
-# target to generate assembly for a file
-Cleaner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Cleaner.cpp.s
-.PHONY : Cleaner.cpp.s
-
 Reader.o: Reader.cpp.o
 .PHONY : Reader.o
 
@@ -232,29 +208,29 @@ Reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/Reader.cpp.s
 .PHONY : Reader.cpp.s
 
-RelationGenerator.o: RelationGenerator.cpp.o
-.PHONY : RelationGenerator.o
+TimelineGenerator.o: TimelineGenerator.cpp.o
+.PHONY : TimelineGenerator.o
 
 # target to build an object file
-RelationGenerator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.o
-.PHONY : RelationGenerator.cpp.o
+TimelineGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/TimelineGenerator.cpp.o
+.PHONY : TimelineGenerator.cpp.o
 
-RelationGenerator.i: RelationGenerator.cpp.i
-.PHONY : RelationGenerator.i
+TimelineGenerator.i: TimelineGenerator.cpp.i
+.PHONY : TimelineGenerator.i
 
 # target to preprocess a source file
-RelationGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.i
-.PHONY : RelationGenerator.cpp.i
+TimelineGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/TimelineGenerator.cpp.i
+.PHONY : TimelineGenerator.cpp.i
 
-RelationGenerator.s: RelationGenerator.cpp.s
-.PHONY : RelationGenerator.s
+TimelineGenerator.s: TimelineGenerator.cpp.s
+.PHONY : TimelineGenerator.s
 
 # target to generate assembly for a file
-RelationGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/RelationGenerator.cpp.s
-.PHONY : RelationGenerator.cpp.s
+TimelineGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/TimelineGenerator.cpp.s
+.PHONY : TimelineGenerator.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -296,15 +272,12 @@ help:
 	@echo "... Builder.o"
 	@echo "... Builder.i"
 	@echo "... Builder.s"
-	@echo "... Cleaner.o"
-	@echo "... Cleaner.i"
-	@echo "... Cleaner.s"
 	@echo "... Reader.o"
 	@echo "... Reader.i"
 	@echo "... Reader.s"
-	@echo "... RelationGenerator.o"
-	@echo "... RelationGenerator.i"
-	@echo "... RelationGenerator.s"
+	@echo "... TimelineGenerator.o"
+	@echo "... TimelineGenerator.i"
+	@echo "... TimelineGenerator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -85,12 +85,12 @@ clean: CMakeFiles/tp.dir/clean
 CMakeFiles/tp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target tp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tp"
 .PHONY : CMakeFiles/tp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/src/vuzix-forensics/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/src/vuzix-forensics/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhys/src/vuzix-forensics/build/CMakeFiles 0
 .PHONY : CMakeFiles/tp.dir/rule
@@ -102,7 +102,7 @@ tp: CMakeFiles/tp.dir/rule
 # codegen rule for target.
 CMakeFiles/tp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tp.dir/build.make CMakeFiles/tp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target tp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rhys/src/vuzix-forensics/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target tp"
 .PHONY : CMakeFiles/tp.dir/codegen
 
 # clean rule for target.

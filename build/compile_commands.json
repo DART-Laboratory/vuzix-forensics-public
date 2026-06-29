@@ -19,15 +19,9 @@
 },
 {
   "directory": "/home/rhys/src/vuzix-forensics/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/RelationGenerator.cpp.o -c /home/rhys/src/vuzix-forensics/RelationGenerator.cpp",
-  "file": "/home/rhys/src/vuzix-forensics/RelationGenerator.cpp",
-  "output": "CMakeFiles/tp.dir/RelationGenerator.cpp.o"
-},
-{
-  "directory": "/home/rhys/src/vuzix-forensics/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/Cleaner.cpp.o -c /home/rhys/src/vuzix-forensics/Cleaner.cpp",
-  "file": "/home/rhys/src/vuzix-forensics/Cleaner.cpp",
-  "output": "CMakeFiles/tp.dir/Cleaner.cpp.o"
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++23 -o CMakeFiles/tp.dir/TimelineGenerator.cpp.o -c /home/rhys/src/vuzix-forensics/TimelineGenerator.cpp",
+  "file": "/home/rhys/src/vuzix-forensics/TimelineGenerator.cpp",
+  "output": "CMakeFiles/tp.dir/TimelineGenerator.cpp.o"
 },
 {
   "directory": "/home/rhys/src/vuzix-forensics/build",

@@ -11,7 +11,7 @@ struct Log {
 
 struct LogcatLog : public Log {
 	std::chrono::month_day date;
-	std::chrono::time_point<std::chrono::system_clock> time;
+	std::chrono::milliseconds time;
 	std::string process_name;
 	std::string description;
 
@@ -34,7 +34,7 @@ struct LogcatLog : public Log {
 	void print() const noexcept {
 		std::cout
 			<< "\n\tDate: " << date
-			<< "\n\tTime: " << std::chrono::hh_mm_ss{time.time_since_epoch()}
+			<< "\n\tTime: " << std::chrono::hh_mm_ss{time}
 			<< "\n\tType: " << log_type_chars[std::distance(log_type_enums.begin(), std::ranges::find(log_type_enums, type))]
 			<< "\n\tProcess name: " << process_name
 			<< "\n\tDescription: " << description
