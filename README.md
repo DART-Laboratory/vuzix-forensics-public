@@ -1,6 +1,6 @@
 # Vuzix Forensics
 
-This a repository for my summer 2026 research project with the Leadership Alliance's FYRE program. This repository contains a CMake project that provides an executable (`tp` located in the `build` directory) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
+This a repository for my summer 2026 research project with the Leadership Alliance's FYRE program. This repository contains a CMake project that provides an executable (`tp`) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
 
 ## Using `tp`
 
@@ -39,3 +39,10 @@ This project uses:
 * CMake download: https://cmake.org/download/
 * CLI11 vcpkg download: https://cliutils.github.io/CLI11/book/chapters/installation.html#installing-cli11-using-vcpkg
 * GraphViz download: https://graphviz.org/download/
+
+## Building
+
+To build project, go to the project's root directory and run `cmake -B build -DCMAKE_BUILD_TYPE=Release .` The `CMAKE_BUILD_TYPE` flag is optional but I recommend keeping it to build in release mode.
+
+After building with that command, the binary will be located in the `build` directory.
+
