@@ -1,0 +1,320 @@
+digraph G {
+layout=fdp
+	"android.ext.services"
+	"android.process.acore"
+	"android.process.media"
+	"com.android.calendar"
+	"com.android.contacts"
+	"com.android.deskclock"
+	"com.android.documentsui"
+	"com.android.dynsystem"
+	"com.android.externalstorage"
+	"com.android.keychain"
+	"com.android.localtransport"
+	"com.android.managedprovisioning"
+	"com.android.networkstack.process"
+	"com.android.onetimeinitializer"
+	"com.android.packageinstaller"
+	"com.android.permissioncontroller"
+	"com.android.phone"
+	"com.android.printspooler"
+	"com.android.providers.calendar"
+	"com.android.providers.media.module"
+	"com.android.settings"
+	"com.android.shell"
+	"com.android.systemui"
+	"com.android.traceur"
+	"com.android.vending"
+	"com.qti.ltebc"
+	"com.qti.ltebc"
+	"com.qti.ltebc"
+	"com.qti.ltebc"
+	"com.qualcomm.qti.qccauthmgr"
+	"com.qualcomm.qti.qms.service.connectionsecurity"
+	"com.qualcomm.qti.qms.service.trustzoneaccess"
+	"com.vuzix.accessibilityservice"
+	"com.vuzix.android.ota"
+	"com.vuzix.downloadslauncher"
+	"com.vuzix.hud.pdfviewer"
+	"com.vuzix.keyboard.latin"
+	"com.vuzix.launcher.m400"
+	"com.vuzix.notificationdrawer"
+	"com.vuzix.quick_start"
+	"com.vuzix.speechrecognitionservice"
+	"com.vuzix.temperatureservice"
+	"com.vuzix.timesyncservice"
+	"com.vuzix.timezoneservice"
+	"org.chromium.webview_shell"
+	subgraph "cluster_android.ext.services" {
+		"android.ext.services.autofill.InlineSuggestionRenderServiceImpl"
+		label="android.ext.services"
+	}
+	subgraph "cluster_com.android.calendar" {
+		"com.android.calendar.alerts.AlertReceiver"
+		label="com.android.calendar"
+	}
+	subgraph "cluster_com.android.contacts" {
+		"com.android.contacts.interactions.OnBootOrUpgradeReceiver"
+		label="com.android.contacts"
+	}
+	subgraph "cluster_com.android.deskclock" {
+		"com.android.deskclock.AlarmInitReceiver"
+		label="com.android.deskclock"
+	}
+	subgraph "cluster_com.android.documentsui" {
+		".ViewDownloadsActivity"
+		"com.android.documentsui.ViewDownloadsActivity"
+		label="com.android.documentsui"
+	}
+	subgraph "cluster_com.android.dynsystem" {
+		"com.android.dynsystem.BootCompletedReceiver"
+		label="com.android.dynsystem"
+	}
+	subgraph "cluster_com.android.externalstorage" {
+		"com.android.externalstorage.MountReceiver"
+		label="com.android.externalstorage"
+	}
+	subgraph "cluster_com.android.keychain" {
+		"com.android.keychain.KeyChainService"
+		label="com.android.keychain"
+	}
+	subgraph "cluster_com.android.localtransport" {
+		"com.android.localtransport.LocalTransportService"
+		label="com.android.localtransport"
+	}
+	subgraph "cluster_com.android.managedprovisioning" {
+		"com.android.managedprovisioning.BootReminder"
+		label="com.android.managedprovisioning"
+	}
+	subgraph "cluster_com.android.mtp" {
+		"com.android.mtp.MtpReceiver"
+		label="com.android.mtp"
+	}
+	subgraph "cluster_com.android.networkstack" {
+		"com.android.server.NetworkStackService"
+		label="com.android.networkstack"
+	}
+	subgraph "cluster_com.android.onetimeinitializer" {
+		"com.android.onetimeinitializer.OneTimeInitializerReceiver"
+		label="com.android.onetimeinitializer"
+	}
+	subgraph "cluster_com.android.packageinstaller" {
+		"com.android.packageinstaller.TemporaryFileManager"
+		label="com.android.packageinstaller"
+	}
+	subgraph "cluster_com.android.permissioncontroller" {
+		"com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck"
+		label="com.android.permissioncontroller"
+	}
+	subgraph "cluster_com.android.printspooler" {
+		"com.android.printspooler.model.PrintSpoolerService"
+		label="com.android.printspooler"
+	}
+	subgraph "cluster_com.android.providers.calendar" {
+		"com.android.providers.calendar.CalendarReceiver"
+		label="com.android.providers.calendar"
+	}
+	subgraph "cluster_com.android.providers.contacts" {
+		"com.android.providers.contacts.CallLogProvider"
+		label="com.android.providers.contacts"
+	}
+	subgraph "cluster_com.android.providers.media.module" {
+		"com.android.providers.media.fuse.ExternalStorageServiceImpl"
+		label="com.android.providers.media.module"
+	}
+	subgraph "cluster_com.android.settings" {
+		".FallbackHome"
+		"com.android.settings.FallbackHome"
+		label="com.android.settings"
+	}
+	subgraph "cluster_com.android.shell" {
+		"com.android.shell.HeapDumpReceiver"
+		label="com.android.shell"
+	}
+	subgraph "cluster_com.android.stk" {
+		"com.android.stk.BootCompletedReceiver"
+		label="com.android.stk"
+	}
+	subgraph "cluster_com.android.systemui" {
+		".usb.UsbDebuggingActivity"
+		"com.android.systemui.SystemUIService"
+		label="com.android.systemui"
+	}
+	subgraph "cluster_com.android.traceur" {
+		"com.android.traceur.Receiver"
+		label="com.android.traceur"
+	}
+	subgraph "cluster_com.android.vending" {
+		"com.huawei.signature.diff.InitReceiver"
+		label="com.android.vending"
+	}
+	subgraph "cluster_com.android.webview" {
+		"org.chromium.android_webview.nonembedded.AwComponentUpdateService"
+		"org.chromium.android_webview.services.VariationsSeedServer"
+		"webview_apk"
+		"webview_service"
+		label="com.android.webview"
+	}
+	subgraph "cluster_com.google.android.gms" {
+		"com.huawei.signature.diff.SignatureService"
+		"org.microg.gms.gcm.TriggerReceiver"
+		"persistent"
+		"signature"
+		label="com.google.android.gms"
+	}
+	subgraph "cluster_com.qti.ltebc" {
+		"com.qualcomm.ltebc.LTEBroadcastAlarmReceiver"
+		"com.qualcomm.ltebc.LTEBroadcastBootReceiver"
+		"com.qualcomm.ltebc.LTEBroadcastReceiver"
+		label="com.qti.ltebc"
+	}
+	subgraph "cluster_com.qualcomm.qti.qccauthmgr" {
+		"com.qualcomm.qti.qccauthmgr.providers.SMQContentProvider"
+		label="com.qualcomm.qti.qccauthmgr"
+	}
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" {
+		"com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver"
+		label="com.qualcomm.qti.qms.service.connectionsecurity"
+	}
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" {
+		"com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService"
+		label="com.qualcomm.qti.qms.service.trustzoneaccess"
+	}
+	subgraph "cluster_com.vuzix.accessibilityservice" {
+		"com.vuzix.accessibilityservice.AccessibilitySpeechInput"
+		label="com.vuzix.accessibilityservice"
+	}
+	subgraph "cluster_com.vuzix.android.ota" {
+		"com.vuzix.android.ota.MonitorServiceBroadcastReceiver"
+		label="com.vuzix.android.ota"
+	}
+	subgraph "cluster_com.vuzix.downloadslauncher" {
+		".Downloads"
+		"com.vuzix.downloadslauncher.Downloads"
+		label="com.vuzix.downloadslauncher"
+	}
+	subgraph "cluster_com.vuzix.hud.pdfviewer" {
+		".viewer.ViewerActivity"
+		"com.vuzix.hud.pdfviewer.viewer.ViewerActivity"
+		label="com.vuzix.hud.pdfviewer"
+	}
+	subgraph "cluster_com.vuzix.keyboard.latin" {
+		"com.vuzix.keyboard.latin.LatinKeyboardService"
+		label="com.vuzix.keyboard.latin"
+	}
+	subgraph "cluster_com.vuzix.launcher.m400" {
+		"com.vuzix.launcher.common.activity.LauncherActivity"
+		label="com.vuzix.launcher.m400"
+	}
+	subgraph "cluster_com.vuzix.notificationdrawer" {
+		"com.vuzix.notificationdrawer.Listener"
+		label="com.vuzix.notificationdrawer"
+	}
+	subgraph "cluster_com.vuzix.quick_start" {
+		"com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver"
+		label="com.vuzix.quick_start"
+	}
+	subgraph "cluster_com.vuzix.speechrecognitionservice" {
+		"com.vuzix.speechrecognitionservice.BootBroadcastReceiver"
+		label="com.vuzix.speechrecognitionservice"
+	}
+	subgraph "cluster_com.vuzix.temperatureservice" {
+		"com.vuzix.temperatureservice.BootReceiver"
+		label="com.vuzix.temperatureservice"
+	}
+	subgraph "cluster_com.vuzix.timesyncservice" {
+		"com.vuzix.timesyncservice.TimeSyncReceiver"
+		label="com.vuzix.timesyncservice"
+	}
+	subgraph "cluster_com.vuzix.timezoneservice" {
+		"com.vuzix.timezoneservice.TimezoneReceiver"
+		label="com.vuzix.timezoneservice"
+	}
+	subgraph "cluster_org.chromium.webview_shell" {
+		".WebViewBrowserActivity"
+		"org.chromium.webview_shell.WebViewBrowserActivity"
+		label="org.chromium.webview_shell"
+	}
+	"com.android.systemui.SystemUIService" -> "com.android.systemui" [label="Started"]
+	"com.android.server.NetworkStackService" -> "com.android.networkstack.process" [label="Started"]
+	"0" -> ".FallbackHome" [label="Started"]
+	"com.android.settings.FallbackHome" -> "com.android.settings" [label="Started"]
+	"android.ext.services.autofill.InlineSuggestionRenderServiceImpl" -> "android.ext.services" [label="Started"]
+	"com.qualcomm.qti.qccauthmgr.providers.SMQContentProvider" -> "com.qualcomm.qti.qccauthmgr" [label="Started"]
+	"com.android.deskclock.AlarmInitReceiver" -> "com.android.deskclock" [label="Started"]
+	"0" -> "com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
+	"com.android.providers.media.fuse.ExternalStorageServiceImpl" -> "com.android.providers.media.module" [label="Started"]
+	"com.android.mtp.MtpReceiver" -> "android.process.media" [label="Started"]
+	"com.vuzix.accessibilityservice.AccessibilitySpeechInput" -> "com.vuzix.accessibilityservice" [label="Started"]
+	"com.android.keychain.KeyChainService" -> "com.android.keychain" [label="Started"]
+	"com.android.printspooler.model.PrintSpoolerService" -> "com.android.printspooler" [label="Started"]
+	"com.vuzix.notificationdrawer.Listener" -> "com.vuzix.notificationdrawer" [label="Started"]
+	"com.vuzix.launcher.common.activity.LauncherActivity" -> "com.vuzix.launcher.m400" [label="Started"]
+	"com.huawei.signature.diff.SignatureService" -> "signature" [label="Started"]
+	"com.huawei.signature.diff.InitReceiver" -> "com.android.vending" [label="Started"]
+	"com.android.providers.contacts.CallLogProvider" -> "android.process.acore" [label="Started"]
+	"com.vuzix.keyboard.latin.LatinKeyboardService" -> "com.vuzix.keyboard.latin" [label="Started"]
+	"com.android.calendar.alerts.AlertReceiver" -> "com.android.calendar" [label="Started"]
+	"com.android.contacts.interactions.OnBootOrUpgradeReceiver" -> "com.android.contacts" [label="Started"]
+	"1000" -> ".usb.UsbDebuggingActivity" [label="Started"]
+	"com.android.dynsystem.BootCompletedReceiver" -> "com.android.dynsystem" [label="Started"]
+	"com.android.managedprovisioning.BootReminder" -> "com.android.managedprovisioning" [label="Started"]
+	"com.android.onetimeinitializer.OneTimeInitializerReceiver" -> "com.android.onetimeinitializer" [label="Started"]
+	"com.android.packageinstaller.TemporaryFileManager" -> "com.android.packageinstaller" [label="Started"]
+	"com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck" -> "com.android.permissioncontroller" [label="Started"]
+	"com.android.providers.calendar.CalendarReceiver" -> "com.android.providers.calendar" [label="Started"]
+	"com.android.shell.HeapDumpReceiver" -> "com.android.shell" [label="Started"]
+	"com.android.stk.BootCompletedReceiver" -> "com.android.phone" [label="Started"]
+	"com.android.traceur.Receiver" -> "com.android.traceur" [label="Started"]
+	"org.microg.gms.gcm.TriggerReceiver" -> "persistent" [label="Started"]
+	"com.qualcomm.ltebc.LTEBroadcastBootReceiver" -> "com.qti.ltebc" [label="Started"]
+	"com.android.localtransport.LocalTransportService" -> "com.android.localtransport" [label="Started"]
+	"com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver" -> "com.qualcomm.qti.qms.service.connectionsecurity" [label="Started"]
+	"com.vuzix.android.ota.MonitorServiceBroadcastReceiver" -> "com.vuzix.android.ota" [label="Started"]
+	"com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver" -> "com.vuzix.quick_start" [label="Started"]
+	"com.vuzix.speechrecognitionservice.BootBroadcastReceiver" -> "com.vuzix.speechrecognitionservice" [label="Started"]
+	"com.vuzix.temperatureservice.BootReceiver" -> "com.vuzix.temperatureservice" [label="Started"]
+	"com.vuzix.timesyncservice.TimeSyncReceiver" -> "com.vuzix.timesyncservice" [label="Started"]
+	"com.vuzix.timezoneservice.TimezoneReceiver" -> "com.vuzix.timezoneservice" [label="Started"]
+	"com.android.externalstorage.MountReceiver" -> "com.android.externalstorage" [label="Started"]
+	"com.qualcomm.ltebc.LTEBroadcastReceiver" -> "com.qti.ltebc" [label="Started"]
+	"com.qualcomm.ltebc.LTEBroadcastReceiver" -> "com.qti.ltebc" [label="Started"]
+	"com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" -> "com.qti.ltebc" [label="Started"]
+	"com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" -> "com.qualcomm.qti.qms.service.trustzoneaccess" [label="Started"]
+	"10014" -> ".WebViewBrowserActivity" [label="Started"]
+	"org.chromium.webview_shell.WebViewBrowserActivity" -> "org.chromium.webview_shell" [label="Started"]
+	"org.chromium.android_webview.services.VariationsSeedServer" -> "webview_service" [label="Started"]
+	"org.chromium.android_webview.nonembedded.AwComponentUpdateService" -> "webview_apk" [label="Started"]
+	"0" -> "com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
+	"10014" -> ".Downloads" [label="Started"]
+	"com.vuzix.downloadslauncher.Downloads" -> "com.vuzix.downloadslauncher" [label="Started"]
+	"10066" -> ".ViewDownloadsActivity" [label="Started"]
+	"com.android.documentsui.ViewDownloadsActivity" -> "com.android.documentsui" [label="Started"]
+	"10017" -> ".viewer.ViewerActivity" [label="Started"]
+	"com.vuzix.hud.pdfviewer.viewer.ViewerActivity" -> "com.vuzix.hud.pdfviewer" [label="Started"]
+	"0" -> "com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
+	subgraph uids {
+		edge [dir=none]
+		"1000" -> "com.android.dynsystem" [label="UID belongs to"]
+		"1000" -> "com.android.keychain" [label="UID belongs to"]
+		"1000" -> "com.android.localtransport" [label="UID belongs to"]
+		"1000" -> "com.android.settings" [label="UID belongs to"]
+		"1000" -> "com.vuzix.android.ota" [label="UID belongs to"]
+		"1000" -> "com.vuzix.notificationdrawer" [label="UID belongs to"]
+		"1000" -> "com.vuzix.speechrecognitionservice" [label="UID belongs to"]
+		"1000" -> "com.vuzix.temperatureservice" [label="UID belongs to"]
+		"1000" -> "com.vuzix.timesyncservice" [label="UID belongs to"]
+		"1000" -> "com.vuzix.timezoneservice" [label="UID belongs to"]
+		"10014" -> "com.vuzix.launcher.m400" [label="UID belongs to"]
+		"10017" -> "com.android.documentsui" [label="UID belongs to"]
+		"10052" -> "persistent" [label="UID belongs to"]
+		"10052" -> "signature" [label="UID belongs to"]
+		"10062" -> "webview_apk" [label="UID belongs to"]
+		"10062" -> "webview_service" [label="UID belongs to"]
+		"10066" -> "com.vuzix.downloadslauncher" [label="UID belongs to"]
+		"10153" -> "com.qti.ltebc" [label="UID belongs to"]
+		"10153" -> "com.qti.ltebc" [label="UID belongs to"]
+		"10153" -> "com.qti.ltebc" [label="UID belongs to"]
+		"10153" -> "com.qti.ltebc" [label="UID belongs to"]
+	}
+}

@@ -36,6 +36,9 @@ private:
 		});
 	}
 
+	static std::optional<std::string> get_node_name(const Proc& proc) noexcept;
+	static std::optional<std::string> get_node_name_until_pid(const Proc& proc) noexcept;
+
 	inline static const std::string HEADER{
 		"digraph G {\n"
 		"layout=fdp\n"
@@ -44,8 +47,5 @@ private:
 	inline static const std::string FOOTER{
 		"}\n"
 	};
-
-	inline static const std::string NO_PACKAGE{"No package"};
-	inline static const std::string NO_NAME{"No name"};
 };
 
