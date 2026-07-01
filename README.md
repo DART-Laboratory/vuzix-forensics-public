@@ -46,3 +46,23 @@ To build project, go to the project's root directory and run `cmake -B build -DC
 
 After building with that command, the binary will be located in the `build` directory.
 
+## Overview of research
+
+The optimal tool for collecting system information for an android device without root seems to be `adb bugreport`. The bugreport command is a part of the `adb` (Android Debug) utility that is often used for Android development. For this project, we are using it for collecting system logs.
+
+The bugreport command runs various other `adb` commands as well as several linux commands and compiles the outputs into a large bugreport file. The utilities present in the bugreport include but not limited to:
+
+* `adb logcat`
+* `dumpsys`
+* `ps`
+* `top`
+* `ip`
+* `ss`
+* `iptables/ip6tables`
+* `netstat`
+* `dmesg`
+
+For `tp` to identify process creation relationships between processes, it primarily uses the `logcat` section of the bugreport. The Android `ActivityManager` and `ActivityTaskManager` log when processes and tasks are started. Like any linux system, processes have PIDs, UIDs, and TIDs associated with them, as well as a parent process. On Android systems, processes often have their own UID that is not associated with any important user, similar to just another unchanging PID. This is to handle specialized permissions.
+
+The difficulty in forming the relationships between processes is figuring out what IDs belong to what processes. Some logs describe relationships only by their UIDs, some by their names. So, when putting together the graph, you must figure out what UID belongs to what PID and name. Plus, processes can share UIDs and names, so PIDs are the only definitive form of identification for a process, but Android logs don't often refer to processes by their PID, so there is always a hint of inferring relationships.
+
