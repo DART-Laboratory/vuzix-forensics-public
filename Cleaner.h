@@ -1,12 +1,16 @@
 #pragma once
 
-#include "RelationGenerator.h"
+#include "TimelineGenerator.h"
+
+struct CleanerOptions {
+	bool merge_procs_starting_with_dot{false};
+};
 
 class Cleaner {
 public:
 	Cleaner() = delete;
 
-	static std::vector<ProcRelation> clean_relations(std::vector<ProcRelation> relations);
+	static void clean_relations(const Timeline& timeline, const CleanerOptions& options);
 
 private:
 	static void set_procs_equal(std::shared_ptr<Proc>& proc1, std::shared_ptr<Proc>& proc2);

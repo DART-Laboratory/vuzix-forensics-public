@@ -13,39 +13,31 @@ public:
 	static std::string build_graph(const Timeline& timeline);
 	
 private:
-	template <typename T>
-	static std::map<std::optional<T>, std::set<Proc>> sort_into(const Timeline& timeline, const std::function<std::optional<T>(const Proc&)> getter) {
-		std::map<std::optional<T>, std::set<Proc>> package_procs{};
-		for (const std::unique_ptr<Event>& event : timeline.events) {
-			package_procs[getter(event->parent)].insert(event->parent);
-			package_procs[getter(event->child)].insert(event->child);
-		}
-
-		return package_procs;
-	}
-	static std::map<std::optional<Package>, std::set<Proc>> sort_into_packages(const Timeline& timeline) {
-		return sort_into<Package>(timeline, [](const Proc& p) {return p.package;});
-	}
-	static std::map<std::optional<UID>, std::set<Proc>> sort_into_uid(const Timeline& timeline) {
-		return sort_into<UID>(timeline, [](const Proc& p) -> std::optional<UID> {
-			if (p.ids.has_value()) {
-				return p.ids.value().uid;
-			} else {
-				return std::nullopt;
-			}
-		});
-	}
-
 	static std::optional<std::string> get_node_name(const Proc& proc) noexcept;
 	static std::optional<std::string> get_node_name_until_pid(const Proc& proc) noexcept;
 
 	inline static const std::string HEADER{
 		"digraph G {\n"
-		"layout=fdp\n"
+		//"\tlayout=fdp\n"
+		"\tsubgraph cluster_legend {"
+			"\t\tlabel=\"Legend\" style=dotted fontsize=9;"
+			"\t\tlegend_process  [label=\"Activity/Service/Application/Content Provider\" shape=ellipse];"
+			"\t\tlegend_activity [label=\"Broadcast\" shape=hexagon];"
+			"\t\tlegend_package  [label=\"Java class\" shape=trapezium];"
+		"\t}"
 	};
 
 	inline static const std::string FOOTER{
 		"}\n"
+	};
+
+	inline static const std::map<Proc::Type, std::string> type_to_shape{
+		{Proc::Type::Activity, "ellipse"},
+		{Proc::Type::Service, "ellipse"},
+		{Proc::Type::Broadcast, "hexagon"},
+		{Proc::Type::Application, "ellipse"},
+		{Proc::Type::ContentProvider, "ellipse"},
+		{Proc::Type::JavaClass, "trapezium"},
 	};
 };
 

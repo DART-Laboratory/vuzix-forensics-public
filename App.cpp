@@ -11,6 +11,7 @@ App::App(const int argc, char** argv) : app{"Log parser"}, argc{argc}, argv{argv
 	app.add_option("file", input_file, "Bug report file name")->check(CLI::ExistingFile)->required();
 	app.add_option("-o,--out", output_file, "Output file (without extension)");
 	app.add_flag("-d,--dot,!--no-dot", save_dot_file, "Save dot file");
+	app.add_flag("--cm,--cleaner-merge", cleaner_options.merge_procs_starting_with_dot, "Merge processes starting with dot in its name");
 }
 
 int App::run() {
@@ -48,26 +49,21 @@ int App::run() {
 	}
 	std::println("Timeline generator passed.");
 
-	/*std::vector<ProcRelation> relations{};
 	try {
-		relations = RelationGenerator::generate_bugreport_relations(logs);
-	} catch (std::exception& e) {
-		std::println(std::cerr, "Relation generator exception: {}", e.what());
-		return 1;
-	}
-	std::println("Relation generator passed.");
-
-	try {
-		relations = Cleaner::clean_relations(relations);
+		Cleaner::clean_relations(timeline, cleaner_options);
 	} catch (std::exception& e) {
 		std::println(std::cerr, "Cleaner exception: {}", e.what());
 		return 1;
 	}
-	std::println("Cleaner passed.");*/
+	std::println("Cleaner passed.");
 
 	std::string file_name{output_file};
 	std::ofstream out{file_name+".dot"};
-	out << Builder::build_graph(timeline);
+	try {
+		out << Builder::build_graph(timeline);
+	} catch (const std::exception& e) {
+		std::println(std::cerr, "Builder exception: {}", e.what());
+	}
 
 	system(std::format("dot -Tsvg {}.dot > {}.svg", file_name, file_name, file_name).c_str());
 	if (!save_dot_file) {

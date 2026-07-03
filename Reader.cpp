@@ -9,6 +9,7 @@ std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::
 		return std::static_pointer_cast<Log>(log);
 	}) | std::ranges::to<std::vector<std::shared_ptr<Log>>>();
 
+	line 5218 sensor service 
 	/*auto logcat_begin{std::ranges::find_if(lines, [](const std::string& line) { return line.find("logcat"); })};
 	if (logcat_begin != lines.end() && logcat_end
 	return std::vector<std::string>{*/

@@ -2,8 +2,8 @@
 #include <algorithm>
 #include "Cleaner.h"
 
-std::vector<ProcRelation> Cleaner::clean_relations(std::vector<ProcRelation> relations) {
-	std::vector<std::shared_ptr<Proc>> procs{};
+void Cleaner::clean_relations(const Timeline& timeline, const CleanerOptions& options) {
+	/*std::vector<std::shared_ptr<Proc>> procs{};
 	procs.reserve(relations.size()*2);
 	for (const ProcRelation& rel : relations) {
 		procs.emplace_back(rel.lhs);
@@ -20,6 +20,24 @@ std::vector<ProcRelation> Cleaner::clean_relations(std::vector<ProcRelation> rel
 		}
 	}
 
-	return relations;
+	return relations;*/
+
+	auto sort_into_pkg{timeline.sort_into_packages()};
+	if (options.merge_procs_starting_with_dot) {
+		for (const std::pair<std::optional<Package>, std::set<Proc*>>& pkg : sort_into_pkg) {
+			for (Proc* proc : pkg.second) {
+				if (!proc->package.has_value() || !proc->name.has_value()) continue;
+				if (!proc->name.value().starts_with('.')) continue;
+
+				std::string combined_name{proc->package.value()+proc->name.value()};
+				if (std::ranges::find_if(pkg.second, [&combined_name](const Proc* proc) {
+					if (!proc->name.has_value()) return false;
+					return proc->name.value() == combined_name;
+				}) != pkg.second.end()) {
+					proc->name = combined_name;
+				}
+			}
+		}
+	}
 }
 

@@ -12,6 +12,7 @@ add_executable(tp
 	App.cpp
 	Reader.cpp
 	TimelineGenerator.cpp
+	Cleaner.cpp
 	Builder.cpp
 )
 
