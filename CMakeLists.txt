@@ -10,6 +10,9 @@ find_package(CLI11 CONFIG REQUIRED)
 add_executable(tp
 	main.cpp
 	App.cpp
+	Node.cpp
+	LogcatLog.cpp
+	SensorDumpLog.cpp
 	Reader.cpp
 	TimelineGenerator.cpp
 	Cleaner.cpp

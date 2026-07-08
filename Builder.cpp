@@ -1,6 +1,9 @@
 #include "Builder.h"
+#include "GraphComponent.h"
 #include <sstream>
 #include <print>
+#include <stdexcept>
+#include <iostream>
 
 /*std::string Builder::build_graph(const std::vector<ProcRelation>& relations) {
 	std::stringstream out_ss{};
@@ -17,11 +20,12 @@
 	return out_ss.str();
 }*/
 
-std::string Builder::build_graph(const Timeline& timeline) {
+std::string Builder::build_graph(Timeline& timeline) {
 	std::stringstream out_ss{};
 	out_ss << HEADER;
 
-	const std::map<std::optional<Package>, std::set<Proc*>> pkg_procs{timeline.sort_into_packages()};
+	
+	/*const std::map<std::optional<Package>, std::set<Proc*>> pkg_procs{timeline.sort_into_packages()};
 	for (const std::pair<std::optional<Package>, std::set<Proc*>>& pkg : pkg_procs) {
 		if (pkg.first.has_value()) {
 			std::println(out_ss, "\tsubgraph \"cluster_{}\" {{", pkg.first.value());
@@ -42,20 +46,40 @@ std::string Builder::build_graph(const Timeline& timeline) {
 			std::println(out_ss, "\t\tlabel=\"{}\"", pkg.first.value());
 			std::println(out_ss, "\t}}");
 		}
+	}*/
+
+	std::vector<std::shared_ptr<Node>> nodes{};
+	nodes.reserve(timeline.events.size()*2);
+	for (const Event& event : timeline.events) {
+		nodes.emplace_back(event.child);
+		nodes.emplace_back(event.parent);
 	}
 
-	for (const std::unique_ptr<Event>& event : timeline.events) {
-		std::optional<std::string> parent{get_node_name(event->parent)};
-		std::optional<std::string> child{get_node_name(event->child)};
-		if (!parent || !child) continue;
-		std::println(out_ss, "\t\"{}\" -> \"{}\" [label=\"{}\"]",
-			parent.value(),
-			child.value(),
-			event->get_relation()
-		);
+	std::println(std::cout, "# nodes: {}", nodes.size());
+
+	for (const std::shared_ptr<Node>& node : nodes) {
+		for (const GraphComponent& comp : node->get_graph_components()) {
+			if (comp.type == GraphComponent::Type::NodeDefinition) {
+				std::println(out_ss, "{}", comp.text);
+			}
+		}
 	}
 
-	std::println(out_ss, "\tsubgraph uids {{");
+	std::println(std::cout, "# events: {}", timeline.events.size());
+
+	for (const Event& event : timeline.events) {
+		std::println(out_ss, "{}", event.get_graph_component().text);
+	}
+
+	for (const std::shared_ptr<Node>& node : nodes) {
+		for (const GraphComponent& comp : node->get_graph_components()) {
+			if (comp.type == GraphComponent::Type::UIDRelation) {
+				std::println(out_ss, "{}", comp.text);
+			}
+		}
+	}
+
+	/*std::println(out_ss, "\tsubgraph uids {{")
 	//std::println(out_ss, "\t\tedge [dir=none]");
 	std::println(out_ss, "\t\tedge [color=grey50, style=dashed]");
 	std::println(out_ss, "\tnode [shape=diamond]");
@@ -71,35 +95,9 @@ std::string Builder::build_graph(const Timeline& timeline) {
 			);
 		}
 	}
-	std::println(out_ss, "\t}}");
+	std::println(out_ss, "\t}}");*/
 	
 	out_ss << FOOTER;
 	return out_ss.str();
-}
-
-std::optional<std::string> Builder::get_node_name(const Proc& proc) noexcept {
-	if (proc.name.has_value()) {
-		return proc.name.value();
-	} else if (proc.ids.has_value()) {
-		if (proc.ids.value().pid.has_value()) {
-			return "PID " + std::to_string(proc.ids.value().pid.value());
-		} else {
-			return "UID " + std::to_string(proc.ids.value().uid);
-		}
-	} else if (proc.package.has_value()) {
-		return "cluster_"+proc.package.value();
-	} else {
-		return std::nullopt;
-	}
-}
-
-std::optional<std::string> Builder::get_node_name_until_pid(const Proc& proc) noexcept {
-	if (proc.name.has_value()) {
-		return proc.name.value();
-	} else if (proc.ids.has_value() && proc.ids.value().pid.has_value()) {
-		return std::to_string(proc.ids.value().pid.value());
-	} else {
-		return std::nullopt;
-	}
 }
 

@@ -2,7 +2,7 @@
 #include <algorithm>
 #include "Cleaner.h"
 
-void Cleaner::clean_relations(const Timeline& timeline, const CleanerOptions& options) {
+void Cleaner::clean_relations(Timeline& timeline, const CleanerOptions& options) {
 	/*std::vector<std::shared_ptr<Proc>> procs{};
 	procs.reserve(relations.size()*2);
 	for (const ProcRelation& rel : relations) {
@@ -22,6 +22,7 @@ void Cleaner::clean_relations(const Timeline& timeline, const CleanerOptions& op
 
 	return relations;*/
 
+	/*
 	auto sort_into_pkg{timeline.sort_into_packages()};
 	if (options.merge_procs_starting_with_dot) {
 		for (const std::pair<std::optional<Package>, std::set<Proc*>>& pkg : sort_into_pkg) {
@@ -39,5 +40,6 @@ void Cleaner::clean_relations(const Timeline& timeline, const CleanerOptions& op
 			}
 		}
 	}
+	*/
 }
 

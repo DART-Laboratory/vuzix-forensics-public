@@ -31,9 +31,9 @@ int App::run() {
 	}
 	in.close();
 
-	std::vector<std::shared_ptr<LogcatLog>> logs{};
+	std::vector<std::shared_ptr<Log>> logs{};
 	try {
-		logs = Reader::read_logcat(lines);
+		logs = Reader::read_bugreport(lines);
 	} catch (std::exception& e) {
 		std::println(std::cerr, "Reader exception: {}", e.what());
 		return 1;

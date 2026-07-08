@@ -10,7 +10,7 @@ class Cleaner {
 public:
 	Cleaner() = delete;
 
-	static void clean_relations(const Timeline& timeline, const CleanerOptions& options);
+	static void clean_relations(Timeline& timeline, const CleanerOptions& options);
 
 private:
 	static void set_procs_equal(std::shared_ptr<Proc>& proc1, std::shared_ptr<Proc>& proc2);
