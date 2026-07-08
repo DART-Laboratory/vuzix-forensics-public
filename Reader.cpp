@@ -15,7 +15,7 @@ std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::
 		if (l.find(" was the duration of ") != std::string::npos) {
 			current_reader = std::nullopt;
 		} else if (l.starts_with("DUMP OF SERVICE CRITICAL")) {
-			current_reader = SensorDumpLog::read_log;
+			current_reader = SensorRegisterLog::read_log;
 		} else if (l.starts_with("------ SYSTEM LOG (logcat")) {
 			current_reader = LogcatLog::read_log;
 		}
@@ -27,9 +27,9 @@ std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::
 	}*/
 
 	static const std::array<
-		std::function<std::optional<std::shared_ptr<Log>>(const std::string&)>, 2
+		std::function<std::optional<std::shared_ptr<Log>>(const std::string&)>, 3
 	> readers{
-		SensorDumpLog::read_log, LogcatLog::read_log
+		LogcatLog::read_log, SensorRegisterLog::read_log, SensorInfoLog::read_log
 	};
 
 	for (const std::string& l : lines) {

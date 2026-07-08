@@ -33,16 +33,7 @@ struct Proc : public Node {
 		const std::optional<Package>& pkg,
 		const std::optional<std::string>& name,
 		const std::optional<IDs>& ids
-	) : package{pkg}, name{name}, ids{ids} {
-		if (name.has_value()) {
-			return;
-		} else if (ids.has_value() && ids.value().pid.has_value()) {
-			return;
-		} else {
-			std::println(std::cout, "DLFKGJ");
-			std::println(std::cout, "Pkg: {}", pkg.value_or("NONE"));
-		}
-	}
+	) : package{pkg}, name{name}, ids{ids} { }
 
 	auto operator<=>(const Proc&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
@@ -59,6 +50,7 @@ struct Proc : public Node {
 
 struct Sensor : public Node {
 	uint32_t id;
+	std::string name;
 
 	Sensor(const uint32_t& id) : id{id} { }
 
@@ -113,35 +105,6 @@ struct Event {
 		Relation relation, const std::shared_ptr<Node>& child
 	) : date{date}, time{time}, parent{parent}, relation{relation}, child{child} { }
 	
-	GraphComponent get_graph_component() const {
-		if (child == nullptr) throw std::runtime_error{"Event child is nullptr."};
-		//std::println(std::cout, "Passed first check.");
-		
-		if (parent != nullptr) {
-			std::optional<std::string> parent_name{parent->get_node_name()};
-			std::optional<std::string> child_name{child->get_node_name()};
-			if (!parent || !child) throw std::runtime_error{"Cannot get node names"};
-			return GraphComponent{
-				std::format(
-					"\t\"{}\" -> \"{}\" [label=\"{}\"]",
-					parent_name.value(),
-					child_name.value(),
-					relation_to_str.at(relation)
-				),
-				GraphComponent::Type::EventRelation
-			};
-		} else {
-			std::optional<std::string> child_name{child->get_node_name()};
-			if (!child) throw std::runtime_error{"Cannot get child node name in non-parented event"};
-			return GraphComponent{
-				std::format(
-					"\t\"{}\" [label=\"{}\"]",
-					child_name.value(),
-					relation_to_str.at(relation)
-				),
-				GraphComponent::Type::EventRelation
-			};
-		}
-	}
+	GraphComponent get_graph_component() const;
 };
 

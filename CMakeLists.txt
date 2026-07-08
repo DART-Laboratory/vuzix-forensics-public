@@ -12,7 +12,7 @@ add_executable(tp
 	App.cpp
 	Node.cpp
 	LogcatLog.cpp
-	SensorDumpLog.cpp
+	SensorLog.cpp
 	Reader.cpp
 	TimelineGenerator.cpp
 	Cleaner.cpp

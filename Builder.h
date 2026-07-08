@@ -15,7 +15,7 @@ private:
 	static std::optional<std::string> get_node_name_until_pid(const Proc& proc) noexcept;
 
 	inline static const std::string HEADER{
-		"digraph G {\n"
+		"digraph Provenance {\n"
 		//"\tlayout=fdp\n"
 		"\tsubgraph cluster_legend {\n"
 			"\t\tlabel=\"Legend\" style=dotted fontsize=9;\n"

@@ -108,7 +108,6 @@ std::optional<Event> LogcatLog::generate_event() {
 				std::nullopt
 			)
 		};
-		std::println(std::cout, "ActivityTaskManager");
 	} else if (process_name == "ActivityManager") {
 		std::regex r{
 			"Start proc ([0-9]{4}):([^/]+)\\/((u0ai?)?[0-9]+)( \\[[^\\]]+\\])? for ((service)|(pre-top-activity)|(top-activity)|(broadcast)|(content provider)|( )|(added application)|(null)) ?\\{?(.*?(?=\\}|$|\n|\r))\\}?"
@@ -181,7 +180,6 @@ std::optional<Event> LogcatLog::generate_event() {
 				)
 			};
 		}
-		std::println(std::cout, "ActivityManager");
 	}
 
 	return event;

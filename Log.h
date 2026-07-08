@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Event.h"
+#include "Node.h"
 
 class Log {
 public:
@@ -37,9 +37,9 @@ private:
 	LogcatLog() = default;
 };
 
-class SensorDumpLog : public Log {
+class SensorRegisterLog : public Log {
 public:
-	static std::optional<std::shared_ptr<SensorDumpLog>> read_log(const std::string& l);
+	static std::optional<std::shared_ptr<SensorRegisterLog>> read_log(const std::string& l);
 	std::optional<Event> generate_event() override;
 
 	std::chrono::milliseconds time;
@@ -50,6 +50,19 @@ public:
 	Package package;
 
 private:
-	SensorDumpLog() = default;
+	SensorRegisterLog() = default;
+};
+
+class SensorInfoLog : public Log {
+public:
+	static std::optional<std::shared_ptr<SensorInfoLog>> read_log(const std::string& l);
+	std::optional<Event> generate_event() override { return std::nullopt; }
+
+	uint32_t sensor_id;
+	std::string component_name;
+	std::string type;
+	
+private:
+	SensorInfoLog() = default;
 };
 

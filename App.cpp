@@ -50,7 +50,7 @@ int App::run() {
 	std::println("Timeline generator passed.");
 
 	try {
-		Cleaner::clean_relations(timeline, cleaner_options);
+		Cleaner::clean_relations(timeline, logs, cleaner_options);
 	} catch (std::exception& e) {
 		std::println(std::cerr, "Cleaner exception: {}", e.what());
 		return 1;

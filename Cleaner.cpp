@@ -1,45 +1,28 @@
-#include <ranges>
-#include <algorithm>
 #include "Cleaner.h"
 
-void Cleaner::clean_relations(Timeline& timeline, const CleanerOptions& options) {
-	/*std::vector<std::shared_ptr<Proc>> procs{};
-	procs.reserve(relations.size()*2);
-	for (const ProcRelation& rel : relations) {
-		procs.emplace_back(rel.lhs);
-		procs.emplace_back(rel.rhs);
-	}
-
-	for (ProcRelation& rel : relations) {
-		for (std::shared_ptr<Proc>& proc : procs) {
-			if (rel.lhs != proc && rel.lhs->set_equal_if_similar(*proc)) {
-				rel.lhs = proc;
-			} else if (rel.rhs != proc && rel.rhs->set_equal_if_similar(*proc)) {
-				rel.rhs = proc;
-			}
+void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_ptr<Log>>& logs, const CleanerOptions& options) {
+	std::map<uint32_t, std::string> id_to_name{};
+	for (const std::shared_ptr<Log>& log : logs) {
+		if (auto sensor_info{std::dynamic_pointer_cast<SensorInfoLog>(log)}) {
+			id_to_name.insert(std::make_pair(sensor_info->sensor_id, sensor_info->type));
 		}
 	}
 
-	return relations;*/
+	std::vector<std::shared_ptr<Node>> nodes{};
+	nodes.reserve(timeline.events.size()*2);
+	for (const Event& event : timeline.events) {
+		nodes.emplace_back(event.child);
+		nodes.emplace_back(event.parent);
+	}
 
-	/*
-	auto sort_into_pkg{timeline.sort_into_packages()};
-	if (options.merge_procs_starting_with_dot) {
-		for (const std::pair<std::optional<Package>, std::set<Proc*>>& pkg : sort_into_pkg) {
-			for (Proc* proc : pkg.second) {
-				if (!proc->package.has_value() || !proc->name.has_value()) continue;
-				if (!proc->name.value().starts_with('.')) continue;
-
-				std::string combined_name{proc->package.value()+proc->name.value()};
-				if (std::ranges::find_if(pkg.second, [&combined_name](const Proc* proc) {
-					if (!proc->name.has_value()) return false;
-					return proc->name.value() == combined_name;
-				}) != pkg.second.end()) {
-					proc->name = combined_name;
-				}
+	for (const std::shared_ptr<Node>& node : nodes) {
+		if (auto sensor_node{std::dynamic_pointer_cast<Sensor>(node)}) {
+			if (auto mapping{id_to_name.find(sensor_node->id)}; mapping != id_to_name.end()) {
+				sensor_node->name = mapping->second;
+			} else {
+				throw std::runtime_error{"Sensor id does not map to any name."};
 			}
 		}
 	}
-	*/
 }
 
