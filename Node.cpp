@@ -1,6 +1,25 @@
 #include "Node.h"
 #include "GraphComponent.h"
 
+GraphComponent Node::get_node_def_graph_component(const std::string& node_name) const {
+	std::string def_str{};
+	if (package.has_value()) {
+		def_str = std::format(
+			"\tsubgraph \"cluster_{}\" {{ label=\"{}\"",
+			package.value(), package.value()
+		);
+	}
+
+	def_str += std::format("\"{}\" [shape={} fillcolor=\"{}\"]{}",
+		node_name,
+		shape_to_str.at(get_shape()),
+		shape_to_color.at(get_shape()),
+		(package.has_value() ? " }" : "")
+	);
+
+	return GraphComponent{def_str, GraphComponent::Type::NodeDefinition};
+}
+
 void Node::extract_package_from_name(const Package& package) noexcept {
 	if (!this->package) return;
 	if (this->name.value().starts_with(package)) {
@@ -87,27 +106,14 @@ std::vector<GraphComponent> Proc::get_graph_components() const {
 	std::optional<std::string> node_name{get_node_name_until_pid()};
 	if (!node_name) return ret;
 
+	ret.emplace_back(get_node_def_graph_component(node_name.value()));
 	if (ids.has_value()) {
 		ret.emplace_back(std::format(
 			"\t\t\"{}\" -> \"UID {}\" [label=\"UID belongs to\"]",
 			node_name.value(), ids.value().uid
-		));
+		), GraphComponent::Type::UIDRelation);
 	}
 
-	std::string def_str{};
-	if (package.has_value()) {
-		def_str = std::format(
-			"\tsubgraph \"cluster_{}\" {{ label=\"{}\"",
-			package.value(), package.value()
-		);
-	}
-
-	def_str += std::format("\"{}\" [shape=ellipse] {}",
-		node_name.value(),
-		(package.has_value() ? "}" : "")
-	);
-
-	ret.emplace_back(def_str, GraphComponent::Type::NodeDefinition);
 	return ret;
 }
 
@@ -152,7 +158,11 @@ std::optional<std::string> Sensor::get_node_name() const noexcept {
 	return name;
 }
 
-std::vector<GraphComponent> Sensor::get_graph_components() const { return {}; }
+std::vector<GraphComponent> Sensor::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
 
 bool Sensor::similar(const std::shared_ptr<Node>& node) const {
 	if (!Node::similar(node)) return false;
@@ -167,13 +177,21 @@ std::optional<std::string> JavaClass::get_node_name() const noexcept {
 	return name;
 }
 
-std::vector<GraphComponent> JavaClass::get_graph_components() const { return {}; }
+std::vector<GraphComponent> JavaClass::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
 
 std::optional<std::string> Broadcast::get_node_name() const noexcept {
 	return name;
 }
 
-std::vector<GraphComponent> Broadcast::get_graph_components() const { return {}; }
+std::vector<GraphComponent> Broadcast::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
 
 GraphComponent Event::get_graph_component() const {
 	if (child == nullptr) throw std::runtime_error{"Event child is nullptr."};
@@ -194,11 +212,11 @@ GraphComponent Event::get_graph_component() const {
 	} else {
 		std::optional<std::string> child_name{child->get_node_name()};
 		if (!child) throw std::runtime_error{"Cannot get child node name in non-parented event"};
+
 		return GraphComponent{
 			std::format(
-				"\t\"{}\" [label=\"{}\"]",
-				child_name.value(),
-				relation_to_str.at(relation)
+				"\t\"{}\"",
+				child_name.value()
 			),
 			GraphComponent::Type::EventRelation
 		};

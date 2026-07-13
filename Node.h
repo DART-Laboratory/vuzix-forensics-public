@@ -18,8 +18,10 @@ struct Node {
 	Node(const std::optional<Package>& pkg, const std::optional<std::string>& name)
 		: package{pkg}, name{name} { }
 
+	auto operator<=>(const Node& node) const noexcept = default;
+
 	virtual std::optional<std::string> get_node_name() const noexcept = 0;
-	virtual std::vector<GraphComponent> get_graph_components() const { return {}; }
+	virtual std::vector<GraphComponent> get_graph_components() const = 0;
 
 	void extract_package_from_name(const Package& package) noexcept;
 	void prefix_package_on_name() noexcept;
@@ -27,7 +29,27 @@ struct Node {
 	virtual bool similar(const std::shared_ptr<Node>& node) const;
 	virtual void relate(const std::shared_ptr<Node>& node);
 
-	auto operator<=>(const Node& node) const noexcept = default;
+	enum class Shape {
+		Ellipse, Hexagon, Trapezium, Box
+	};
+
+	inline static const std::map<Shape, std::string> shape_to_str{
+		{Shape::Ellipse,	"ellipse"},
+		{Shape::Box,		"box"},
+		{Shape::Hexagon,	"hexagon"},
+		{Shape::Trapezium,	"trapezium"},
+	};
+	inline static const std::map<Shape, std::string> shape_to_color{
+		{Shape::Ellipse,	"#d6eaf8"},
+		{Shape::Box,		"#fdebd0"},
+		{Shape::Hexagon,	"#fadbd8"},
+		{Shape::Trapezium,	"#e8daef"},
+	};
+
+	virtual constexpr Shape get_shape() const noexcept = 0;
+
+protected:
+	GraphComponent get_node_def_graph_component(const std::string& node_name) const;
 };
 
 struct Proc : public Node {
@@ -51,6 +73,10 @@ struct Proc : public Node {
 
 	bool similar(const std::shared_ptr<Node>& node) const override;
 	void relate(const std::shared_ptr<Node>& node) override;
+	
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Ellipse;
+	}
 
 	auto operator<=>(const Proc&) const noexcept = default;
 	
@@ -58,8 +84,7 @@ struct Proc : public Node {
 		"pre-top-activity",
 		"top-activity",
 		"service",
-		"content provider",
-		"added application"
+		"content provider"
 	};
 };
 
@@ -67,6 +92,10 @@ struct Sensor : public Node {
 	uint32_t id;
 
 	Sensor(const uint32_t& id) : Node{std::nullopt, std::nullopt}, id{id} { }
+
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Box;
+	}
 
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
@@ -79,6 +108,10 @@ struct Sensor : public Node {
 struct JavaClass : public Node {
 	JavaClass(const std::string& name) : Node{std::nullopt, name} { }
 
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Trapezium;
+	}
+
 	auto operator<=>(const JavaClass&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
@@ -87,6 +120,10 @@ struct JavaClass : public Node {
 struct Broadcast : public Node {
 	Broadcast(const std::optional<Package>& pkg, const std::string& name)
 		: Node{pkg, name} { }
+
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Hexagon;
+	}
 
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;

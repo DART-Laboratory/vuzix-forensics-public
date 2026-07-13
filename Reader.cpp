@@ -1,4 +1,5 @@
 #include "Reader.h"
+#include <execution>
 #include <functional>
 #include <iostream>
 #include <print>
@@ -16,7 +17,7 @@ std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::
 		for (const auto& reader : readers) {
 			if (const auto log{reader(l)}) {
 				cumulative_logs.emplace_back(log.value());
-				continue;
+				break;
 			}
 		}
 	}

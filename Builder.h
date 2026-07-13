@@ -17,11 +17,14 @@ private:
 	inline static const std::string HEADER{
 		"digraph Provenance {\n"
 		//"\tlayout=fdp\n"
+		"\tgraph [ranksep=\"2\"]\n"
+		"\tnode [style=\"filled\" fillcolor=\"#fef9e7\"]\n"
 		"\tsubgraph cluster_legend {\n"
 			"\t\tlabel=\"Legend\" style=dotted fontsize=9;\n"
-			"\t\tlegend_process  [label=\"Activity/Service/Application/Content Provider\" shape=ellipse];\n"
-			"\t\tlegend_activity [label=\"Broadcast\" shape=hexagon];\n"
-			"\t\tlegend_package  [label=\"Java class\" shape=trapezium];\n"
+			"\t\tlegend_process  [label=\"Process/Activity/Service/Application/Content Provider/Unknown\" shape=ellipse fillcolor=\"#d6eaf8\"];\n"
+			"\t\tlegend_package  [label=\"Sensor\" shape=box fillcolor=\"#fdebd0\"];\n"
+			"\t\tlegend_activity [label=\"Broadcast/Broadcast receiver\" shape=hexagon fillcolor=\"#fadbd8\"];\n"
+			"\t\tlegend_package  [label=\"Java class\" shape=trapezium fillcolor=\"#e8daef\"];\n"
 		"\t}\n"
 	};
 

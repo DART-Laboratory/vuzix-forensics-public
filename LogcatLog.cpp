@@ -210,6 +210,22 @@ std::optional<Event> LogcatLog::parse_activity_manager() {
 				}
 			)
 		};
+	} else if (m[6] == "added application") {
+		const auto child{get_package_and_name(m[2].str())};
+		return Event{
+			date,
+			time,
+			nullptr,
+			Event::Relation::Started,
+			std::make_shared<Proc>(
+				child.first,
+				child.second,
+				Proc::IDs{
+					get_uid(m[3]),
+					(PID)std::stoi(m[1].str())
+				}
+			)
+		};
 	}
 	
 	return std::nullopt;

@@ -5,8 +5,8 @@ void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_
 	std::vector<std::shared_ptr<Node>> nodes{};
 	nodes.reserve(timeline.events.size()*2);
 	for (const Event& event : timeline.events) {
-		nodes.emplace_back(event.child);
-		nodes.emplace_back(event.parent);
+		if (event.child != nullptr) nodes.emplace_back(event.child);
+		if (event.parent != nullptr) nodes.emplace_back(event.parent);
 	}
 
 	map_sensor_ids(nodes, logs);
