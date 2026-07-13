@@ -2,7 +2,6 @@
 #include "GraphComponent.h"
 #include <sstream>
 #include <print>
-#include <stdexcept>
 #include <iostream>
 
 std::string Builder::build_graph(Timeline& timeline) {
@@ -23,10 +22,12 @@ std::string Builder::build_graph(Timeline& timeline) {
 			}
 		}
 	}
+	std::println(std::cout, "Builder: Node graph components building passed");
 
 	for (const Event& event : timeline.events) {
 		std::println(out_ss, "{}", event.get_graph_component().text);
 	}
+	std::println(std::cout, "Builder: Event graph components building passed");
 
 	for (const std::shared_ptr<Node>& node : nodes) {
 		for (const GraphComponent& comp : node->get_graph_components()) {
@@ -35,6 +36,7 @@ std::string Builder::build_graph(Timeline& timeline) {
 			}
 		}
 	}
+	std::println(std::cout, "Builder: UID graph components building passed");
 	
 	out_ss << FOOTER;
 	return out_ss.str();

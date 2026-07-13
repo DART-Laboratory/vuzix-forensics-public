@@ -35,6 +35,9 @@ public:
 
 private:
 	LogcatLog() = default;
+
+	std::optional<Event> parse_activity_task_manager();
+	std::optional<Event> parse_activity_manager();
 };
 
 class SensorRegisterLog : public Log {

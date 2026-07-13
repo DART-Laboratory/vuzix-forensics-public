@@ -12,15 +12,25 @@ using PID = uint16_t;
 using Package = std::string;
 
 struct Node {
+	std::optional<Package> package;
+	std::optional<std::string> name;
+
+	Node(const std::optional<Package>& pkg, const std::optional<std::string>& name)
+		: package{pkg}, name{name} { }
+
 	virtual std::optional<std::string> get_node_name() const noexcept = 0;
 	virtual std::vector<GraphComponent> get_graph_components() const { return {}; }
+
+	void extract_package_from_name(const Package& package) noexcept;
+	void prefix_package_on_name() noexcept;
+
+	virtual bool similar(const std::shared_ptr<Node>& node) const;
+	virtual void relate(const std::shared_ptr<Node>& node);
+
 	auto operator<=>(const Node& node) const noexcept = default;
 };
 
 struct Proc : public Node {
-	std::optional<Package> package;
-	std::optional<std::string> name;
-
 	struct IDs {
 		UID uid;
 		std::optional<PID> pid;
@@ -33,36 +43,41 @@ struct Proc : public Node {
 		const std::optional<Package>& pkg,
 		const std::optional<std::string>& name,
 		const std::optional<IDs>& ids
-	) : package{pkg}, name{name}, ids{ids} { }
+	) : Node{pkg, name}, ids{ids} { }
 
-	auto operator<=>(const Proc&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::optional<std::string> get_node_name_until_pid() const noexcept;
 	std::vector<GraphComponent> get_graph_components() const override;
+
+	bool similar(const std::shared_ptr<Node>& node) const override;
+	void relate(const std::shared_ptr<Node>& node) override;
+
+	auto operator<=>(const Proc&) const noexcept = default;
 	
-	static inline const std::array<std::string, 4> proc_types{
+	static inline const std::array<std::string, 5> proc_types{
 		"pre-top-activity",
 		"top-activity",
 		"service",
-		"content provider"
+		"content provider",
+		"added application"
 	};
 };
 
 struct Sensor : public Node {
 	uint32_t id;
-	std::string name;
 
-	Sensor(const uint32_t& id) : id{id} { }
+	Sensor(const uint32_t& id) : Node{std::nullopt, std::nullopt}, id{id} { }
 
-	auto operator<=>(const Sensor&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
+
+	bool similar(const std::shared_ptr<Node>& node) const override;
+
+	auto operator<=>(const Sensor&) const noexcept = default;
 };
 
 struct JavaClass : public Node {
-	std::string name;
-
-	JavaClass(const std::string& name) : name{name} { }
+	JavaClass(const std::string& name) : Node{std::nullopt, name} { }
 
 	auto operator<=>(const JavaClass&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
@@ -70,15 +85,13 @@ struct JavaClass : public Node {
 };
 
 struct Broadcast : public Node {
-	std::optional<Package> package;
-	std::string name;
-
 	Broadcast(const std::optional<Package>& pkg, const std::string& name)
-		: package{pkg}, name{name} { }
+		: Node{pkg, name} { }
 
-	auto operator<=>(const Broadcast&) const noexcept = default;
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
+
+	auto operator<=>(const Broadcast&) const noexcept = default;
 };
 
 struct Event {

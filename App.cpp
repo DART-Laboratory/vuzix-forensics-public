@@ -5,7 +5,7 @@
 #include "TimelineGenerator.h"
 #include "Builder.h"
 
-App::App(const int argc, char** argv) : app{"Log parser"}, argc{argc}, argv{argv} {
+App::App(const int argc, char** argv) : app{"HindSight"}, argc{argc}, argv{argv} {
     argv = app.ensure_utf8(argv);
 
 	app.add_option("file", input_file, "Bug report file name")->check(CLI::ExistingFile)->required();
@@ -63,7 +63,9 @@ int App::run() {
 		out << Builder::build_graph(timeline);
 	} catch (const std::exception& e) {
 		std::println(std::cerr, "Builder exception: {}", e.what());
+		return 1;
 	}
+	std::println("Builder passed.");
 
 	system(std::format("dot -Tsvg {}.dot > {}.svg", file_name, file_name, file_name).c_str());
 	if (!save_dot_file) {
