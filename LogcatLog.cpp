@@ -1,4 +1,5 @@
 #include "Log.h"
+#include "Node.h"
 #include <regex>
 #include <ranges>
 #include <algorithm>
@@ -110,10 +111,9 @@ std::optional<Event> LogcatLog::parse_activity_task_manager() {
 			}
 		),
 		Event::Relation::Started,
-		std::make_shared<Proc>(
+		std::make_shared<Activity>(
 			(!pkg.empty() ? pkg : cmp.first),
-			cmp.second,
-			std::nullopt
+			cmp.second
 		)
 	};
 }
@@ -126,7 +126,7 @@ std::optional<Event> LogcatLog::parse_activity_manager() {
 	std::regex_match(description, m, r);
 	if (m.empty()) return std::nullopt;
 
-	if (std::ranges::find(Proc::proc_types, m[6].str()) != Proc::proc_types.end()) {
+	if (m[6] == "content_provider") {
 		const auto parent{get_package_and_name(m[15].str())};
 		const auto child{get_package_and_name(m[2].str())};
 
@@ -147,9 +147,28 @@ std::optional<Event> LogcatLog::parse_activity_manager() {
 		return Event{
 			date, time, parent_proc, Event::Relation::Started, child_proc
 		};
+	} else if (m[6] == "service") {
+		const auto service_name{get_package_and_name(m[15].str())};
+		std::shared_ptr<Service> service{std::make_shared<Service>(
+			service_name.first,
+			service_name.second
+		)};
+
+		const auto proc_name{get_package_and_name(m[2].str())};
+		std::shared_ptr<Proc> proc{std::make_shared<Proc>(
+			proc_name.first,
+			proc_name.second,
+			Proc::IDs{
+				get_uid(m[3].str()),
+				(PID)std::stoi(m[1].str())
+			}
+		)};
+		return Event{
+			date, time, proc, Event::Relation::StartedForService, service
+		};
 	} else if (m[6] == "broadcast") {
 		const auto broadcast_name{get_package_and_name(m[15].str())};
-		std::shared_ptr<Broadcast> broadcast{std::make_shared<Broadcast>(
+		std::shared_ptr<BroadcastReceiver> broadcast{std::make_shared<BroadcastReceiver>(
 			broadcast_name.first,
 			broadcast_name.second
 		)};
@@ -165,6 +184,25 @@ std::optional<Event> LogcatLog::parse_activity_manager() {
 		)};
 		return Event{
 			date, time, proc, Event::Relation::StartedForBroadcast, broadcast
+		};
+	} else if (m[6] == "pre-top-activity" || m[6] == "top-activity") {
+		const auto activity_name{get_package_and_name(m[15].str())};
+		std::shared_ptr<Activity> activity{std::make_shared<Activity>(
+			activity_name.first,
+			activity_name.second
+		)};
+
+		const auto proc_name{get_package_and_name(m[2].str())};
+		std::shared_ptr<Proc> proc{std::make_shared<Proc>(
+			proc_name.first,
+			proc_name.second,
+			Proc::IDs{
+				get_uid(m[3].str()),
+				(PID)std::stoi(m[1].str())
+			}
+		)};
+		return Event{
+			date, time, activity, Event::Relation::Started, proc
 		};
 	} else if (m[6] == "null") {
 		std::shared_ptr<Node> parent{nullptr};

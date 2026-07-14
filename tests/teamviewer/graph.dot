@@ -3,10 +3,12 @@ digraph Provenance {
 	node [style="filled" fillcolor="#fef9e7"]
 	subgraph cluster_legend {
 		label="Legend" style=dotted fontsize=9;
-		legend_process  [label="Process/Activity/Service/Application/Content Provider/Unknown" shape=ellipse fillcolor="#d6eaf8"];
-		legend_package  [label="Sensor" shape=box fillcolor="#fdebd0"];
-		legend_activity [label="Broadcast/Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
-		legend_package  [label="Java class" shape=trapezium fillcolor="#e8daef"];
+		legend_process  [label="Process/Content Provider/Unknown" shape=ellipse fillcolor="#d6eaf8"];
+		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
+		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
+		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
+		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
 "android.sensor.gyroscope_uncalibrated(16)" [shape=box fillcolor="#fdebd0"]
 "unknown_package_pid_3460 PID 3460" [shape=ellipse fillcolor="#d6eaf8"]
@@ -48,18 +50,18 @@ digraph Provenance {
 "com.android.server.policy.WindowOrientationListener PID 1373" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [shape=hexagon fillcolor="#fadbd8"] }
 "com.qti.ltebc PID 3343" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
 "com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 "unknown_package_pid_3460 PID 3460" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.incomingsession.IncomingCallActivity" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.com.teamviewer.pilotlitesessionlib.activity.PilotLiteSessionActivity" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.incomingsession.IncomingCallActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.com.teamviewer.pilotlitesessionlib.activity.PilotLiteSessionActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
 "com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=ellipse fillcolor="#d6eaf8"] }
 	"unknown_package_pid_3460 PID 3460" -> "android.sensor.gyroscope_uncalibrated(16)" [label="Registered sensor"]
 	"unknown_package_pid_3460 PID 3460" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
 	"unknown_package_pid_3460 PID 3460" -> "android.sensor.gyroscope_uncalibrated(16)" [label="Registered sensor"]
@@ -80,7 +82,7 @@ digraph Provenance {
 	"unknown_package_pid_3460 PID 3460" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
 	"com.android.server.policy.WindowOrientationListener PID 1373" -> "android.sensor.device_orientation(27)" [label="Registered sensor"]
 	"com.qti.ltebc PID 3343" -> "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [label="Started for broadcast"]
-	"com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" -> "com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" [label="Started"]
+	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 	"UID 10014" -> "com.teamviewer.pilot.lite.main.MainActivity" [label="Started"]
 	"com.teamviewer.pilot.lite.main.MainActivity" -> "unknown_package_pid_3460 PID 3460" [label="Started"]
 	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
@@ -88,7 +90,7 @@ digraph Provenance {
 	"UID 10001" -> "com.teamviewer.pilot.lite.incomingsession.IncomingCallActivity" [label="Started"]
 	"UID 10001" -> "com.teamviewer.pilot.lite.com.teamviewer.pilotlitesessionlib.activity.PilotLiteSessionActivity" [label="Started"]
 	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
-	"com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" -> "com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" [label="Started"]
+	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 		"unknown_package_pid_3460 PID 3460" -> "UID 10001" [label="UID belongs to"]
 		"unknown_package_pid_3460 PID 3460" -> "UID 10001" [label="UID belongs to"]
 		"unknown_package_pid_3460 PID 3460" -> "UID 10001" [label="UID belongs to"]

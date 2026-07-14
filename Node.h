@@ -30,23 +30,19 @@ struct Node {
 	virtual void relate(const std::shared_ptr<Node>& node);
 
 	enum class Shape {
-		Ellipse, Hexagon, Trapezium, Box
+		Ellipse, Hexagon, Octagon, Box, Parallelogram
 	};
 
 	inline static const std::map<Shape, std::string> shape_to_str{
 		{Shape::Ellipse,	"ellipse"},
 		{Shape::Box,		"box"},
 		{Shape::Hexagon,	"hexagon"},
-		{Shape::Trapezium,	"trapezium"},
-	};
-	inline static const std::map<Shape, std::string> shape_to_color{
-		{Shape::Ellipse,	"#d6eaf8"},
-		{Shape::Box,		"#fdebd0"},
-		{Shape::Hexagon,	"#fadbd8"},
-		{Shape::Trapezium,	"#e8daef"},
+		{Shape::Octagon,	"octagon"},
+		{Shape::Parallelogram,	"parallelogram"}
 	};
 
 	virtual constexpr Shape get_shape() const noexcept = 0;
+	virtual constexpr uint32_t get_color() const noexcept = 0;
 
 protected:
 	GraphComponent get_node_def_graph_component(const std::string& node_name) const;
@@ -77,15 +73,28 @@ struct Proc : public Node {
 	constexpr Shape get_shape() const noexcept override {
 		return Node::Shape::Ellipse;
 	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xd6eaf8;
+	}
 
 	auto operator<=>(const Proc&) const noexcept = default;
-	
-	static inline const std::array<std::string, 5> proc_types{
-		"pre-top-activity",
-		"top-activity",
-		"service",
-		"content provider"
-	};
+};
+
+struct Service : public Node {
+	Service(const std::optional<Package>& pkg, const std::string& name)
+		: Node{pkg, name} { }
+
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Octagon;
+	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xabebc6;
+	}
+
+	std::optional<std::string> get_node_name() const noexcept override;
+	std::vector<GraphComponent> get_graph_components() const override;
+
+	auto operator<=>(const Service&) const noexcept = default;
 };
 
 struct Sensor : public Node {
@@ -96,6 +105,9 @@ struct Sensor : public Node {
 	constexpr Shape get_shape() const noexcept override {
 		return Node::Shape::Box;
 	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xfdebd0;
+	}
 
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
@@ -105,11 +117,31 @@ struct Sensor : public Node {
 	auto operator<=>(const Sensor&) const noexcept = default;
 };
 
+struct Activity : public Node {
+	Activity(const std::optional<Package>& pkg, const std::string& name)
+		: Node{pkg, name} { }
+
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Ellipse;
+	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xd5f5e3;
+	}
+
+	std::optional<std::string> get_node_name() const noexcept override;
+	std::vector<GraphComponent> get_graph_components() const override;
+
+	auto operator<=>(const Activity&) const noexcept = default;
+};
+
 struct JavaClass : public Node {
 	JavaClass(const std::string& name) : Node{std::nullopt, name} { }
 
 	constexpr Shape get_shape() const noexcept override {
-		return Node::Shape::Trapezium;
+		return Node::Shape::Octagon;
+	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xe8daef;
 	}
 
 	auto operator<=>(const JavaClass&) const noexcept = default;
@@ -117,18 +149,21 @@ struct JavaClass : public Node {
 	std::vector<GraphComponent> get_graph_components() const override;
 };
 
-struct Broadcast : public Node {
-	Broadcast(const std::optional<Package>& pkg, const std::string& name)
+struct BroadcastReceiver : public Node {
+	BroadcastReceiver(const std::optional<Package>& pkg, const std::string& name)
 		: Node{pkg, name} { }
 
 	constexpr Shape get_shape() const noexcept override {
 		return Node::Shape::Hexagon;
 	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xfadbd8;
+	}
 
 	std::optional<std::string> get_node_name() const noexcept override;
 	std::vector<GraphComponent> get_graph_components() const override;
 
-	auto operator<=>(const Broadcast&) const noexcept = default;
+	auto operator<=>(const BroadcastReceiver&) const noexcept = default;
 };
 
 struct Event {
@@ -139,12 +174,13 @@ struct Event {
 	std::shared_ptr<Node> child;
 
 	enum class Relation {
-		Started, StartedForBroadcast, RegisteredSensor
+		Started, StartedForBroadcast, RegisteredSensor, StartedForService
 	} relation;
 	inline static const std::map<Relation, std::string> relation_to_str{
 		{Relation::Started, "Started"},
 		{Relation::StartedForBroadcast, "Started for broadcast"},
-		{Relation::RegisteredSensor, "Registered sensor"}
+		{Relation::RegisteredSensor, "Registered sensor"},
+		{Relation::StartedForService, "Started for service"}
 	};
 
 	Event() = default;

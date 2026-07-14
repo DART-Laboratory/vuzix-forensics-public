@@ -10,10 +10,13 @@ GraphComponent Node::get_node_def_graph_component(const std::string& node_name) 
 		);
 	}
 
+	std::stringstream color_ss;
+	color_ss << std::hex << get_color();
+
 	def_str += std::format("\"{}\" [shape={} fillcolor=\"{}\"]{}",
 		node_name,
 		shape_to_str.at(get_shape()),
-		shape_to_color.at(get_shape()),
+		"#" + color_ss.str(),
 		(package.has_value() ? " }" : "")
 	);
 
@@ -154,6 +157,16 @@ void Proc::relate(const std::shared_ptr<Node>& node) {
 	if (ids) proc->ids = ids;
 }
 
+std::optional<std::string> Service::get_node_name() const noexcept {
+	return name;
+}
+
+std::vector<GraphComponent> Service::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
+
 std::optional<std::string> Sensor::get_node_name() const noexcept {
 	return name;
 }
@@ -173,6 +186,16 @@ bool Sensor::similar(const std::shared_ptr<Node>& node) const {
 	return false;
 }
 
+std::optional<std::string> Activity::get_node_name() const noexcept {
+	return name;
+}
+
+std::vector<GraphComponent> Activity::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
+
 std::optional<std::string> JavaClass::get_node_name() const noexcept {
 	return name;
 }
@@ -183,11 +206,11 @@ std::vector<GraphComponent> JavaClass::get_graph_components() const {
 	return {get_node_def_graph_component(node_name.value())};
 }
 
-std::optional<std::string> Broadcast::get_node_name() const noexcept {
+std::optional<std::string> BroadcastReceiver::get_node_name() const noexcept {
 	return name;
 }
 
-std::vector<GraphComponent> Broadcast::get_graph_components() const {
+std::vector<GraphComponent> BroadcastReceiver::get_graph_components() const {
 	std::optional<std::string> node_name{get_node_name()};
 	if (!node_name) return {};
 	return {get_node_def_graph_component(node_name.value())};

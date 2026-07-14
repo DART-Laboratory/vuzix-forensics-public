@@ -21,10 +21,12 @@ private:
 		"\tnode [style=\"filled\" fillcolor=\"#fef9e7\"]\n"
 		"\tsubgraph cluster_legend {\n"
 			"\t\tlabel=\"Legend\" style=dotted fontsize=9;\n"
-			"\t\tlegend_process  [label=\"Process/Activity/Service/Application/Content Provider/Unknown\" shape=ellipse fillcolor=\"#d6eaf8\"];\n"
-			"\t\tlegend_package  [label=\"Sensor\" shape=box fillcolor=\"#fdebd0\"];\n"
-			"\t\tlegend_activity [label=\"Broadcast/Broadcast receiver\" shape=hexagon fillcolor=\"#fadbd8\"];\n"
-			"\t\tlegend_package  [label=\"Java class\" shape=trapezium fillcolor=\"#e8daef\"];\n"
+			"\t\tlegend_process  [label=\"Process/Content Provider/Unknown\" shape=ellipse fillcolor=\"#d6eaf8\"];\n"
+			"\t\tlegend_service  [label=\"Service\" shape=octagon fillcolor=\"#abebc6\"];\n"
+			"\t\tlegend_activity  [label=\"Activity\" shape=ellipse fillcolor=\"#d5f5e3\"];\n"
+			"\t\tlegend_sensor  [label=\"Sensor\" shape=box fillcolor=\"#fdebd0\"];\n"
+			"\t\tlegend_broadcast [label=\"Broadcast receiver\" shape=hexagon fillcolor=\"#fadbd8\"];\n"
+			"\t\tlegend_class  [label=\"Java class\" shape=octagon fillcolor=\"#e8daef\"];\n"
 		"\t}\n"
 	};
 
