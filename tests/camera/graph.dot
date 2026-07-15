@@ -7,6 +7,7 @@ digraph Provenance {
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
@@ -123,8 +124,14 @@ digraph Provenance {
 	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
 "android.view.OrientationEventListener PID 3469" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.SettingsActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	"android.view.OrientationEventListener PID 3469" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
 	"android.view.OrientationEventListener PID 3469" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
@@ -191,8 +198,11 @@ digraph Provenance {
 	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3382" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 	"UID 10014" -> "org.codeaurora.snapcam.com.android.camera.CameraLauncher" [label="Started"]
 	"org.codeaurora.snapcam.com.android.camera.CameraLauncher" -> "android.view.OrientationEventListener PID 3469" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
 	"UID 10011" -> "org.codeaurora.snapcam.com.android.camera.SettingsActivity" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
 	"UID 10014" -> "org.codeaurora.snapcam.com.android.camera.CameraLauncher" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
 	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
 		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]
 		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]

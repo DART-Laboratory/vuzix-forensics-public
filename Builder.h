@@ -24,6 +24,7 @@ private:
 			"\t\tlegend_service  [label=\"Service\" shape=octagon fillcolor=\"#abebc6\"];\n"
 			"\t\tlegend_activity  [label=\"Activity\" shape=ellipse fillcolor=\"#d5f5e3\"];\n"
 			"\t\tlegend_sensor  [label=\"Sensor\" shape=box fillcolor=\"#fdebd0\"];\n"
+			"\t\tlegend_component  [label=\"Component (like camera)\" shape=box fillcolor=\"#f4e5d4\"];\n"
 			"\t\tlegend_broadcast [label=\"Broadcast receiver\" shape=hexagon fillcolor=\"#fadbd8\"];\n"
 			"\t\tlegend_class  [label=\"Java class\" shape=octagon fillcolor=\"#e8daef\"];\n"
 		"\t}\n"

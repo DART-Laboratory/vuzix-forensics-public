@@ -7,6 +7,7 @@ digraph Provenance {
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
@@ -117,6 +118,8 @@ digraph Provenance {
 	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android""com.google.zxing.client.android.IconActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 "com.google.zxing.client.android PID 3476" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android""com.google.zxing.client.android.IconActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"com.google.zxing.client.android PID 3476" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell""org.chromium.webview_shell.WebViewBrowserActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 "org.chromium.webview_shell PID 3604" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell""org.chromium.webview_shell.WebViewBrowserActivity" [shape=ellipse fillcolor="#d5f5e3"] }
@@ -189,6 +192,7 @@ digraph Provenance {
 	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 	"UID 10014" -> "com.google.zxing.client.android.IconActivity" [label="Started"]
 	"com.google.zxing.client.android.IconActivity" -> "com.google.zxing.client.android PID 3476" [label="Started"]
+	"com.google.zxing.client.android PID 3476" -> "Camera" [label="Connected to"]
 	"UID 1000" -> "org.chromium.webview_shell.WebViewBrowserActivity" [label="Started"]
 	"org.chromium.webview_shell.WebViewBrowserActivity" -> "org.chromium.webview_shell PID 3604" [label="Started"]
 	"com.android.webview.webview_service PID 3635" -> "com.android.webview.org.chromium.android_webview.services.VariationsSeedServer" [label="Started for service"]
@@ -252,6 +256,7 @@ digraph Provenance {
 		"com.qti.ltebc PID 3292" -> "UID 10153" [label="UID belongs to"]
 		"com.qti.ltebc PID 3349" -> "UID 10153" [label="UID belongs to"]
 		"com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" -> "UID 10148" [label="UID belongs to"]
+		"com.google.zxing.client.android PID 3476" -> "UID 1000" [label="UID belongs to"]
 		"com.google.zxing.client.android PID 3476" -> "UID 1000" [label="UID belongs to"]
 		"org.chromium.webview_shell PID 3604" -> "UID 10036" [label="UID belongs to"]
 		"com.android.webview.webview_service PID 3635" -> "UID 10062" [label="UID belongs to"]

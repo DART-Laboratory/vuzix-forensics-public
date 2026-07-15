@@ -7,6 +7,7 @@ digraph Provenance {
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
@@ -59,6 +60,8 @@ digraph Provenance {
 	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.main.MainActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.incomingsession.IncomingCallActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	subgraph "cluster_com.teamviewer.pilot.lite" { label="com.teamviewer.pilot.lite""com.teamviewer.pilot.lite.com.teamviewer.pilotlitesessionlib.activity.PilotLiteSessionActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"com.teamviewer.pilot.lite" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
 "com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" [shape=ellipse fillcolor="#d6eaf8"]
@@ -89,6 +92,7 @@ digraph Provenance {
 	"UID 10014" -> "com.teamviewer.pilot.lite.main.MainActivity" [label="Started"]
 	"UID 10001" -> "com.teamviewer.pilot.lite.incomingsession.IncomingCallActivity" [label="Started"]
 	"UID 10001" -> "com.teamviewer.pilot.lite.com.teamviewer.pilotlitesessionlib.activity.PilotLiteSessionActivity" [label="Started"]
+	"com.teamviewer.pilot.lite" -> "Camera" [label="Connected to"]
 	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
 	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 		"unknown_package_pid_3460 PID 3460" -> "UID 10001" [label="UID belongs to"]

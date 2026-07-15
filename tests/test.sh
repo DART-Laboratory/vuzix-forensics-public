@@ -16,7 +16,8 @@ for dir in ../logs/*/; do
 
 	[[ -n "$bugreport" ]] || continue
 
-	mkdir -p "$out_dir"
+	rm -r "$out_dir"
+	mkdir "$out_dir"
 
-	$hs -d -o "$out_dir" "$bugreport"
+	$hs -d -o "$out_dir/graph" "$bugreport"
 done

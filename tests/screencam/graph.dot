@@ -7,6 +7,7 @@ digraph Provenance {
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}

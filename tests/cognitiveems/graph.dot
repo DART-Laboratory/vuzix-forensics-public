@@ -7,6 +7,7 @@ digraph Provenance {
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
@@ -118,6 +119,8 @@ digraph Provenance {
 "com.example.cognitive_ems PID 3479" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.example.cognitive_ems" { label="com.example.cognitive_ems""com.example.cognitive_ems.MainActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	subgraph "cluster_com.example.cognitive_ems" { label="com.example.cognitive_ems""com.example.cognitive_ems.CameraStreamActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"com.example.cognitive_ems PID 3479" [shape=ellipse fillcolor="#d6eaf8"]
 	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice""com.vuzix.timesyncservice.TimeSyncReceiver" [shape=hexagon fillcolor="#fadbd8"] }
 "com.vuzix.timesyncservice PID 3176" [shape=ellipse fillcolor="#d6eaf8"]
@@ -186,6 +189,7 @@ digraph Provenance {
 	"UID 10014" -> "com.example.cognitive_ems.MainActivity" [label="Started"]
 	"com.example.cognitive_ems.MainActivity" -> "com.example.cognitive_ems PID 3479" [label="Started"]
 	"UID 10172" -> "com.example.cognitive_ems.CameraStreamActivity" [label="Started"]
+	"com.example.cognitive_ems PID 3479" -> "Camera" [label="Connected to"]
 	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
 	"com.vuzix.timesyncservice PID 3176" -> "com.vuzix.timesyncservice.TimeSyncReceiver" [label="Started for broadcast"]
 	"com.vuzix.timezoneservice PID 3199" -> "com.vuzix.timezoneservice.TimezoneReceiver" [label="Started for broadcast"]
@@ -246,6 +250,7 @@ digraph Provenance {
 		"com.qti.ltebc PID 3288" -> "UID 10153" [label="UID belongs to"]
 		"com.qti.ltebc PID 3345" -> "UID 10153" [label="UID belongs to"]
 		"com.qualcomm.qti.qms.service.trustzoneaccess PID 3370" -> "UID 10148" [label="UID belongs to"]
+		"com.example.cognitive_ems PID 3479" -> "UID 10172" [label="UID belongs to"]
 		"com.example.cognitive_ems PID 3479" -> "UID 10172" [label="UID belongs to"]
 		"com.vuzix.timesyncservice PID 3176" -> "UID 1000" [label="UID belongs to"]
 		"com.vuzix.timezoneservice PID 3199" -> "UID 1000" [label="UID belongs to"]
