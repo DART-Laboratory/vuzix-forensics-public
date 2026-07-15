@@ -20,8 +20,8 @@ struct Node {
 
 	auto operator<=>(const Node& node) const noexcept = default;
 
-	virtual std::optional<std::string> get_node_name() const noexcept = 0;
-	virtual std::vector<GraphComponent> get_graph_components() const = 0;
+	virtual std::optional<std::string> get_node_name() const noexcept;
+	virtual std::vector<GraphComponent> get_graph_components() const;
 
 	void extract_package_from_name(const Package& package) noexcept;
 	void prefix_package_on_name() noexcept;
@@ -91,9 +91,6 @@ struct Service : public Node {
 		return 0xabebc6;
 	}
 
-	std::optional<std::string> get_node_name() const noexcept override;
-	std::vector<GraphComponent> get_graph_components() const override;
-
 	auto operator<=>(const Service&) const noexcept = default;
 };
 
@@ -109,12 +106,22 @@ struct Sensor : public Node {
 		return 0xfdebd0;
 	}
 
-	std::optional<std::string> get_node_name() const noexcept override;
-	std::vector<GraphComponent> get_graph_components() const override;
-
 	bool similar(const std::shared_ptr<Node>& node) const override;
 
 	auto operator<=>(const Sensor&) const noexcept = default;
+};
+
+struct Component : public Node {
+	Component(const std::string& name) : Node {std::nullopt, name} { }
+
+	constexpr Shape get_shape() const noexcept override {
+		return Node::Shape::Box;
+	}
+	constexpr uint32_t get_color() const noexcept override {
+		return 0xf4e5d4;
+	}
+
+	auto operator<=>(const Component&) const noexcept = default;
 };
 
 struct Activity : public Node {
@@ -127,9 +134,6 @@ struct Activity : public Node {
 	constexpr uint32_t get_color() const noexcept override {
 		return 0xd5f5e3;
 	}
-
-	std::optional<std::string> get_node_name() const noexcept override;
-	std::vector<GraphComponent> get_graph_components() const override;
 
 	auto operator<=>(const Activity&) const noexcept = default;
 };
@@ -145,8 +149,6 @@ struct JavaClass : public Node {
 	}
 
 	auto operator<=>(const JavaClass&) const noexcept = default;
-	std::optional<std::string> get_node_name() const noexcept override;
-	std::vector<GraphComponent> get_graph_components() const override;
 };
 
 struct BroadcastReceiver : public Node {
@@ -160,9 +162,6 @@ struct BroadcastReceiver : public Node {
 		return 0xfadbd8;
 	}
 
-	std::optional<std::string> get_node_name() const noexcept override;
-	std::vector<GraphComponent> get_graph_components() const override;
-
 	auto operator<=>(const BroadcastReceiver&) const noexcept = default;
 };
 
@@ -174,13 +173,14 @@ struct Event {
 	std::shared_ptr<Node> child;
 
 	enum class Relation {
-		Started, StartedForBroadcast, RegisteredSensor, StartedForService
+		Started, StartedForBroadcast, RegisteredSensor, StartedForService, ConnectedTo
 	} relation;
 	inline static const std::map<Relation, std::string> relation_to_str{
 		{Relation::Started, "Started"},
 		{Relation::StartedForBroadcast, "Started for broadcast"},
 		{Relation::RegisteredSensor, "Registered sensor"},
-		{Relation::StartedForService, "Started for service"}
+		{Relation::StartedForService, "Started for service"},
+		{Relation::ConnectedTo, "Connected to"}
 	};
 
 	Event() = default;

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.1)
-project(tp)
+project(hs)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED)
@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(CLI11 CONFIG REQUIRED)
 
-add_executable(tp
+add_executable(hs
 	main.cpp
 	App.cpp
 	Node.cpp
@@ -19,5 +19,5 @@ add_executable(tp
 	Builder.cpp
 )
 
-target_link_libraries(tp PRIVATE CLI11::CLI11)
+target_link_libraries(hs PRIVATE CLI11::CLI11)
 

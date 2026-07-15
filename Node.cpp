@@ -1,6 +1,16 @@
 #include "Node.h"
 #include "GraphComponent.h"
 
+std::optional<std::string> Node::get_node_name() const noexcept {
+	return name;
+}
+
+std::vector<GraphComponent> Node::get_graph_components() const {
+	std::optional<std::string> node_name{get_node_name()};
+	if (!node_name) return {};
+	return {get_node_def_graph_component(node_name.value())};
+}
+
 GraphComponent Node::get_node_def_graph_component(const std::string& node_name) const {
 	std::string def_str{};
 	if (package.has_value()) {
@@ -95,7 +105,7 @@ std::optional<std::string> Proc::get_node_name_until_pid() const noexcept {
 		}
 	} else if (ids) {
 		if (ids->pid) {
-		return "PID " + std::to_string(ids->pid.value());
+			return "PID " + std::to_string(ids->pid.value());
 		}
 	}
 
@@ -157,26 +167,6 @@ void Proc::relate(const std::shared_ptr<Node>& node) {
 	if (ids) proc->ids = ids;
 }
 
-std::optional<std::string> Service::get_node_name() const noexcept {
-	return name;
-}
-
-std::vector<GraphComponent> Service::get_graph_components() const {
-	std::optional<std::string> node_name{get_node_name()};
-	if (!node_name) return {};
-	return {get_node_def_graph_component(node_name.value())};
-}
-
-std::optional<std::string> Sensor::get_node_name() const noexcept {
-	return name;
-}
-
-std::vector<GraphComponent> Sensor::get_graph_components() const {
-	std::optional<std::string> node_name{get_node_name()};
-	if (!node_name) return {};
-	return {get_node_def_graph_component(node_name.value())};
-}
-
 bool Sensor::similar(const std::shared_ptr<Node>& node) const {
 	if (!Node::similar(node)) return false;
 	if (auto sensor{std::dynamic_pointer_cast<Sensor>(node)}) {
@@ -184,36 +174,6 @@ bool Sensor::similar(const std::shared_ptr<Node>& node) const {
 	}
 
 	return false;
-}
-
-std::optional<std::string> Activity::get_node_name() const noexcept {
-	return name;
-}
-
-std::vector<GraphComponent> Activity::get_graph_components() const {
-	std::optional<std::string> node_name{get_node_name()};
-	if (!node_name) return {};
-	return {get_node_def_graph_component(node_name.value())};
-}
-
-std::optional<std::string> JavaClass::get_node_name() const noexcept {
-	return name;
-}
-
-std::vector<GraphComponent> JavaClass::get_graph_components() const {
-	std::optional<std::string> node_name{get_node_name()};
-	if (!node_name) return {};
-	return {get_node_def_graph_component(node_name.value())};
-}
-
-std::optional<std::string> BroadcastReceiver::get_node_name() const noexcept {
-	return name;
-}
-
-std::vector<GraphComponent> BroadcastReceiver::get_graph_components() const {
-	std::optional<std::string> node_name{get_node_name()};
-	if (!node_name) return {};
-	return {get_node_def_graph_component(node_name.value())};
 }
 
 GraphComponent Event::get_graph_component() const {

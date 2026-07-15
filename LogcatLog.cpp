@@ -24,7 +24,7 @@ static std::pair<std::optional<Package>, std::string> get_package_and_name(const
 	}
 
 	if (ret.second.empty()) {
-		throw std::runtime_error{"Package name empty when splitting"};
+		throw std::runtime_error{"Name empty when splitting"};
 	}
 
 	return ret;
@@ -85,6 +85,8 @@ std::optional<Event> LogcatLog::generate_event() {
 		return parse_activity_task_manager();
 	} else if (process_name == "ActivityManager") {
 		return parse_activity_manager();
+	} else if (process_name == "CameraService") {
+		return parse_camera_service();
 	}
 	
 	return std::nullopt;
@@ -267,5 +269,30 @@ std::optional<Event> LogcatLog::parse_activity_manager() {
 	}
 	
 	return std::nullopt;
+}
+
+std::optional<Event> LogcatLog::parse_camera_service() {
+	std::regex r{"CameraService::connect call \\(PID -?\\d+ \"([^\"]+)\", camera ID \\d+\\).*"};
+	std::smatch m{};
+	std::regex_match(description, m, r);
+	if (m.empty()) return std::nullopt;
+
+	std::println(std::cout, "{}", m[1].str());
+
+	std::string pkg{m[1].str()};
+	//std::pair<std::optional<Package>, std::string> cmp{get_package_and_name(m[2].str())};
+	
+	return Event{
+		date,
+		time,
+		std::make_shared<Proc>(
+			//cmp.first, cmp.second, std::nullopt
+			std::nullopt, m[1].str(), std::nullopt
+		),
+		Event::Relation::ConnectedTo,
+		std::make_shared<Component>(
+			"Camera"
+		)
+	};
 }
 

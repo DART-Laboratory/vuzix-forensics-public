@@ -38,6 +38,7 @@ private:
 
 	std::optional<Event> parse_activity_task_manager();
 	std::optional<Event> parse_activity_manager();
+	std::optional<Event> parse_camera_service();
 };
 
 class SensorRegisterLog : public Log {

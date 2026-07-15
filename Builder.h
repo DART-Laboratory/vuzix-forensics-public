@@ -16,7 +16,6 @@ private:
 
 	inline static const std::string HEADER{
 		"digraph Provenance {\n"
-		//"\tlayout=fdp\n"
 		"\tgraph [ranksep=\"2\"]\n"
 		"\tnode [style=\"filled\" fillcolor=\"#fef9e7\"]\n"
 		"\tsubgraph cluster_legend {\n"

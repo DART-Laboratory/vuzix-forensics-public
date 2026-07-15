@@ -1,0 +1,267 @@
+digraph Provenance {
+	graph [ranksep="2"]
+	node [style="filled" fillcolor="#fef9e7"]
+	subgraph cluster_legend {
+		label="Legend" style=dotted fontsize=9;
+		legend_process  [label="Process/Content Provider/Unknown" shape=ellipse fillcolor="#d6eaf8"];
+		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
+		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
+		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
+		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
+		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
+	}
+"android.sensor.accelerometer(1)" [shape=box fillcolor="#fdebd0"]
+"android.view.OrientationEventListener PID 3469" [shape=ellipse fillcolor="#d6eaf8"]
+"android.sensor.accelerometer(1)" [shape=box fillcolor="#fdebd0"]
+"android.view.OrientationEventListener PID 3469" [shape=ellipse fillcolor="#d6eaf8"]
+"android.sensor.accelerometer(1)" [shape=box fillcolor="#fdebd0"]
+"android.view.OrientationEventListener PID 3469" [shape=ellipse fillcolor="#d6eaf8"]
+"android.sensor.device_orientation(27)" [shape=box fillcolor="#fdebd0"]
+"com.android.server.policy.WindowOrientationListener PID 1373" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui""com.android.systemui.SystemUIService" [shape=octagon fillcolor="#abebc6"] }
+"com.android.systemui PID 1539" [shape=ellipse fillcolor="#d6eaf8"]
+"WebViewLoader-armeabi-v7a PID 1571" [shape=ellipse fillcolor="#d6eaf8"]
+" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" [shape=octagon fillcolor="#e8daef"]
+"WebViewLoader-arm64-v8a PID 1597" [shape=ellipse fillcolor="#d6eaf8"]
+" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" [shape=octagon fillcolor="#e8daef"]
+	subgraph "cluster_com.android.networkstack" { label="com.android.networkstack""com.android.networkstack.com.android.server.NetworkStackService" [shape=octagon fillcolor="#abebc6"] }
+"com.android.networkstack.process PID 1633" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.settings" { label="com.android.settings""com.android.settings.FallbackHome" [shape=ellipse fillcolor="#d5f5e3"] }
+".qtidataservices PID 1659" [shape=ellipse fillcolor="#d6eaf8"]
+"com.android.networkstack.process PID 1740" [shape=ellipse fillcolor="#d6eaf8"]
+"com.android.se PID 1767" [shape=ellipse fillcolor="#d6eaf8"]
+"com.qualcomm.qti.qdma PID 1791" [shape=ellipse fillcolor="#d6eaf8"]
+"com.android.settings PID 1805" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.settings" { label="com.android.settings""com.android.settings.FallbackHome" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_android.ext.services" { label="android.ext.services""android.ext.services.autofill.InlineSuggestionRenderServiceImpl" [shape=octagon fillcolor="#abebc6"] }
+"android.ext.services PID 1824" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock""com.android.deskclock.AlarmInitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.deskclock PID 2030" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.services.systemhelper" { label="com.qualcomm.qti.services.systemhelper""com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2186" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+".dataservices PID 2212" [shape=ellipse fillcolor="#d6eaf8"]
+"com.vuzix.hud.connectivity PID 2232" [shape=ellipse fillcolor="#d6eaf8"]
+"com.google.android.gms PID 2240" [shape=ellipse fillcolor="#d6eaf8"]
+"com.qualcomm.qti.workloadclassifier PID 2259" [shape=ellipse fillcolor="#d6eaf8"]
+"com.vuzix.displayoptimizer PID 2279" [shape=ellipse fillcolor="#d6eaf8"]
+"com.vuzix.usbpowermonitor PID 2300" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.services.secureui" { label="com.qualcomm.qti.services.secureui""com.qualcomm.qti.services.secureui.sui_service PID 2334" [shape=ellipse fillcolor="#d6eaf8"] }
+"com.vuzix.AppWorldStoreService PID 2349" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module""com.android.providers.media.module.com.android.providers.media.fuse.ExternalStorageServiceImpl" [shape=octagon fillcolor="#abebc6"] }
+"com.android.providers.media.module PID 2378" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.mtp" { label="com.android.mtp""com.android.mtp.MtpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"android.process.media PID 2399" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice""com.vuzix.accessibilityservice.AccessibilitySpeechInput" [shape=octagon fillcolor="#abebc6"] }
+"com.vuzix.accessibilityservice PID 2416" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.keychain" { label="com.android.keychain""com.android.keychain.KeyChainService" [shape=octagon fillcolor="#abebc6"] }
+"com.android.keychain PID 2439" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler""com.android.printspooler.model.PrintSpoolerService" [shape=octagon fillcolor="#abebc6"] }
+"com.android.printspooler PID 2455" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer""com.vuzix.notificationdrawer.Listener" [shape=octagon fillcolor="#abebc6"] }
+"com.vuzix.notificationdrawer PID 2481" [shape=ellipse fillcolor="#d6eaf8"]
+"com.vuzix.launcher.m400 PID 2501" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.com.huawei.signature.diff.SignatureService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.signature PID 2523" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.vending" { label="com.android.vending""com.android.vending.com.huawei.signature.diff.InitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.vending PID 2550" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin""com.vuzix.keyboard.latin.LatinKeyboardService" [shape=octagon fillcolor="#abebc6"] }
+"com.vuzix.keyboard.latin PID 2643" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui""com.android.systemui.usb.UsbDebuggingActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.android.calendar" { label="com.android.calendar""com.android.calendar.alerts.AlertReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.calendar PID 2670" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.contacts" { label="com.android.contacts""com.android.contacts.interactions.OnBootOrUpgradeReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.contacts PID 2694" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem""com.android.dynsystem.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.dynsystem PID 2717" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning""com.android.managedprovisioning.BootReminder" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.managedprovisioning PID 2738" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer""com.android.onetimeinitializer.OneTimeInitializerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.onetimeinitializer PID 2759" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller""com.android.packageinstaller.TemporaryFileManager" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.packageinstaller PID 2784" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller""com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.permissioncontroller PID 2811" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar""com.android.providers.calendar.CalendarReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.providers.calendar PID 2836" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.shell" { label="com.android.shell""com.android.shell.HeapDumpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.shell PID 2887" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.stk" { label="com.android.stk""com.android.stk.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.phone PID 2909" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.traceur" { label="com.android.traceur""com.android.traceur.Receiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.traceur PID 2932" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.org.microg.gms.gcm.TriggerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.persistent PID 2971" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.qti.ltebc PID 2998" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport""com.android.localtransport.LocalTransportService" [shape=octagon fillcolor="#abebc6"] }
+"com.android.localtransport PID 3006" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity""com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.qualcomm.qti.qms.service.connectionsecurity PID 3056" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota""com.vuzix.android.ota.MonitorServiceBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.android.ota PID 3083" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start""com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.quick_start PID 3116" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice""com.vuzix.speechrecognitionservice.BootBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.speechrecognitionservice PID 3140" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice""com.vuzix.temperatureservice.BootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.temperatureservice PID 3163" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice""com.vuzix.timesyncservice.TimeSyncReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.timesyncservice PID 3188" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice""com.vuzix.timezoneservice.TimezoneReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.vuzix.timezoneservice PID 3211" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage""com.android.externalstorage.MountReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.android.externalstorage PID 3236" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.qti.ltebc PID 3260" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.qti.ltebc PID 3295" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+"com.qti.ltebc PID 3355" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
+"com.qualcomm.qti.qms.service.trustzoneaccess PID 3382" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
+"android.view.OrientationEventListener PID 3469" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.SettingsActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_org.codeaurora.snapcam" { label="org.codeaurora.snapcam""org.codeaurora.snapcam.com.android.camera.CameraLauncher" [shape=ellipse fillcolor="#d5f5e3"] }
+"Camera" [shape=box fillcolor="#f4e5d4"]
+"org.codeaurora.snapcam" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	"android.view.OrientationEventListener PID 3469" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
+	"android.view.OrientationEventListener PID 3469" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
+	"android.view.OrientationEventListener PID 3469" -> "android.sensor.accelerometer(1)" [label="Registered sensor"]
+	"com.android.server.policy.WindowOrientationListener PID 1373" -> "android.sensor.device_orientation(27)" [label="Registered sensor"]
+	"com.android.systemui PID 1539" -> "com.android.systemui.SystemUIService" [label="Started for service"]
+	" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" -> "WebViewLoader-armeabi-v7a PID 1571" [label="Started"]
+	" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" -> "WebViewLoader-arm64-v8a PID 1597" [label="Started"]
+	"com.android.networkstack.process PID 1633" -> "com.android.networkstack.com.android.server.NetworkStackService" [label="Started for service"]
+	"UID 0" -> "com.android.settings.FallbackHome" [label="Started"]
+	".qtidataservices PID 1659"
+	"com.android.networkstack.process PID 1740"
+	"com.android.se PID 1767"
+	"com.qualcomm.qti.qdma PID 1791"
+	"com.android.settings.FallbackHome" -> "com.android.settings PID 1805" [label="Started"]
+	"android.ext.services PID 1824" -> "android.ext.services.autofill.InlineSuggestionRenderServiceImpl" [label="Started for service"]
+	"com.android.deskclock PID 2030" -> "com.android.deskclock.AlarmInitReceiver" [label="Started for broadcast"]
+	"com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2186"
+	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
+	".dataservices PID 2212"
+	"com.vuzix.hud.connectivity PID 2232"
+	"com.google.android.gms PID 2240"
+	"com.qualcomm.qti.workloadclassifier PID 2259"
+	"com.vuzix.displayoptimizer PID 2279"
+	"com.vuzix.usbpowermonitor PID 2300"
+	"com.qualcomm.qti.services.secureui.sui_service PID 2334"
+	"com.vuzix.AppWorldStoreService PID 2349"
+	"com.android.providers.media.module PID 2378" -> "com.android.providers.media.module.com.android.providers.media.fuse.ExternalStorageServiceImpl" [label="Started for service"]
+	"android.process.media PID 2399" -> "com.android.mtp.MtpReceiver" [label="Started for broadcast"]
+	"com.vuzix.accessibilityservice PID 2416" -> "com.vuzix.accessibilityservice.AccessibilitySpeechInput" [label="Started for service"]
+	"com.android.keychain PID 2439" -> "com.android.keychain.KeyChainService" [label="Started for service"]
+	"com.android.printspooler PID 2455" -> "com.android.printspooler.model.PrintSpoolerService" [label="Started for service"]
+	"com.vuzix.notificationdrawer PID 2481" -> "com.vuzix.notificationdrawer.Listener" [label="Started for service"]
+	"com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" -> "com.vuzix.launcher.m400 PID 2501" [label="Started"]
+	"com.google.android.gms.signature PID 2523" -> "com.google.android.gms.com.huawei.signature.diff.SignatureService" [label="Started for service"]
+	"com.android.vending PID 2550" -> "com.android.vending.com.huawei.signature.diff.InitReceiver" [label="Started for broadcast"]
+	"com.vuzix.keyboard.latin PID 2643" -> "com.vuzix.keyboard.latin.LatinKeyboardService" [label="Started for service"]
+	"UID 1000" -> "com.android.systemui.usb.UsbDebuggingActivity" [label="Started"]
+	"com.android.calendar PID 2670" -> "com.android.calendar.alerts.AlertReceiver" [label="Started for broadcast"]
+	"com.android.contacts PID 2694" -> "com.android.contacts.interactions.OnBootOrUpgradeReceiver" [label="Started for broadcast"]
+	"com.android.dynsystem PID 2717" -> "com.android.dynsystem.BootCompletedReceiver" [label="Started for broadcast"]
+	"com.android.managedprovisioning PID 2738" -> "com.android.managedprovisioning.BootReminder" [label="Started for broadcast"]
+	"com.android.onetimeinitializer PID 2759" -> "com.android.onetimeinitializer.OneTimeInitializerReceiver" [label="Started for broadcast"]
+	"com.android.packageinstaller PID 2784" -> "com.android.packageinstaller.TemporaryFileManager" [label="Started for broadcast"]
+	"com.android.permissioncontroller PID 2811" -> "com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck" [label="Started for broadcast"]
+	"com.android.providers.calendar PID 2836" -> "com.android.providers.calendar.CalendarReceiver" [label="Started for broadcast"]
+	"com.android.shell PID 2887" -> "com.android.shell.HeapDumpReceiver" [label="Started for broadcast"]
+	"com.android.phone PID 2909" -> "com.android.stk.BootCompletedReceiver" [label="Started for broadcast"]
+	"com.android.traceur PID 2932" -> "com.android.traceur.Receiver" [label="Started for broadcast"]
+	"com.google.android.gms.persistent PID 2971" -> "com.google.android.gms.org.microg.gms.gcm.TriggerReceiver" [label="Started for broadcast"]
+	"com.qti.ltebc PID 2998" -> "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastBootReceiver" [label="Started for broadcast"]
+	"com.android.localtransport PID 3006" -> "com.android.localtransport.LocalTransportService" [label="Started for service"]
+	"com.qualcomm.qti.qms.service.connectionsecurity PID 3056" -> "com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver" [label="Started for broadcast"]
+	"com.vuzix.android.ota PID 3083" -> "com.vuzix.android.ota.MonitorServiceBroadcastReceiver" [label="Started for broadcast"]
+	"com.vuzix.quick_start PID 3116" -> "com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver" [label="Started for broadcast"]
+	"com.vuzix.speechrecognitionservice PID 3140" -> "com.vuzix.speechrecognitionservice.BootBroadcastReceiver" [label="Started for broadcast"]
+	"com.vuzix.temperatureservice PID 3163" -> "com.vuzix.temperatureservice.BootReceiver" [label="Started for broadcast"]
+	"com.vuzix.timesyncservice PID 3188" -> "com.vuzix.timesyncservice.TimeSyncReceiver" [label="Started for broadcast"]
+	"com.vuzix.timezoneservice PID 3211" -> "com.vuzix.timezoneservice.TimezoneReceiver" [label="Started for broadcast"]
+	"com.android.externalstorage PID 3236" -> "com.android.externalstorage.MountReceiver" [label="Started for broadcast"]
+	"com.qti.ltebc PID 3260" -> "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [label="Started for broadcast"]
+	"com.qti.ltebc PID 3295" -> "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [label="Started for broadcast"]
+	"com.qti.ltebc PID 3355" -> "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [label="Started for broadcast"]
+	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3382" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
+	"UID 10014" -> "org.codeaurora.snapcam.com.android.camera.CameraLauncher" [label="Started"]
+	"org.codeaurora.snapcam.com.android.camera.CameraLauncher" -> "android.view.OrientationEventListener PID 3469" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
+	"UID 10011" -> "org.codeaurora.snapcam.com.android.camera.SettingsActivity" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
+	"UID 10014" -> "org.codeaurora.snapcam.com.android.camera.CameraLauncher" [label="Started"]
+	"org.codeaurora.snapcam" -> "Camera" [label="Connected to"]
+	"UID 0" -> "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [label="Started"]
+		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]
+		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]
+		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]
+		"com.android.server.policy.WindowOrientationListener PID 1373" -> "UID 1000" [label="UID belongs to"]
+		"com.android.systemui PID 1539" -> "UID 10007" [label="UID belongs to"]
+		"WebViewLoader-armeabi-v7a PID 1571" -> "UID 1037" [label="UID belongs to"]
+		"WebViewLoader-arm64-v8a PID 1597" -> "UID 1037" [label="UID belongs to"]
+		"com.android.networkstack.process PID 1633" -> "UID 1073" [label="UID belongs to"]
+		".qtidataservices PID 1659" -> "UID 10146" [label="UID belongs to"]
+		"com.android.networkstack.process PID 1740" -> "UID 1073" [label="UID belongs to"]
+		"com.android.se PID 1767" -> "UID 1068" [label="UID belongs to"]
+		"com.qualcomm.qti.qdma PID 1791" -> "UID 1000" [label="UID belongs to"]
+		"com.android.settings PID 1805" -> "UID 1000" [label="UID belongs to"]
+		"android.ext.services PID 1824" -> "UID 10027" [label="UID belongs to"]
+		"com.android.deskclock PID 2030" -> "UID 10037" [label="UID belongs to"]
+		"com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2186" -> "UID 10151" [label="UID belongs to"]
+		".dataservices PID 2212" -> "UID 1001" [label="UID belongs to"]
+		"com.vuzix.hud.connectivity PID 2232" -> "UID 1000" [label="UID belongs to"]
+		"com.google.android.gms PID 2240" -> "UID 10052" [label="UID belongs to"]
+		"com.qualcomm.qti.workloadclassifier PID 2259" -> "UID 10160" [label="UID belongs to"]
+		"com.vuzix.displayoptimizer PID 2279" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.usbpowermonitor PID 2300" -> "UID 1000" [label="UID belongs to"]
+		"com.qualcomm.qti.services.secureui.sui_service PID 2334" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.AppWorldStoreService PID 2349" -> "UID 10064" [label="UID belongs to"]
+		"com.android.providers.media.module PID 2378" -> "UID 10164" [label="UID belongs to"]
+		"android.process.media PID 2399" -> "UID 10008" [label="UID belongs to"]
+		"com.vuzix.accessibilityservice PID 2416" -> "UID 10010" [label="UID belongs to"]
+		"com.android.keychain PID 2439" -> "UID 1000" [label="UID belongs to"]
+		"com.android.printspooler PID 2455" -> "UID 10047" [label="UID belongs to"]
+		"com.vuzix.notificationdrawer PID 2481" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.launcher.m400 PID 2501" -> "UID 10014" [label="UID belongs to"]
+		"com.google.android.gms.signature PID 2523" -> "UID 10052" [label="UID belongs to"]
+		"com.android.vending PID 2550" -> "UID 10046" [label="UID belongs to"]
+		"com.vuzix.keyboard.latin PID 2643" -> "UID 10033" [label="UID belongs to"]
+		"com.android.calendar PID 2670" -> "UID 10059" [label="UID belongs to"]
+		"com.android.contacts PID 2694" -> "UID 10029" [label="UID belongs to"]
+		"com.android.dynsystem PID 2717" -> "UID 1000" [label="UID belongs to"]
+		"com.android.managedprovisioning PID 2738" -> "UID 10009" [label="UID belongs to"]
+		"com.android.onetimeinitializer PID 2759" -> "UID 10026" [label="UID belongs to"]
+		"com.android.packageinstaller PID 2784" -> "UID 10028" [label="UID belongs to"]
+		"com.android.permissioncontroller PID 2811" -> "UID 10163" [label="UID belongs to"]
+		"com.android.providers.calendar PID 2836" -> "UID 10143" [label="UID belongs to"]
+		"com.android.shell PID 2887" -> "UID 2000" [label="UID belongs to"]
+		"com.android.phone PID 2909" -> "UID 1001" [label="UID belongs to"]
+		"com.android.traceur PID 2932" -> "UID 10040" [label="UID belongs to"]
+		"com.google.android.gms.persistent PID 2971" -> "UID 10052" [label="UID belongs to"]
+		"com.qti.ltebc PID 2998" -> "UID 10153" [label="UID belongs to"]
+		"com.android.localtransport PID 3006" -> "UID 1000" [label="UID belongs to"]
+		"com.qualcomm.qti.qms.service.connectionsecurity PID 3056" -> "UID 10147" [label="UID belongs to"]
+		"com.vuzix.android.ota PID 3083" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.quick_start PID 3116" -> "UID 10144" [label="UID belongs to"]
+		"com.vuzix.speechrecognitionservice PID 3140" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.temperatureservice PID 3163" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.timesyncservice PID 3188" -> "UID 1000" [label="UID belongs to"]
+		"com.vuzix.timezoneservice PID 3211" -> "UID 1000" [label="UID belongs to"]
+		"com.android.externalstorage PID 3236" -> "UID 10022" [label="UID belongs to"]
+		"com.qti.ltebc PID 3260" -> "UID 10153" [label="UID belongs to"]
+		"com.qti.ltebc PID 3295" -> "UID 10153" [label="UID belongs to"]
+		"com.qti.ltebc PID 3355" -> "UID 10153" [label="UID belongs to"]
+		"com.qualcomm.qti.qms.service.trustzoneaccess PID 3382" -> "UID 10148" [label="UID belongs to"]
+		"android.view.OrientationEventListener PID 3469" -> "UID 10011" [label="UID belongs to"]
+}
