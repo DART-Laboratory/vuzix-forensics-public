@@ -1,4 +1,5 @@
 #include "Node.h"
+#include "CLI/CLI.hpp"
 #include "GraphComponent.h"
 
 std::optional<std::string> Node::get_node_name() const noexcept {
@@ -11,33 +12,30 @@ std::vector<GraphComponent> Node::get_graph_components() const {
 	return {get_node_def_graph_component(node_name.value())};
 }
 
-GraphComponent Node::get_node_def_graph_component(const std::string& node_name) const {
-	std::string def_str{};
+std::string Node::package_cluster(const std::optional<Package>& package, const std::string& cluster_contents) {
 	if (package.has_value()) {
-		def_str = std::format(
-			"\tsubgraph \"cluster_{}\" {{ label=\"{}\"",
-			package.value(), package.value()
+		return std::format(
+			"\tsubgraph \"cluster_{}\" {{ label=\"{}\" {} }}",
+			package.value(), package.value(), cluster_contents
 		);
+	} else {
+		return '\t' + cluster_contents;
 	}
+}
 
+GraphComponent Node::get_node_def_graph_component(const std::string& node_name) const {
 	std::stringstream color_ss;
 	color_ss << std::hex << get_color();
 
-	def_str += std::format("\"{}\" [shape={} fillcolor=\"{}\"]{}",
-		node_name,
-		shape_to_str.at(get_shape()),
-		"#" + color_ss.str(),
-		(package.has_value() ? " }" : "")
-	);
 
-	return GraphComponent{def_str, GraphComponent::Type::NodeDefinition};
-}
-
-void Node::extract_package_from_name(const Package& package) noexcept {
-	if (!this->package) return;
-	if (this->name.value().starts_with(package)) {
-		this->package = package;
-	}
+	return GraphComponent{
+		package_cluster(package, std::format("\"{}\" [shape={} fillcolor=\"{}\"]",
+			node_name,
+			shape_to_str.at(get_shape()),
+			"#" + color_ss.str()
+		)),
+		GraphComponent::Type::NodeDefinition
+	};
 }
 
 void Node::prefix_package_on_name() noexcept {
@@ -85,7 +83,7 @@ std::optional<std::string> Proc::get_node_name() const noexcept {
 			return "UID " + std::to_string(ids->uid);
 		}
 	} else if (package) {
-		return package.value();
+		return dummy_package_node_prefix+package.value();
 	}
 
 	return std::nullopt;
@@ -182,13 +180,17 @@ GraphComponent Event::get_graph_component() const {
 	if (parent != nullptr) {
 		std::optional<std::string> parent_name{parent->get_node_name()};
 		std::optional<std::string> child_name{child->get_node_name()};
-		if (!parent || !child) throw std::runtime_error{"Cannot get node names"};
+		if (!parent_name || !child_name) throw std::runtime_error{"Cannot get node names"};
+
 		return GraphComponent{
 			std::format(
-				"\t\"{}\" -> \"{}\" [label=\"{}\"]",
+				"\t\"{}\" -> \"{}\" [label=\"{}\"{}]",
 				parent_name.value(),
 				child_name.value(),
-				relation_to_str.at(relation)
+				relation_to_str.at(relation),
+				(parent_name->starts_with(Node::dummy_package_node_prefix) ?
+					" ltail=\"cluster_" + parent->package.value() + '\"' : ""
+				)
 			),
 			GraphComponent::Type::EventRelation
 		};

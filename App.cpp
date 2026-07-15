@@ -11,7 +11,8 @@ App::App(const int argc, char** argv) : app{"HindSight"}, argc{argc}, argv{argv}
 	app.add_option("file", input_file, "Bug report file name")->check(CLI::ExistingFile)->required();
 	app.add_option("-o,--out", output_file, "Output file (without extension)");
 	app.add_flag("-d,--dot,!--no-dot", save_dot_file, "Save dot file");
-	app.add_flag("--cm,--cleaner-merge", cleaner_options.merge_procs_starting_with_dot, "Merge processes starting with dot in its name");
+	app.add_flag("--cm,--cleaner-map-sensor-ids", cleaner_options.map_sensor_ids, "Map sensor ids to sensor names");
+	app.add_flag("!--no-ce,!--no-cleaner-extract-package-names", cleaner_options.extract_package_names, "Find if any node names begin with any known packages and set node package if so");
 }
 
 int App::run() {

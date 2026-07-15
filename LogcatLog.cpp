@@ -285,9 +285,9 @@ std::optional<Event> LogcatLog::parse_camera_service() {
 	return Event{
 		date,
 		time,
-		std::make_shared<Proc>(
+		std::make_shared<Proc>( // All I know is the package
 			//cmp.first, cmp.second, std::nullopt
-			std::nullopt, m[1].str(), std::nullopt
+			m[1].str(), std::nullopt, std::nullopt
 		),
 		Event::Relation::ConnectedTo,
 		std::make_shared<Component>(

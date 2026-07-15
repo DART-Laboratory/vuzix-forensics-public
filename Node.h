@@ -40,6 +40,10 @@ struct Node {
 		{Shape::Octagon,	"octagon"},
 		{Shape::Parallelogram,	"parallelogram"}
 	};
+	
+	inline static const std::string dummy_package_node_prefix{"DUMMY_NODE_"};
+
+	static std::string package_cluster(const std::optional<Package>& package, const std::string& cluster_contents);
 
 	virtual constexpr Shape get_shape() const noexcept = 0;
 	virtual constexpr uint32_t get_color() const noexcept = 0;
@@ -118,7 +122,7 @@ struct Component : public Node {
 		return Node::Shape::Box;
 	}
 	constexpr uint32_t get_color() const noexcept override {
-		return 0xf4e5d4;
+		return 0xf4d4ed;
 	}
 
 	auto operator<=>(const Component&) const noexcept = default;

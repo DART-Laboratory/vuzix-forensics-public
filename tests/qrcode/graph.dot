@@ -1,135 +1,219 @@
 digraph Provenance {
-	graph [ranksep="2"]
+	graph [nodesep="1" ranksep="2"]
 	node [style="filled" fillcolor="#fef9e7"]
+	compound=true
 	subgraph cluster_legend {
 		label="Legend" style=dotted fontsize=9;
 		legend_process  [label="Process/Content Provider/Unknown" shape=ellipse fillcolor="#d6eaf8"];
 		legend_service  [label="Service" shape=octagon fillcolor="#abebc6"];
 		legend_activity  [label="Activity" shape=ellipse fillcolor="#d5f5e3"];
 		legend_sensor  [label="Sensor" shape=box fillcolor="#fdebd0"];
-		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4e5d4"];
+		legend_component  [label="Component (like camera)" shape=box fillcolor="#f4d4ed"];
 		legend_broadcast [label="Broadcast receiver" shape=hexagon fillcolor="#fadbd8"];
 		legend_class  [label="Java class" shape=octagon fillcolor="#e8daef"];
 	}
-"android.sensor.device_orientation(27)" [shape=box fillcolor="#fdebd0"]
-"com.android.server.policy.WindowOrientationListener PID 1372" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.systemui" { label="com.android.systemui""com.android.systemui.SystemUIService" [shape=octagon fillcolor="#abebc6"] }
-"com.android.systemui PID 1541" [shape=ellipse fillcolor="#d6eaf8"]
-"WebViewLoader-armeabi-v7a PID 1583" [shape=ellipse fillcolor="#d6eaf8"]
-" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" [shape=octagon fillcolor="#e8daef"]
-"WebViewLoader-arm64-v8a PID 1589" [shape=ellipse fillcolor="#d6eaf8"]
-" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" [shape=octagon fillcolor="#e8daef"]
-	subgraph "cluster_com.android.networkstack" { label="com.android.networkstack""com.android.networkstack.com.android.server.NetworkStackService" [shape=octagon fillcolor="#abebc6"] }
-"com.android.networkstack.process PID 1636" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.settings" { label="com.android.settings""com.android.settings.FallbackHome" [shape=ellipse fillcolor="#d5f5e3"] }
-".qtidataservices PID 1658" [shape=ellipse fillcolor="#d6eaf8"]
-"com.android.networkstack.process PID 1739" [shape=ellipse fillcolor="#d6eaf8"]
-"com.android.se PID 1766" [shape=ellipse fillcolor="#d6eaf8"]
-"com.qualcomm.qti.qdma PID 1783" [shape=ellipse fillcolor="#d6eaf8"]
-"com.android.settings PID 1800" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.settings" { label="com.android.settings""com.android.settings.FallbackHome" [shape=ellipse fillcolor="#d5f5e3"] }
-	subgraph "cluster_android.ext.services" { label="android.ext.services""android.ext.services.autofill.InlineSuggestionRenderServiceImpl" [shape=octagon fillcolor="#abebc6"] }
-"android.ext.services PID 1821" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock""com.android.deskclock.AlarmInitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.deskclock PID 2028" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-	subgraph "cluster_com.qualcomm.qti.services.systemhelper" { label="com.qualcomm.qti.services.systemhelper""com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2181" [shape=ellipse fillcolor="#d6eaf8"] }
-".dataservices PID 2208" [shape=ellipse fillcolor="#d6eaf8"]
-"com.vuzix.hud.connectivity PID 2229" [shape=ellipse fillcolor="#d6eaf8"]
-"com.google.android.gms PID 2248" [shape=ellipse fillcolor="#d6eaf8"]
-"com.qualcomm.qti.workloadclassifier PID 2266" [shape=ellipse fillcolor="#d6eaf8"]
-"com.vuzix.displayoptimizer PID 2278" [shape=ellipse fillcolor="#d6eaf8"]
-"com.vuzix.usbpowermonitor PID 2294" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qualcomm.qti.services.secureui" { label="com.qualcomm.qti.services.secureui""com.qualcomm.qti.services.secureui.sui_service PID 2317" [shape=ellipse fillcolor="#d6eaf8"] }
-"com.vuzix.AppWorldStoreService PID 2333" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module""com.android.providers.media.module.com.android.providers.media.fuse.ExternalStorageServiceImpl" [shape=octagon fillcolor="#abebc6"] }
-"com.android.providers.media.module PID 2348" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.mtp" { label="com.android.mtp""com.android.mtp.MtpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"android.process.media PID 2366" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.keychain" { label="com.android.keychain""com.android.keychain.KeyChainService" [shape=octagon fillcolor="#abebc6"] }
-"com.android.keychain PID 2407" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler""com.android.printspooler.model.PrintSpoolerService" [shape=octagon fillcolor="#abebc6"] }
-"com.android.printspooler PID 2428" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice""com.vuzix.accessibilityservice.AccessibilitySpeechInput" [shape=octagon fillcolor="#abebc6"] }
-"com.vuzix.accessibilityservice PID 2460" [shape=ellipse fillcolor="#d6eaf8"]
-"com.vuzix.launcher.m400 PID 2470" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer""com.vuzix.notificationdrawer.Listener" [shape=octagon fillcolor="#abebc6"] }
-"com.vuzix.notificationdrawer PID 2497" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.com.huawei.signature.diff.SignatureService" [shape=octagon fillcolor="#abebc6"] }
-	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.signature PID 2515" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.android.vending" { label="com.android.vending""com.android.vending.com.huawei.signature.diff.InitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.vending PID 2555" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin""com.vuzix.keyboard.latin.LatinKeyboardService" [shape=octagon fillcolor="#abebc6"] }
-"com.vuzix.keyboard.latin PID 2637" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.calendar" { label="com.android.calendar""com.android.calendar.alerts.AlertReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.calendar PID 2655" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.contacts" { label="com.android.contacts""com.android.contacts.interactions.OnBootOrUpgradeReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.contacts PID 2680" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.systemui" { label="com.android.systemui""com.android.systemui.usb.UsbDebuggingActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem""com.android.dynsystem.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.dynsystem PID 2712" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning""com.android.managedprovisioning.BootReminder" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.managedprovisioning PID 2733" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer""com.android.onetimeinitializer.OneTimeInitializerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.onetimeinitializer PID 2754" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller""com.android.packageinstaller.TemporaryFileManager" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.packageinstaller PID 2777" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller""com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.permissioncontroller PID 2805" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar""com.android.providers.calendar.CalendarReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.providers.calendar PID 2831" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.shell" { label="com.android.shell""com.android.shell.HeapDumpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.shell PID 2857" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.stk" { label="com.android.stk""com.android.stk.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.phone PID 2883" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.traceur" { label="com.android.traceur""com.android.traceur.Receiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.traceur PID 2928" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.org.microg.gms.gcm.TriggerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms""com.google.android.gms.persistent PID 2967" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.qti.ltebc PID 2994" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport""com.android.localtransport.LocalTransportService" [shape=octagon fillcolor="#abebc6"] }
-"com.android.localtransport PID 3019" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity""com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.qualcomm.qti.qms.service.connectionsecurity PID 3051" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota""com.vuzix.android.ota.MonitorServiceBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.android.ota PID 3078" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start""com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.quick_start PID 3108" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice""com.vuzix.speechrecognitionservice.BootBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.speechrecognitionservice PID 3135" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice""com.vuzix.temperatureservice.BootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.temperatureservice PID 3158" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice""com.vuzix.timesyncservice.TimeSyncReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.timesyncservice PID 3184" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice""com.vuzix.timezoneservice.TimezoneReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.vuzix.timezoneservice PID 3207" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage""com.android.externalstorage.MountReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.android.externalstorage PID 3233" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.qti.ltebc PID 3258" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.qti.ltebc PID 3292" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc""com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [shape=hexagon fillcolor="#fadbd8"] }
-"com.qti.ltebc PID 3349" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess""com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
-"com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android""com.google.zxing.client.android.IconActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-"com.google.zxing.client.android PID 3476" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android""com.google.zxing.client.android.IconActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-"Camera" [shape=box fillcolor="#f4e5d4"]
-"com.google.zxing.client.android PID 3476" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell""org.chromium.webview_shell.WebViewBrowserActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-"org.chromium.webview_shell PID 3604" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell""org.chromium.webview_shell.WebViewBrowserActivity" [shape=ellipse fillcolor="#d5f5e3"] }
-	subgraph "cluster_com.android.webview" { label="com.android.webview""com.android.webview.org.chromium.android_webview.services.VariationsSeedServer" [shape=octagon fillcolor="#abebc6"] }
-	subgraph "cluster_com.android.webview" { label="com.android.webview""com.android.webview.webview_service PID 3635" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.android.webview" { label="com.android.webview""com.android.webview.sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 PID 3657" [shape=ellipse fillcolor="#d6eaf8"] }
-"org.chromium.webview_shell PID 3604" [shape=ellipse fillcolor="#d6eaf8"]
-	subgraph "cluster_com.android.webview" { label="com.android.webview""com.android.webview.org.chromium.android_webview.nonembedded.AwComponentUpdateService" [shape=octagon fillcolor="#abebc6"] }
-	subgraph "cluster_com.android.webview" { label="com.android.webview""com.android.webview.webview_apk PID 3698" [shape=ellipse fillcolor="#d6eaf8"] }
-	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400""com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "DUMMY_NODE_com.android.systemui" [shape=point style=invis] }
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "DUMMY_NODE_com.android.systemui" [shape=point style=invis] }
+	subgraph "cluster_com.android.networkstack" { label="com.android.networkstack" "DUMMY_NODE_com.android.networkstack" [shape=point style=invis] }
+	subgraph "cluster_com.android.settings" { label="com.android.settings" "DUMMY_NODE_com.android.settings" [shape=point style=invis] }
+	subgraph "cluster_com.android.settings" { label="com.android.settings" "DUMMY_NODE_com.android.settings" [shape=point style=invis] }
+	subgraph "cluster_android.ext.services" { label="android.ext.services" "DUMMY_NODE_android.ext.services" [shape=point style=invis] }
+	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock" "DUMMY_NODE_com.android.deskclock" [shape=point style=invis] }
+	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module" "DUMMY_NODE_com.android.providers.media.module" [shape=point style=invis] }
+	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning" "DUMMY_NODE_com.android.managedprovisioning" [shape=point style=invis] }
+	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer" "DUMMY_NODE_com.android.onetimeinitializer" [shape=point style=invis] }
+	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer" "DUMMY_NODE_com.android.onetimeinitializer" [shape=point style=invis] }
+	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller" "DUMMY_NODE_com.android.packageinstaller" [shape=point style=invis] }
+	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller" "DUMMY_NODE_com.android.packageinstaller" [shape=point style=invis] }
+	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller" "DUMMY_NODE_com.android.permissioncontroller" [shape=point style=invis] }
+	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller" "DUMMY_NODE_com.android.permissioncontroller" [shape=point style=invis] }
+	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar" "DUMMY_NODE_com.android.providers.calendar" [shape=point style=invis] }
+	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar" "DUMMY_NODE_com.android.providers.calendar" [shape=point style=invis] }
+	subgraph "cluster_com.android.shell" { label="com.android.shell" "DUMMY_NODE_com.android.shell" [shape=point style=invis] }
+	subgraph "cluster_com.android.shell" { label="com.android.shell" "DUMMY_NODE_com.android.shell" [shape=point style=invis] }
+	subgraph "cluster_com.android.stk" { label="com.android.stk" "DUMMY_NODE_com.android.stk" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.services.secureui" { label="com.qualcomm.qti.services.secureui" "DUMMY_NODE_com.qualcomm.qti.services.secureui" [shape=point style=invis] }
+	subgraph "cluster_com.android.mtp" { label="com.android.mtp" "DUMMY_NODE_com.android.mtp" [shape=point style=invis] }
+	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module" "DUMMY_NODE_com.android.providers.media.module" [shape=point style=invis] }
+	subgraph "cluster_com.android.keychain" { label="com.android.keychain" "DUMMY_NODE_com.android.keychain" [shape=point style=invis] }
+	subgraph "cluster_com.android.keychain" { label="com.android.keychain" "DUMMY_NODE_com.android.keychain" [shape=point style=invis] }
+	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler" "DUMMY_NODE_com.android.printspooler" [shape=point style=invis] }
+	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler" "DUMMY_NODE_com.android.printspooler" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice" "DUMMY_NODE_com.vuzix.accessibilityservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice" "DUMMY_NODE_com.vuzix.accessibilityservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400" "DUMMY_NODE_com.vuzix.launcher.m400" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer" "DUMMY_NODE_com.vuzix.notificationdrawer" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer" "DUMMY_NODE_com.vuzix.notificationdrawer" [shape=point style=invis] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "DUMMY_NODE_com.google.android.gms" [shape=point style=invis] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "DUMMY_NODE_com.google.android.gms" [shape=point style=invis] }
+	subgraph "cluster_com.android.vending" { label="com.android.vending" "DUMMY_NODE_com.android.vending" [shape=point style=invis] }
+	subgraph "cluster_com.android.vending" { label="com.android.vending" "DUMMY_NODE_com.android.vending" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin" "DUMMY_NODE_com.vuzix.keyboard.latin" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin" "DUMMY_NODE_com.vuzix.keyboard.latin" [shape=point style=invis] }
+	subgraph "cluster_com.android.calendar" { label="com.android.calendar" "DUMMY_NODE_com.android.calendar" [shape=point style=invis] }
+	subgraph "cluster_com.android.calendar" { label="com.android.calendar" "DUMMY_NODE_com.android.calendar" [shape=point style=invis] }
+	subgraph "cluster_com.android.contacts" { label="com.android.contacts" "DUMMY_NODE_com.android.contacts" [shape=point style=invis] }
+	subgraph "cluster_com.android.contacts" { label="com.android.contacts" "DUMMY_NODE_com.android.contacts" [shape=point style=invis] }
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "DUMMY_NODE_com.android.systemui" [shape=point style=invis] }
+	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem" "DUMMY_NODE_com.android.dynsystem" [shape=point style=invis] }
+	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem" "DUMMY_NODE_com.android.dynsystem" [shape=point style=invis] }
+	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning" "DUMMY_NODE_com.android.managedprovisioning" [shape=point style=invis] }
+	subgraph "cluster_android.ext.services" { label="android.ext.services" "DUMMY_NODE_android.ext.services" [shape=point style=invis] }
+	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock" "DUMMY_NODE_com.android.deskclock" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.services.systemhelper" { label="com.qualcomm.qti.services.systemhelper" "DUMMY_NODE_com.qualcomm.qti.services.systemhelper" [shape=point style=invis] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "DUMMY_NODE_com.google.android.gms" [shape=point style=invis] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "DUMMY_NODE_com.android.webview" [shape=point style=invis] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "DUMMY_NODE_com.android.webview" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400" "DUMMY_NODE_com.vuzix.launcher.m400" [shape=point style=invis] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "DUMMY_NODE_com.android.webview" [shape=point style=invis] }
+	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell" "DUMMY_NODE_org.chromium.webview_shell" [shape=point style=invis] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "DUMMY_NODE_com.android.webview" [shape=point style=invis] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "DUMMY_NODE_com.android.webview" [shape=point style=invis] }
+	subgraph "cluster_com.android.traceur" { label="com.android.traceur" "DUMMY_NODE_com.android.traceur" [shape=point style=invis] }
+	subgraph "cluster_com.android.traceur" { label="com.android.traceur" "DUMMY_NODE_com.android.traceur" [shape=point style=invis] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "DUMMY_NODE_com.google.android.gms" [shape=point style=invis] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "DUMMY_NODE_com.google.android.gms" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport" "DUMMY_NODE_com.android.localtransport" [shape=point style=invis] }
+	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport" "DUMMY_NODE_com.android.localtransport" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity" "DUMMY_NODE_com.qualcomm.qti.qms.service.connectionsecurity" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity" "DUMMY_NODE_com.qualcomm.qti.qms.service.connectionsecurity" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota" "DUMMY_NODE_com.vuzix.android.ota" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota" "DUMMY_NODE_com.vuzix.android.ota" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start" "DUMMY_NODE_com.vuzix.quick_start" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice" "DUMMY_NODE_com.vuzix.speechrecognitionservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start" "DUMMY_NODE_com.vuzix.quick_start" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice" "DUMMY_NODE_com.vuzix.temperatureservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice" "DUMMY_NODE_com.vuzix.speechrecognitionservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice" "DUMMY_NODE_com.vuzix.temperatureservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice" "DUMMY_NODE_com.vuzix.timesyncservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice" "DUMMY_NODE_com.vuzix.timesyncservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice" "DUMMY_NODE_com.vuzix.timezoneservice" [shape=point style=invis] }
+	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice" "DUMMY_NODE_com.vuzix.timezoneservice" [shape=point style=invis] }
+	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage" "DUMMY_NODE_com.android.externalstorage" [shape=point style=invis] }
+	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage" "DUMMY_NODE_com.android.externalstorage" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "DUMMY_NODE_com.qti.ltebc" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess" "DUMMY_NODE_com.qualcomm.qti.qms.service.trustzoneaccess" [shape=point style=invis] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess" "DUMMY_NODE_com.qualcomm.qti.qms.service.trustzoneaccess" [shape=point style=invis] }
+	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android" "DUMMY_NODE_com.google.zxing.client.android" [shape=point style=invis] }
+	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android" "DUMMY_NODE_com.google.zxing.client.android" [shape=point style=invis] }
+	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android" "DUMMY_NODE_com.google.zxing.client.android" [shape=point style=invis] }
+	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell" "DUMMY_NODE_org.chromium.webview_shell" [shape=point style=invis] }
+	"com.android.server.policy.WindowOrientationListener PID 1372" [shape=ellipse fillcolor="#d6eaf8"]
+	"android.sensor.device_orientation(27)" [shape=box fillcolor="#fdebd0"]
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "com.android.systemui.SystemUIService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "com.android.systemui PID 1541" [shape=ellipse fillcolor="#d6eaf8"] }
+	"WebViewLoader-armeabi-v7a PID 1583" [shape=ellipse fillcolor="#d6eaf8"]
+	" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" [shape=octagon fillcolor="#e8daef"]
+	"WebViewLoader-arm64-v8a PID 1589" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.networkstack" { label="com.android.networkstack" "com.android.networkstack.com.android.server.NetworkStackService" [shape=octagon fillcolor="#abebc6"] }
+	"com.android.networkstack.process PID 1636" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.settings" { label="com.android.settings" "com.android.settings.FallbackHome" [shape=ellipse fillcolor="#d5f5e3"] }
+	"com.android.se PID 1766" [shape=ellipse fillcolor="#d6eaf8"]
+	"com.qualcomm.qti.qdma PID 1783" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.settings" { label="com.android.settings" "com.android.settings PID 1800" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_android.ext.services" { label="android.ext.services" "android.ext.services.autofill.InlineSuggestionRenderServiceImpl" [shape=octagon fillcolor="#abebc6"] }
+	".qtidataservices PID 1658" [shape=ellipse fillcolor="#d6eaf8"]
+	"com.android.networkstack.process PID 1739" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock" "com.android.deskclock.AlarmInitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module" "com.android.providers.media.module.com.android.providers.media.fuse.ExternalStorageServiceImpl" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning" "com.android.managedprovisioning PID 2733" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer" "com.android.onetimeinitializer.OneTimeInitializerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.onetimeinitializer" { label="com.android.onetimeinitializer" "com.android.onetimeinitializer PID 2754" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller" "com.android.packageinstaller.TemporaryFileManager" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.packageinstaller" { label="com.android.packageinstaller" "com.android.packageinstaller PID 2777" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller" "com.android.permissioncontroller.permission.service.LocationAccessCheck$SetupPeriodicBackgroundLocationAccessCheck" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.permissioncontroller" { label="com.android.permissioncontroller" "com.android.permissioncontroller PID 2805" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar" "com.android.providers.calendar.CalendarReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.providers.calendar" { label="com.android.providers.calendar" "com.android.providers.calendar PID 2831" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.shell" { label="com.android.shell" "com.android.shell.HeapDumpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.shell" { label="com.android.shell" "com.android.shell PID 2857" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.stk" { label="com.android.stk" "com.android.stk.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	"com.qualcomm.qti.workloadclassifier PID 2266" [shape=ellipse fillcolor="#d6eaf8"]
+	"com.vuzix.displayoptimizer PID 2278" [shape=ellipse fillcolor="#d6eaf8"]
+	"com.vuzix.usbpowermonitor PID 2294" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.qualcomm.qti.services.secureui" { label="com.qualcomm.qti.services.secureui" "com.qualcomm.qti.services.secureui.sui_service PID 2317" [shape=ellipse fillcolor="#d6eaf8"] }
+	"com.vuzix.AppWorldStoreService PID 2333" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.mtp" { label="com.android.mtp" "com.android.mtp.MtpReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.providers.media.module" { label="com.android.providers.media.module" "com.android.providers.media.module PID 2348" [shape=ellipse fillcolor="#d6eaf8"] }
+	"android.process.media PID 2366" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.keychain" { label="com.android.keychain" "com.android.keychain.KeyChainService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.keychain" { label="com.android.keychain" "com.android.keychain PID 2407" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler" "com.android.printspooler.model.PrintSpoolerService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.printspooler" { label="com.android.printspooler" "com.android.printspooler PID 2428" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice" "com.vuzix.accessibilityservice.AccessibilitySpeechInput" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.vuzix.accessibilityservice" { label="com.vuzix.accessibilityservice" "com.vuzix.accessibilityservice PID 2460" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400" "com.vuzix.launcher.m400 PID 2470" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer" "com.vuzix.notificationdrawer.Listener" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.vuzix.notificationdrawer" { label="com.vuzix.notificationdrawer" "com.vuzix.notificationdrawer PID 2497" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "com.google.android.gms.com.huawei.signature.diff.SignatureService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "com.google.android.gms.signature PID 2515" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.vending" { label="com.android.vending" "com.android.vending.com.huawei.signature.diff.InitReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.vending" { label="com.android.vending" "com.android.vending PID 2555" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin" "com.vuzix.keyboard.latin.LatinKeyboardService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.vuzix.keyboard.latin" { label="com.vuzix.keyboard.latin" "com.vuzix.keyboard.latin PID 2637" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.calendar" { label="com.android.calendar" "com.android.calendar.alerts.AlertReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.calendar" { label="com.android.calendar" "com.android.calendar PID 2655" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.contacts" { label="com.android.contacts" "com.android.contacts.interactions.OnBootOrUpgradeReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.contacts" { label="com.android.contacts" "com.android.contacts PID 2680" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.systemui" { label="com.android.systemui" "com.android.systemui.usb.UsbDebuggingActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem" "com.android.dynsystem.BootCompletedReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.dynsystem" { label="com.android.dynsystem" "com.android.dynsystem PID 2712" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.managedprovisioning" { label="com.android.managedprovisioning" "com.android.managedprovisioning.BootReminder" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_android.ext.services" { label="android.ext.services" "android.ext.services PID 1821" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.deskclock" { label="com.android.deskclock" "com.android.deskclock PID 2028" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qualcomm.qti.services.systemhelper" { label="com.qualcomm.qti.services.systemhelper" "com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2181" [shape=ellipse fillcolor="#d6eaf8"] }
+	".dataservices PID 2208" [shape=ellipse fillcolor="#d6eaf8"]
+	"com.vuzix.hud.connectivity PID 2229" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "com.google.android.gms PID 2248" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "com.android.webview.org.chromium.android_webview.services.VariationsSeedServer" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "com.android.webview.webview_service PID 3635" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.launcher.m400" { label="com.vuzix.launcher.m400" "com.vuzix.launcher.m400.com.vuzix.launcher.common.activity.LauncherActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "com.android.webview.org.chromium.android_webview.nonembedded.AwComponentUpdateService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell" "org.chromium.webview_shell PID 3604" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "com.android.webview.sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 PID 3657" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.webview" { label="com.android.webview" "com.android.webview.webview_apk PID 3698" [shape=ellipse fillcolor="#d6eaf8"] }
+	"com.android.phone PID 2883" [shape=ellipse fillcolor="#d6eaf8"]
+	subgraph "cluster_com.android.traceur" { label="com.android.traceur" "com.android.traceur.Receiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.traceur" { label="com.android.traceur" "com.android.traceur PID 2928" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "com.google.android.gms.org.microg.gms.gcm.TriggerReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.google.android.gms" { label="com.google.android.gms" "com.google.android.gms.persistent PID 2967" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc PID 2994" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport" "com.android.localtransport.LocalTransportService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.android.localtransport" { label="com.android.localtransport" "com.android.localtransport PID 3019" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity" "com.qualcomm.qti.qms.service.connectionsecurity.ConnSecBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.connectionsecurity" { label="com.qualcomm.qti.qms.service.connectionsecurity" "com.qualcomm.qti.qms.service.connectionsecurity PID 3051" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota" "com.vuzix.android.ota PID 3078" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.android.ota" { label="com.vuzix.android.ota" "com.vuzix.android.ota.MonitorServiceBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start" "com.vuzix.quick_start.releasenotes.service.ReleaseNotesBootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice" "com.vuzix.speechrecognitionservice.BootBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.quick_start" { label="com.vuzix.quick_start" "com.vuzix.quick_start PID 3108" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice" "com.vuzix.temperatureservice.BootReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.speechrecognitionservice" { label="com.vuzix.speechrecognitionservice" "com.vuzix.speechrecognitionservice PID 3135" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.temperatureservice" { label="com.vuzix.temperatureservice" "com.vuzix.temperatureservice PID 3158" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice" "com.vuzix.timesyncservice.TimeSyncReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.timesyncservice" { label="com.vuzix.timesyncservice" "com.vuzix.timesyncservice PID 3184" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice" "com.vuzix.timezoneservice.TimezoneReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.vuzix.timezoneservice" { label="com.vuzix.timezoneservice" "com.vuzix.timezoneservice PID 3207" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage" "com.android.externalstorage.MountReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.android.externalstorage" { label="com.android.externalstorage" "com.android.externalstorage PID 3233" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc PID 3258" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc PID 3292" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc.com.qualcomm.ltebc.LTEBroadcastAlarmReceiver" [shape=hexagon fillcolor="#fadbd8"] }
+	subgraph "cluster_com.qti.ltebc" { label="com.qti.ltebc" "com.qti.ltebc PID 3349" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess" "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [shape=octagon fillcolor="#abebc6"] }
+	subgraph "cluster_com.qualcomm.qti.qms.service.trustzoneaccess" { label="com.qualcomm.qti.qms.service.trustzoneaccess" "com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" [shape=ellipse fillcolor="#d6eaf8"] }
+	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android" "com.google.zxing.client.android.IconActivity" [shape=ellipse fillcolor="#d5f5e3"] }
+	subgraph "cluster_com.google.zxing.client.android" { label="com.google.zxing.client.android" "com.google.zxing.client.android PID 3476" [shape=ellipse fillcolor="#d6eaf8"] }
+	"Camera" [shape=box fillcolor="#f4d4ed"]
+	subgraph "cluster_org.chromium.webview_shell" { label="org.chromium.webview_shell" "org.chromium.webview_shell.WebViewBrowserActivity" [shape=ellipse fillcolor="#d5f5e3"] }
 	"com.android.server.policy.WindowOrientationListener PID 1372" -> "android.sensor.device_orientation(27)" [label="Registered sensor"]
 	"com.android.systemui PID 1541" -> "com.android.systemui.SystemUIService" [label="Started for service"]
 	" [android.webkit.WebViewLibraryLoader$RelroFileCreator]" -> "WebViewLoader-armeabi-v7a PID 1583" [label="Started"]
@@ -192,7 +276,7 @@ digraph Provenance {
 	"com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" -> "com.qualcomm.qti.qms.service.trustzoneaccess.TZAccessService" [label="Started for service"]
 	"UID 10014" -> "com.google.zxing.client.android.IconActivity" [label="Started"]
 	"com.google.zxing.client.android.IconActivity" -> "com.google.zxing.client.android PID 3476" [label="Started"]
-	"com.google.zxing.client.android PID 3476" -> "Camera" [label="Connected to"]
+	"DUMMY_NODE_com.google.zxing.client.android" -> "Camera" [label="Connected to" ltail="cluster_com.google.zxing.client.android"]
 	"UID 1000" -> "org.chromium.webview_shell.WebViewBrowserActivity" [label="Started"]
 	"org.chromium.webview_shell.WebViewBrowserActivity" -> "org.chromium.webview_shell PID 3604" [label="Started"]
 	"com.android.webview.webview_service PID 3635" -> "com.android.webview.org.chromium.android_webview.services.VariationsSeedServer" [label="Started for service"]
@@ -204,17 +288,17 @@ digraph Provenance {
 		"WebViewLoader-armeabi-v7a PID 1583" -> "UID 1037" [label="UID belongs to"]
 		"WebViewLoader-arm64-v8a PID 1589" -> "UID 1037" [label="UID belongs to"]
 		"com.android.networkstack.process PID 1636" -> "UID 1073" [label="UID belongs to"]
-		".qtidataservices PID 1658" -> "UID 10146" [label="UID belongs to"]
-		"com.android.networkstack.process PID 1739" -> "UID 1073" [label="UID belongs to"]
 		"com.android.se PID 1766" -> "UID 1068" [label="UID belongs to"]
 		"com.qualcomm.qti.qdma PID 1783" -> "UID 1000" [label="UID belongs to"]
 		"com.android.settings PID 1800" -> "UID 1000" [label="UID belongs to"]
-		"android.ext.services PID 1821" -> "UID 10027" [label="UID belongs to"]
-		"com.android.deskclock PID 2028" -> "UID 10037" [label="UID belongs to"]
-		"com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2181" -> "UID 10151" [label="UID belongs to"]
-		".dataservices PID 2208" -> "UID 1001" [label="UID belongs to"]
-		"com.vuzix.hud.connectivity PID 2229" -> "UID 1000" [label="UID belongs to"]
-		"com.google.android.gms PID 2248" -> "UID 10052" [label="UID belongs to"]
+		".qtidataservices PID 1658" -> "UID 10146" [label="UID belongs to"]
+		"com.android.networkstack.process PID 1739" -> "UID 1073" [label="UID belongs to"]
+		"com.android.managedprovisioning PID 2733" -> "UID 10009" [label="UID belongs to"]
+		"com.android.onetimeinitializer PID 2754" -> "UID 10026" [label="UID belongs to"]
+		"com.android.packageinstaller PID 2777" -> "UID 10028" [label="UID belongs to"]
+		"com.android.permissioncontroller PID 2805" -> "UID 10163" [label="UID belongs to"]
+		"com.android.providers.calendar PID 2831" -> "UID 10143" [label="UID belongs to"]
+		"com.android.shell PID 2857" -> "UID 2000" [label="UID belongs to"]
 		"com.qualcomm.qti.workloadclassifier PID 2266" -> "UID 10160" [label="UID belongs to"]
 		"com.vuzix.displayoptimizer PID 2278" -> "UID 1000" [label="UID belongs to"]
 		"com.vuzix.usbpowermonitor PID 2294" -> "UID 1000" [label="UID belongs to"]
@@ -233,12 +317,16 @@ digraph Provenance {
 		"com.android.calendar PID 2655" -> "UID 10059" [label="UID belongs to"]
 		"com.android.contacts PID 2680" -> "UID 10029" [label="UID belongs to"]
 		"com.android.dynsystem PID 2712" -> "UID 1000" [label="UID belongs to"]
-		"com.android.managedprovisioning PID 2733" -> "UID 10009" [label="UID belongs to"]
-		"com.android.onetimeinitializer PID 2754" -> "UID 10026" [label="UID belongs to"]
-		"com.android.packageinstaller PID 2777" -> "UID 10028" [label="UID belongs to"]
-		"com.android.permissioncontroller PID 2805" -> "UID 10163" [label="UID belongs to"]
-		"com.android.providers.calendar PID 2831" -> "UID 10143" [label="UID belongs to"]
-		"com.android.shell PID 2857" -> "UID 2000" [label="UID belongs to"]
+		"android.ext.services PID 1821" -> "UID 10027" [label="UID belongs to"]
+		"com.android.deskclock PID 2028" -> "UID 10037" [label="UID belongs to"]
+		"com.qualcomm.qti.services.systemhelper.systemhelper_service PID 2181" -> "UID 10151" [label="UID belongs to"]
+		".dataservices PID 2208" -> "UID 1001" [label="UID belongs to"]
+		"com.vuzix.hud.connectivity PID 2229" -> "UID 1000" [label="UID belongs to"]
+		"com.google.android.gms PID 2248" -> "UID 10052" [label="UID belongs to"]
+		"com.android.webview.webview_service PID 3635" -> "UID 10062" [label="UID belongs to"]
+		"org.chromium.webview_shell PID 3604" -> "UID 10036" [label="UID belongs to"]
+		"com.android.webview.sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 PID 3657" -> "UID 99000" [label="UID belongs to"]
+		"com.android.webview.webview_apk PID 3698" -> "UID 10062" [label="UID belongs to"]
 		"com.android.phone PID 2883" -> "UID 1001" [label="UID belongs to"]
 		"com.android.traceur PID 2928" -> "UID 10040" [label="UID belongs to"]
 		"com.google.android.gms.persistent PID 2967" -> "UID 10052" [label="UID belongs to"]
@@ -257,10 +345,4 @@ digraph Provenance {
 		"com.qti.ltebc PID 3349" -> "UID 10153" [label="UID belongs to"]
 		"com.qualcomm.qti.qms.service.trustzoneaccess PID 3375" -> "UID 10148" [label="UID belongs to"]
 		"com.google.zxing.client.android PID 3476" -> "UID 1000" [label="UID belongs to"]
-		"com.google.zxing.client.android PID 3476" -> "UID 1000" [label="UID belongs to"]
-		"org.chromium.webview_shell PID 3604" -> "UID 10036" [label="UID belongs to"]
-		"com.android.webview.webview_service PID 3635" -> "UID 10062" [label="UID belongs to"]
-		"com.android.webview.sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 PID 3657" -> "UID 99000" [label="UID belongs to"]
-		"org.chromium.webview_shell PID 3604" -> "UID 10036" [label="UID belongs to"]
-		"com.android.webview.webview_apk PID 3698" -> "UID 10062" [label="UID belongs to"]
 }

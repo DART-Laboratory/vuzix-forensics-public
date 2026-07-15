@@ -8,11 +8,21 @@ std::string Builder::build_graph(Timeline& timeline) {
 	std::stringstream out_ss{};
 	out_ss << HEADER;
 
-	std::vector<std::shared_ptr<Node>> nodes{};
-	nodes.reserve(timeline.events.size()*2);
+	std::set<std::shared_ptr<Node>> nodes{};
 	for (const Event& event : timeline.events) {
-		if (event.child != nullptr) nodes.emplace_back(event.child);
-		if (event.parent != nullptr) nodes.emplace_back(event.parent);
+		if (event.child != nullptr) nodes.insert(event.child);
+		if (event.parent != nullptr) nodes.insert(event.parent);
+	}
+
+	for (const std::shared_ptr<Node>& node : nodes) {
+		if (node->package) {
+			std::println(out_ss, "{}", Node::package_cluster(
+				node->package,
+				std::format("\"{}\" [shape=point style=invis]",
+					Node::dummy_package_node_prefix+node->package.value()
+				)
+			));
+		}
 	}
 
 	for (const std::shared_ptr<Node>& node : nodes) {
