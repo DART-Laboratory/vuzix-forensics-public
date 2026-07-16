@@ -1,14 +1,14 @@
 #pragma once
 
 #include "TimelineGenerator.h"
-#include <map>
+#include "Statistics.h"
 
 class Builder {
 public:
 	Builder() = delete;
 
 	//static std::string build_graph(const std::vector<ProcRelation>& relations);
-	static std::string build_graph(Timeline& timeline);
+	static std::string build_graph(Timeline& timeline, Statistics& stats);
 	
 private:
 	static std::optional<std::string> get_node_name(const Proc& proc) noexcept;

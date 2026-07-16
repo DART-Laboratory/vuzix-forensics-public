@@ -1,7 +1,6 @@
 #include "CLI/App.hpp"
-#include "CLI/Formatter.hpp"
-#include "CLI/Config.hpp"
 #include "Cleaner.h"
+#include "Statistics.h"
 
 class App {
 public:
@@ -18,5 +17,7 @@ private:
 	std::string output_file{"graph"};
 	bool save_dot_file{false};
 	CleanerOptions cleaner_options{};
+	Statistics stats{};
+	bool print_stats{false};
 };
 

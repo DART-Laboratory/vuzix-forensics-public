@@ -1,5 +1,6 @@
 #include "Cleaner.h"
 #include "Node.h"
+#include <print>
 
 void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_ptr<Log>>& logs, const CleanerOptions& options) {
 	std::vector<std::shared_ptr<Node>*> nodes{};
@@ -11,17 +12,17 @@ void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_
 
 	if (options.map_sensor_ids) {
 		map_sensor_ids(nodes, logs);
-		std::println(std::cout, "Cleaner: Map sensor ids passed");
+		std::println("Cleaner: Map sensor ids passed");
 	}
 	if (options.extract_package_names) {
 		extract_package_names(nodes);
-		std::println(std::cout, "Cleaner: Extract package names passed");
+		std::println("Cleaner: Extract package names passed");
 	}
 
 	prefix_packages_on_names(nodes);
-	std::println(std::cout, "Cleaner: prefix packages on names passed");
+	std::println("Cleaner: prefix packages on names passed");
 	relate_similar_nodes(nodes);
-	std::println(std::cout, "Cleaner: Relate similar nodes passed");
+	std::println("Cleaner: Relate similar nodes passed");
 }
 
 void Cleaner::map_sensor_ids(const std::vector<std::shared_ptr<Node>*>& nodes, const std::vector<std::shared_ptr<Log>>& logs) {

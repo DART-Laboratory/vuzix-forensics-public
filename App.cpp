@@ -1,6 +1,9 @@
+#include <filesystem>
 #include <print>
 #include <fstream>
 #include "App.h"
+#include "CLI/Formatter.hpp"
+#include "CLI/Config.hpp"
 #include "Reader.h"
 #include "TimelineGenerator.h"
 #include "Builder.h"
@@ -10,12 +13,15 @@ App::App(const int argc, char** argv) : app{"HindSight"}, argc{argc}, argv{argv}
 
 	app.add_option("file", input_file, "Bug report file name")->check(CLI::ExistingFile)->required();
 	app.add_option("-o,--out", output_file, "Output file (without extension)");
-	app.add_flag("-d,--dot,!--no-dot", save_dot_file, "Save dot file");
+	app.add_flag("-d,--dot", save_dot_file, "Save dot file");
+	app.add_flag("-s,--stats,", print_stats, "Print statistics");
 	app.add_flag("--cm,--cleaner-map-sensor-ids", cleaner_options.map_sensor_ids, "Map sensor ids to sensor names");
 	app.add_flag("!--no-ce,!--no-cleaner-extract-package-names", cleaner_options.extract_package_names, "Find if any node names begin with any known packages and set node package if so");
 }
 
 int App::run() {
+	std::chrono::steady_clock::time_point begin{std::chrono::steady_clock::now()};
+
 	CLI11_PARSE(app, argc, argv);
 
 	std::ifstream in{input_file};
@@ -61,7 +67,7 @@ int App::run() {
 	std::string file_name{output_file};
 	std::ofstream out{file_name+".dot"};
 	try {
-		out << Builder::build_graph(timeline);
+		out << Builder::build_graph(timeline, stats);
 	} catch (const std::exception& e) {
 		std::println(std::cerr, "Builder exception: {}", e.what());
 		return 1;
@@ -75,6 +81,15 @@ int App::run() {
 		std::println("Created graph dot file ({}.dot).", file_name);
 	}
 	std::println("Created graph image ({}.svg).", file_name);
+
+	std::chrono::steady_clock::time_point end{std::chrono::steady_clock::now()};
+	stats.run_time = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
+
+	stats.bugreport_size = std::filesystem::file_size(input_file);
+	stats.bugreport_size_per_node = stats.bugreport_size/(double)stats.num_of_nodes;
+	stats.bugreport_size_per_graph_component = stats.bugreport_size/(double)(stats.num_of_nodes+stats.num_of_edges);
+
+	if (print_stats) stats.print();
 
 	return 0;
 }

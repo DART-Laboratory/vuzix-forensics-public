@@ -4,7 +4,7 @@
 #include <print>
 #include <iostream>
 
-std::string Builder::build_graph(Timeline& timeline) {
+std::string Builder::build_graph(Timeline& timeline, Statistics& stats) {
 	std::stringstream out_ss{};
 	out_ss << HEADER;
 
@@ -29,24 +29,27 @@ std::string Builder::build_graph(Timeline& timeline) {
 		for (const GraphComponent& comp : node->get_graph_components()) {
 			if (comp.type == GraphComponent::Type::NodeDefinition) {
 				std::println(out_ss, "{}", comp.text);
+				stats.num_of_nodes++;
 			}
 		}
 	}
-	std::println(std::cout, "Builder: Node graph components building passed");
+	std::println("Builder: Node graph components building passed");
 
 	for (const Event& event : timeline.events) {
 		std::println(out_ss, "{}", event.get_graph_component().text);
+		stats.num_of_edges++;
 	}
-	std::println(std::cout, "Builder: Event graph components building passed");
+	std::println("Builder: Event graph components building passed");
 
 	for (const std::shared_ptr<Node>& node : nodes) {
 		for (const GraphComponent& comp : node->get_graph_components()) {
 			if (comp.type == GraphComponent::Type::UIDRelation) {
 				std::println(out_ss, "{}", comp.text);
+				stats.num_of_edges++;
 			}
 		}
 	}
-	std::println(std::cout, "Builder: UID graph components building passed");
+	std::println("Builder: UID graph components building passed");
 	
 	out_ss << FOOTER;
 	return out_ss.str();
