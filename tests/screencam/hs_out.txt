@@ -1,0 +1,21 @@
+Reader passed.
+Timeline generator passed.
+Cleaner: Map sensor ids passed
+Cleaner: Extract package names passed
+Cleaner: prefix packages on names passed
+Cleaner: Relate similar nodes passed
+Cleaner passed.
+Builder: Node graph components building passed
+Builder: Event graph components building passed
+Builder: UID graph components building passed
+Builder passed.
+Created graph dot file (screencam/graph.dot).
+Created graph image (screencam/graph.svg).
+Run time:                            4095ms
+# nodes:                             106
+# edges:                             128
+# graph components (nodes+edges):    234
+Bugreport file size:                 14918964KB
+Bugreport file size/node:            140744.9KB/node
+Bugreport file size/graph component: 63756.3KB/graph component
+

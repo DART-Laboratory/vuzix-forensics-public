@@ -1,0 +1,22 @@
+Reader passed.
+com.teamviewer.pilot.lite
+Timeline generator passed.
+Cleaner: Map sensor ids passed
+Cleaner: Extract package names passed
+Cleaner: prefix packages on names passed
+Cleaner: Relate similar nodes passed
+Cleaner passed.
+Builder: Node graph components building passed
+Builder: Event graph components building passed
+Builder: UID graph components building passed
+Builder passed.
+Created graph dot file (teamviewer/graph.dot).
+Created graph image (teamviewer/graph.svg).
+Run time:                            3924ms
+# nodes:                             14
+# edges:                             34
+# graph components (nodes+edges):    48
+Bugreport file size:                 12330877KB
+Bugreport file size/node:            880776.9KB/node
+Bugreport file size/graph component: 256893.3KB/graph component
+
