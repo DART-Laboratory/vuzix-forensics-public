@@ -13,6 +13,7 @@ add_executable(hs
 	Node.cpp
 	LogcatLog.cpp
 	SensorLog.cpp
+	AudioServiceLog.cpp
 	Reader.cpp
 	TimelineGenerator.cpp
 	Cleaner.cpp

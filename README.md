@@ -1,14 +1,10 @@
 # Vuzix Forensics
 
-This a repository for my summer 2026 research project with the Leadership Alliance's FYRE program. This repository contains a CMake project that provides an executable (`hs`) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
+This a repository for my summer 2026 research project with the Leadership Alliance's FYRE program. This repository contains a CMake project that provides a binary (`hs`) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
 
 ## Using `hs`
 
-`hs` stands for "HindSight" Run `hs` with `-h` or `--help` to print the help page. The command-line parameters are as follows:
-
-* `file`                        - Required argument for the bugreport file.
-* `-o,--out TEXT`               - Output file, without file extension. This will be the file name for the generated dot and svg files.
-* `-d,--dot,--no-dot{false}`    - Whether or not to save or delete the dot file after creating the svg.
+`hs` stands for "HindSight" Run `hs` with `-h` or `--help` to print the help page. You must always pass the path to the bugreport text file to parse. HindSight will parse the bugreport and generate the graph file. The default file name is graph.svg.
 
 ## Dependencies
 
@@ -65,4 +61,6 @@ The bugreport command runs various other `adb` commands as well as several linux
 For HindSight to identify process creation relationships between processes, it primarily uses the `logcat` section of the bugreport. The Android `ActivityManager` and `ActivityTaskManager` log when processes and tasks are started. Like any linux system, processes have PIDs, UIDs, and TIDs associated with them, as well as a parent process. On Android systems, processes often have their own UID that is not associated with any important user, similar to just another unchanging PID. This is to handle specialized permissions.
 
 The difficulty in forming the relationships between processes is figuring out what IDs belong to what processes. Some logs describe relationships only by their UIDs, some by their names. So, when putting together the graph, you must figure out what UID belongs to what PID and name. Plus, processes can share UIDs and names, so PIDs are the only definitive form of identification for a process, but Android logs don't often refer to processes by their PID, so it is essentially impossible to draw certain conclusions about what process is actually acting on another, and thus attempting to using PIDs to draw relationships is a fruitless endeavor. The Android logs essentially build a huge complicated puzzle with several missing pieces, so in order to form a complete puzzle, you have to assume what is on the missing pieces and draw them yourself.
+
+The Android framework has many services that are used as an interface between applications and device components. For example `SensorService` and `CameraService`. HindSight uses these to discover what processes/applications interacted with the various components.
 

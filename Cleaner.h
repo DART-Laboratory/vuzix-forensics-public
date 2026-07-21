@@ -18,5 +18,6 @@ private:
 	static void extract_package_names(const std::vector<std::shared_ptr<Node>*>& nodes);
 	static void prefix_packages_on_names(const std::vector<std::shared_ptr<Node>*>& nodes);
 	static void relate_similar_nodes(std::vector<std::shared_ptr<Node>*>& nodes);
+	static void remove_duplicate_events(Timeline& timeline);
 };
 

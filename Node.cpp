@@ -15,7 +15,7 @@ std::vector<GraphComponent> Node::get_graph_components() const {
 std::string Node::package_cluster(const std::optional<Package>& package, const std::string& cluster_contents) {
 	if (package.has_value()) {
 		return std::format(
-			"\tsubgraph \"cluster_{}\" {{ label=\"{}\" {} }}",
+			"\tsubgraph \"cluster_{}\" {{ label=\"PACKAGE {}\" {} }}",
 			package.value(), package.value(), cluster_contents
 		);
 	} else {
@@ -152,6 +152,9 @@ bool Proc::similar(const std::shared_ptr<Node>& node) const {
 		int name_comp{optional_value_compare(name, proc->name)};
 		if (name_comp == 3) return false;
 		if (name_comp == 2) return true;
+
+		int pkg_comp{optional_value_compare(package, proc->package)};
+		if (pkg_comp == 2) return true;
 	}
 
 	return false;
@@ -206,5 +209,9 @@ GraphComponent Event::get_graph_component() const {
 			GraphComponent::Type::EventRelation
 		};
 	}
+}
+
+bool Event::similar(const Event& event) const noexcept {
+	return (parent == event.parent && child == event.child && relation == event.relation);
 }
 

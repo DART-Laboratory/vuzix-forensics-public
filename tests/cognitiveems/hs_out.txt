@@ -1,10 +1,10 @@
 Reader passed.
-com.example.cognitive_ems
 Timeline generator passed.
 Cleaner: Map sensor ids passed
 Cleaner: Extract package names passed
 Cleaner: prefix packages on names passed
 Cleaner: Relate similar nodes passed
+Cleaner: Remove duplicate events passed
 Cleaner passed.
 Builder: Node graph components building passed
 Builder: Event graph components building passed
@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (cognitiveems/graph.dot).
 Created graph image (cognitiveems/graph.svg).
-Run time:                            4296ms
-# nodes:                             104
-# edges:                             125
-# graph components (nodes+edges):    229
+Run time:                            6141ms
+# nodes:                             106
+# edges:                             127
+# graph components (nodes+edges):    233
 Bugreport file size:                 14025431KB
-Bugreport file size/node:            134859.9KB/node
-Bugreport file size/graph component: 61246.4KB/graph component
+Bugreport file size/node:            132315.4KB/node
+Bugreport file size/graph component: 60195.0KB/graph component
 

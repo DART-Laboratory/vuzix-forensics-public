@@ -116,7 +116,7 @@ struct Sensor : public Node {
 };
 
 struct Component : public Node {
-	Component(const std::string& name) : Node {std::nullopt, name} { }
+	Component(const std::string& name) : Node{std::nullopt, name} { }
 
 	constexpr Shape get_shape() const noexcept override {
 		return Node::Shape::Box;
@@ -177,14 +177,19 @@ struct Event {
 	std::shared_ptr<Node> child;
 
 	enum class Relation {
-		Started, StartedForBroadcast, RegisteredSensor, StartedForService, ConnectedTo
+		Started, StartedForBroadcast, RegisteredSensor,
+		StartedForService, ConnectedTo,
+		AudioRecUpdated, AudioRecStoped, AudioRecStarted
 	} relation;
 	inline static const std::map<Relation, std::string> relation_to_str{
 		{Relation::Started, "Started"},
 		{Relation::StartedForBroadcast, "Started for broadcast"},
 		{Relation::RegisteredSensor, "Registered sensor"},
 		{Relation::StartedForService, "Started for service"},
-		{Relation::ConnectedTo, "Connected to"}
+		{Relation::ConnectedTo, "Connected to"},
+		{Relation::AudioRecUpdated, "Audio record config updated"},
+		{Relation::AudioRecStoped, "Audio record stopped"},
+		{Relation::AudioRecStarted, "Audio record started"}
 	};
 
 	Event() = default;
@@ -194,7 +199,9 @@ struct Event {
 		const std::shared_ptr<Node>& parent,
 		Relation relation, const std::shared_ptr<Node>& child
 	) : date{date}, time{time}, parent{parent}, relation{relation}, child{child} { }
-	
+
 	GraphComponent get_graph_component() const;
+
+	bool similar(const Event& event) const noexcept;
 };
 

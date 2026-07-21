@@ -4,6 +4,7 @@ Cleaner: Map sensor ids passed
 Cleaner: Extract package names passed
 Cleaner: prefix packages on names passed
 Cleaner: Relate similar nodes passed
+Cleaner: Remove duplicate events passed
 Cleaner passed.
 Builder: Node graph components building passed
 Builder: Event graph components building passed
@@ -11,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (browserandpdf/graph.dot).
 Created graph image (browserandpdf/graph.svg).
-Run time:                            4791ms
-# nodes:                             114
+Run time:                            6394ms
+# nodes:                             115
 # edges:                             141
-# graph components (nodes+edges):    255
+# graph components (nodes+edges):    256
 Bugreport file size:                 14334615KB
-Bugreport file size/node:            125742.2KB/node
-Bugreport file size/graph component: 56214.2KB/graph component
+Bugreport file size/node:            124648.8KB/node
+Bugreport file size/graph component: 55994.6KB/graph component
 

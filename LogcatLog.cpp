@@ -277,10 +277,7 @@ std::optional<Event> LogcatLog::parse_camera_service() {
 	std::regex_match(description, m, r);
 	if (m.empty()) return std::nullopt;
 
-	std::println("{}", m[1].str());
-
 	std::string pkg{m[1].str()};
-	//std::pair<std::optional<Package>, std::string> cmp{get_package_and_name(m[2].str())};
 	
 	return Event{
 		date,

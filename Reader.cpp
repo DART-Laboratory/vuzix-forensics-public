@@ -1,5 +1,4 @@
 #include "Reader.h"
-#include <execution>
 #include <functional>
 #include <iostream>
 #include <print>
@@ -8,9 +7,10 @@ std::vector<std::shared_ptr<Log>> Reader::read_bugreport(const std::vector<std::
 	std::vector<std::shared_ptr<Log>> cumulative_logs{};
 
 	static const std::array<
-		std::function<std::optional<std::shared_ptr<Log>>(const std::string&)>, 3
+		std::function<std::optional<std::shared_ptr<Log>>(const std::string&)>, 4
 	> readers{
-		LogcatLog::read_log, SensorRegisterLog::read_log, SensorInfoLog::read_log
+		LogcatLog::read_log, SensorRegisterLog::read_log,
+		SensorInfoLog::read_log, AudioServiceLog::read_log
 	};
 
 	for (const std::string& l : lines) {

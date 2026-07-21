@@ -1,10 +1,10 @@
 Reader passed.
-com.google.zxing.client.android
 Timeline generator passed.
 Cleaner: Map sensor ids passed
 Cleaner: Extract package names passed
 Cleaner: prefix packages on names passed
 Cleaner: Relate similar nodes passed
+Cleaner: Remove duplicate events passed
 Cleaner passed.
 Builder: Node graph components building passed
 Builder: Event graph components building passed
@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (qrcode/graph.dot).
 Created graph image (qrcode/graph.svg).
-Run time:                            3872ms
-# nodes:                             110
-# edges:                             131
-# graph components (nodes+edges):    241
+Run time:                            6190ms
+# nodes:                             111
+# edges:                             134
+# graph components (nodes+edges):    245
 Bugreport file size:                 14733404KB
-Bugreport file size/node:            133940.0KB/node
-Bugreport file size/graph component: 61134.5KB/graph component
+Bugreport file size/node:            132733.4KB/node
+Bugreport file size/graph component: 60136.3KB/graph component
 

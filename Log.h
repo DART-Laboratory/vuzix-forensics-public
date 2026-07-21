@@ -70,3 +70,17 @@ private:
 	SensorInfoLog() = default;
 };
 
+class AudioServiceLog : public Log {
+public:
+	static std::optional<std::shared_ptr<AudioServiceLog>> read_log(const std::string& l);
+	std::optional<Event> generate_event() override;
+
+	std::chrono::month_day date;
+	std::chrono::milliseconds time;
+	UID uid;
+	std::string source;
+	Package package;
+
+	Event::Relation event;
+};
+

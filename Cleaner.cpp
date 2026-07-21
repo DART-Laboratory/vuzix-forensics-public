@@ -1,6 +1,7 @@
 #include "Cleaner.h"
 #include "Node.h"
 #include <print>
+#include <ranges>
 
 void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_ptr<Log>>& logs, const CleanerOptions& options) {
 	std::vector<std::shared_ptr<Node>*> nodes{};
@@ -21,8 +22,12 @@ void Cleaner::clean_relations(Timeline& timeline, const std::vector<std::shared_
 
 	prefix_packages_on_names(nodes);
 	std::println("Cleaner: prefix packages on names passed");
+	
 	relate_similar_nodes(nodes);
 	std::println("Cleaner: Relate similar nodes passed");
+
+	remove_duplicate_events(timeline);
+	std::println("Cleaner: Remove duplicate events passed");
 }
 
 void Cleaner::map_sensor_ids(const std::vector<std::shared_ptr<Node>*>& nodes, const std::vector<std::shared_ptr<Log>>& logs) {
@@ -52,7 +57,11 @@ void Cleaner::extract_package_names(const std::vector<std::shared_ptr<Node>*>& n
 
 	for (const std::shared_ptr<Node>* n : nodes) {
 		if (n->get()->package || !n->get()->name) continue;
-		if (packages.contains(n->get()->name.value())) n->get()->package = n->get()->name;
+		for (const Package& package : packages) {
+			if (n->get()->name.value().starts_with(package)) {
+				n->get()->package = n->get()->name;
+			}
+		}
 	}
 }
 
@@ -68,6 +77,24 @@ void Cleaner::relate_similar_nodes(std::vector<std::shared_ptr<Node>*>& nodes) {
 			if (nodes[i]->get()->similar(*nodes[j])) {
 				nodes[i]->get()->relate(*nodes[j]);
 				*nodes[i] = *nodes[j];
+			}
+		}
+	}
+}
+
+void Cleaner::remove_duplicate_events(Timeline& timeline) {
+	bool wait_i = false;
+	bool wait_j = false;
+	for (size_t i = 0; i < timeline.events.size(); i += (wait_i?0:1)) {
+		if (wait_i) wait_i = false;
+
+		for (size_t j = i+1; j < timeline.events.size(); j += (wait_j?0:1)) {
+			if (wait_j) wait_j = false;
+
+			if (timeline.events[i].similar(timeline.events[j])) {
+				timeline.events.erase(timeline.events.begin()+i);
+				wait_i = true;
+				wait_j = true;
 			}
 		}
 	}
