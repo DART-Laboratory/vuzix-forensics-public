@@ -18,6 +18,7 @@ add_executable(hs
 	TimelineGenerator.cpp
 	Cleaner.cpp
 	Builder.cpp
+	Statistics.cpp
 )
 
 target_link_libraries(hs PRIVATE CLI11::CLI11)

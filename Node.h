@@ -4,7 +4,6 @@
 #include <memory>
 #include <chrono>
 #include <map>
-#include <iostream>
 #include "GraphComponent.h"
 
 using UID = uint64_t;
@@ -48,6 +47,9 @@ struct Node {
 	virtual constexpr Shape get_shape() const noexcept = 0;
 	virtual constexpr uint32_t get_color() const noexcept = 0;
 
+	virtual uint8_t get_missing_items() const noexcept;
+	virtual constexpr uint8_t get_total_possible_items() const noexcept { return 2; }
+
 protected:
 	GraphComponent get_node_def_graph_component(const std::string& node_name) const;
 };
@@ -81,6 +83,9 @@ struct Proc : public Node {
 		return 0xd6eaf8;
 	}
 
+	uint8_t get_missing_items() const noexcept override;
+	constexpr uint8_t get_total_possible_items() const noexcept override;
+
 	auto operator<=>(const Proc&) const noexcept = default;
 };
 
@@ -112,6 +117,9 @@ struct Sensor : public Node {
 
 	bool similar(const std::shared_ptr<Node>& node) const override;
 
+	uint8_t get_missing_items() const noexcept override { return 0; }
+	constexpr uint8_t get_total_possible_items() const noexcept override { return 0; }
+
 	auto operator<=>(const Sensor&) const noexcept = default;
 };
 
@@ -124,6 +132,9 @@ struct Component : public Node {
 	constexpr uint32_t get_color() const noexcept override {
 		return 0xf4d4ed;
 	}
+
+	uint8_t get_missing_items() const noexcept override { return 0; }
+	constexpr uint8_t get_total_possible_items() const noexcept override { return 0; }
 
 	auto operator<=>(const Component&) const noexcept = default;
 };

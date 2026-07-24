@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (cognitiveems/graph.dot).
 Created graph image (cognitiveems/graph.svg).
-Run time:                            6141ms
+Run time:                            5683ms
 # nodes:                             106
 # edges:                             127
 # graph components (nodes+edges):    233
 Bugreport file size:                 14025431KB
 Bugreport file size/node:            132315.4KB/node
-Bugreport file size/graph component: 60195.0KB/graph component
-
+Bugreport file size/graph component: 6019498.3KB/graph component
+Missing items:                       33/344 (0.10%)

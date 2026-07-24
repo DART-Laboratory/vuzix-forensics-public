@@ -20,7 +20,7 @@ App::App(const int argc, char** argv) : app{"HindSight"}, argc{argc}, argv{argv}
 }
 
 int App::run() {
-	std::chrono::steady_clock::time_point begin{std::chrono::steady_clock::now()};
+	stats.time_start();
 
 	CLI11_PARSE(app, argc, argv);
 
@@ -82,13 +82,9 @@ int App::run() {
 	}
 	std::println("Created graph image ({}.svg).", file_name);
 
-	std::chrono::steady_clock::time_point end{std::chrono::steady_clock::now()};
-	stats.run_time = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
-
-	stats.bugreport_size = std::filesystem::file_size(input_file);
-	stats.bugreport_size_per_node = stats.bugreport_size/(double)stats.num_of_nodes;
-	stats.bugreport_size_per_graph_component = stats.bugreport_size/(double)(stats.num_of_nodes+stats.num_of_edges);
-
+	stats.time_end();
+	stats.calculate_graph_stats(input_file);
+	
 	if (print_stats) stats.print();
 
 	return 0;

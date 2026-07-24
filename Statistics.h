@@ -1,30 +1,26 @@
 #pragma once
 
 #include <chrono>
-#include <print>
 
 struct Statistics {
-	std::chrono::milliseconds run_time{};
-	size_t num_of_nodes{};
-	size_t num_of_edges{};
-	uintmax_t bugreport_size{};
-	double bugreport_size_per_node{};
-	double bugreport_size_per_graph_component{};
+	struct Timer {
+		std::chrono::time_point<std::chrono::system_clock> start_time;
+		std::chrono::milliseconds run_time;
+		std::chrono::time_point<std::chrono::system_clock> end_time;
+	} timer;
+	size_t num_of_nodes;
+	size_t num_of_edges;
+	uintmax_t bugreport_size;
+	double bugreport_size_per_node;
+	double bugreport_size_per_graph_component;
+	size_t missing_items;
+	size_t total_possible_items;
 	
-	void print() const noexcept {
-		std::println(
-			"Run time:                            {}\n"
-			"# nodes:                             {}\n"
-			"# edges:                             {}\n"
-			"# graph components (nodes+edges):    {}\n"
-			"Bugreport file size:                 {}KB\n"
-			"Bugreport file size/node:            {:.1f}KB/node\n"
-			"Bugreport file size/graph component: {:.1f}KB/graph component\n",
-			run_time, num_of_nodes, num_of_edges,
-			num_of_nodes+num_of_edges,
-			bugreport_size, bugreport_size_per_node,
-			bugreport_size_per_graph_component
-		);
-	}
+	void print() const noexcept;
+
+	void time_start();
+	void time_end();
+
+	void calculate_graph_stats(const std::string& input_file);
 };
 

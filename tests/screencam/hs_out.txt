@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (screencam/graph.dot).
 Created graph image (screencam/graph.svg).
-Run time:                            5750ms
+Run time:                            5593ms
 # nodes:                             107
 # edges:                             131
 # graph components (nodes+edges):    238
 Bugreport file size:                 14918964KB
 Bugreport file size/node:            139429.6KB/node
-Bugreport file size/graph component: 62684.7KB/graph component
-
+Bugreport file size/graph component: 6268472.3KB/graph component
+Missing items:                       48/372 (0.13%)

@@ -62,6 +62,10 @@ void Node::relate(const std::shared_ptr<Node>& node) {
 	relate_one_way(*node, *this);
 }
 
+uint8_t Node::get_missing_items() const noexcept {
+	return !package.has_value() + !name.has_value();
+}
+
 // Order of importance:
 // (NAME) PID (PID)
 // (NAME)
@@ -166,6 +170,14 @@ void Proc::relate(const std::shared_ptr<Node>& node) {
 	Node::relate(node);
 	if (proc->ids) ids = proc->ids;
 	if (ids) proc->ids = ids;
+}
+
+uint8_t Proc::get_missing_items() const noexcept {
+	return Node::get_missing_items() + (ids.has_value() ? !ids->pid.has_value() : 2);
+}
+
+constexpr uint8_t Proc::get_total_possible_items() const noexcept {
+	return Node::get_total_possible_items() + 2;
 }
 
 bool Sensor::similar(const std::shared_ptr<Node>& node) const {

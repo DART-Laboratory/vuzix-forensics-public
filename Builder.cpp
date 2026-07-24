@@ -2,7 +2,6 @@
 #include "GraphComponent.h"
 #include <sstream>
 #include <print>
-#include <iostream>
 
 std::string Builder::build_graph(Timeline& timeline, Statistics& stats) {
 	std::stringstream out_ss{};
@@ -12,6 +11,11 @@ std::string Builder::build_graph(Timeline& timeline, Statistics& stats) {
 	for (const Event& event : timeline.events) {
 		if (event.child != nullptr) nodes.insert(event.child);
 		if (event.parent != nullptr) nodes.insert(event.parent);
+	}
+
+	for (const std::shared_ptr<Node>& node : nodes) {
+		stats.missing_items += node->get_missing_items();
+		stats.total_possible_items += node->get_total_possible_items();
 	}
 
 	for (const std::shared_ptr<Node>& node : nodes) {
