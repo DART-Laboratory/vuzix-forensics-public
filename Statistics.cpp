@@ -17,7 +17,7 @@ void Statistics::print() const noexcept {
 		bugreport_size, bugreport_size_per_node,
 		bugreport_size_per_graph_component,
 		missing_items, total_possible_items,
-		(double)missing_items/total_possible_items
+		(double)missing_items/total_possible_items*100
 	);
 }
 
@@ -33,6 +33,6 @@ void Statistics::time_end() {
 void Statistics::calculate_graph_stats(const std::string& input_file) {
 	bugreport_size = std::filesystem::file_size(input_file);
 	bugreport_size_per_node = bugreport_size/(double)num_of_nodes;
-	bugreport_size_per_graph_component = bugreport_size/(double)(num_of_nodes+num_of_edges)*100;
+	bugreport_size_per_graph_component = bugreport_size/(double)(num_of_nodes+num_of_edges);
 }
 

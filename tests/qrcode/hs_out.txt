@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (qrcode/graph.dot).
 Created graph image (qrcode/graph.svg).
-Run time:                            5709ms
+Run time:                            18676ms
 # nodes:                             111
 # edges:                             134
 # graph components (nodes+edges):    245
 Bugreport file size:                 14733404KB
 Bugreport file size/node:            132733.4KB/node
-Bugreport file size/graph component: 6013634.3KB/graph component
-Missing items:                       36/368 (0.10%)
+Bugreport file size/graph component: 60136.3KB/graph component
+Missing items:                       36/368 (9.78%)

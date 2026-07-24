@@ -12,11 +12,11 @@ Builder: UID graph components building passed
 Builder passed.
 Created graph dot file (teamviewer/graph.dot).
 Created graph image (teamviewer/graph.svg).
-Run time:                            5086ms
+Run time:                            17932ms
 # nodes:                             15
 # edges:                             22
 # graph components (nodes+edges):    37
 Bugreport file size:                 12330877KB
 Bugreport file size/node:            822058.5KB/node
-Bugreport file size/graph component: 33326694.6KB/graph component
-Missing items:                       22/56 (0.39%)
+Bugreport file size/graph component: 333266.9KB/graph component
+Missing items:                       22/56 (39.29%)
