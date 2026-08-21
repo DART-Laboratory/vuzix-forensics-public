@@ -8,7 +8,7 @@ void Statistics::print() const noexcept {
 		"# nodes:                             {}\n"
 		"# edges:                             {}\n"
 		"# graph components (nodes+edges):    {}\n"
-		"Bugreport file size:                 {}KB\n"
+		"Bugreport file size:                 {} Bytes\n"
 		"Bugreport file size/node:            {:.1f} Bytes/node\n"
 		"Bugreport file size/graph component: {:.1f} Bytes/graph component\n"
 		"Missing items:                       {}/{} ({:.2f}%)",
