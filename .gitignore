@@ -2,3 +2,4 @@ logs
 build
 .cache
 oil:
+compile_commands.json
