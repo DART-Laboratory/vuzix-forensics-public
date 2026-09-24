@@ -1,6 +1,6 @@
 # Vuzix Forensics
 
-This a repository for my summer 2026 research project with the Leadership Alliance's FYRE program. This repository contains a CMake project that provides a binary (`hs`) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
+This repository contains a CMake project that provides a binary (`hs`) that reads and analyzes an Android `adb` bugreport (specifically tailored to a Vuzix device) and generates a provenance graph.
 
 ## Using `hs`
 
